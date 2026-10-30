@@ -64,9 +64,9 @@ export function StudyMaterialSheet({ material, onClose }: { material: StudyMater
 
       <article
         id="study-material-print"
-        className="w-full max-w-[210mm] rounded-2xl bg-[#ffffff] px-12 py-10 text-[14px] leading-relaxed text-slate-900 shadow-2xl print:max-w-none print:rounded-none print:px-[15mm] print:py-[12mm] print:shadow-none"
+        className="w-full max-w-[210mm] rounded-2xl bg-[#ffffff] px-12 py-10 text-[14px] leading-relaxed text-slate-900 shadow-2xl print:max-w-none print:columns-2 print:gap-[8mm] print:rounded-none print:px-[15mm] print:py-[12mm] print:text-[11px] print:shadow-none"
       >
-        <header className="border-b border-slate-300 pb-4">
+        <header className="border-b border-slate-300 pb-4 print:[column-span:all]">
           <p className="text-[11px] uppercase tracking-[0.18em] text-slate-500">
             {languageLabel} · {LEVEL_LABELS[material.level]} · {date}
           </p>
@@ -87,7 +87,7 @@ export function StudyMaterialSheet({ material, onClose }: { material: StudyMater
         )}
 
         {material.word_bank.length > 0 && (
-          <section className="mt-5 rounded-lg border border-slate-300 px-4 py-3">
+          <section className="mt-5 rounded-lg border border-slate-300 px-4 py-3 print:[column-span:all]">
             <p className="text-[11px] uppercase tracking-[0.14em] text-slate-500">Banco de palavras</p>
             <p className="mt-1 text-slate-800">{material.word_bank.join("   ·   ")}</p>
           </section>
@@ -97,7 +97,7 @@ export function StudyMaterialSheet({ material, onClose }: { material: StudyMater
           <h2 className="text-[13px] font-semibold text-slate-800">Preencha as lacunas</h2>
           <ol className="mt-3 space-y-4">
             {material.items.map((item, i) => (
-              <li key={i} className="flex gap-3">
+              <li key={i} className="flex gap-3 break-inside-avoid">
                 <span className="w-6 shrink-0 text-right font-semibold text-slate-500">{i + 1}.</span>
                 <p>
                   <Sentence text={item.sentence} />

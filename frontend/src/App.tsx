@@ -72,37 +72,18 @@ function Content() {
 /**
  * Professor: na rota /conversa aparece em tela inteira; nas outras telas, como janela flutuante.
  * Ao sair da conversa, ela continua aberta como janela, sem perder o que estava sendo feito.
+ * Ao abrir o aplicativo, o professor começa minimizado (botão flutuante).
  */
-const WIDGET_KEY = "chat-widget-state";
-
-/** Estado da janela do professor (aberta, maximizada ou minimizada), lembrado neste computador. */
-function readWidgetState(): ChatPresentation {
-  try {
-    const saved = window.localStorage.getItem(WIDGET_KEY);
-    return saved === "open" || saved === "max" || saved === "closed" ? saved : "closed";
-  } catch {
-    return "closed";
-  }
-}
-
 function ChatHost() {
   const { pathname } = useLocation();
   const inChat = pathname.startsWith("/conversa");
-  const [widget, setWidget] = useState<ChatPresentation>(readWidgetState);
+  const [widget, setWidget] = useState<ChatPresentation>("closed");
   const wasInChat = useRef(inChat);
 
   useEffect(() => {
     if (wasInChat.current && !inChat) setWidget((current) => (current === "closed" ? "open" : current));
     wasInChat.current = inChat;
   }, [inChat]);
-
-  useEffect(() => {
-    try {
-      window.localStorage.setItem(WIDGET_KEY, widget === "page" ? "closed" : widget);
-    } catch {
-      // Sem armazenamento disponível, a janela simplesmente não lembra o estado.
-    }
-  }, [widget]);
 
   return <ConversationPage presentation={inChat ? "page" : widget} onPresentation={setWidget} />;
 }
