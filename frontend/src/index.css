@@ -321,21 +321,52 @@ input[type="range"]:focus-visible {
 
 /* Impressão do material de apoio: imprime só a folha, sem a interface nem o fundo escuro. */
 @media print {
-  body * {
-    visibility: hidden !important;
-  }
-  #study-material-print,
-  #study-material-print * {
-    visibility: visible !important;
-  }
-  #study-material-print {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    padding: 0;
+  /* A4 com margem zero: o espaçamento da folha já vem do próprio componente, em mm. */
+  @page {
+    size: A4;
     margin: 0;
+  }
+
+  /* Página limpa: sem o fundo escuro do app e sem alturas fixas que cortam o conteúdo. */
+  html,
+  body,
+  #root {
+    background: #ffffff !important;
+    background-image: none !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+  }
+
+  /* Esconde tudo que não é a folha ou um ancestral dela. */
+  body *:not(:has(#study-material-print)):not(#study-material-print):not(#study-material-print *) {
+    display: none !important;
+  }
+
+  /* Os ancestrais da folha viram blocos comuns, sem posição, altura nem recortes. */
+  body *:has(#study-material-print) {
+    position: static !important;
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+    transform: none !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  #study-material-print {
+    position: static !important;
+    width: 100% !important;
+    max-width: none !important;
     background: #ffffff !important;
     box-shadow: none !important;
+    color: #0f172a !important;
   }
 }
 
