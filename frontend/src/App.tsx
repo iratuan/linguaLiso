@@ -163,13 +163,14 @@ function Sidebar() {
   useNavigationShortcuts();
   return (
     <aside className="sidebar-surface flex w-[244px] shrink-0 flex-col border-r border-line px-3 pb-4 pt-3 backdrop-blur-2xl">
-      {/* Área de arrasto no topo, sob os controles da janela */}
-      <div className="drag-region flex h-9 items-center gap-2.5 px-2">
-        <img src={logoMark} alt="" aria-hidden className="no-drag h-7 w-7 shrink-0 object-contain" />
-        <p className="no-drag text-[14px] font-semibold tracking-tight text-white">English Teacher</p>
+      {/* Marca no topo: logo grande com o nome abaixo. A área é de arrasto, sob os controles da janela */}
+      <div className="drag-region flex flex-col items-center gap-2 px-2 pb-4 pt-2">
+        <img src={logoMark} alt="" aria-hidden className="no-drag h-14 w-14 shrink-0 object-contain" />
+        <p className="no-drag text-[16px] font-semibold tracking-tight text-white">English Teacher</p>
       </div>
+      <div className="mx-2 border-t border-line" aria-hidden />
 
-      <nav className="mt-5 flex flex-1 flex-col gap-0.5" aria-label="Navegação principal">
+      <nav className="mt-4 flex flex-1 flex-col gap-0.5" aria-label="Navegação principal">
         {NAV.map(({ to, label, icon: Icon }, index) => (
           <NavLink
             key={to}
