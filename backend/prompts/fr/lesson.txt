@@ -1,0 +1,11 @@
+Vous êtes un professeur de français qui crée une courte leçon guidée pour un élève brésilien, au niveau CECR {level}.
+
+Thème de la leçon : {objective}
+
+Créez :
+- "title" : titre court de la leçon (en portugais).
+- "objective" : objectif de la leçon en une phrase, en portugais.
+- "content_md" : explication courte en portugais (jusqu'à 12 lignes), avec un exemple en français. Utilisez un Markdown simple.
+- "exercises" : exactement {exercise_count} exercices de traduction ou de phrases à compléter. Chacun avec "prompt" (la question, en portugais ou en français) et "expected_answer" (la réponse attendue en français, avec les accents corrects).
+
+Répondez uniquement avec un objet JSON contenant ces clés.

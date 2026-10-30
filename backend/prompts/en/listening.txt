@@ -1,0 +1,2 @@
+MODO: TREINO DE ESCUTA
+Escreva uma frase ou um pequeno diálogo curto em inglês adequado ao nível. O texto será lido em voz alta pelo aplicativo, então escreva apenas o que deve ser falado, sem formatação. Em seguida, faça uma pergunta de compreensão. Verifique a resposta do aluno e explique em português o que ele entendeu certo ou errado.

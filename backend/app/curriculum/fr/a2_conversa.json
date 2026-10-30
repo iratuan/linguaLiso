@@ -1,0 +1,118 @@
+{
+  "level": "A2",
+  "title": "Básico",
+  "description": "Conversas sobre o passado, planos e situações práticas de viagem e serviços em francês.",
+  "goal": "Você mantém conversas curtas sobre experiências, planos e necessidades do dia a dia.",
+  "units": [
+    {
+      "id": "fr-a2-cu1",
+      "title": "Raconter des histoires",
+      "goal": "Conversar sobre o que aconteceu, com amigos e colegas.",
+      "lessons": [
+        {
+          "id": "fr-a2-c1-1",
+          "title": "Conversa : le week-end",
+          "objective": "Contar o que fez no fim de semana e reagir ao que o outro contou.",
+          "explanation": "Para contar algo no passado, use o passé composé. Para reagir com interesse:\n\n- *Ah bon ? Ça a l'air super !* — Sério? Parece ótimo!\n- *Oh là là, tu es bien ?* — Nossa, você está bem?\n- *Comment c'était ?* — Como foi?",
+          "key_phrases": [
+            {"en": "Qu'est-ce que tu as fait ce week-end ?", "pt": "O que você fez no fim de semana?"},
+            {"en": "Ça a l'air super !", "pt": "Parece ótimo!"}
+          ],
+          "exercises": [
+            {"id": "fr-a2-c1-1-e1", "type": "open_reply", "prompt": "Qu'est-ce que tu as fait ce week-end ?", "context": "Um colega pergunta sobre o seu fim de semana.", "hint": "Conte uma atividade no passado.", "answers": ["Je suis allé à la plage avec ma famille.", "J'ai rendu visite à ma grand-mère.", "J'ai regardé un film à la maison."], "explanation": "Use o passé composé: *j'ai* + particípio, ou *je suis allé* para movimento."},
+            {"id": "fr-a2-c1-1-e2", "type": "open_reply", "prompt": "Moi, je suis tombé en faisant du vélo !", "context": "O colega contou um acidente sem gravidade.", "hint": "Reaja com empatia.", "answers": ["Oh là là ! Tu n'as rien ?", "Aïe ! Tu es bien ?", "Oh non ! Ça va mieux maintenant ?"], "explanation": "Reações curtas mostram que você está ouvindo."},
+            {"id": "fr-a2-c1-1-e3", "type": "open_reply", "prompt": "Et toi, tu as aimé ?", "context": "O colega quer saber se você gostou do que fez.", "hint": "Diga se gostou e por quê.", "answers": ["Oui, c'était très agréable.", "J'ai adoré, c'était reposant.", "Pas vraiment, c'était un peu long."], "explanation": "*c'était* (imparfait) para descrever como foi."},
+            {"id": "fr-a2-c1-1-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "Ah bon ? Ça a l'air génial !", "answers": ["Ah bon ? Ça a l'air génial !"], "explanation": "Reação entusiasmada."}
+          ]
+        },
+        {
+          "id": "fr-a2-c1-2",
+          "title": "Conversa : une journée difficile",
+          "objective": "Explicar um problema e pedir ou oferecer ajuda.",
+          "explanation": "Para explicar um problema: *J'ai raté le bus ce matin.* / *J'ai perdu mes clés.*\n\nPara pedir ajuda: *Tu pourrais m'aider ?* / *Tu peux me donner un coup de main ?*\n\nPara oferecer ajuda: *Je peux t'aider ?* / *Tu veux que je t'accompagne ?*",
+          "key_phrases": [
+            {"en": "J'ai raté le bus ce matin.", "pt": "Perdi o ônibus hoje de manhã."},
+            {"en": "Tu pourrais m'aider ?", "pt": "Você poderia me ajudar?"}
+          ],
+          "exercises": [
+            {"id": "fr-a2-c1-2-e1", "type": "open_reply", "prompt": "Tu as l'air fatigué. Qu'est-ce qui s'est passé ?", "context": "Um amigo percebe que você está cansado.", "hint": "Explique o que aconteceu.", "answers": ["J'ai raté le bus ce matin.", "Je n'ai pas bien dormi cette nuit.", "J'ai eu une journée très longue au travail."], "explanation": "Explique numa frase simples."},
+            {"id": "fr-a2-c1-2-e2", "type": "open_reply", "prompt": "Oh là là ! Tu as besoin de quelque chose ?", "context": "O amigo quer ajudar.", "hint": "Peça ajuda de forma educada.", "answers": ["Tu pourrais m'aider avec mes sacs ?", "Tu peux me donner un coup de main, s'il te plaît ?", "Oui, tu peux me prêter ton téléphone ?"], "explanation": "*Tu pourrais* é mais educado que *tu peux*."},
+            {"id": "fr-a2-c1-2-e3", "type": "open_reply", "prompt": "Pas de problème ! Je peux te ramener à la maison.", "context": "O amigo oferece carona.", "hint": "Aceite com agradecimento.", "answers": ["Merci beaucoup, c'est très gentil !", "Ce serait super, merci !", "Merci, j'apprécie vraiment."], "explanation": "*Ce serait super* aceita a oferta."},
+            {"id": "fr-a2-c1-2-e4", "type": "multiple_choice", "prompt": "Qual frase oferece ajuda?", "options": ["J'ai besoin d'aide.", "Je peux t'aider ?", "Aide-moi maintenant !", "Je ne peux pas aider."], "answer": 1, "explanation": "*Je peux t'aider ?*"}
+          ]
+        },
+        {
+          "id": "fr-a2-c1-3",
+          "title": "Conversa : mes habitudes",
+          "objective": "Perguntar sobre hábitos e falar dos seus.",
+          "explanation": "Perguntas sobre hábitos usam o présent: *Tu cuisines souvent ?* / *Tu fais du sport ?*\n\nAdvérbios de frequência: *toujours, souvent, parfois, rarement, jamais*.",
+          "key_phrases": [
+            {"en": "Tu fais du sport souvent ?", "pt": "Você faz esporte com frequência?"},
+            {"en": "Je cuisine rarement le soir.", "pt": "Eu cozinho raramente à noite."}
+          ],
+          "exercises": [
+            {"id": "fr-a2-c1-3-e1", "type": "open_reply", "prompt": "Tu cuisines souvent à la maison ?", "context": "Uma nova colega pergunta sobre seus hábitos.", "hint": "Responda com um advérbio de frequência.", "answers": ["Oui, je cuisine presque tous les jours.", "Parfois, mais je préfère sortir manger.", "Non, je cuisine rarement."], "explanation": "O advérbio de frequência vem depois do verbo conjugado ou antes do infinitivo."},
+            {"id": "fr-a2-c1-3-e2", "type": "open_reply", "prompt": "Et tu fais du sport ?", "context": "A conversa segue sobre exercícios.", "hint": "Diga com que frequência pratica.", "answers": ["Je fais du sport trois fois par semaine.", "Je vais à la salle de sport tous les matins.", "Pas beaucoup, mais je marche souvent."], "explanation": "*fois par semaine* ou *tous les jours* para frequência."},
+            {"id": "fr-a2-c1-3-e3", "type": "open_reply", "prompt": "Qu'est-ce que tu aimes faire pendant ton temps libre ?", "context": "A conversa segue sobre lazer.", "hint": "Fale de uma atividade que gosta.", "answers": ["J'aime lire et regarder des films.", "J'adore jouer de la guitare.", "J'aime me promener au parc."], "explanation": "*J'aime* + infinitivo, ou *J'aime* + substantivo."},
+            {"id": "fr-a2-c1-3-e4", "type": "reorder", "prompt": "Monte a frase: eu costumo acordar cedo nos fins de semana", "words": ["tôt", "le week-end", "Je", "me lève", "d'habitude"], "answers": ["Je me lève d'habitude tôt le week-end."], "explanation": "*d'habitude* = normalmente."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-a2-cu2",
+      "title": "Projets et services",
+      "goal": "Marcar encontros, resolver problemas em hotéis e fazer reservas.",
+      "lessons": [
+        {
+          "id": "fr-a2-c2-1",
+          "title": "Conversa : fixer un rendez-vous",
+          "objective": "Combinar dia, horário e local com alguém.",
+          "explanation": "Para combinar algo:\n\n- *Tu es libre samedi ?* — Você está livre no sábado?\n- *Et si on se voit à 19 heures ?* — E se a gente se encontrar às 19h?\n- *On se retrouve devant le café.* — A gente se encontra em frente ao café.\n- *À tout à l'heure !* — Até logo!",
+          "key_phrases": [
+            {"en": "Tu es libre samedi ?", "pt": "Você está livre no sábado?"},
+            {"en": "Et si on se voit à 19 heures ?", "pt": "E se a gente se encontrar às 19h?"}
+          ],
+          "exercises": [
+            {"id": "fr-a2-c2-1-e1", "type": "open_reply", "prompt": "Salut ! Tu veux qu'on se voie cette semaine ?", "context": "Um amigo quer marcar um encontro.", "hint": "Pergunte o dia que ele prefere.", "answers": ["Oui, avec plaisir ! Tu es libre vendredi ?", "Bien sûr ! Quel jour te convient ?", "Oui ! Jeudi soir, ça te va ?"], "explanation": "*Quel jour te convient ?* é uma forma natural de combinar."},
+            {"id": "fr-a2-c2-1-e2", "type": "open_reply", "prompt": "Vendredi à vingt heures, ça te va ?", "context": "O amigo sugere um horário.", "hint": "Aceite ou sugira outro horário.", "answers": ["Oui, parfait !", "Ça me va très bien.", "Vendredi à vingt heures, c'est possible, mais plutôt vingt et une heures."], "explanation": "*Ça me va* aceita; *plutôt* sugere outro."},
+            {"id": "fr-a2-c2-1-e3", "type": "open_reply", "prompt": "On se retrouve où ?", "context": "Vocês precisam combinar o lugar.", "hint": "Sugira um local.", "answers": ["On se retrouve devant le café près de la gare.", "Et si on se voyait au restaurant de la place ?", "On se retrouve au parc ?"], "explanation": "*On se retrouve* + lugar."},
+            {"id": "fr-a2-c2-1-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "À tout à l'heure ! Ne sois pas en retard.", "answers": ["À tout à l'heure ! Ne sois pas en retard.", "À tout à l'heure, ne sois pas en retard."], "explanation": "Despedida comum ao combinar algo."}
+          ]
+        },
+        {
+          "id": "fr-a2-c2-2",
+          "title": "Conversa : à l'hôtel",
+          "objective": "Fazer check-in e pedir algo à recepção.",
+          "explanation": "No hotel:\n\n- *J'ai une réservation au nom de Silva.* — Tenho uma reserva no nome de Silva.\n- *À quelle heure est le petit-déjeuner ?* — A que horas é o café da manhã?\n- *Y a-t-il le Wi-Fi dans la chambre ?* — Tem Wi-Fi no quarto?\n- *Je voudrais une chambre avec vue.* — Gostaria de um quarto com vista.",
+          "key_phrases": [
+            {"en": "J'ai une réservation au nom de Silva.", "pt": "Tenho uma reserva no nome de Silva."},
+            {"en": "À quelle heure est le petit-déjeuner ?", "pt": "A que horas é o café da manhã?"}
+          ],
+          "exercises": [
+            {"id": "fr-a2-c2-2-e1", "type": "open_reply", "prompt": "Bonsoir ! Vous avez une réservation ?", "context": "Você chegou a um hotel.", "hint": "Diga que tem reserva e o seu nome.", "answers": ["Oui, j'ai une réservation au nom de Silva.", "Oui, au nom de Silva, pour deux nuits.", "Oui, Silva."], "explanation": "*J'ai une réservation au nom de...* é o padrão."},
+            {"id": "fr-a2-c2-2-e2", "type": "open_reply", "prompt": "Voici votre clé. Chambre 204, au deuxième étage.", "context": "A recepcionista entrega a chave.", "hint": "Pergunte onde fica o elevador.", "answers": ["Merci ! Où est l'ascenseur ?", "Merci beaucoup. Où se trouve l'ascenseur ?"], "explanation": "*Où est...* para localizar algo."},
+            {"id": "fr-a2-c2-2-e3", "type": "open_reply", "prompt": "Le petit-déjeuner est servi de 7 à 10 heures.", "context": "Você quer saber mais sobre o café da manhã.", "hint": "Pergunte se está incluído.", "answers": ["Le petit-déjeuner est-il inclus dans le prix ?", "Est-ce que le petit-déjeuner est inclus ?"], "explanation": "*inclus* = incluído."},
+            {"id": "fr-a2-c2-2-e4", "type": "multiple_choice", "prompt": "Como perguntar se o Wi-Fi funciona no quarto?", "options": ["Wi-Fi où ?", "Y a-t-il le Wi-Fi dans la chambre ?", "Donnez-moi le Wi-Fi.", "Le Wi-Fi est bon."], "answer": 1, "explanation": "*Y a-t-il le Wi-Fi ... ?*"}
+          ]
+        },
+        {
+          "id": "fr-a2-c2-3",
+          "title": "Conversa : résoudre un problème",
+          "objective": "Reclamar com educação e pedir uma solução.",
+          "explanation": "Para reclamar com educação:\n\n- *Excusez-moi, il y a un problème dans ma chambre.*\n- *La climatisation ne marche pas.*\n- *Pourriez-vous envoyer quelqu'un pour la réparer ?*\n\nAntes de pedir, use *Désolé de vous déranger.*",
+          "key_phrases": [
+            {"en": "Il y a un problème dans ma chambre.", "pt": "Há um problema no meu quarto."},
+            {"en": "Pourriez-vous envoyer quelqu'un ?", "pt": "Poderia mandar alguém?"}
+          ],
+          "exercises": [
+            {"id": "fr-a2-c2-3-e1", "type": "open_reply", "prompt": "Bonjour ! Tout va bien ?", "context": "A recepcionista pergunta se está tudo bem.", "hint": "Diga que há um problema no quarto.", "answers": ["Excusez-moi, il y a un problème dans ma chambre.", "Désolé de vous déranger, la climatisation ne marche pas."], "explanation": "*Excusez-moi* antes de reclamar soa educado."},
+            {"id": "fr-a2-c2-3-e2", "type": "open_reply", "prompt": "Je suis désolée. Quel est le problème ?", "context": "A recepcionista quer detalhes.", "hint": "Descreva o problema.", "answers": ["La douche ne fonctionne pas.", "Il n'y a pas d'eau chaude.", "Le wifi ne marche pas."], "explanation": "Descreva o problema de forma simples."},
+            {"id": "fr-a2-c2-3-e3", "type": "open_reply", "prompt": "Je vais envoyer quelqu'un tout de suite. Autre chose ?", "context": "A recepcionista promete resolver.", "hint": "Agradeça e peça algo a mais, se quiser.", "answers": ["Merci ! Pourriez-vous aussi m'apporter des serviettes ?", "Merci, c'est tout pour le moment."], "explanation": "*Pourriez-vous aussi...?* para pedidos extras."},
+            {"id": "fr-a2-c2-3-e4", "type": "reorder", "prompt": "Monte a pergunta: poderia mandar alguém consertar isso?", "words": ["quelqu'un", "Pourriez-vous", "envoyer", "réparer", "le", "pour", "?"], "answers": ["Pourriez-vous envoyer quelqu'un pour le réparer ?"], "explanation": "*envoyer quelqu'un pour réparer*."}
+          ]
+        }
+      ]
+    }
+  ]
+}

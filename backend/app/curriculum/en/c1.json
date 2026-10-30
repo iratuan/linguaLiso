@@ -1,0 +1,228 @@
+{
+  "level": "C1",
+  "title": "Avançado — fluência",
+  "description": "Estruturas avançadas, registro formal e informal, argumentação e expressões de falante nativo.",
+  "goal": "Você se expressa com precisão e naturalidade em contextos acadêmicos, profissionais e sociais.",
+  "units": [
+    {
+      "id": "c1-u1",
+      "title": "Ênfase e inversão",
+      "goal": "Dar ênfase às ideias com estruturas avançadas.",
+      "lessons": [
+        {
+          "id": "c1-1-1",
+          "title": "Inversão com advérbios negativos",
+          "objective": "Usar inversão após never, rarely, hardly e no sooner.",
+          "explanation": "Após advérbios negativos no início da frase, o verbo auxiliar vem antes do sujeito. É uma forma formal e enfática:\n\n- *Never have I seen such a view.*\n- *Rarely do they complain.*\n- *Hardly had I sat down when the phone rang.*\n- *No sooner had we arrived than it started raining.*",
+          "key_phrases": [
+            {"en": "Never have I felt so welcome.", "pt": "Nunca me senti tão bem-vindo."},
+            {"en": "Not only did she win, but she also broke the record.", "pt": "Não só ela ganhou, mas também quebrou o recorde."}
+          ],
+          "exercises": [
+            {"id": "c1-1-1-e1", "type": "multiple_choice", "prompt": "Rarely ___ such honest answers.", "options": ["I hear", "do I hear", "I do hear", "hear I"], "answer": 1, "explanation": "Inversão: *do I hear*."},
+            {"id": "c1-1-1-e2", "type": "fill_blank", "prompt": "Never ___ I been so surprised. (inversão)", "answers": ["have"], "hint": "Present perfect", "explanation": "*Never have I been*."},
+            {"id": "c1-1-1-e3", "type": "translate", "prompt": "Mal tínhamos chegado quando começou a chover.", "answers": ["Hardly had we arrived when it started raining.", "Hardly had we arrived before it started to rain."], "explanation": "*Hardly had ... when*."},
+            {"id": "c1-1-1-e4", "type": "reorder", "prompt": "Monte a frase: não só ele se atrasou, mas também esqueceu o documento", "words": ["but", "also", "Not only", "was he late", "forgot", "he", "the document"], "answers": ["Not only was he late but he also forgot the document."], "explanation": "*Not only ... but also*."}
+          ]
+        },
+        {
+          "id": "c1-1-2",
+          "title": "Frases clivadas: It was... that",
+          "objective": "Destacar uma parte da frase com it is/was ... that.",
+          "explanation": "Para dar foco a uma parte da frase:\n\n- *It was my sister who called you.* (foi minha irmã)\n- *It is the price that worries me.* (é o preço que me preocupa)\n- *What I need is a holiday.* (o que eu preciso é de férias)",
+          "key_phrases": [
+            {"en": "It was the manager who made the decision.", "pt": "Foi o gerente quem tomou a decisão."},
+            {"en": "What I really want is more time.", "pt": "O que eu realmente quero é mais tempo."}
+          ],
+          "exercises": [
+            {"id": "c1-1-2-e1", "type": "multiple_choice", "prompt": "It was Maria ___ solved the problem.", "options": ["which", "who", "what", "where"], "answer": 1, "explanation": "Pessoa: *who*."},
+            {"id": "c1-1-2-e2", "type": "fill_blank", "prompt": "It was in London ___ we first met.", "answers": ["that"], "hint": "Estrutura it was ... that", "explanation": "*that*."},
+            {"id": "c1-1-2-e3", "type": "translate", "prompt": "O que eu mais valorizo é a honestidade.", "answers": ["What I value most is honesty.", "What I value the most is honesty."], "explanation": "*What ... is*."},
+            {"id": "c1-1-2-e4", "type": "reorder", "prompt": "Monte a frase: foi o preço que nos fez desistir", "words": ["made us give up", "It was", "the price", "that"], "answers": ["It was the price that made us give up."], "explanation": "Clivada com *that*."}
+          ]
+        },
+        {
+          "id": "c1-1-3",
+          "title": "Do/does/did para dar ênfase",
+          "objective": "Reforçar afirmações com do/does/did.",
+          "explanation": "O auxiliar *do/does/did* reforça um verbo, em tom de insistência ou contraste:\n\n- *I do like your idea!* (eu realmente gosto)\n- *She did finish the report, after all.*\n- *Please do come in.*",
+          "key_phrases": [
+            {"en": "I do appreciate your help.", "pt": "Eu realmente agradeço sua ajuda."},
+            {"en": "He does speak very well.", "pt": "Ele fala muito bem, de fato."}
+          ],
+          "exercises": [
+            {"id": "c1-1-3-e1", "type": "multiple_choice", "prompt": "I ___ believe you were right all along.", "options": ["do", "does", "am", "will"], "answer": 0, "explanation": "*do* com *I* para ênfase."},
+            {"id": "c1-1-3-e2", "type": "fill_blank", "prompt": "She ___ (did) apologize, even though she didn't need to.", "answers": ["did"], "hint": "Passado", "explanation": "*did apologize*."},
+            {"id": "c1-1-3-e3", "type": "translate", "prompt": "Ele realmente se esforçou nesse projeto.", "answers": ["He did make an effort on this project.", "He really did make an effort on this project."], "explanation": "*did make*."},
+            {"id": "c1-1-3-e4", "type": "multiple_choice", "prompt": "Choose the emphatic form: 'Please come in.'", "options": ["Please do come in.", "Please come in do.", "Please does come in.", "Please did come in."], "answer": 0, "explanation": "*do come in*."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c1-u2",
+      "title": "Gramática avançada",
+      "goal": "Usar subjuntivo, modais de julgamento e orações participiais com precisão.",
+      "lessons": [
+        {
+          "id": "c1-2-1",
+          "title": "Subjuntivo",
+          "objective": "Usar o subjuntivo em frases formais de sugestão, exigência e importância.",
+          "explanation": "Após verbos como *suggest, recommend, insist, demand* e expressões como *it is essential that*, o verbo fica na **forma base** (sem *-s*, sem *to*, mesmo com *he/she*):\n\n- *I recommend that he see a doctor.*\n- *It is essential that everyone be on time.*\n- *They insisted that she stay.*",
+          "key_phrases": [
+            {"en": "It's important that you be honest.", "pt": "É importante que você seja honesto."},
+            {"en": "I suggest that he take a break.", "pt": "Sugiro que ele tire uma pausa."}
+          ],
+          "exercises": [
+            {"id": "c1-2-1-e1", "type": "multiple_choice", "prompt": "It is essential that he ___ the form today.", "options": ["submits", "submit", "submitted", "to submit"], "answer": 1, "explanation": "Subjuntivo: verbo base."},
+            {"id": "c1-2-1-e2", "type": "fill_blank", "prompt": "I recommend that she ___ (take) the course.", "answers": ["take"], "hint": "Verbo base", "explanation": "*take*."},
+            {"id": "c1-2-1-e3", "type": "translate", "prompt": "É fundamental que todos estejam presentes.", "answers": ["It is essential that everyone be present.", "It's essential that everyone be present."], "explanation": "*be present*."},
+            {"id": "c1-2-1-e4", "type": "multiple_choice", "prompt": "They demanded that the report ___ on time.", "options": ["is delivered", "be delivered", "delivered", "will deliver"], "answer": 1, "explanation": "*demand that ... be delivered*."}
+          ]
+        },
+        {
+          "id": "c1-2-2",
+          "title": "Modais perfeitos para julgar o passado",
+          "objective": "Avaliar ações passadas: should have, could have, must have.",
+          "explanation": "- *should have + particípio*: arrependimento ou crítica. *You should have told me.*\n- *could have + particípio*: possibilidade não realizada. *We could have won.*\n- *must have + particípio*: certeza sobre o passado. *He must have forgotten.*\n- *needn't have + particípio*: algo feito sem necessidade. *You needn't have come early.*",
+          "key_phrases": [
+            {"en": "You should have called earlier.", "pt": "Você deveria ter ligado antes."},
+            {"en": "She must have known the answer.", "pt": "Ela deve ter sabido a resposta."}
+          ],
+          "exercises": [
+            {"id": "c1-2-2-e1", "type": "multiple_choice", "prompt": "You ___ have told me about the change.", "options": ["should", "should have", "should to", "would"], "answer": 1, "explanation": "Crítica sobre o passado: *should have*."},
+            {"id": "c1-2-2-e2", "type": "fill_blank", "prompt": "He ___ have forgotten the meeting. (dedução sobre o passado)", "answers": ["must"], "hint": "Certeza", "explanation": "*must have forgotten*."},
+            {"id": "c1-2-2-e3", "type": "translate", "prompt": "Nós poderíamos ter perdido o voo.", "answers": ["We could have missed the flight.", "We could have missed the plane."], "explanation": "*could have missed*."},
+            {"id": "c1-2-2-e4", "type": "reorder", "prompt": "Monte a frase: você não precisava ter trazido comida", "words": ["brought", "needn't have", "You", "food"], "answers": ["You needn't have brought food."], "explanation": "*needn't have* + particípio."}
+          ]
+        },
+        {
+          "id": "c1-2-3",
+          "title": "Orações participiais",
+          "objective": "Condensar frases com -ing e -ed para ganhar fluidez.",
+          "explanation": "Orações reduzidas tornam o texto mais elegante:\n\n- *Walking home, I met an old friend.* (Enquanto voltava para casa...)\n- *Tired of waiting, they left.* (Cansados de esperar...)\n- *Having finished the report, she went home.* (Depois de terminar...)\n\nO sujeito da oração reduzida deve ser o mesmo da oração principal.",
+          "key_phrases": [
+            {"en": "Having lived abroad, she speaks four languages.", "pt": "Tendo morado no exterior, ela fala quatro idiomas."},
+            {"en": "Written in 1900, the book is still popular.", "pt": "Escrito em 1900, o livro ainda é popular."}
+          ],
+          "exercises": [
+            {"id": "c1-2-3-e1", "type": "multiple_choice", "prompt": "___ the bus, I fell asleep.", "options": ["Taking", "Taken", "Take", "To take"], "answer": 0, "explanation": "Ação simultânea: -ing."},
+            {"id": "c1-2-3-e2", "type": "fill_blank", "prompt": "___ (finish) the work, we went out.", "answers": ["Having finished"], "hint": "Ação anterior", "explanation": "*Having finished*."},
+            {"id": "c1-2-3-e3", "type": "translate", "prompt": "Cansada de esperar, ela foi embora.", "answers": ["Tired of waiting, she left.", "Tired of waiting, she went away."], "explanation": "Oração reduzida com -ed."},
+            {"id": "c1-2-3-e4", "type": "multiple_choice", "prompt": "___ in English, the letter was hard to understand.", "options": ["Writing", "Written", "Write", "To write"], "answer": 1, "explanation": "Passiva reduzida: *Written*."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c1-u3",
+      "title": "Registro formal e argumentação",
+      "goal": "Escrever e falar em contextos acadêmicos e profissionais com clareza e polidez.",
+      "lessons": [
+        {
+          "id": "c1-3-1",
+          "title": "Linguagem de cautela (hedging)",
+          "objective": "Suavizar afirmações e evitar tom absoluto.",
+          "explanation": "Em contextos formais, evitamos afirmar com certeza absoluta:\n\n- *It seems that...* / *It appears that...*\n- *To some extent,...*\n- *The data suggests that...*\n- *This may / might indicate that...*\n\nIsso mostra precisão intelectual e cortesia.",
+          "key_phrases": [
+            {"en": "It appears that sales have decreased.", "pt": "Parece que as vendas caíram."},
+            {"en": "To some extent, I agree with you.", "pt": "Até certo ponto, concordo com você."}
+          ],
+          "exercises": [
+            {"id": "c1-3-1-e1", "type": "multiple_choice", "prompt": "Qual frase é mais cautelosa?", "options": ["This is definitely the cause.", "This may be one of the causes.", "This is the only cause.", "There is no doubt this is the cause."], "answer": 1, "explanation": "*may be one of the causes*."},
+            {"id": "c1-3-1-e2", "type": "fill_blank", "prompt": "It ___ that the project will be delayed. (parece)", "answers": ["appears", "seems"], "hint": "Verbo de aparência", "explanation": "*It appears/seems that*."},
+            {"id": "c1-3-1-e3", "type": "translate", "prompt": "Até certo ponto, os dados confirmam a hipótese.", "answers": ["To some extent, the data confirms the hypothesis.", "To some extent, the data support the hypothesis."], "explanation": "Cautela."},
+            {"id": "c1-3-1-e4", "type": "reorder", "prompt": "Monte a frase: isso pode indicar um problema maior", "words": ["a bigger problem", "indicate", "This", "might"], "answers": ["This might indicate a bigger problem."], "explanation": "Modal de possibilidade."}
+          ]
+        },
+        {
+          "id": "c1-3-2",
+          "title": "Conectores de argumentação",
+          "objective": "Organizar um argumento com conectores de causa, consequência e contraste.",
+          "explanation": "- Adição: *furthermore, moreover, in addition*\n- Causa: *as a result, consequently, therefore*\n- Contraste: *nevertheless, on the other hand, whereas*\n- Conclusão: *all things considered, in conclusion*",
+          "key_phrases": [
+            {"en": "Consequently, we need to revise the budget.", "pt": "Consequentemente, precisamos revisar o orçamento."},
+            {"en": "On the other hand, the cost is lower.", "pt": "Por outro lado, o custo é menor."}
+          ],
+          "exercises": [
+            {"id": "c1-3-2-e1", "type": "multiple_choice", "prompt": "The plan is cheap; ___, it is slow.", "options": ["therefore", "nevertheless", "furthermore", "consequently"], "answer": 1, "explanation": "Contraste: *nevertheless*."},
+            {"id": "c1-3-2-e2", "type": "fill_blank", "prompt": "Sales fell. ___, we reduced our costs. (como resultado)", "answers": ["As a result", "Consequently", "Therefore"], "hint": "Causa e consequência", "explanation": "Conector de consequência."},
+            {"id": "c1-3-2-e3", "type": "translate", "prompt": "Além disso, o produto é mais sustentável.", "answers": ["Furthermore, the product is more sustainable.", "Moreover, the product is more sustainable.", "In addition, the product is more sustainable."], "explanation": "Adição."},
+            {"id": "c1-3-2-e4", "type": "reorder", "prompt": "Monte a frase: por outro lado, o risco é baixo", "words": ["the risk is low", "On the other hand", ","], "answers": ["On the other hand, the risk is low."], "explanation": "Contraste."}
+          ]
+        },
+        {
+          "id": "c1-3-3",
+          "title": "E-mails e reuniões profissionais",
+          "objective": "Conduzir reuniões e escrever e-mails formais com eficiência.",
+          "explanation": "Em reuniões:\n- *Let's move on to the next item.* — Vamos ao próximo ponto.\n- *Could we revisit that point?* — Podemos retomar aquele ponto?\n- *I'd like to follow up on...* — Gostaria de dar seguimento a...\n\nEm e-mails:\n- *I am writing to inquire about...* — Escrevo para perguntar sobre...\n- *Please find attached...* — Segue em anexo...",
+          "key_phrases": [
+            {"en": "Let's move on to the next agenda item.", "pt": "Vamos ao próximo item da pauta."},
+            {"en": "Please find attached the updated report.", "pt": "Segue em anexo o relatório atualizado."}
+          ],
+          "exercises": [
+            {"id": "c1-3-3-e1", "type": "multiple_choice", "prompt": "Para avançar para o próximo tópico em uma reunião, diga:", "options": ["Let's move on to the next item.", "Shut up and listen.", "I'm bored.", "Next one, whatever."], "answer": 0, "explanation": "*Let's move on*."},
+            {"id": "c1-3-3-e2", "type": "fill_blank", "prompt": "Please ___ attached the updated file. (veja anexo)", "answers": ["find"], "hint": "Please find attached", "explanation": "*Please find attached*."},
+            {"id": "c1-3-3-e3", "type": "translate", "prompt": "Escrevo para acompanhar nossa conversa de ontem.", "answers": ["I am writing to follow up on our conversation yesterday.", "I am writing to follow up on our conversation from yesterday."], "explanation": "E-mail formal."},
+            {"id": "c1-3-3-e4", "type": "reorder", "prompt": "Monte a frase: podemos retomar esse ponto, por favor", "words": ["Could we", "revisit", "that point", "please"], "answers": ["Could we revisit that point please?"], "explanation": "Pedido polido em reunião."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c1-u4",
+      "title": "Fluência natural",
+      "goal": "Falar com naturalidade: expressões coloquiais, preenchimento de pausas e compreensão de fala rápida.",
+      "lessons": [
+        {
+          "id": "c1-4-1",
+          "title": "Phrasal verbs avançados",
+          "objective": "Usar phrasal verbs de uso frequente em contextos sociais e profissionais.",
+          "explanation": "- **come up with** — pensar em (uma ideia): *She came up with a clever solution.*\n- **go over** — revisar: *Let's go over the details.*\n- **carry on** — continuar: *Carry on with your work.*\n- **run out of** — ficar sem: *We ran out of time.*\n- **look into** — investigar: *We'll look into the problem.*",
+          "key_phrases": [
+            {"en": "We need to look into this issue.", "pt": "Precisamos investigar essa questão."},
+            {"en": "We ran out of coffee.", "pt": "Ficamos sem café."}
+          ],
+          "exercises": [
+            {"id": "c1-4-1-e1", "type": "multiple_choice", "prompt": "She ___ a brilliant idea. (pensou em)", "options": ["came up with", "came over", "came in", "came back"], "answer": 0, "explanation": "*come up with*."},
+            {"id": "c1-4-1-e2", "type": "fill_blank", "prompt": "We ran ___ of time before we finished.", "answers": ["out"], "hint": "run out of", "explanation": "*run out of time*."},
+            {"id": "c1-4-1-e3", "type": "translate", "prompt": "Vamos investigar o problema amanhã.", "answers": ["We'll look into the problem tomorrow.", "We will look into the problem tomorrow."], "explanation": "*look into*."},
+            {"id": "c1-4-1-e4", "type": "multiple_choice", "prompt": "Let's ___ the details before the meeting. (revisar)", "options": ["go over", "go out", "go through with", "go off"], "answer": 0, "explanation": "*go over* = revisar."}
+          ]
+        },
+        {
+          "id": "c1-4-2",
+          "title": "Pausas e reformulação",
+          "objective": "Ganhar tempo e reformular sem travar a conversa.",
+          "explanation": "Falantes fluentes não ficam em silêncio: usam expressões de transição:\n\n- *Well, let me think...* / *That's a tricky one...*\n- *What I mean is...* — O que quero dizer é...\n- *In other words...* — Em outras palavras...\n- *To put it another way...* — Dizendo de outra forma...\n- *If I remember correctly...* — Se não me engano...",
+          "key_phrases": [
+            {"en": "What I mean is that we need more time.", "pt": "O que quero dizer é que precisamos de mais tempo."},
+            {"en": "That's a tricky question, actually.", "pt": "Essa é uma pergunta complicada, na verdade."}
+          ],
+          "exercises": [
+            {"id": "c1-4-2-e1", "type": "multiple_choice", "prompt": "Para reformular o que acabou de dizer, você usa:", "options": ["In other words", "Once upon a time", "Hold on", "All of a sudden"], "answer": 0, "explanation": "*In other words* = em outras palavras."},
+            {"id": "c1-4-2-e2", "type": "fill_blank", "prompt": "Well, let me ___ about that. (pensar)", "answers": ["think"], "hint": "Pausa para pensar", "explanation": "*let me think*."},
+            {"id": "c1-4-2-e3", "type": "translate", "prompt": "Se não me engano, a reunião foi na terça.", "answers": ["If I remember correctly, the meeting was on Tuesday.", "If I remember correctly, the meeting was on Tuesday."], "explanation": "Expressão de dúvida suave."},
+            {"id": "c1-4-2-e4", "type": "reorder", "prompt": "Monte a frase: o que quero dizer é que concordo com você", "words": ["agree with you", "is that I", "What I mean"], "answers": ["What I mean is that I agree with you."], "explanation": "Reformulação."}
+          ]
+        },
+        {
+          "id": "c1-4-3",
+          "title": "Idiomas e expressões de nativo",
+          "objective": "Entender e usar expressões idiomáticas comuns entre falantes nativos.",
+          "explanation": "- *To be on the same page* — estar alinhado\n- *To bite the bullet* — encarar algo difícil\n- *To hit the nail on the head* — acertar em cheio\n- *Under the radar* — passar despercebido\n- *To go the extra mile* — fazer mais do que o necessário",
+          "key_phrases": [
+            {"en": "Let's make sure we're on the same page.", "pt": "Vamos garantir que estamos alinhados."},
+            {"en": "You really hit the nail on the head.", "pt": "Você acertou em cheio."}
+          ],
+          "exercises": [
+            {"id": "c1-4-3-e1", "type": "multiple_choice", "prompt": "'To hit the nail on the head' means:", "options": ["to hurt yourself", "to be exactly right", "to start a fight", "to be late"], "answer": 1, "explanation": "Acertar exatamente."},
+            {"id": "c1-4-3-e2", "type": "fill_blank", "prompt": "Let's make sure we're all on the same ___.", "answers": ["page"], "hint": "Alinhamento", "explanation": "*on the same page*."},
+            {"id": "c1-4-3-e3", "type": "translate", "prompt": "Ela sempre vai além do necessário pelos clientes.", "answers": ["She always goes the extra mile for her clients.", "She always goes the extra mile for clients."], "explanation": "*go the extra mile*."},
+            {"id": "c1-4-3-e4", "type": "multiple_choice", "prompt": "'Under the radar' means:", "options": ["very famous", "unnoticed", "very expensive", "in danger"], "answer": 1, "explanation": "Passar despercebido."}
+          ]
+        }
+      ]
+    }
+  ]
+}

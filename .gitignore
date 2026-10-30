@@ -1,0 +1,29 @@
+# Ambientes e dependências
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+
+# Build e artefatos
+frontend/dist/
+build/
+dist/
+*.spec
+
+# Dados do aluno e modelos baixados (nunca versionar)
+data/
+ai-model/models/
+ai-model/voices/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Configurações locais
+.env
+.env.*
+
+# Logs e caches de teste
+*.log
+.pytest_cache/
+.vitest/
+coverage/

@@ -1,0 +1,233 @@
+{
+  "level": "A1",
+  "title": "Iniciante",
+  "description": "Primeiras frases: apresentar-se, falar da rotina, pedir direções e fazer compras.",
+  "goal": "Você consegue se apresentar, entender perguntas simples e falar sobre o dia a dia.",
+  "units": [
+    {
+      "id": "a1-u1",
+      "title": "Primeiros contatos",
+      "goal": "Cumprimentar, apresentar-se e dar informações pessoais básicas.",
+      "lessons": [
+        {
+          "id": "a1-1-1",
+          "title": "Cumprimentos e o verbo to be",
+          "objective": "Usar am, is e are para falar de você e de outras pessoas.",
+          "explanation": "Use o verbo **to be** para dizer quem você é e como está.\n\n- I **am** (I'm) — eu sou / estou\n- You **are** (you're) — você é / está\n- He / She / It **is** (he's / she's / it's) — ele / ela / isso é / está\n\nExemplos: *I am Ana.* · *She is my friend.* · *You are welcome.*",
+          "key_phrases": [
+            {"en": "Hello! / Hi!", "pt": "Olá! / Oi!"},
+            {"en": "Good morning", "pt": "Bom dia"},
+            {"en": "Nice to meet you", "pt": "Prazer em conhecê-lo(a)"},
+            {"en": "How are you?", "pt": "Como você está?"}
+          ],
+          "exercises": [
+            {"id": "a1-1-1-e1", "type": "multiple_choice", "prompt": "Complete: I ___ Ana.", "options": ["am", "is", "are", "be"], "answer": 0, "explanation": "Com *I*, usamos *am*."},
+            {"id": "a1-1-1-e2", "type": "fill_blank", "prompt": "She ___ from Brazil.", "answers": ["is"], "hint": "Ela = she (3ª pessoa)", "explanation": "*She* pede *is*."},
+            {"id": "a1-1-1-e3", "type": "translate", "prompt": "Eu sou estudante.", "answers": ["I am a student.", "I'm a student."], "explanation": "*I am* ou *I'm*."},
+            {"id": "a1-1-1-e4", "type": "reorder", "prompt": "Monte a frase: meu nome é Carlos", "words": ["Carlos", "is", "name", "My"], "answers": ["My name is Carlos."], "explanation": "Ordem: *My name is...*"}
+          ]
+        },
+        {
+          "id": "a1-1-2",
+          "title": "Dados pessoais",
+          "objective": "Perguntar e responder sobre nome, idade e origem.",
+          "explanation": "Perguntas com **be** começam pelo verbo ou pela palavra de pergunta:\n\n- *What is your name?* — Qual é o seu nome?\n- *Where are you from?* — De onde você é?\n- *How old are you?* — Quantos anos você tem?\n\nResposta: *My name is...* / *I am from...* / *I am 25.*",
+          "key_phrases": [
+            {"en": "What is your name?", "pt": "Qual é o seu nome?"},
+            {"en": "I am from Portugal.", "pt": "Eu sou de Portugal."},
+            {"en": "I am twenty-five.", "pt": "Eu tenho vinte e cinco anos."}
+          ],
+          "exercises": [
+            {"id": "a1-1-2-e1", "type": "multiple_choice", "prompt": "___ are you from?", "options": ["Where", "What", "Who", "When"], "answer": 0, "explanation": "*Where* pergunta o lugar."},
+            {"id": "a1-1-2-e2", "type": "fill_blank", "prompt": "I ___ 25 years old.", "answers": ["am"], "hint": "Eu = I", "explanation": "*I am*."},
+            {"id": "a1-1-2-e3", "type": "translate", "prompt": "De onde você é?", "answers": ["Where are you from?"], "explanation": "*Where are you from?*"},
+            {"id": "a1-1-2-e4", "type": "listen", "prompt": "Ouça a frase e digite exatamente o que foi dito.", "text": "My name is Julia and I am from Portugal.", "answers": ["My name is Julia and I am from Portugal."], "explanation": "Atenção à pronúncia de *Portugal*: PÓR-tu-gal."}
+          ]
+        },
+        {
+          "id": "a1-1-3",
+          "title": "Números e idade",
+          "objective": "Usar números de 0 a 100 e perguntar a idade.",
+          "explanation": "Números de 13 a 19 terminam em *-teen* (thirteen, fifteen). Dezenas terminam em *-ty* (twenty, thirty). Números compostos usam hífen: *twenty-one*.\n\nPergunta: *How old are you?* — Resposta: *I am thirty.*",
+          "key_phrases": [
+            {"en": "How old are you?", "pt": "Quantos anos você tem?"},
+            {"en": "I am thirty years old.", "pt": "Eu tenho trinta anos."}
+          ],
+          "exercises": [
+            {"id": "a1-1-3-e1", "type": "multiple_choice", "prompt": "Qual é o número 15?", "options": ["fifty", "fifteen", "five", "fifty-one"], "answer": 1, "explanation": "*Fifteen* = 15."},
+            {"id": "a1-1-3-e2", "type": "fill_blank", "prompt": "Complete a palavra do número 14: fourt___", "answers": ["een"], "hint": "Números de 13 a 19 terminam em -teen", "explanation": "*Fourteen*."},
+            {"id": "a1-1-3-e3", "type": "translate", "prompt": "Eu tenho trinta anos.", "answers": ["I am thirty years old.", "I'm thirty years old."], "explanation": "*I am thirty years old.*"},
+            {"id": "a1-1-3-e4", "type": "reorder", "prompt": "Monte a pergunta: quantos anos você tem", "words": ["old", "are", "How", "you"], "answers": ["How old are you?"], "explanation": "*How old are you?*"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1-u2",
+      "title": "Rotina diária",
+      "goal": "Falar do que você faz todo dia, com horários e dias da semana.",
+      "lessons": [
+        {
+          "id": "a1-2-1",
+          "title": "Present simple: eu trabalho, ela trabalha",
+          "objective": "Conjugar verbos no presente simples e fazer frases negativas.",
+          "explanation": "No presente simples, o verbo fica na forma base. Só a 3ª pessoa do singular (he, she, it) recebe **-s**:\n\n- I / you / we / they **work**\n- He / she / it **works**\n\nNegativa: *do not* (don't) ou *does not* (doesn't) + verbo base. Ex.: *She doesn't work on Sundays.*",
+          "key_phrases": [
+            {"en": "I work every day.", "pt": "Eu trabalho todos os dias."},
+            {"en": "She drinks coffee.", "pt": "Ela bebe café."},
+            {"en": "I don't like tea.", "pt": "Eu não gosto de chá."}
+          ],
+          "exercises": [
+            {"id": "a1-2-1-e1", "type": "multiple_choice", "prompt": "She ___ coffee every morning.", "options": ["drink", "drinks", "drinking", "is drink"], "answer": 1, "explanation": "Com *she*, o verbo ganha *-s*."},
+            {"id": "a1-2-1-e2", "type": "fill_blank", "prompt": "He ___ not work on Sundays.", "answers": ["does"], "hint": "Negativa com he", "explanation": "*He does not* (doesn't) + verbo base."},
+            {"id": "a1-2-1-e3", "type": "translate", "prompt": "Eu não gosto de café.", "answers": ["I do not like coffee.", "I don't like coffee."], "explanation": "*I don't like coffee.*"},
+            {"id": "a1-2-1-e4", "type": "reorder", "prompt": "Monte a frase: eu jogo futebol aos domingos", "words": ["on", "Sundays", "I", "play", "football"], "answers": ["I play football on Sundays."], "explanation": "*on* antes de dias da semana."}
+          ]
+        },
+        {
+          "id": "a1-2-2",
+          "title": "Horas e rotina",
+          "objective": "Falar de horários com at, in e on.",
+          "explanation": "Use **at** para horas (*at seven o'clock*), **in** para partes do dia (*in the morning, in the evening*) e **on** para dias (*on Monday*).\n\nPergunta: *What time do you wake up?* — Resposta: *I wake up at seven.*",
+          "key_phrases": [
+            {"en": "What time is it?", "pt": "Que horas são?"},
+            {"en": "I have lunch at noon.", "pt": "Eu almoço ao meio-dia."},
+            {"en": "I work in the morning.", "pt": "Eu trabalho de manhã."}
+          ],
+          "exercises": [
+            {"id": "a1-2-2-e1", "type": "multiple_choice", "prompt": "I wake up ___ seven o'clock.", "options": ["in", "at", "on", "to"], "answer": 1, "explanation": "Horas exatas usam *at*."},
+            {"id": "a1-2-2-e2", "type": "fill_blank", "prompt": "I have lunch ___ the afternoon.", "answers": ["in"], "hint": "Partes do dia usam in", "explanation": "*in the afternoon*."},
+            {"id": "a1-2-2-e3", "type": "translate", "prompt": "Eu acordo às sete da manhã.", "answers": ["I wake up at seven in the morning.", "I wake up at 7 in the morning.", "I wake up at seven a.m."], "explanation": "*at seven in the morning*."},
+            {"id": "a1-2-2-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "I go to work at eight thirty.", "answers": ["I go to work at eight thirty.", "I go to work at 8:30."], "explanation": "*at eight thirty* = 8h30."}
+          ]
+        },
+        {
+          "id": "a1-2-3",
+          "title": "Dias, meses e datas",
+          "objective": "Nomear dias da semana e meses e falar de datas.",
+          "explanation": "Dias e meses sempre começam com letra maiúscula: *Monday, Tuesday... / January, February...*\n\nUse **on** com dias (*on Friday*) e **in** com meses (*in March*).",
+          "key_phrases": [
+            {"en": "What day is it today?", "pt": "Que dia é hoje?"},
+            {"en": "My birthday is in March.", "pt": "Meu aniversário é em março."}
+          ],
+          "exercises": [
+            {"id": "a1-2-3-e1", "type": "multiple_choice", "prompt": "Qual dia vem depois de Monday?", "options": ["Sunday", "Tuesday", "Friday", "Wednesday"], "answer": 1, "explanation": "A sequência é Monday, Tuesday, Wednesday..."},
+            {"id": "a1-2-3-e2", "type": "fill_blank", "prompt": "January, February, ___", "answers": ["March"], "hint": "Terceiro mês do ano", "explanation": "*March*."},
+            {"id": "a1-2-3-e3", "type": "translate", "prompt": "Meu aniversário é em março.", "answers": ["My birthday is in March."], "explanation": "*in March*."},
+            {"id": "a1-2-3-e4", "type": "reorder", "prompt": "Monte a frase: nós nos encontramos na sexta", "words": ["on", "Friday", "We", "meet"], "answers": ["We meet on Friday."], "explanation": "*on Friday*."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1-u3",
+      "title": "Pela cidade",
+      "goal": "Descrever lugares e pedir direções.",
+      "lessons": [
+        {
+          "id": "a1-3-1",
+          "title": "There is / There are",
+          "objective": "Dizer que algo existe ou não existe.",
+          "explanation": "Use **there is** para um item e **there are** para vários:\n\n- *There is a bank near here.*\n- *There are two parks in my city.*\n\nPergunta: *Is there a restaurant near here?*",
+          "key_phrases": [
+            {"en": "There is a pharmacy.", "pt": "Há uma farmácia."},
+            {"en": "Is there a bus stop?", "pt": "Há um ponto de ônibus?"}
+          ],
+          "exercises": [
+            {"id": "a1-3-1-e1", "type": "multiple_choice", "prompt": "___ a bank near here.", "options": ["There is", "There are", "Is there", "They are"], "answer": 0, "explanation": "Um item = *there is*."},
+            {"id": "a1-3-1-e2", "type": "fill_blank", "prompt": "There ___ two parks in my city.", "answers": ["are"], "hint": "Plural", "explanation": "Plural = *there are*."},
+            {"id": "a1-3-1-e3", "type": "translate", "prompt": "Há um restaurante aqui perto?", "answers": ["Is there a restaurant near here?"], "explanation": "Pergunta: *Is there...?*"},
+            {"id": "a1-3-1-e4", "type": "reorder", "prompt": "Monte a frase: há muitas lojas aqui", "words": ["are", "there", "many", "shops", "here"], "answers": ["There are many shops here."], "explanation": "*There are many...*"}
+          ]
+        },
+        {
+          "id": "a1-3-2",
+          "title": "Onde fica? Direções",
+          "objective": "Perguntar onde algo fica e entender direções simples.",
+          "explanation": "Para perguntar um lugar: *Where is the...?*\n\nDireções úteis:\n- *Go straight.* — Siga em frente.\n- *Turn left / right.* — Vire à esquerda / direita.\n- *It is on the left.* — Fica à esquerda.",
+          "key_phrases": [
+            {"en": "Where is the bathroom?", "pt": "Onde fica o banheiro?"},
+            {"en": "Turn right at the corner.", "pt": "Vire à direita na esquina."}
+          ],
+          "exercises": [
+            {"id": "a1-3-2-e1", "type": "multiple_choice", "prompt": "Para dizer 'siga em frente', você diz:", "options": ["Turn left", "Go straight", "Stop here", "Sit down"], "answer": 1, "explanation": "*Go straight*."},
+            {"id": "a1-3-2-e2", "type": "fill_blank", "prompt": "The station is ___ the left.", "answers": ["on"], "hint": "Preposição para lados", "explanation": "*on the left*."},
+            {"id": "a1-3-2-e3", "type": "translate", "prompt": "Onde fica o banheiro?", "answers": ["Where is the bathroom?", "Where's the bathroom?"], "explanation": "*Where is the bathroom?*"},
+            {"id": "a1-3-2-e4", "type": "listen", "prompt": "Ouça a direção e digite a frase.", "text": "Turn right at the corner.", "answers": ["Turn right at the corner."], "explanation": "*at the corner* = na esquina."}
+          ]
+        },
+        {
+          "id": "a1-3-3",
+          "title": "Preposições de lugar",
+          "objective": "Localizar objetos com in, on, next to, behind e between.",
+          "explanation": "- **in** — dentro: *in the box*\n- **on** — sobre: *on the table*\n- **next to** — ao lado de: *next to the bank*\n- **behind** — atrás de: *behind the door*\n- **between** — entre: *between the bank and the park*",
+          "key_phrases": [
+            {"en": "The keys are on the table.", "pt": "As chaves estão na mesa."},
+            {"en": "The bank is next to the park.", "pt": "O banco fica ao lado do parque."}
+          ],
+          "exercises": [
+            {"id": "a1-3-3-e1", "type": "multiple_choice", "prompt": "The book is ___ the table.", "options": ["in", "at", "on", "into"], "answer": 2, "explanation": "Sobre a mesa = *on the table*."},
+            {"id": "a1-3-3-e2", "type": "fill_blank", "prompt": "The bank is ___ the supermarket. (ao lado)", "answers": ["next to"], "hint": "Duas palavras", "explanation": "*next to*."},
+            {"id": "a1-3-3-e3", "type": "translate", "prompt": "O gato está atrás da porta.", "answers": ["The cat is behind the door."], "explanation": "*behind*."},
+            {"id": "a1-3-3-e4", "type": "reorder", "prompt": "Monte a frase: o banco fica ao lado do parque", "words": ["park", "next to", "is", "The", "bank", "the"], "answers": ["The bank is next to the park."], "explanation": "*next to the park*."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1-u4",
+      "title": "Comida e compras",
+      "goal": "Pedir comida, perguntar preços e comprar com educação.",
+      "lessons": [
+        {
+          "id": "a1-4-1",
+          "title": "Some, any, much e many",
+          "objective": "Falar de quantidades de coisas contáveis e incontáveis.",
+          "explanation": "- **some** — algum/alguns em frases afirmativas: *I have some friends.*\n- **any** — algum em perguntas e negativas: *Do you have any milk?*\n- **much** — muito (incontável): *How much water?*\n- **many** — muitos (contável): *How many apples?*",
+          "key_phrases": [
+            {"en": "Do you have any bread?", "pt": "Você tem pão?"},
+            {"en": "I need some sugar.", "pt": "Eu preciso de açúcar."}
+          ],
+          "exercises": [
+            {"id": "a1-4-1-e1", "type": "multiple_choice", "prompt": "I need ___ milk.", "options": ["a", "an", "some", "many"], "answer": 2, "explanation": "*milk* é incontável: *some milk*."},
+            {"id": "a1-4-1-e2", "type": "fill_blank", "prompt": "Do you have ___ apples? (perguntas)", "answers": ["any"], "hint": "Em perguntas", "explanation": "*any* em perguntas."},
+            {"id": "a1-4-1-e3", "type": "translate", "prompt": "Eu tenho alguns amigos.", "answers": ["I have some friends."], "explanation": "*some* em afirmativas."},
+            {"id": "a1-4-1-e4", "type": "multiple_choice", "prompt": "How ___ water do you want?", "options": ["many", "much", "few", "any"], "answer": 1, "explanation": "*water* é incontável: *much*."}
+          ]
+        },
+        {
+          "id": "a1-4-2",
+          "title": "Pedindo comida",
+          "objective": "Fazer pedidos educados em restaurantes.",
+          "explanation": "Para pedir, use **I'd like** (I would like), que soa mais educado que *I want*:\n\n- *I'd like a pizza, please.*\n- *Can I have a glass of water?*\n- *Could I see the menu?*",
+          "key_phrases": [
+            {"en": "I'd like the menu, please.", "pt": "Eu gostaria do cardápio, por favor."},
+            {"en": "Can I have the bill?", "pt": "Pode trazer a conta?"}
+          ],
+          "exercises": [
+            {"id": "a1-4-2-e1", "type": "multiple_choice", "prompt": "Qual é a forma educada de pedir?", "options": ["Give me pizza!", "I'd like a pizza, please.", "Pizza now.", "I want pizza yesterday."], "answer": 1, "explanation": "*I'd like..., please.*"},
+            {"id": "a1-4-2-e2", "type": "fill_blank", "prompt": "Can I have ___ glass of water?", "answers": ["a"], "hint": "glass começa com som de consoante", "explanation": "*a glass*."},
+            {"id": "a1-4-2-e3", "type": "translate", "prompt": "Eu gostaria de um suco, por favor.", "answers": ["I'd like a juice, please.", "I would like a juice, please.", "I'd like a juice please."], "explanation": "*I'd like a juice, please.*"},
+            {"id": "a1-4-2-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "Could I see the menu, please?", "answers": ["Could I see the menu, please?", "Could I see the menu please?"], "explanation": "Pedido educado no restaurante."}
+          ]
+        },
+        {
+          "id": "a1-4-3",
+          "title": "Preços e compras",
+          "objective": "Perguntar preços e tamanhos em lojas.",
+          "explanation": "- *How much is this?* — Quanto custa isso?\n- *How much does it cost?* — Quanto custa?\n- *What is your size?* — Qual é o seu tamanho?\n\nO preço usa *dollars*, *reais* etc. no plural quando é mais de um.",
+          "key_phrases": [
+            {"en": "How much is it?", "pt": "Quanto custa?"},
+            {"en": "Do you have it in blue?", "pt": "Você tem em azul?"}
+          ],
+          "exercises": [
+            {"id": "a1-4-3-e1", "type": "multiple_choice", "prompt": "How ___ is this shirt?", "options": ["many", "much", "long", "old"], "answer": 1, "explanation": "Preço = *how much*."},
+            {"id": "a1-4-3-e2", "type": "fill_blank", "prompt": "It costs ten ___.", "answers": ["dollars", "dollar"], "hint": "Moeda plural", "explanation": "*ten dollars*."},
+            {"id": "a1-4-3-e3", "type": "translate", "prompt": "Quanto custa isso?", "answers": ["How much is this?", "How much does this cost?", "How much is it?"], "explanation": "Duas formas comuns."},
+            {"id": "a1-4-3-e4", "type": "reorder", "prompt": "Monte a pergunta: qual é o seu tamanho", "words": ["size", "What", "your", "is"], "answers": ["What is your size?"], "explanation": "*What is your size?*"}
+          ]
+        }
+      ]
+    }
+  ]
+}

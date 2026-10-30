@@ -1,0 +1,17 @@
+{
+  "id": "en-airport-a2",
+  "language": "en",
+  "level": "A2",
+  "title": "No aeroporto",
+  "context": "Você chega ao aeroporto, faz o check-in e pergunta sobre o embarque.",
+  "sentences": [
+    {"text": "Good morning. I have a flight to London.", "pt": "Bom dia. Tenho um voo para Londres."},
+    {"text": "Here is my passport and my ticket.", "pt": "Aqui estão meu passaporte e minha passagem."},
+    {"text": "Do I need to check any bags?", "pt": "Eu preciso despachar alguma bagagem?"},
+    {"text": "Yes, I would like to check this suitcase.", "pt": "Sim, gostaria de despachar esta mala."},
+    {"text": "Which gate does the flight leave from?", "pt": "De qual portão sai o voo?"},
+    {"text": "Excuse me, is the flight on time?", "pt": "Com licença, o voo está no horário?"},
+    {"text": "I'm sorry, I did not understand. Could you repeat that?", "pt": "Desculpe, não entendi. Pode repetir?"},
+    {"text": "Thank you very much for your help.", "pt": "Muito obrigado pela sua ajuda."}
+  ]
+}

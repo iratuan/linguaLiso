@@ -1,0 +1,118 @@
+{
+  "level": "A2",
+  "title": "Básico",
+  "description": "Conversas sobre o passado, planos e situações práticas de viagem e serviços.",
+  "goal": "Você mantém conversas curtas sobre experiências, planos e necessidades do dia a dia.",
+  "units": [
+    {
+      "id": "a2-cu1",
+      "title": "Contando histórias",
+      "goal": "Conversar sobre o que aconteceu, com amigos e colegas.",
+      "lessons": [
+        {
+          "id": "a2-c1-1",
+          "title": "Conversa: o fim de semana",
+          "objective": "Contar o que fez no fim de semana e reagir ao que o outro contou.",
+          "explanation": "Para contar algo no passado, use o passado simples. Para reagir com interesse:\n\n- *Really? That sounds great!* — Sério? Parece ótimo!\n- *Oh no! Are you OK?* — Ah não! Você está bem?\n- *What was it like?* — Como foi?",
+          "key_phrases": [
+            {"en": "What did you do last weekend?", "pt": "O que você fez no fim de semana passado?"},
+            {"en": "That sounds great!", "pt": "Parece ótimo!"}
+          ],
+          "exercises": [
+            {"id": "a2-c1-1-e1", "type": "open_reply", "prompt": "What did you do last weekend?", "context": "Um colega pergunta sobre o seu fim de semana.", "hint": "Conte uma atividade no passado.", "answers": ["I went to the beach with my family.", "I visited my grandmother.", "I watched a movie at home."], "explanation": "Use o passado: *went, visited, watched*."},
+            {"id": "a2-c1-1-e2", "type": "open_reply", "prompt": "I went hiking and it started raining!", "context": "O colega contou uma experiência ruim.", "hint": "Reaja com interesse ou empatia.", "answers": ["Oh no! Did you get wet?", "That's too bad! Are you OK?", "Really? What happened next?"], "explanation": "Reações curtas mostram que você está ouvindo."},
+            {"id": "a2-c1-1-e3", "type": "open_reply", "prompt": "Did you enjoy it?", "context": "O colega quer saber se você gostou do que fez.", "hint": "Diga se gostou e por quê.", "answers": ["Yes, it was really fun!", "Yes, I loved it. It was relaxing.", "Not really, it was too long."], "explanation": "*It was fun / relaxing / boring*."},
+            {"id": "a2-c1-1-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "Really? That sounds amazing!", "answers": ["Really? That sounds amazing!"], "explanation": "Reação entusiasmada."}
+          ]
+        },
+        {
+          "id": "a2-c1-2",
+          "title": "Conversa: um dia difícil",
+          "objective": "Explicar um problema e pedir ou oferecer ajuda.",
+          "explanation": "Para explicar um problema: *I missed my bus.* / *I lost my keys.*\n\nPara pedir ajuda: *Could you help me?* / *Can you give me a hand?*\n\nPara oferecer ajuda: *Do you want me to help?* / *I can drive you.*",
+          "key_phrases": [
+            {"en": "I missed the bus this morning.", "pt": "Perdi o ônibus hoje de manhã."},
+            {"en": "Can you give me a hand?", "pt": "Pode me dar uma mão?"}
+          ],
+          "exercises": [
+            {"id": "a2-c1-2-e1", "type": "open_reply", "prompt": "You look tired. What happened?", "context": "Um amigo percebe que você está cansado.", "hint": "Explique o que aconteceu.", "answers": ["I missed the bus this morning.", "I didn't sleep well last night.", "I had a really long day at work."], "explanation": "Explique em uma frase simples."},
+            {"id": "a2-c1-2-e2", "type": "open_reply", "prompt": "Oh no! Do you need anything?", "context": "O amigo quer ajudar.", "hint": "Peça ajuda de forma educada.", "answers": ["Could you help me with my bags?", "Can you give me a hand, please?", "Yes, could you lend me your phone?"], "explanation": "*Could you...?* é educado."},
+            {"id": "a2-c1-2-e3", "type": "open_reply", "prompt": "Sure! I can drive you home.", "context": "O amigo oferece carona.", "hint": "Aceite com agradecimento.", "answers": ["Thank you so much, that's kind of you!", "That would be great, thanks!", "Thanks! I really appreciate it."], "explanation": "*That would be great* aceita a oferta."},
+            {"id": "a2-c1-2-e4", "type": "multiple_choice", "prompt": "Qual frase oferece ajuda?", "options": ["I need help.", "Do you want me to help you?", "Help me now!", "I can't help."], "answer": 1, "explanation": "*Do you want me to help you?*"}
+          ]
+        },
+        {
+          "id": "a2-c1-3",
+          "title": "Conversa: conhecendo a rotina do outro",
+          "objective": "Perguntar sobre hábitos e falar dos seus.",
+          "explanation": "Perguntas sobre hábitos usam o presente simples: *Do you usually cook at home?* / *How often do you exercise?*\n\nRespostas de frequência: *always, usually, sometimes, never*.",
+          "key_phrases": [
+            {"en": "How often do you exercise?", "pt": "Com que frequência você se exercita?"},
+            {"en": "I usually cook at home.", "pt": "Eu costumo cozinhar em casa."}
+          ],
+          "exercises": [
+            {"id": "a2-c1-3-e1", "type": "open_reply", "prompt": "Do you usually cook at home?", "context": "Um novo colega pergunta sobre seus hábitos.", "hint": "Responda com um advérbio de frequência.", "answers": ["Yes, I usually cook at home.", "Sometimes. I prefer eating out.", "No, I never cook."], "explanation": "Advérbios de frequência vão antes do verbo principal."},
+            {"id": "a2-c1-3-e2", "type": "open_reply", "prompt": "How often do you exercise?", "context": "A pessoa quer saber sobre sua rotina de exercícios.", "hint": "Fale com que frequência faz exercício.", "answers": ["I exercise three times a week.", "I go to the gym every day.", "Not very often, but I walk a lot."], "explanation": "*times a week / every day*."},
+            {"id": "a2-c1-3-e3", "type": "open_reply", "prompt": "What do you like to do in your free time?", "context": "A conversa segue sobre lazer.", "hint": "Fale de uma atividade que gosta.", "answers": ["I like reading and watching movies.", "I enjoy going to the park.", "I like playing guitar."], "explanation": "*I like + -ing* para gostos."},
+            {"id": "a2-c1-3-e4", "type": "reorder", "prompt": "Monte a frase: eu costumo acordar cedo nos fins de semana", "words": ["early", "on weekends", "I", "usually", "wake up"], "answers": ["I usually wake up early on weekends."], "explanation": "O advérbio *usually* vem antes do verbo."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2-cu2",
+      "title": "Planos e serviços",
+      "goal": "Marcar encontros, resolver problemas em hotéis e fazer reservas.",
+      "lessons": [
+        {
+          "id": "a2-c2-1",
+          "title": "Conversa: marcando um encontro",
+          "objective": "Combinar dia, horário e local com alguém.",
+          "explanation": "Para combinar algo:\n\n- *Are you free on Saturday?* — Você está livre no sábado?\n- *How about 7 o'clock?* — Que tal às 7?\n- *Let's meet at the café.* — Vamos nos encontrar no café.\n- *See you then!* — Até lá!",
+          "key_phrases": [
+            {"en": "Are you free on Saturday?", "pt": "Você está livre no sábado?"},
+            {"en": "How about 7 o'clock?", "pt": "Que tal às 7?"}
+          ],
+          "exercises": [
+            {"id": "a2-c2-1-e1", "type": "open_reply", "prompt": "Hey! Want to get together this week?", "context": "Um amigo quer marcar um encontro.", "hint": "Pergunte o dia que ele prefere.", "answers": ["Sure! Are you free on Friday?", "Sounds good. What day works for you?", "Yes! How about Thursday evening?"], "explanation": "*What day works for you?* é uma forma natural de combinar."},
+            {"id": "a2-c2-1-e2", "type": "open_reply", "prompt": "How about Friday at 8?", "context": "O amigo sugere um horário.", "hint": "Aceite ou sugira outro horário.", "answers": ["Friday at 8 sounds great!", "I'm busy at 8, how about 9?", "Perfect, let's meet then."], "explanation": "*Sounds great* aceita; *How about...?* sugere outro."},
+            {"id": "a2-c2-1-e3", "type": "open_reply", "prompt": "Where should we meet?", "context": "Vocês precisam combinar o lugar.", "hint": "Sugira um local.", "answers": ["Let's meet at the café near the station.", "How about the restaurant on Main Street?", "I'll see you at the park."], "explanation": "*Let's meet at...* para sugerir local."},
+            {"id": "a2-c2-1-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "See you then! Don't be late.", "answers": ["See you then! Don't be late.", "See you then, don't be late."], "explanation": "Despedida comum ao combinar algo."}
+          ]
+        },
+        {
+          "id": "a2-c2-2",
+          "title": "Conversa: no hotel",
+          "objective": "Fazer check-in e pedir algo ao recepcionista.",
+          "explanation": "No hotel:\n\n- *I have a reservation under Silva.* — Tenho uma reserva em nome de Silva.\n- *Could I get a room with a view?* — Poderia ter um quarto com vista?\n- *What time is breakfast?* — Que horas é o café da manhã?\n- *Is there Wi-Fi in the room?* — Tem Wi-Fi no quarto?",
+          "key_phrases": [
+            {"en": "I have a reservation under Silva.", "pt": "Tenho uma reserva em nome de Silva."},
+            {"en": "What time is breakfast?", "pt": "Que horas é o café da manhã?"}
+          ],
+          "exercises": [
+            {"id": "a2-c2-2-e1", "type": "open_reply", "prompt": "Good afternoon! Do you have a reservation?", "context": "Você chegou em um hotel.", "hint": "Diga que tem reserva e o seu nome.", "answers": ["Yes, I have a reservation under Silva.", "Yes, the name is Silva.", "I have a reservation for two nights."], "explanation": "*I have a reservation under...* é o padrão."},
+            {"id": "a2-c2-2-e2", "type": "open_reply", "prompt": "Here is your key. Room 204, second floor.", "context": "O recepcionista entrega a chave.", "hint": "Pergunte onde fica o elevador.", "answers": ["Thank you! Where is the elevator?", "Thanks. Where can I find the elevator?"], "explanation": "*Where is the...?* para localizar algo."},
+            {"id": "a2-c2-2-e3", "type": "open_reply", "prompt": "Breakfast is served from 7 to 10.", "context": "Você quer saber mais sobre o café da manhã.", "hint": "Pergunte se está incluído.", "answers": ["Is breakfast included in the price?", "Is breakfast included?", "Thanks! Is breakfast included in the rate?"], "explanation": "*included* = incluído."},
+            {"id": "a2-c2-2-e4", "type": "multiple_choice", "prompt": "Como perguntar se o Wi-Fi funciona?", "options": ["Wi-Fi where?", "Is there Wi-Fi in the room?", "Give me Wi-Fi.", "Wi-Fi is good."], "answer": 1, "explanation": "*Is there Wi-Fi...?*"}
+          ]
+        },
+        {
+          "id": "a2-c2-3",
+          "title": "Conversa: resolvendo um problema",
+          "objective": "Reclamar de algo com educação e pedir solução.",
+          "explanation": "Para reclamar com educação:\n\n- *Excuse me, there's a problem with my room.*\n- *The air conditioning doesn't work.*\n- *Could you send someone to fix it?*\n\nUse *Sorry to bother you* antes de pedir algo.",
+          "key_phrases": [
+            {"en": "There's a problem with my room.", "pt": "Há um problema no meu quarto."},
+            {"en": "Could you send someone to fix it?", "pt": "Poderia mandar alguém consertar?"}
+          ],
+          "exercises": [
+            {"id": "a2-c2-3-e1", "type": "open_reply", "prompt": "Good morning! Is everything all right?", "context": "O recepcionista pergunta se está tudo bem.", "hint": "Diga que há um problema no quarto.", "answers": ["Excuse me, there's a problem with my room.", "Sorry to bother you, the air conditioning doesn't work."], "explanation": "*Excuse me* antes de reclamar soa educado."},
+            {"id": "a2-c2-3-e2", "type": "open_reply", "prompt": "I'm sorry to hear that. What's the problem?", "context": "O recepcionista quer detalhes.", "hint": "Descreva o problema.", "answers": ["The shower is not working.", "The air conditioning is too loud.", "There's no hot water."], "explanation": "Descreva o problema de forma simples."},
+            {"id": "a2-c2-3-e3", "type": "open_reply", "prompt": "I'll send someone right away. Anything else?", "context": "O recepcionista promete resolver.", "hint": "Agradeça e peça mais alguma coisa, se quiser.", "answers": ["Thank you! Could I also get some extra towels?", "Thanks, that's all for now."], "explanation": "*Could I also get...?* para pedidos extras."},
+            {"id": "a2-c2-3-e4", "type": "reorder", "prompt": "Monte a frase: poderia mandar alguém consertar isso?", "words": ["someone", "Could", "fix", "send", "you", "it", "to"], "answers": ["Could you send someone to fix it?"], "explanation": "*send someone to fix it*."}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+MODO: REVISÃO DE ERROS
+A seguir estão os erros recorrentes registrados para este aluno. Crie exercícios curtos que treinem especificamente esses pontos, um por vez. Dê o exercício, espere a resposta, corrija e só então passe para o próximo. Se o aluno acertar, reconheça e siga em frente.
+
+Erros recorrentes:
+{recurring_errors}

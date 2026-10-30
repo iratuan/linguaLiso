@@ -1,0 +1,228 @@
+{
+  "level": "B2",
+  "title": "Intermediário superior",
+  "description": "Narrar com precisão, expressar arrependimento e desejos, usar estruturas de discurso e nuances naturais.",
+  "goal": "Você se expressa com naturalidade sobre a maioria dos temas, com erros raros e sem perder a fluidez.",
+  "units": [
+    {
+      "id": "b2-u1",
+      "title": "Narrativas precisas",
+      "goal": "Contar histórias com a sequência correta de tempos verbais.",
+      "lessons": [
+        {
+          "id": "b2-1-1",
+          "title": "Past perfect",
+          "objective": "Marcar qual ação aconteceu antes de outra no passado.",
+          "explanation": "**Had + particípio** indica uma ação anterior a outra ação passada:\n\n- *When I arrived, the film had already started.*\n- *She didn't recognize him because he had changed a lot.*\n\nUse o past perfect só quando for preciso deixar a ordem clara.",
+          "key_phrases": [
+            {"en": "By the time we got there, they had left.", "pt": "Quando chegamos, eles já tinham saído."},
+            {"en": "I had never seen the sea before.", "pt": "Eu nunca tinha visto o mar antes."}
+          ],
+          "exercises": [
+            {"id": "b2-1-1-e1", "type": "multiple_choice", "prompt": "When I called, she ___ already ___ (leave).", "options": ["has / left", "had / left", "was / leaving", "did / leave"], "answer": 1, "explanation": "Ação anterior = *had left*."},
+            {"id": "b2-1-1-e2", "type": "fill_blank", "prompt": "I had ___ (never) been abroad before that trip.", "answers": ["never"], "hint": "Advérbio de frequência", "explanation": "*had never been*."},
+            {"id": "b2-1-1-e3", "type": "translate", "prompt": "Quando cheguei, o ônibus já tinha partido.", "answers": ["When I arrived, the bus had already left.", "When I got there, the bus had already left."], "explanation": "*had already left*."},
+            {"id": "b2-1-1-e4", "type": "reorder", "prompt": "Monte a frase: ele já tinha comido quando ela chegou", "words": ["had eaten", "He", "already", "when she arrived"], "answers": ["He had already eaten when she arrived."], "explanation": "*had already eaten*."}
+          ]
+        },
+        {
+          "id": "b2-1-2",
+          "title": "Past continuous e past simple juntos",
+          "objective": "Descrever o cenário (past continuous) interrompido por um evento (past simple).",
+          "explanation": "- **Past continuous** (*was/were + -ing*): ação em andamento, pano de fundo.\n- **Past simple**: evento que interrompe ou acontece.\n\n*I was cooking when the phone rang.*\n*While they were talking, someone knocked on the door.*",
+          "key_phrases": [
+            {"en": "It was raining when we left.", "pt": "Estava chovendo quando saímos."},
+            {"en": "While I was waiting, I read a book.", "pt": "Enquanto eu esperava, li um livro."}
+          ],
+          "exercises": [
+            {"id": "b2-1-2-e1", "type": "multiple_choice", "prompt": "I ___ a shower when the power went out.", "options": ["took", "was taking", "had taken", "take"], "answer": 1, "explanation": "Cenário em andamento = past continuous."},
+            {"id": "b2-1-2-e2", "type": "fill_blank", "prompt": "While we ___ (walk) home, it started to rain.", "answers": ["were walking"], "hint": "were + -ing", "explanation": "*were walking*."},
+            {"id": "b2-1-2-e3", "type": "translate", "prompt": "Enquanto eu dirigia, meu celular tocou.", "answers": ["While I was driving, my phone rang.", "While I was driving my phone rang."], "explanation": "Continuous + simple."},
+            {"id": "b2-1-2-e4", "type": "multiple_choice", "prompt": "Choose the correct sentence.", "options": ["I was sleeping when the alarm rang.", "I slept when the alarm was ringing.", "I was sleep when the alarm rang.", "I sleeping when the alarm rang."], "answer": 0, "explanation": "Sono em andamento interrompido pelo alarme."}
+          ]
+        },
+        {
+          "id": "b2-1-3",
+          "title": "Futuro perfeito e futuro contínuo",
+          "objective": "Falar de ações concluídas ou em andamento no futuro.",
+          "explanation": "- **Future perfect** (*will have + particípio*): algo já concluído até um momento futuro. *By June, I will have finished the course.*\n- **Future continuous** (*will be + -ing*): ação em andamento no futuro. *This time tomorrow, I will be flying to Lisbon.*",
+          "key_phrases": [
+            {"en": "By next year, I will have graduated.", "pt": "No próximo ano, eu já terei me formado."},
+            {"en": "I'll be working at 9 tomorrow.", "pt": "Amanhã às 9h estarei trabalhando."}
+          ],
+          "exercises": [
+            {"id": "b2-1-3-e1", "type": "multiple_choice", "prompt": "By 2030, they ___ the new bridge. (concluída)", "options": ["will finish", "will have finished", "finish", "are finishing"], "answer": 1, "explanation": "*will have finished* = concluído até lá."},
+            {"id": "b2-1-3-e2", "type": "fill_blank", "prompt": "This time next week, I will ___ (lie) on the beach.", "answers": ["be lying"], "hint": "will be + -ing", "explanation": "*will be lying*."},
+            {"id": "b2-1-3-e3", "type": "translate", "prompt": "Até sexta, eu terei terminado o relatório.", "answers": ["By Friday, I will have finished the report."], "explanation": "Future perfect com *by*."},
+            {"id": "b2-1-3-e4", "type": "reorder", "prompt": "Monte a frase: às oito estarei dirigindo para casa", "words": ["will be driving", "I", "home", "at eight"], "answers": ["I will be driving home at eight."], "explanation": "Future continuous."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b2-u2",
+      "title": "Desejos, arrependimentos e hipóteses",
+      "goal": "Falar do que poderia ter sido diferente e de situações impossíveis.",
+      "lessons": [
+        {
+          "id": "b2-2-1",
+          "title": "Third conditional",
+          "objective": "Falar de arrependimentos e situações passadas que não aconteceram.",
+          "explanation": "Estrutura: **if + past perfect, would have + particípio**.\n\n- *If I had studied harder, I would have passed.*\n- *She would have come if she had known.*\n\nNa lingua falada, *would've* e *'d've* são comuns.",
+          "key_phrases": [
+            {"en": "If I had known, I would have helped.", "pt": "Se eu tivesse sabido, teria ajudado."},
+            {"en": "We wouldn't have missed the flight if we had left earlier.", "pt": "Não teríamos perdido o voo se tivéssemos saído antes."}
+          ],
+          "exercises": [
+            {"id": "b2-2-1-e1", "type": "multiple_choice", "prompt": "If you ___ earlier, you would have caught the bus.", "options": ["left", "had left", "leave", "would leave"], "answer": 1, "explanation": "*had left* no 3º tipo."},
+            {"id": "b2-2-1-e2", "type": "fill_blank", "prompt": "I would ___ (call) you if I had had your number.", "answers": ["have called"], "hint": "would have + particípio", "explanation": "*would have called*."},
+            {"id": "b2-2-1-e3", "type": "translate", "prompt": "Se ela tivesse estudado, teria passado no exame.", "answers": ["If she had studied, she would have passed the exam.", "If she had studied, she would have passed the test."], "explanation": "3º tipo."},
+            {"id": "b2-2-1-e4", "type": "reorder", "prompt": "Monte a frase: eu teria ido se tivesse tido tempo", "words": ["gone", "I would have", "if I had had", "time"], "answers": ["I would have gone if I had had time."], "explanation": "Estrutura do 3º tipo."}
+          ]
+        },
+        {
+          "id": "b2-2-2",
+          "title": "Condicionais mistos",
+          "objective": "Combinar passado e presente em uma mesma frase condicional.",
+          "explanation": "Às vezes a condição é passada e o resultado é presente (ou o contrário):\n\n- *If I had taken that job, I would be rich now.* (passado → presente)\n- *If I were more organized, I would have finished it.* (presente → passado)",
+          "key_phrases": [
+            {"en": "If I had studied medicine, I would be a doctor now.", "pt": "Se eu tivesse estudado medicina, seria médico agora."},
+            {"en": "If I were brave, I would have spoken up.", "pt": "Se eu fosse corajoso, teria falado."}
+          ],
+          "exercises": [
+            {"id": "b2-2-2-e1", "type": "multiple_choice", "prompt": "If I ___ that job, I would be happier now.", "options": ["accepted", "had accepted", "would accept", "accept"], "answer": 1, "explanation": "Condição passada, resultado presente."},
+            {"id": "b2-2-2-e2", "type": "fill_blank", "prompt": "If she ___ (be) more careful, she wouldn't have lost her wallet.", "answers": ["were"], "hint": "Condição presente, resultado passado", "explanation": "*were*."},
+            {"id": "b2-2-2-e3", "type": "translate", "prompt": "Se eu tivesse aprendido inglês antes, estaria trabalhando no exterior agora.", "answers": ["If I had learned English earlier, I would be working abroad now.", "If I had learnt English earlier, I would be working abroad now."], "explanation": "Misto."},
+            {"id": "b2-2-2-e4", "type": "reorder", "prompt": "Monte a frase: se eu fosse rico, teria comprado aquela casa", "words": ["bought", "would have", "that house", "If I were rich", "I"], "answers": ["If I were rich, I would have bought that house."], "explanation": "Misto presente → passado."}
+          ]
+        },
+        {
+          "id": "b2-2-3",
+          "title": "I wish e if only",
+          "objective": "Expressar arrependimentos e desejos sobre o presente e o passado.",
+          "explanation": "- **wish + past simple** = desejo sobre o presente: *I wish I spoke Spanish.* (não falo)\n- **wish + past perfect** = arrependimento: *I wish I had studied.*\n- **if only** = mais emocional: *If only I had listened!*",
+          "key_phrases": [
+            {"en": "I wish I lived closer to the sea.", "pt": "Queria morar mais perto do mar."},
+            {"en": "I wish I had called her.", "pt": "Queria ter ligado para ela."}
+          ],
+          "exercises": [
+            {"id": "b2-2-3-e1", "type": "multiple_choice", "prompt": "I wish I ___ more time right now.", "options": ["have", "had", "will have", "would have"], "answer": 1, "explanation": "Desejo sobre o presente = past simple."},
+            {"id": "b2-2-3-e2", "type": "fill_blank", "prompt": "I wish I ___ (take) that opportunity last year.", "answers": ["had taken"], "hint": "Passado", "explanation": "*had taken*."},
+            {"id": "b2-2-3-e3", "type": "translate", "prompt": "Queria saber falar francês.", "answers": ["I wish I knew how to speak French.", "I wish I could speak French."], "explanation": "*I wish* + passado."},
+            {"id": "b2-2-3-e4", "type": "multiple_choice", "prompt": "'If only I had listened!' expresses:", "options": ["a future plan", "regret", "a question", "an order"], "answer": 1, "explanation": "*If only* + past perfect = arrependimento."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b2-u3",
+      "title": "Relatando e pedindo coisas",
+      "goal": "Relatar falas com precisão e pedir que alguém faça algo por você.",
+      "lessons": [
+        {
+          "id": "b2-3-1",
+          "title": "Discurso indireto avançado",
+          "objective": "Relatar perguntas, ordens e pedidos com ajustes de tempo e pronome.",
+          "explanation": "- Ordens: *\"Sit down.\"* → *He told me to sit down.*\n- Pedidos: *\"Could you help me?\"* → *She asked me to help her.*\n- Perguntas sim/não: *\"Are you coming?\"* → *He asked if I was coming.*\n- Mudam também *this → that, today → that day, here → there, tomorrow → the next day.*",
+          "key_phrases": [
+            {"en": "She asked me if I was ready.", "pt": "Ela me perguntou se eu estava pronto."},
+            {"en": "He told us to wait outside.", "pt": "Ele nos mandou esperar do lado de fora."}
+          ],
+          "exercises": [
+            {"id": "b2-3-1-e1", "type": "multiple_choice", "prompt": "'Close the door.' → She told him ___.", "options": ["close the door", "to close the door", "closing the door", "that close the door"], "answer": 1, "explanation": "Ordens: *told + to + verbo*."},
+            {"id": "b2-3-1-e2", "type": "fill_blank", "prompt": "'Are you coming?' → He asked ___ I was coming. (se)", "answers": ["if", "whether"], "hint": "Pergunta sim/não", "explanation": "*asked if*."},
+            {"id": "b2-3-1-e3", "type": "translate", "prompt": "Ele me pediu para esperar aqui.", "answers": ["He asked me to wait here.", "He asked me to wait there."], "explanation": "Pedido: *asked + to*."},
+            {"id": "b2-3-1-e4", "type": "multiple_choice", "prompt": "'I'll see you tomorrow.' → He said he would see me ___.", "options": ["tomorrow", "the next day", "yesterday", "today"], "answer": 1, "explanation": "*tomorrow* vira *the next day*."}
+          ]
+        },
+        {
+          "id": "b2-3-2",
+          "title": "Verbos de relato e a forma -ing ou to",
+          "objective": "Usar verbos como suggest, admit e recommend com a estrutura correta.",
+          "explanation": "Alguns verbos pedem gerúndio, outros infinitivo:\n\n- *suggest / admit / avoid / deny + -ing*: *He admitted making a mistake.*\n- *agree / refuse / promise / offer + to*: *She refused to apologize.*\n- *suggest that + sujeito + verbo base*: *I suggest you call him.*",
+          "key_phrases": [
+            {"en": "She suggested going to the beach.", "pt": "Ela sugeriu ir à praia."},
+            {"en": "He refused to answer.", "pt": "Ele se recusou a responder."}
+          ],
+          "exercises": [
+            {"id": "b2-3-2-e1", "type": "multiple_choice", "prompt": "He admitted ___ the money.", "options": ["to take", "taking", "take", "to taking"], "answer": 1, "explanation": "*admit* + -ing."},
+            {"id": "b2-3-2-e2", "type": "fill_blank", "prompt": "They refused ___ (help) us.", "answers": ["to help"], "hint": "refuse + to", "explanation": "*refused to help*."},
+            {"id": "b2-3-2-e3", "type": "translate", "prompt": "Eu sugiro que você tente de novo.", "answers": ["I suggest you try again.", "I suggest that you try again."], "explanation": "*suggest that + verbo base*."},
+            {"id": "b2-3-2-e4", "type": "multiple_choice", "prompt": "She promised ___ on time.", "options": ["being", "to be", "be", "to being"], "answer": 1, "explanation": "*promise + to*."}
+          ]
+        },
+        {
+          "id": "b2-3-3",
+          "title": "Causative: have e get something done",
+          "objective": "Dizer que alguém fez algo para você.",
+          "explanation": "Use **have / get + objeto + particípio** para serviços:\n\n- *I had my car repaired.* (mandei consertar o carro)\n- *She is getting her hair cut tomorrow.*\n\nNão confunda com *I had my car*: a estrutura causativa é sempre com particípio.",
+          "key_phrases": [
+            {"en": "I need to have my laptop checked.", "pt": "Preciso mandar verificar meu notebook."},
+            {"en": "We had the kitchen painted.", "pt": "Mandamos pintar a cozinha."}
+          ],
+          "exercises": [
+            {"id": "b2-3-3-e1", "type": "multiple_choice", "prompt": "I ___ my hair ___ yesterday. (cortar, por outra pessoa)", "options": ["had / cut", "had / cutted", "have / cutting", "got / cutting"], "answer": 0, "explanation": "*had my hair cut*."},
+            {"id": "b2-3-3-e2", "type": "fill_blank", "prompt": "We need to get the roof ___ (repair).", "answers": ["repaired"], "hint": "Particípio", "explanation": "*get ... repaired*."},
+            {"id": "b2-3-3-e3", "type": "translate", "prompt": "Vou mandar consertar meu celular.", "answers": ["I'm going to have my phone repaired.", "I am going to have my phone repaired.", "I'm going to get my phone repaired."], "explanation": "Causativo."},
+            {"id": "b2-3-3-e4", "type": "reorder", "prompt": "Monte a frase: ela mandou pintar o carro", "words": ["painted", "had", "She", "her car"], "answers": ["She had her car painted."], "explanation": "*had + objeto + particípio*."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b2-u4",
+      "title": "Conectores e nuances",
+      "goal": "Usar conectores para argumentar e expressões naturais como um falante fluente.",
+      "lessons": [
+        {
+          "id": "b2-4-1",
+          "title": "Conectores de contraste e concessão",
+          "objective": "Ligar ideias opostas com however, although e despite.",
+          "explanation": "- **although / even though** + oração: *Although it was cold, we went out.*\n- **despite / in spite of** + substantivo ou -ing: *Despite the rain, we went out.* / *Despite being tired, I finished.*\n- **however** (separa com vírgula): *It was cheap. However, the quality was poor.*",
+          "key_phrases": [
+            {"en": "Although it's expensive, it's worth it.", "pt": "Embora seja caro, vale a pena."},
+            {"en": "In spite of the delay, the show was great.", "pt": "Apesar do atraso, o show foi ótimo."}
+          ],
+          "exercises": [
+            {"id": "b2-4-1-e1", "type": "multiple_choice", "prompt": "___ the traffic, we arrived on time.", "options": ["Although", "Despite", "However", "Because"], "answer": 1, "explanation": "*Despite* + substantivo."},
+            {"id": "b2-4-1-e2", "type": "fill_blank", "prompt": "She was tired. ___, she kept working. (no entanto)", "answers": ["However"], "hint": "Conector de contraste", "explanation": "*However*."},
+            {"id": "b2-4-1-e3", "type": "translate", "prompt": "Apesar de estar cansado, ele terminou o trabalho.", "answers": ["Although he was tired, he finished the work.", "Although he was tired, he finished the job.", "Despite being tired, he finished the work."], "explanation": "Concessão."},
+            {"id": "b2-4-1-e4", "type": "reorder", "prompt": "Monte a frase: embora chova, vamos sair", "words": ["we will go out", "Although it rains", ","], "answers": ["Although it rains, we will go out."], "explanation": "*Although* no início, vírgula depois."}
+          ]
+        },
+        {
+          "id": "b2-4-2",
+          "title": "Make x do e collocations",
+          "objective": "Usar as combinações de palavras que um falante nativo usaria.",
+          "explanation": "Collocations são pares que soam naturais:\n\n- **make**: a decision, a mistake, progress, an effort\n- **do**: homework, the dishes, your best, business\n\nEx.: *I made a mistake.* / *Did you do your homework?*",
+          "key_phrases": [
+            {"en": "Can you do me a favour?", "pt": "Pode me fazer um favor?"},
+            {"en": "We need to make a decision.", "pt": "Precisamos tomar uma decisão."}
+          ],
+          "exercises": [
+            {"id": "b2-4-2-e1", "type": "multiple_choice", "prompt": "Please ___ the dishes after dinner.", "options": ["make", "do", "take", "have"], "answer": 1, "explanation": "*do the dishes*."},
+            {"id": "b2-4-2-e2", "type": "fill_blank", "prompt": "I want to ___ a good impression. (causar)", "answers": ["make"], "hint": "make a ...", "explanation": "*make an impression*."},
+            {"id": "b2-4-2-e3", "type": "translate", "prompt": "Ela fez um ótimo trabalho.", "answers": ["She did a great job.", "She did a good job."], "explanation": "*do a job*."},
+            {"id": "b2-4-2-e4", "type": "multiple_choice", "prompt": "We have made ___ this month. (progresso)", "options": ["do progress", "progress", "make progress", "making progress"], "answer": 2, "explanation": "*make progress*."}
+          ]
+        },
+        {
+          "id": "b2-4-3",
+          "title": "Idiomas do cotidiano",
+          "objective": "Entender e usar expressões idiomáticas frequentes.",
+          "explanation": "Idiomas muito usados:\n\n- *It's raining cats and dogs.* — está chovendo canivete\n- *Break a leg!* — boa sorte (em apresentações)\n- *Piece of cake.* — moleza\n- *I'm under the weather.* — estou indisposto\n- *Let's call it a day.* — vamos parar por hoje",
+          "key_phrases": [
+            {"en": "It's a piece of cake.", "pt": "É moleza."},
+            {"en": "Let's call it a day.", "pt": "Vamos parar por hoje."}
+          ],
+          "exercises": [
+            {"id": "b2-4-3-e1", "type": "multiple_choice", "prompt": "'It's a piece of cake' means:", "options": ["It's delicious", "It's very easy", "It's expensive", "It's a dessert"], "answer": 1, "explanation": "Significa *muito fácil*."},
+            {"id": "b2-4-3-e2", "type": "fill_blank", "prompt": "I feel under the ___ today. (indisposto)", "answers": ["weather"], "hint": "Clima", "explanation": "*under the weather*."},
+            {"id": "b2-4-3-e3", "type": "translate", "prompt": "Vamos encerrar por hoje.", "answers": ["Let's call it a day.", "Let's call it a day for today."], "explanation": "Idioma comum no trabalho."},
+            {"id": "b2-4-3-e4", "type": "multiple_choice", "prompt": "'Break a leg!' is said to:", "options": ["someone who is injured", "someone before a performance", "someone who is late", "someone who is hungry"], "answer": 1, "explanation": "Desejo de boa sorte antes de apresentações."}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+MODO: VOCABULÁRIO
+Apresente uma ou duas palavras por vez, com tradução em português, um exemplo de uso e o contexto em que a palavra aparece. Peça ao aluno que use a palavra em uma frase própria. Registre os termos novos em "new_vocabulary".

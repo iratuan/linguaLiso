@@ -1,0 +1,18 @@
+Você é um autor de cursos de {language_name} para brasileiros que falam português. Crie UMA lição de nível {level} (escala CEFR) sobre o tema indicado.
+
+TEMA: {topic}
+NÃO repita temas que já existem na trilha: {existing}
+
+REGRAS
+1. Os exercícios e as frases-chave são em {language_name}. A explicação das regras e as dicas são em português.
+2. "explanation": regras e exemplos claros em markdown (use ** para negrito, * para exemplos), entre 80 e 200 palavras, no nível {level}.
+3. "key_phrases": de 3 a 5 frases úteis. "en" é a frase em {language_name} e "pt" é a tradução.
+4. "exercises": de 4 a 6 exercícios. Use somente estes tipos:
+   - multiple_choice: "prompt", "options" (de 2 a 4 textos) e "answer" (índice da opção correta, começando em 0).
+   - fill_blank: "prompt" com ___ no lugar da palavra e "answers" com a palavra certa.
+   - translate: "prompt" em português e "answers" com pelo menos uma tradução correta em {language_name}.
+   - reorder: "prompt" em português, "words" (as palavras embaralhadas) e "answers" com uma lista de um item: a frase correta. As palavras de "words" devem formar exatamente essa frase.
+   - listen: "text" (frase em {language_name} para ditado) e "answers" com essa mesma frase.
+   Todo exercício tem "explanation" curta em português e "hint" opcional.
+5. Confira cada resposta antes de devolver. Não invente informações.
+6. Responda SOMENTE com o objeto JSON pedido, sem texto fora dele.

@@ -1,0 +1,118 @@
+{
+  "level": "C1",
+  "title": "Avançado — fluência",
+  "description": "Conversas de alto nível: apresentações, debates, negociações e situações sociais delicadas em francês.",
+  "goal": "Você conversa com fluência em qualquer contexto, com precisão, nuance e registro adequado.",
+  "units": [
+    {
+      "id": "fr-c1-cu1",
+      "title": "Présentations et questions",
+      "goal": "Apresentar ideias com segurança e responder perguntas difíceis em público.",
+      "lessons": [
+        {
+          "id": "fr-c1-c1-1",
+          "title": "Conversa : répondre à une question difficile",
+          "objective": "Ganhar tempo, reformular e responder sem perder o controle.",
+          "explanation": "Recursos para responder bem:\n\n- *Excellente question !* — Ótima pergunta!\n- *Si je reformule bien votre question...* — Se entendi bem a sua pergunta...\n- *Je n'ai pas les chiffres exacts, mais ma compréhension est que ...* — Não tenho os números exatos, mas entendo que...\n- *Puis-je revenir sur ce point plus tard ?* — Posso voltar a esse ponto depois?",
+          "key_phrases": [
+            {"en": "Si je reformule bien votre question...", "pt": "Se entendi bem a sua pergunta..."},
+            {"en": "Puis-je revenir sur ce point plus tard ?", "pt": "Posso voltar a esse ponto depois?"}
+          ],
+          "exercises": [
+            {"id": "fr-c1-c1-1-e1", "type": "open_reply", "prompt": "Pouvez-vous expliquer comment le modèle gère les données manquantes ?", "context": "Você apresenta um estudo e alguém faz uma pergunta técnica.", "hint": "Responda ou explique o que vai fazer.", "answers": ["Excellente question. Le modèle remplace les valeurs manquantes par la médiane.", "Avec plaisir. Nous excluons les enregistrements incomplets.", "C'est une bonne remarque. Je reviendrai sur ce point après la démonstration."], "explanation": "Respostas claras, ou um compromisso de voltar ao ponto, são igualmente profissionais."},
+            {"id": "fr-c1-c1-1-e2", "type": "open_reply", "prompt": "Je ne suis pas sûr de vous suivre. Vous dites que les résultats sont faux ?", "context": "A pergunta veio confusa e você precisa garantir que entendeu.", "hint": "Reformule a pergunta antes de responder.", "answers": ["Si je reformule bien votre question : vous vous demandez si l'échantillon était représentatif ?", "Si je comprends bien, votre inquiétude porte sur la taille de l'échantillon, c'est bien ça ?"], "explanation": "Reformular evita responder à pergunta errada."},
+            {"id": "fr-c1-c1-1-e3", "type": "open_reply", "prompt": "Vous avez les chiffres exacts de l'an dernier ?", "context": "Você não tem o número na memória.", "hint": "Admita sem constrangimento e ofereça o seguimento.", "answers": ["Je ne les ai pas sous la main, mais je vous les envoie aujourd'hui.", "Il faudrait que je vérifie. Je vous transmets les chiffres précis."], "explanation": "Admitir e oferecer seguimento transmite segurança."},
+            {"id": "fr-c1-c1-1-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "Puis-je revenir sur ce point plus tard ?", "answers": ["Puis-je revenir sur ce point plus tard ?"], "explanation": "Uma forma educada de adiar uma resposta."}
+          ]
+        },
+        {
+          "id": "fr-c1-c1-2",
+          "title": "Conversa : défendre un point de vue nuancé",
+          "objective": "Desenvolver um argumento em camadas e reconhecer limitações.",
+          "explanation": "Para argumentos sofisticados:\n\n- *S'il est vrai que X, il ne s'ensuit pas nécessairement que Y.* — Se é verdade que X, não se segue necessariamente que Y.\n- *Dans une large mesure, je suis d'accord, même si ...* — Em grande medida, concordo, embora...\n- *La vraie question, à mon sens, c'est de savoir si ...* — A verdadeira questão, na minha opinião, é saber se...",
+          "key_phrases": [
+            {"en": "Dans une large mesure, je suis d'accord.", "pt": "Em grande medida, concordo."},
+            {"en": "La vraie question, c'est de savoir si c'est durable.", "pt": "A verdadeira questão é saber se é sustentável."}
+          ],
+          "exercises": [
+            {"id": "fr-c1-c1-2-e1", "type": "open_reply", "prompt": "La croissance économique améliore toujours le bien-être des gens, non ?", "context": "Um debate sobre desenvolvimento econômico.", "hint": "Concorde em parte e explique a ressalva.", "answers": ["S'il est vrai que la croissance augmente les revenus, il ne s'ensuit pas forcément que le bien-être s'améliore.", "Dans une large mesure, je suis d'accord, même si les inégalités peuvent compenser les bénéfices."], "explanation": "Argumentos em camadas reconhecem o ponto do outro antes de refutá-lo."},
+            {"id": "fr-c1-c1-2-e2", "type": "open_reply", "prompt": "Alors, quel est le vrai problème, selon vous ?", "context": "O debate pede que você identifique o cerne da questão.", "hint": "Aponte o que, na sua visão, é central.", "answers": ["La vraie question, à mon sens, c'est de savoir si cette politique est durable.", "Pour moi, le cœur du problème, c'est l'accès, et non l'efficacité."], "explanation": "*La vraie question* direciona a discussão para o essencial."},
+            {"id": "fr-c1-c1-2-e3", "type": "open_reply", "prompt": "Que proposeriez-vous à la place ?", "context": "A discussão pede uma alternativa.", "hint": "Proponha algo com ressalvas.", "answers": ["Je proposerais une démarche progressive, tout en voulant voir d'abord les coûts.", "Peut-être un programme pilote pourrait-il tester l'idée avant de l'étendre."], "explanation": "*tout en voulant voir* mostra cautela e pensamento crítico."},
+            {"id": "fr-c1-c1-2-e4", "type": "multiple_choice", "prompt": "Qual frase reconhece um ponto e depois discorda ?", "options": ["Vous avez tort.", "S'il est vrai que cela existe, il ne s'ensuit pas que ce soit juste.", "Comme vous voulez.", "Non, non, non."], "answer": 1, "explanation": "*S'il est vrai que ... il ne s'ensuit pas ...*"}
+          ]
+        },
+        {
+          "id": "fr-c1-c1-3",
+          "title": "Conversa : animer une réunion",
+          "objective": "Moderar uma discussão, dar a palavra e fechar decisões.",
+          "explanation": "Para conduzir uma reunião:\n\n- *Commençons, veux-tu ?* — Vamos começar?\n- *Écoutons d'abord Marie.* — Ouçamos a Marie primeiro.\n- *Peut-on reporter ce sujet à plus tard ?* — Podemos deixar esse assunto para depois?\n- *Pour résumer, nous avons décidé de ...* — Resumindo, decidimos...",
+          "key_phrases": [
+            {"en": "Écoutons d'abord Marie.", "pt": "Ouçamos a Marie primeiro."},
+            {"en": "Peut-on reporter ce sujet à plus tard ?", "pt": "Podemos deixar esse assunto para depois?"}
+          ],
+          "exercises": [
+            {"id": "fr-c1-c1-3-e1", "type": "open_reply", "prompt": "On commence ? L'ordre du jour est chargé.", "context": "Você abre a reunião como moderador.", "hint": "Convide a equipe a começar.", "answers": ["Oui, commençons. Nous avons beaucoup à couvrir.", "Allons-y, et surveillons l'heure."], "explanation": "*Allons-y* é uma forma dinâmica de começar."},
+            {"id": "fr-c1-c1-3-e2", "type": "open_reply", "prompt": "Je pense qu'on devrait aussi parler du budget maintenant.", "context": "Alguém quer mudar de assunto no meio da reunião.", "hint": "Proponha deixar para depois.", "answers": ["Bonne remarque, mais peut-on reporter le budget et y revenir ensuite ?", "Finissons d'abord le calendrier, puis passons au budget."], "explanation": "*Reporter* adia um tema sem desprezá-lo."},
+            {"id": "fr-c1-c1-3-e3", "type": "open_reply", "prompt": "Alors, qu'est-ce qu'on a décidé ?", "context": "A reunião está chegando ao fim.", "hint": "Recapitule as decisões.", "answers": ["Pour résumer, nous avons décidé de lancer en mars et de revoir le budget la semaine prochaine.", "En résumé, l'équipe testera l'outil et nous ferons un bilan vendredi."], "explanation": "*Pour résumer* organiza as decisões."},
+            {"id": "fr-c1-c1-3-e4", "type": "reorder", "prompt": "Monte a frase: vamos ouvir primeiro a equipe de vendas", "words": ["d'abord", "l'équipe commerciale", "Écoutons", "."], "answers": ["Écoutons d'abord l'équipe commerciale."], "explanation": "*Écoutons d'abord* convida a fala de alguém."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-c1-cu2",
+      "title": "Relations et situations sociales",
+      "goal": "Lidar com conflitos, elogios, desculpas e assuntos delicados com naturalidade.",
+      "lessons": [
+        {
+          "id": "fr-c1-c2-1",
+          "title": "Conversa : s'excuser sincèrement",
+          "objective": "Assumir um erro, reparar o dano e evitar justificativas vazias.",
+          "explanation": "Um pedido de desculpas sincero tem três partes:\n\n- *Je vous dois des excuses.* — Devo-lhe desculpas.\n- *C'est entièrement de ma faute.* — É totalmente culpa minha.\n- *Laissez-moi réparer cela.* — Deixe-me reparar isso.\n\nEvite começar com *mais* logo após o pedido de desculpas.",
+          "key_phrases": [
+            {"en": "Je vous dois des excuses.", "pt": "Devo-lhe desculpas."},
+            {"en": "Laissez-moi réparer cela.", "pt": "Deixe-me reparar isso."}
+          ],
+          "exercises": [
+            {"id": "fr-c1-c2-1-e1", "type": "open_reply", "prompt": "Vous avez raté la date limite et toute l'équipe a dû travailler tard.", "context": "Você atrasou uma entrega que afetou a equipe.", "hint": "Assuma a responsabilidade.", "answers": ["Je vous dois tous des excuses. C'est entièrement de ma faute.", "Je suis désolé. J'aurais dû signaler le retard plus tôt."], "explanation": "Assumir sem rodeios é o início de uma reparação."},
+            {"id": "fr-c1-c2-1-e2", "type": "open_reply", "prompt": "Et que comptez-vous faire pour réparer ?", "context": "A equipe quer saber como você vai reparar o erro.", "hint": "Proponha uma reparação concreta.", "answers": ["Laissez-moi réparer cela : je prends en charge les deux prochains rapports.", "Je voudrais me racheter. Puis-je vous offrir un déjeuner cette semaine ?"], "explanation": "Propostas concretas mostram comprometimento."},
+            {"id": "fr-c1-c2-1-e3", "type": "open_reply", "prompt": "D'accord. Assurez-vous que cela ne se reproduise pas.", "context": "A pessoa aceita, mas com cobrança.", "hint": "Comprometa-se sem se justificar demais.", "answers": ["Ça ne se reproduira pas. Merci de votre compréhension.", "Vous avez ma parole. Je vous tiendrai informé à chaque étape."], "explanation": "Promessas específicas são melhores que frases genéricas."},
+            {"id": "fr-c1-c2-1-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "C'est entièrement de ma faute, et je suis désolé.", "answers": ["C'est entièrement de ma faute, et je suis désolé.", "C'est entièrement de ma faute et je suis désolé."], "explanation": "Assumir a culpa com clareza."}
+          ]
+        },
+        {
+          "id": "fr-c1-c2-2",
+          "title": "Conversa : complimenter et recevoir un compliment",
+          "objective": "Elogiar com naturalidade e receber elogios sem parecer forçado.",
+          "explanation": "Elogios soam mais naturais quando são específicos:\n\n- *La façon dont tu as géré ce client était impressionnante.* — A forma como você lidou com aquele cliente foi impressionante.\n- *J'admire ton calme face à la crise.* — Admiro a sua calma diante da crise.\n\nAo receber elogios: *C'est très gentil de ta part.* / *Je n'y serais pas arrivé sans l'équipe.*",
+          "key_phrases": [
+            {"en": "La façon dont tu as géré ça était impressionnante.", "pt": "A forma como você lidou com isso foi impressionante."},
+            {"en": "Je n'y serais pas arrivé sans l'équipe.", "pt": "Eu não teria conseguido sem a equipe."}
+          ],
+          "exercises": [
+            {"id": "fr-c1-c2-2-e1", "type": "open_reply", "prompt": "Ta présentation d'hier était vraiment excellente.", "context": "Um colega elogia sua apresentação.", "hint": "Receba o elogio com modéstia.", "answers": ["C'est très gentil. Je n'y serais pas arrivé sans l'équipe.", "Merci, ça me fait très plaisir."], "explanation": "Receber elogios com humildade é natural."},
+            {"id": "fr-c1-c2-2-e2", "type": "open_reply", "prompt": "Comment as-tu réussi à rester aussi calme pendant la crise ?", "context": "Alguém admira sua postura numa situação difícil.", "hint": "Explique com sinceridade.", "answers": ["Honnêtement, je me suis concentré sur ce que je pouvais contrôler.", "J'ai appris que rester calme aide aussi les autres à se calmer."], "explanation": "Respostas reflexivas aprofundam a conversa."},
+            {"id": "fr-c1-c2-2-e3", "type": "open_reply", "prompt": "Merci de partager ça. Tu changerais quelque chose ?", "context": "A conversa aprofunda para uma reflexão.", "hint": "Diga algo que mudaria, com humildade.", "answers": ["J'aurais davantage informé les parties prenantes dès le début.", "Probablement, j'aurais prévu plus de marge pour l'imprévu."], "explanation": "Autocrítica construtiva transmite maturidade."},
+            {"id": "fr-c1-c2-2-e4", "type": "multiple_choice", "prompt": "Qual é uma forma natural de receber um elogio ?", "options": ["Non, ce n'était pas bien du tout.", "C'est très gentil, merci.", "Je sais, je suis le meilleur.", "Peu importe."], "answer": 1, "explanation": "Agradecer com gentileza."}
+          ]
+        },
+        {
+          "id": "fr-c1-c2-3",
+          "title": "Conversa : dire non à un supérieur",
+          "objective": "Discordar de uma decisão com respeito, propondo alternativas.",
+          "explanation": "Para discordar de uma decisão superior:\n\n- *Je comprends la logique de cette décision, mais j'ai quelques réserves.*\n- *Seriez-vous ouvert à une autre option ?*\n- *Je préfère le signaler maintenant plutôt qu'après notre engagement.*\n\nFoque no problema, não na pessoa.",
+          "key_phrases": [
+            {"en": "J'ai quelques réserves sur le calendrier.", "pt": "Tenho algumas reservas quanto ao cronograma."},
+            {"en": "Seriez-vous ouvert à une autre option ?", "pt": "Você estaria aberto a outra opção?"}
+          ],
+          "exercises": [
+            {"id": "fr-c1-c2-3-e1", "type": "open_reply", "prompt": "Nous allons avancer le lancement à la semaine prochaine. Des objections ?", "context": "Seu gestor anuncia uma mudança arriscada.", "hint": "Expresse a preocupação com respeito.", "answers": ["Je comprends la logique, mais j'ai quelques réserves sur le calendrier.", "Je comprends l'urgence, mais je préfère signaler un risque maintenant."], "explanation": "Reconhecer o motivo antes de questionar."},
+            {"id": "fr-c1-c2-3-e2", "type": "open_reply", "prompt": "Pourquoi ? Le plan initial me semblait pourtant correct.", "context": "Seu gestor pede justificativa.", "hint": "Explique o risco concreto.", "answers": ["Les tests ne sont pas terminés, et je crains pour la qualité de la version.", "Nous aurions moins de temps pour corriger les bogues critiques trouvés la semaine dernière."], "explanation": "Fatos concretos são mais convincentes que opiniões gerais."},
+            {"id": "fr-c1-c2-3-e3", "type": "open_reply", "prompt": "Hmm. Que proposez-vous alors ?", "context": "Seu gestor abre espaço para uma alternativa.", "hint": "Proponha uma saída intermediária.", "answers": ["Seriez-vous ouvert à un lancement progressif, d'abord avec un petit groupe ?", "Et si nous gardions la date mais limitions la première version aux fonctions essentielles ?"], "explanation": "Propor alternativas transforma a crítica em colaboração."},
+            {"id": "fr-c1-c2-3-e4", "type": "reorder", "prompt": "Monte a frase: eu preferiria levantar isso agora", "words": ["maintenant", "signaler cela", "Je préfère", "."], "answers": ["Je préfère signaler cela maintenant."], "explanation": "*Je préfère signaler maintenant* antes de comprometer o projeto."}
+          ]
+        }
+      ]
+    }
+  ]
+}

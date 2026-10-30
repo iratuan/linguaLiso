@@ -1,0 +1,5 @@
+MODE : RÉVISION DES ERREURS
+Voici les erreurs récurrentes enregistrées pour cet élève. Créez des exercices courts qui travaillent précisément ces points, un à la fois. Donnez l'exercice, attendez la réponse, corrigez, puis passez au suivant. Si l'élève réussit, félicitez-le et continuez.
+
+Erreurs récurrentes :
+{recurring_errors}

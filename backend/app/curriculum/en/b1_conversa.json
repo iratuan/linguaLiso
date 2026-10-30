@@ -1,0 +1,118 @@
+{
+  "level": "B1",
+  "title": "Intermediário",
+  "description": "Conversas com opiniões, experiências e situações do trabalho e viagens.",
+  "goal": "Você conduz conversas sobre temas do cotidiano, explica ideias e reage a opiniões diferentes.",
+  "units": [
+    {
+      "id": "b1-cu1",
+      "title": "Opiniões e experiências",
+      "goal": "Compartilhar o que pensa e o que já viveu, com argumentos simples.",
+      "lessons": [
+        {
+          "id": "b1-c1-1",
+          "title": "Conversa: um filme que você viu",
+          "objective": "Dar opinião sobre algo que viu e justificar.",
+          "explanation": "Para opinar e justificar:\n\n- *I thought it was really good, because the story was original.*\n- *To be honest, I found it a bit slow.*\n- *What I liked most was the ending.*\n\nDepois de uma opinião, justifique com *because*.",
+          "key_phrases": [
+            {"en": "To be honest, I found it a bit slow.", "pt": "Para ser sincero, achei um pouco lento."},
+            {"en": "What I liked most was the ending.", "pt": "O que mais gostei foi o final."}
+          ],
+          "exercises": [
+            {"id": "b1-c1-1-e1", "type": "open_reply", "prompt": "Have you seen the new film everyone is talking about?", "context": "Um colega quer saber sua opinião sobre um filme.", "hint": "Diga se viu e o que achou.", "answers": ["Yes, I saw it last week. I really liked it.", "Not yet, but I heard it's good.", "I did. To be honest, I found it a bit long."], "explanation": "Responda com a experiência e uma opinião."},
+            {"id": "b1-c1-1-e2", "type": "open_reply", "prompt": "Really? Why did you like it?", "context": "O colega quer saber o motivo da sua opinião.", "hint": "Justifique com *because*.", "answers": ["Because the story was original and the acting was great.", "I liked it because the music was amazing.", "Because it made me think about my life."], "explanation": "*Because* + motivo."},
+            {"id": "b1-c1-1-e3", "type": "open_reply", "prompt": "Interesting! Did you disagree with anything?", "context": "O colega quer saber se há algo de que você não gostou.", "hint": "Diga o que não gostou, com educação.", "answers": ["I think the ending was a bit predictable.", "I didn't like the main character much.", "I see your point, but I found the second half slow."], "explanation": "*I see your point, but...* é uma forma educada de discordar."},
+            {"id": "b1-c1-1-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "What I liked most was the ending.", "answers": ["What I liked most was the ending."], "explanation": "Estrutura *What I liked most was...*."}
+          ]
+        },
+        {
+          "id": "b1-c1-2",
+          "title": "Conversa: uma viagem marcante",
+          "objective": "Contar uma experiência de viagem com detalhes.",
+          "explanation": "Para contar uma viagem, combine *present perfect* (experiência) e *past simple* (o que aconteceu):\n\n- *I've been to Japan twice. The first time I visited Tokyo.*\n- *We stayed in a small hotel, which was amazing.*\n\nUse conectores: *first, then, after that, finally*.",
+          "key_phrases": [
+            {"en": "I've been to Portugal twice.", "pt": "Eu já fui a Portugal duas vezes."},
+            {"en": "It was an unforgettable trip.", "pt": "Foi uma viagem inesquecível."}
+          ],
+          "exercises": [
+            {"id": "b1-c1-2-e1", "type": "open_reply", "prompt": "Have you ever travelled abroad?", "context": "Um novo amigo pergunta sobre suas viagens.", "hint": "Diga se já viajou e para onde.", "answers": ["Yes, I've been to Portugal twice.", "Yes, I went to Argentina last year.", "Not yet, but I'd love to visit Japan."], "explanation": "*I've been to* para experiências; *I went to* para viagens com data."},
+            {"id": "b1-c1-2-e2", "type": "open_reply", "prompt": "Oh nice! What was the best part?", "context": "O amigo quer saber o melhor momento da viagem.", "hint": "Conte algo que aconteceu.", "answers": ["The food was amazing and the people were friendly.", "We visited a beautiful old church.", "I loved walking along the beach at sunset."], "explanation": "Detalhes sensoriais deixam a história viva."},
+            {"id": "b1-c1-2-e3", "type": "open_reply", "prompt": "Sounds unforgettable! Would you go back?", "context": "O amigo pergunta se você voltaria.", "hint": "Diga se voltaria e por quê.", "answers": ["Definitely! I'd like to go back next summer.", "Maybe, if I had more time.", "I'd go back, because there's so much more to see."], "explanation": "*I'd like to* + verbo para desejos."},
+            {"id": "b1-c1-2-e4", "type": "reorder", "prompt": "Monte a frase: primeiro visitamos o museu e depois almoçamos", "words": ["visited", "the museum", "First, we", "then", "had lunch"], "answers": ["First, we visited the museum then had lunch."], "explanation": "*First, ... then ...* organiza a sequência."}
+          ]
+        },
+        {
+          "id": "b1-c1-3",
+          "title": "Conversa: concordando e discordando",
+          "objective": "Reagir a opiniões diferentes sem perder a cordialidade.",
+          "explanation": "Para concordar: *I totally agree.* / *That's a good point.*\n\nPara discordar com educação: *I see what you mean, but...* / *I'm not sure I agree.*\n\nPara pedir mais informações antes de discordar: *Why do you think that?*",
+          "key_phrases": [
+            {"en": "I see what you mean, but...", "pt": "Entendo o que você quer dizer, mas..."},
+            {"en": "That's a good point.", "pt": "Esse é um bom argumento."}
+          ],
+          "exercises": [
+            {"id": "b1-c1-3-e1", "type": "open_reply", "prompt": "I think working from home is better than going to the office.", "context": "Colegas discutem trabalho remoto.", "hint": "Concorde ou discorde com educação.", "answers": ["I see what you mean, but I think offices help teamwork.", "I partly agree. It saves time, but people miss the social side.", "I totally agree with you!"], "explanation": "*I partly agree* é uma concordância parcial muito usada."},
+            {"id": "b1-c1-3-e2", "type": "open_reply", "prompt": "Why do you think that?", "context": "O colega quer que você justifique sua posição.", "hint": "Dê um motivo.", "answers": ["Because it gives people more flexibility.", "I think it's easier to communicate in person.", "Because we save time on the commute."], "explanation": "Justifique sua posição com um motivo claro."},
+            {"id": "b1-c1-3-e3", "type": "open_reply", "prompt": "That's a fair point. What would you suggest?", "context": "A discussão chegou a uma solução possível.", "hint": "Faça uma sugestão.", "answers": ["Maybe we could try a mix of both.", "What if we had two days at the office each week?", "I'd suggest a trial period first."], "explanation": "*Maybe we could...* / *What if...?* para sugerir."},
+            {"id": "b1-c1-3-e4", "type": "multiple_choice", "prompt": "Qual frase discorda com educação?", "options": ["You're completely wrong!", "I see your point, but I'm not sure I agree.", "No way, that's stupid.", "Whatever."], "answer": 1, "explanation": "Reconhecer o ponto antes de discordar é o mais educado."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b1-cu2",
+      "title": "No trabalho",
+      "goal": "Conversar com colegas, atualizar projetos e marcar reuniões.",
+      "lessons": [
+        {
+          "id": "b1-c2-1",
+          "title": "Conversa: atualizando um projeto",
+          "objective": "Dar e pedir atualizações sobre o andamento de um trabalho.",
+          "explanation": "Para atualizar: *We're on track.* (no prazo) / *We're a bit behind schedule.* (atrasados)\n\nPara perguntar: *How's the project going?* / *Have you finished the report yet?*\n\nTempos verbais: *present perfect* para o que já foi feito, *will* para o que vai acontecer.",
+          "key_phrases": [
+            {"en": "We're on track.", "pt": "Estamos no prazo."},
+            {"en": "Have you finished the report yet?", "pt": "Você já terminou o relatório?"}
+          ],
+          "exercises": [
+            {"id": "b1-c2-1-e1", "type": "open_reply", "prompt": "How's the project going?", "context": "Seu gerente quer uma atualização.", "hint": "Diga se está no prazo ou atrasado.", "answers": ["We're on track. We should finish by Friday.", "We're a bit behind schedule, but we're catching up.", "It's going well. We've completed the first phase."], "explanation": "Atualize com status e próximo passo."},
+            {"id": "b1-c2-1-e2", "type": "open_reply", "prompt": "Have you sent the client the updated proposal?", "context": "O gerente pergunta sobre uma tarefa.", "hint": "Diga se já enviou ou quando vai enviar.", "answers": ["Not yet. I'll send it this afternoon.", "Yes, I sent it yesterday.", "I've sent a draft, and I'll send the final version tomorrow."], "explanation": "*Not yet* + previsão com *will*."},
+            {"id": "b1-c2-1-e3", "type": "open_reply", "prompt": "Great. Is there anything blocking you?", "context": "O gerente quer saber sobre impedimentos.", "hint": "Peça ajuda se precisar, ou diga que está tudo bem.", "answers": ["I need some feedback from the design team.", "Nothing at the moment, thanks.", "Could you help me get access to the data?"], "explanation": "Pedir ajuda com clareza agiliza o trabalho."},
+            {"id": "b1-c2-1-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "We've made good progress this week.", "answers": ["We've made good progress this week.", "We have made good progress this week."], "explanation": "*make progress* = avançar."}
+          ]
+        },
+        {
+          "id": "b1-c2-2",
+          "title": "Conversa: marcando uma reunião",
+          "objective": "Propor, confirmar e remarcar reuniões.",
+          "explanation": "Para propor: *Would you be available for a call on Tuesday?*\n\nPara confirmar: *That works for me.* / *Sounds good, see you then.*\n\nPara remarcar: *Would it be possible to move it to Thursday?*",
+          "key_phrases": [
+            {"en": "Would you be available for a call on Tuesday?", "pt": "Você estaria disponível para uma chamada na terça?"},
+            {"en": "Would it be possible to move it to Thursday?", "pt": "Seria possível remarcar para quinta?"}
+          ],
+          "exercises": [
+            {"id": "b1-c2-2-e1", "type": "open_reply", "prompt": "Hi! Are you free for a quick call this week?", "context": "Um colega quer marcar uma conversa rápida.", "hint": "Proponha um dia e horário.", "answers": ["Sure! How about Wednesday at 10?", "Would Thursday afternoon work for you?", "Yes, Tuesday at 3 would be good for me."], "explanation": "*How about...?* e *Would ... work?* são formas naturais de propor."},
+            {"id": "b1-c2-2-e2", "type": "open_reply", "prompt": "Unfortunately, I have a conflict on Wednesday. Could we move it?", "context": "O colega precisa remarcar.", "hint": "Aceite a mudança ou proponha outro horário.", "answers": ["No problem. Would Thursday at 11 work?", "Sure, let's do Friday instead.", "That's fine, I'll send a new invitation."], "explanation": "Confirme a mudança e proponha alternativa."},
+            {"id": "b1-c2-2-e3", "type": "open_reply", "prompt": "Great, I'll send the invite now.", "context": "A reunião foi marcada.", "hint": "Confirme e agradeça.", "answers": ["Perfect, thanks! See you then.", "That works for me. Thanks a lot!", "Sounds good. Talk to you on Thursday."], "explanation": "Confirmações curtas encerram bem o combinado."},
+            {"id": "b1-c2-2-e4", "type": "multiple_choice", "prompt": "Qual frase remarca uma reunião de forma educada?", "options": ["Cancel it now!", "Would it be possible to move it to Thursday?", "I'm not coming.", "Thursday. Okay?"], "answer": 1, "explanation": "*Would it be possible to move it...?*"}
+          ]
+        },
+        {
+          "id": "b1-c2-3",
+          "title": "Conversa: num jantar de trabalho",
+          "objective": "Conversar socialmente sobre assuntos profissionais e pessoais.",
+          "explanation": "Em jantares e cafés com colegas, perguntas abertas funcionam bem:\n\n- *How long have you been working here?*\n- *What's your favourite part of the job?*\n- *Have you got any plans for the holidays?*\n\nTambém é comum elogiar com naturalidade: *That's a great idea!*",
+          "key_phrases": [
+            {"en": "How long have you been working here?", "pt": "Há quanto tempo você trabalha aqui?"},
+            {"en": "Have you got any plans for the holidays?", "pt": "Você tem algum plano para as férias?"}
+          ],
+          "exercises": [
+            {"id": "b1-c2-3-e1", "type": "open_reply", "prompt": "How long have you been working here?", "context": "Um colega novo pergunta sobre seu tempo de empresa.", "hint": "Responda com *for* ou *since*.", "answers": ["I've been working here for three years.", "Since 2021.", "About two years now."], "explanation": "*for* + duração; *since* + ponto no tempo."},
+            {"id": "b1-c2-3-e2", "type": "open_reply", "prompt": "What's your favourite part of the job?", "context": "A conversa segue para o que você gosta no trabalho.", "hint": "Fale de algo que gosta.", "answers": ["I really enjoy working with the team.", "I love solving problems for clients.", "The best part is learning new things every day."], "explanation": "*I enjoy + -ing* para gostos."},
+            {"id": "b1-c2-3-e3", "type": "open_reply", "prompt": "Have you got any plans for the holidays?", "context": "A conversa muda para as férias.", "hint": "Fale de um plano usando *going to*.", "answers": ["I'm going to visit my parents.", "I'm thinking about going to the mountains.", "I'm planning to rest and read a lot."], "explanation": "*I'm going to / I'm thinking about / I'm planning to*."},
+            {"id": "b1-c2-3-e4", "type": "reorder", "prompt": "Monte a frase: essa é uma ótima ideia", "words": ["great", "a", "idea", "That's"], "answers": ["That's a great idea."], "explanation": "Elogio natural a uma sugestão."}
+          ]
+        }
+      ]
+    }
+  ]
+}

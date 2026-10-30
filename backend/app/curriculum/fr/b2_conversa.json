@@ -1,0 +1,118 @@
+{
+  "level": "B2",
+  "title": "Intermediário superior",
+  "description": "Debates, narrativas longas, negociações e expressões do cotidiano em francês.",
+  "goal": "Você se expressa com naturalidade sobre a maioria dos temas, argumentando e reagindo com nuance.",
+  "units": [
+    {
+      "id": "fr-b2-cu1",
+      "title": "Débats et arguments",
+      "goal": "Defender uma posição, ceder em um ponto e chegar a um acordo.",
+      "lessons": [
+        {
+          "id": "fr-b2-c1-1",
+          "title": "Conversa : défendre une idée",
+          "objective": "Apresentar um argumento e sustentá-lo com um exemplo.",
+          "explanation": "Para argumentar com clareza:\n\n- *À mon sens, ...* — No meu entender...\n- *Ce que je défendrais, c'est que ...* — O que eu defenderia é que...\n- *Prenons mon cas, par exemple ...* — Tomemos o meu caso, por exemplo.\n\nUm bom argumento tem afirmação, justificativa e exemplo.",
+          "key_phrases": [
+            {"en": "À mon sens, le télétravail fait gagner du temps.", "pt": "No meu entender, o trabalho remoto economiza tempo."},
+            {"en": "Prenons mon cas, par exemple.", "pt": "Tomemos o meu caso, por exemplo."}
+          ],
+          "exercises": [
+            {"id": "fr-b2-c1-1-e1", "type": "open_reply", "prompt": "Tu crois que les réseaux sociaux font plus de mal que de bien ?", "context": "Um debate informal sobre redes sociais.", "hint": "Defenda uma posição com um argumento.", "answers": ["À mon sens, ils font plus de bien, car ils gardent les gens connectés.", "Je défendrais plutôt l'idée qu'ils font plus de mal, surtout aux jeunes.", "Tout dépend de l'usage : c'est la modération qui compte."], "explanation": "*À mon sens* e *je défendrais* introduzem a posição."},
+            {"id": "fr-b2-c1-1-e2", "type": "open_reply", "prompt": "Tu peux me donner un exemple ?", "context": "Seu interlocutor pede um exemplo concreto.", "hint": "Dê um exemplo pessoal ou de alguém que conhece.", "answers": ["Prenons mon cas : j'ai arrêté et je me suis senti plus concentré.", "Par exemple, ma sœur l'utilise pour développer son entreprise.", "Un bon exemple, c'est mon voisin, qui a appris le français en ligne."], "explanation": "*Prenons ... par exemple* tornam o argumento concreto."},
+            {"id": "fr-b2-c1-1-e3", "type": "open_reply", "prompt": "C'est juste, mais qu'en est-il de la vie privée ?", "context": "Seu interlocutor levanta uma objeção.", "hint": "Reconheça a objeção e responda.", "answers": ["C'est une préoccupation légitime, mais je pense que la régulation peut la résoudre.", "Je comprends ton point sur la vie privée. Cependant, les avantages l'emportent.", "Tu as raison de t'en inquiéter, mais les utilisateurs peuvent contrôler leurs paramètres."], "explanation": "*C'est une préoccupation légitime, mais...* reconhece a objeção antes de responder."},
+            {"id": "fr-b2-c1-1-e4", "type": "reorder", "prompt": "Monte a frase: a meu ver, a educação é a chave", "words": ["l'éducation", "À mon sens", "est", "la clé"], "answers": ["À mon sens, l'éducation est la clé."], "explanation": "*À mon sens* abre o argumento."}
+          ]
+        },
+        {
+          "id": "fr-b2-c1-2",
+          "title": "Conversa : trouver un compromis",
+          "objective": "Negociar: aceitar parte da proposta e propor um meio-termo.",
+          "explanation": "Em uma negociação:\n\n- *Je peux vous rejoindre à mi-chemin.* — Posso encontrá-lo a meio caminho.\n- *D'accord, on partage la différence.* — Combinado, dividimos a diferença.\n- *Seriez-vous ouvert à un compromis ?* — Você aceitaria um meio-termo?",
+          "key_phrases": [
+            {"en": "Je peux vous rejoindre à mi-chemin.", "pt": "Posso ceder até um meio-termo."},
+            {"en": "On partage la différence ?", "pt": "Dividimos a diferença?"}
+          ],
+          "exercises": [
+            {"id": "fr-b2-c1-2-e1", "type": "open_reply", "prompt": "Nous ne pouvons pas descendre en dessous de 5 000 euros pour ce projet.", "context": "Você negocia o valor de um projeto com um cliente.", "hint": "Proponha um meio-termo.", "answers": ["Je peux vous rejoindre à mi-chemin, à 5 500 euros.", "Seriez-vous ouvert à un partage de la différence ?", "Que diriez-vous de 5 200 euros avec un délai plus court ?"], "explanation": "Um meio-termo mostra flexibilidade e mantém a negociação viva."},
+            {"id": "fr-b2-c1-2-e2", "type": "open_reply", "prompt": "C'est la meilleure offre que nous puissions faire. À prendre ou à laisser.", "context": "O cliente pressiona.", "hint": "Responda sem perder o tom cordial.", "answers": ["Je vous remercie pour l'offre. Laissez-moi y réfléchir et je reviens vers vous.", "Je comprends votre position. Pouvons-nous revoir le calendrier ?", "D'accord. Reprenons la discussion demain."], "explanation": "Não aceite nem recuse de imediato: peça um tempo ou outro ponto de negociação."},
+            {"id": "fr-b2-c1-2-e3", "type": "open_reply", "prompt": "D'accord, je crois qu'on peut trouver un compromis.", "context": "Vocês chegaram a um acordo.", "hint": "Confirme o acordo.", "answers": ["Parfait. Mettons-le par écrit.", "Très bien, je pense que c'est juste pour nous deux.", "Entendu ! J'envoie le contrat révisé aujourd'hui."], "explanation": "*Mettons-le par écrit* formaliza o acordo."},
+            {"id": "fr-b2-c1-2-e4", "type": "multiple_choice", "prompt": "Qual frase propõe dividir a diferença ?", "options": ["À prendre ou à laisser.", "On partage la différence ?", "Jamais de la vie.", "Je ne changerai pas d'avis."], "answer": 1, "explanation": "*partager la différence* = dividir a diferença."}
+          ]
+        },
+        {
+          "id": "fr-b2-c1-3",
+          "title": "Conversa : se plaindre avec élégance",
+          "objective": "Expressar insatisfação sem agressividade e pedir uma solução.",
+          "explanation": "Para reclamar com elegância:\n\n- *Je déteste me plaindre, mais ...* — Odeio reclamar, mas...\n- *Je croyais que c'était inclus.* — Eu achava que estava incluído.\n- *Serait-il possible de ...?* — Seria possível...?\n\nComece reconhecendo o esforço e depois descreva o problema.",
+          "key_phrases": [
+            {"en": "Je déteste me plaindre, mais la commande est fausse.", "pt": "Odeio reclamar, mas o pedido está errado."},
+            {"en": "Je croyais que c'était inclus.", "pt": "Eu achava que estava incluído."}
+          ],
+          "exercises": [
+            {"id": "fr-b2-c1-3-e1", "type": "open_reply", "prompt": "Bonjour, je peux vous aider ?", "context": "Você está no balcão de uma loja e o pedido veio errado.", "hint": "Explique o problema com educação.", "answers": ["Je déteste me plaindre, mais j'ai reçu la mauvaise commande.", "Je croyais que cet article était inclus dans le prix."], "explanation": "*Je déteste me plaindre, mais...* suaviza a reclamação."},
+            {"id": "fr-b2-c1-3-e2", "type": "open_reply", "prompt": "Je suis désolé. Que souhaitez-vous qu'on fasse ?", "context": "O atendente pergunta como resolver.", "hint": "Peça uma solução concreta.", "answers": ["Serait-il possible de l'échanger contre le bon article ?", "Pourriez-vous me rembourser la différence, s'il vous plaît ?", "Pourriez-vous renvoyer la bonne commande ?"], "explanation": "*Serait-il possible de...?* pede sem exigir."},
+            {"id": "fr-b2-c1-3-e3", "type": "open_reply", "prompt": "Bien sûr. Je m'en occupe tout de suite.", "context": "O atendente promete resolver.", "hint": "Agradeça pelo cuidado.", "answers": ["Merci, je vous suis très reconnaissant.", "C'est très aimable à vous. Merci de vous en occuper."], "explanation": "Agradecer no fim mantém uma boa relação."},
+            {"id": "fr-b2-c1-3-e4", "type": "reorder", "prompt": "Monte a frase: odeio reclamar, mas o produto chegou quebrado", "words": ["je déteste me plaindre", "mais", "le produit est arrivé cassé"], "answers": ["Je déteste me plaindre, mais le produit est arrivé cassé."], "explanation": "Reclamação suave seguida do problema."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-b2-cu2",
+      "title": "Récits et expressions",
+      "goal": "Contar histórias com emoção e usar expressões que soam naturais.",
+      "lessons": [
+        {
+          "id": "fr-b2-c2-1",
+          "title": "Conversa : raconter une anecdote",
+          "objective": "Narrar um episódio com suspense, sequência e reação.",
+          "explanation": "Para contar uma história:\n\n- *Figure-toi que ...* — Imagina só que...\n- *Bref, ...* — Resumindo...\n- *Tu ne vas pas le croire !* — Você não vai acreditar!\n\nUse o imparfait para o cenário e o passé composé para as ações.",
+          "key_phrases": [
+            {"en": "Figure-toi que j'étais coincé dans les embouteillages.", "pt": "Imagina só que eu estava preso no trânsito."},
+            {"en": "Bref, j'ai raté l'avion.", "pt": "Resumindo, perdi o voo."}
+          ],
+          "exercises": [
+            {"id": "fr-b2-c2-1-e1", "type": "open_reply", "prompt": "Tu as l'air d'avoir une histoire à raconter. Qu'est-ce qui s'est passé ?", "context": "Um amigo percebe que você tem uma história para contar.", "hint": "Comece com *Figure-toi que...*", "answers": ["Figure-toi que j'ai passé deux heures dans les embouteillages.", "Tu ne vas pas le croire ! Je me suis perdu dans la vieille ville.", "Bref, j'ai oublié mon téléphone dans un taxi."], "explanation": "*Figure-toi que* prende a atenção do ouvinte."},
+            {"id": "fr-b2-c2-1-e2", "type": "open_reply", "prompt": "Non ! Et après, qu'est-ce qui s'est passé ?", "context": "O amigo quer saber o desfecho.", "hint": "Conte o que aconteceu depois.", "answers": ["Heureusement, un chauffeur gentil m'a emmené.", "Puis j'ai réalisé que mon téléphone était dans mon sac !", "J'ai fini par rentrer à pied, ce qui a pris une éternité."], "explanation": "Conectores como *heureusement* e *puis* organizam a sequência."},
+            {"id": "fr-b2-c2-1-e3", "type": "open_reply", "prompt": "C'est fou ! Comment tu t'es senti ?", "context": "O amigo quer saber sua reação.", "hint": "Descreva sua emoção.", "answers": ["Sur le moment, j'étais furieux, mais maintenant j'en ris.", "Franchement, j'étais gêné, mais tout s'est bien terminé.", "Je me suis senti soulagé quand je suis enfin rentré."], "explanation": "Expressar sentimentos torna a história mais viva."},
+            {"id": "fr-b2-c2-1-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "Bref, on est arrivés juste à temps.", "answers": ["Bref, on est arrivés juste à temps."], "explanation": "*Bref* encerra um relato resumidamente."}
+          ]
+        },
+        {
+          "id": "fr-b2-c2-2",
+          "title": "Conversa : expressions naturelles",
+          "objective": "Usar expressões idiomáticas comuns em conversas informais.",
+          "explanation": "Expressões muito usadas:\n\n- *Ce n'est pas mon truc.* — Não é a minha praia.\n- *Je suis débordé.* — Estou sobrecarregado.\n- *On arrête là pour aujourd'hui.* — Vamos parar por hoje.\n- *C'est du gâteau !* — É moleza!",
+          "key_phrases": [
+            {"en": "Ce n'est pas mon truc.", "pt": "Não é a minha praia."},
+            {"en": "Je suis débordé cette semaine.", "pt": "Estou sobrecarregado esta semana."}
+          ],
+          "exercises": [
+            {"id": "fr-b2-c2-2-e1", "type": "open_reply", "prompt": "Tu veux aller à l'opéra ce soir ?", "context": "Um amigo convida para um evento que você não gosta.", "hint": "Use uma expressão idiomática para recusar.", "answers": ["Merci, mais l'opéra, ce n'est pas mon truc.", "Non merci, ce n'est pas vraiment mon truc."], "explanation": "*Ce n'est pas mon truc* recusa com leveza."},
+            {"id": "fr-b2-c2-2-e2", "type": "open_reply", "prompt": "Tu peux m'aider à déménager ce week-end ?", "context": "Um amigo pede ajuda, mas você está ocupado.", "hint": "Use *débordé*.", "answers": ["Désolé, je suis débordé ce week-end.", "J'aimerais bien, mais je suis débordé en ce moment."], "explanation": "*Être débordé* = estar sobrecarregado."},
+            {"id": "fr-b2-c2-2-e3", "type": "open_reply", "prompt": "Ta présentation s'est très bien passée !", "context": "Um colega elogia seu trabalho.", "hint": "Responda com leveza.", "answers": ["Merci ! C'était du gâteau, honnêtement.", "Merci, je suis content que ça se soit bien passé."], "explanation": "*C'est du gâteau* = algo fácil."},
+            {"id": "fr-b2-c2-2-e4", "type": "multiple_choice", "prompt": "« On arrête là pour aujourd'hui » significa :", "options": ["Vamos marcar um encontro.", "Vamos parar por hoje.", "Vamos ligar amanhã.", "Vamos comemorar."], "answer": 1, "explanation": "Encerrar o trabalho do dia."}
+          ]
+        },
+        {
+          "id": "fr-b2-c2-3",
+          "title": "Conversa : commenter l'actualité",
+          "objective": "Comentar notícias e reagir a fatos com nuance.",
+          "explanation": "Ao comentar notícias:\n\n- *Apparemment, ...* — Aparentemente...\n- *D'après ce que j'ai lu, ...* — Pelo que li...\n- *Il est difficile de dire, mais ...* — É difícil dizer, mas...\n- *C'est inquiétant, non ?* — Isso preocupa, não é?",
+          "key_phrases": [
+            {"en": "Apparemment, les prix vont augmenter.", "pt": "Aparentemente, os preços vão subir."},
+            {"en": "D'après ce que j'ai lu, le projet est annulé.", "pt": "Pelo que li, o projeto foi cancelado."}
+          ],
+          "exercises": [
+            {"id": "fr-b2-c2-3-e1", "type": "open_reply", "prompt": "Tu as entendu parler de la nouvelle loi sur le télétravail ?", "context": "Um colega comenta uma notícia.", "hint": "Diga o que ouviu com *d'après* ou *apparemment*.", "answers": ["D'après ce que j'ai lu, elle va toucher beaucoup d'entreprises.", "Apparemment, ça va changer beaucoup de choses pour les freelances."], "explanation": "*D'après* e *apparemment* indicam informação de segunda mão."},
+            {"id": "fr-b2-c2-3-e2", "type": "open_reply", "prompt": "Tu penses que c'est une bonne chose ?", "context": "A conversa pede sua opinião.", "hint": "Dê uma opinião com ressalva.", "answers": ["Il est difficile de dire, mais je pense que c'est un pas en avant.", "Dans l'ensemble, je la trouve positive, même si certains détails m'inquiètent."], "explanation": "*Il est difficile de dire, mais...* mostra cautela."},
+            {"id": "fr-b2-c2-3-e3", "type": "open_reply", "prompt": "Je ne suis pas sûr. Ça pourrait causer beaucoup de problèmes.", "context": "O colega está preocupado.", "hint": "Reconheça a preocupação e responda.", "answers": ["C'est inquiétant, non ? J'espère qu'ils la réviseront.", "Tu as raison d'être prudent, ça pourrait être risqué."], "explanation": "Reconhecer o sentimento do outro é essencial numa conversa."},
+            {"id": "fr-b2-c2-3-e4", "type": "reorder", "prompt": "Monte a frase: pelo que entendi, a reunião foi adiada", "words": ["reportée", "d'après ce que j'ai compris", "a été", "la réunion"], "answers": ["D'après ce que j'ai compris, la réunion a été reportée."], "explanation": "*D'après ce que j'ai compris* + oração."}
+          ]
+        }
+      ]
+    }
+  ]
+}

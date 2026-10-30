@@ -1,0 +1,118 @@
+{
+  "level": "A1",
+  "title": "Iniciante",
+  "description": "Primeiras frases: apresentar-se, falar da rotina, pedir direções e fazer compras.",
+  "goal": "Você consegue se apresentar, entender perguntas simples e falar sobre o dia a dia.",
+  "units": [
+    {
+      "id": "a1-cu1",
+      "title": "Conversas do dia a dia",
+      "goal": "Responder perguntas simples de conhecidos, em um café ou sobre o seu dia.",
+      "lessons": [
+        {
+          "id": "a1-c1-1",
+          "title": "Conversa: conhecendo alguém",
+          "objective": "Responder perguntas básicas quando alguém se apresenta.",
+          "explanation": "Quando alguém se apresenta, você responde e devolve uma pergunta:\n\n- *Nice to meet you!* → *Nice to meet you too.*\n- *What's your name?* → *My name is...* / *I'm...*\n- *Where are you from?* → *I'm from...*\n\nDevolver a pergunta mantém a conversa viva.",
+          "key_phrases": [
+            {"en": "Nice to meet you!", "pt": "Prazer em conhecê-lo!"},
+            {"en": "And you?", "pt": "E você?"}
+          ],
+          "exercises": [
+            {"id": "a1-c1-1-e1", "type": "open_reply", "prompt": "Hi! I'm Carlos. Nice to meet you!", "context": "Você acabou de conhecer alguém em uma festa.", "hint": "Responda ao cumprimento e diga seu nome.", "answers": ["Nice to meet you, Carlos! I'm Ana.", "Hi Carlos, nice to meet you too. My name is Ana.", "Nice to meet you, Carlos. My name is Ana."], "explanation": "Responder ao cumprimento e se apresentar é o primeiro passo de qualquer conversa."},
+            {"id": "a1-c1-1-e2", "type": "open_reply", "prompt": "Where are you from?", "context": "Um colega de trabalho quer saber sua origem.", "hint": "Diga de onde você é.", "answers": ["I'm from Brazil.", "I am from Brazil.", "I'm from São Paulo, Brazil."], "explanation": "*I'm from* + lugar."},
+            {"id": "a1-c1-1-e3", "type": "open_reply", "prompt": "And you? What do you do?", "context": "O colega quer saber sua profissão.", "hint": "Diga o que você faz (estudante, professor...).", "answers": ["I'm a student.", "I am a teacher.", "I work as an engineer."], "explanation": "*I'm a/an* + profissão."},
+            {"id": "a1-c1-1-e4", "type": "listen", "prompt": "Ouça a pergunta e digite-a como foi dita.", "text": "How do you spell your name?", "answers": ["How do you spell your name?"], "explanation": "*spell* = soletrar. Use quando precisar confirmar a grafia do nome."}
+          ]
+        },
+        {
+          "id": "a1-c1-2",
+          "title": "Conversa: no café",
+          "objective": "Pedir algo em um café e responder ao atendente.",
+          "explanation": "No café, o atendente pergunta o que você quer. Respostas comuns:\n\n- *I'd like a coffee, please.*\n- *Just a coffee, thanks.*\n- *For here, please.* / *To go, please.* (para tomar aqui ou levar)\n\nAgradecimento: *Thank you!* — resposta: *You're welcome.*",
+          "key_phrases": [
+            {"en": "Can I get a coffee?", "pt": "Posso pedir um café?"},
+            {"en": "To go, please.", "pt": "Para viagem, por favor."}
+          ],
+          "exercises": [
+            {"id": "a1-c1-2-e1", "type": "open_reply", "prompt": "Hi! What can I get for you?", "context": "Você está no balcão de um café.", "hint": "Peça uma bebida.", "answers": ["I'd like a coffee, please.", "Can I get a coffee, please?", "I'd like a tea, please."], "explanation": "*I'd like* é uma forma educada de pedir."},
+            {"id": "a1-c1-2-e2", "type": "open_reply", "prompt": "For here or to go?", "context": "O atendente quer saber se você vai tomar ali ou levar.", "hint": "Responda: aqui ou para viagem.", "answers": ["For here, please.", "To go, please.", "To go, thanks."], "explanation": "*For here* = para tomar aqui. *To go* = para levar."},
+            {"id": "a1-c1-2-e3", "type": "open_reply", "prompt": "That's three dollars. Here's your coffee. Anything else?", "context": "O atendente entrega o café e pergunta se você quer mais alguma coisa.", "hint": "Agradeça e diga que não quer mais nada.", "answers": ["Thank you! No, that's all.", "Thanks! That's everything.", "No, thank you. Have a nice day!"], "explanation": "*That's all* / *That's everything* encerra o pedido."},
+            {"id": "a1-c1-2-e4", "type": "multiple_choice", "prompt": "Qual é a resposta certa para 'Thank you!'?", "options": ["You're welcome.", "Yes, please.", "I'm fine.", "Good morning."], "answer": 0, "explanation": "*You're welcome* = de nada."}
+          ]
+        },
+        {
+          "id": "a1-c1-3",
+          "title": "Conversa: falando sobre o seu dia",
+          "objective": "Contar o que fez e perguntar sobre o dia de outra pessoa.",
+          "explanation": "Para perguntar sobre o dia de alguém: *How was your day?* — Resposta: *It was good.* / *It was busy.*\n\nPara contar o que fez: *I worked in the morning and I went to the gym.*",
+          "key_phrases": [
+            {"en": "How was your day?", "pt": "Como foi o seu dia?"},
+            {"en": "It was really busy.", "pt": "Foi bem corrido."}
+          ],
+          "exercises": [
+            {"id": "a1-c1-3-e1", "type": "open_reply", "prompt": "Hi! How was your day?", "context": "Um amigo pergunta sobre o seu dia.", "hint": "Diga se foi bom, corrido, cansativo...", "answers": ["It was good, thanks. And yours?", "It was busy. And you?", "It was tiring, but good."], "explanation": "Responda e devolva a pergunta."},
+            {"id": "a1-c1-3-e2", "type": "open_reply", "prompt": "What did you do this morning?", "context": "O amigo quer saber o que você fez de manhã.", "hint": "Conte uma atividade (trabalhei, estudei, dormi...).", "answers": ["I worked in the morning.", "I studied English this morning.", "I went to the gym."], "explanation": "Use o passado simples para o que já aconteceu."},
+            {"id": "a1-c1-3-e3", "type": "open_reply", "prompt": "Nice! Do you have plans for the weekend?", "context": "O amigo pergunta sobre os seus planos.", "hint": "Fale de um plano (ir ao cinema, descansar...).", "answers": ["I'm going to visit my family.", "I'm going to rest at home.", "I'm going to the beach."], "explanation": "*I'm going to* + verbo para planos."},
+            {"id": "a1-c1-3-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "It was a long day, but I'm happy now.", "answers": ["It was a long day, but I'm happy now.", "It was a long day but I am happy now."], "explanation": "Um desabafo comum no fim do dia."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1-cu2",
+      "title": "Fora de casa",
+      "goal": "Conversar em restaurantes, lojas e ao pedir informações na rua.",
+      "lessons": [
+        {
+          "id": "a1-c2-1",
+          "title": "Conversa: no restaurante",
+          "objective": "Pedir comida, escolher uma bebida e pedir a conta.",
+          "explanation": "No restaurante, a sequência típica é:\n\n1. *Table for two, please.* (mesa para duas pessoas)\n2. *Can I see the menu?*\n3. *I'd like the chicken, please.*\n4. *Can we have the bill, please?*",
+          "key_phrases": [
+            {"en": "Table for two, please.", "pt": "Mesa para duas pessoas, por favor."},
+            {"en": "Can we have the bill, please?", "pt": "Pode trazer a conta, por favor?"}
+          ],
+          "exercises": [
+            {"id": "a1-c2-1-e1", "type": "open_reply", "prompt": "Good evening! How many people?", "context": "Você chegou em um restaurante com um amigo.", "hint": "Diga quantas pessoas são.", "answers": ["Table for two, please.", "Two people, please.", "There are two of us."], "explanation": "*Table for two* é a forma mais natural."},
+            {"id": "a1-c2-1-e2", "type": "open_reply", "prompt": "Would you like something to drink?", "context": "O garçom oferece bebidas.", "hint": "Peça uma bebida.", "answers": ["Yes, I'd like a water, please.", "Just water, please.", "I'd like an orange juice, please."], "explanation": "*Just water, please* é curto e educado."},
+            {"id": "a1-c2-1-e3", "type": "open_reply", "prompt": "Are you ready to order?", "context": "O garçom quer anotar o pedido.", "hint": "Peça um prato.", "answers": ["Yes, I'd like the chicken, please.", "I'll have the fish, please.", "Can I have the pasta, please?"], "explanation": "*I'll have* também é muito usado para pedir."},
+            {"id": "a1-c2-1-e4", "type": "multiple_choice", "prompt": "Como pedir a conta de forma educada?", "options": ["Bill!", "Can we have the bill, please?", "Give me money.", "I want to pay now quickly."], "answer": 1, "explanation": "*Can we have the bill, please?*"}
+          ]
+        },
+        {
+          "id": "a1-c2-2",
+          "title": "Conversa: na loja",
+          "objective": "Perguntar preço, tamanho e cor, e dizer que só está olhando.",
+          "explanation": "Na loja:\n\n- *Just looking, thanks.* — Só estou olhando.\n- *Do you have this in medium?* — Você tem em tamanho M?\n- *How much is it?* — Quanto custa?\n- *Can I try it on?* — Posso provar?",
+          "key_phrases": [
+            {"en": "Just looking, thanks.", "pt": "Só estou olhando, obrigado."},
+            {"en": "Do you have this in blue?", "pt": "Vocês têm isso em azul?"}
+          ],
+          "exercises": [
+            {"id": "a1-c2-2-e1", "type": "open_reply", "prompt": "Hello! Can I help you?", "context": "Você entrou em uma loja de roupas.", "hint": "Diga que só está olhando.", "answers": ["Just looking, thanks.", "I'm just looking, thank you."], "explanation": "Resposta padrão ao vendedor."},
+            {"id": "a1-c2-2-e2", "type": "open_reply", "prompt": "What size are you looking for?", "context": "O vendedor quer saber seu tamanho.", "hint": "Diga um tamanho (P, M, G).", "answers": ["I'm looking for a medium.", "A medium, please.", "Large, please."], "explanation": "Tamanhos: *small, medium, large*."},
+            {"id": "a1-c2-2-e3", "type": "open_reply", "prompt": "This shirt is 20 dollars. Would you like to try it on?", "context": "Você gostou de uma camisa.", "hint": "Pergunte se pode provar.", "answers": ["Yes, can I try it on?", "Can I try it on, please?", "How much is it? Can I try it on?"], "explanation": "*Can I try it on?* para provar."},
+            {"id": "a1-c2-2-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "Do you have this in a smaller size?", "answers": ["Do you have this in a smaller size?"], "explanation": "*a smaller size* = um tamanho menor."}
+          ]
+        },
+        {
+          "id": "a1-c2-3",
+          "title": "Conversa: pedindo informação",
+          "objective": "Pedir direções e perguntar horários na rua.",
+          "explanation": "Na rua, use frases curtas e educadas:\n\n- *Excuse me, where is the station?*\n- *Is it far from here?*\n- *What time does the bus leave?*\n- *Thanks for your help!*",
+          "key_phrases": [
+            {"en": "Excuse me, is this the bus stop?", "pt": "Com licença, este é o ponto de ônibus?"},
+            {"en": "Is it far from here?", "pt": "Fica longe daqui?"}
+          ],
+          "exercises": [
+            {"id": "a1-c2-3-e1", "type": "open_reply", "prompt": "Hi! Can I help you?", "context": "Você está perdido na rua e quer pedir ajuda.", "hint": "Peça onde fica um lugar.", "answers": ["Excuse me, where is the station?", "Excuse me, where is the bank?"], "explanation": "*Excuse me* chama a atenção de forma educada."},
+            {"id": "a1-c2-3-e2", "type": "open_reply", "prompt": "It's about five minutes away, on the left.", "context": "A pessoa explica onde fica o lugar.", "hint": "Pergunte se é longe, ou agradeça.", "answers": ["Is it far from here?", "Thank you so much for your help!", "Thanks! Is it far?"], "explanation": "Confirme ou agradeça ao final da explicação."},
+            {"id": "a1-c2-3-e3", "type": "open_reply", "prompt": "Sorry, I don't know. Ask someone else!", "context": "A pessoa não sabe a resposta.", "hint": "Agradeça mesmo assim.", "answers": ["No problem, thanks anyway.", "That's OK. Thank you!", "Thanks anyway, have a nice day."], "explanation": "*Thanks anyway* = obrigado mesmo assim."},
+            {"id": "a1-c2-3-e4", "type": "reorder", "prompt": "Monte a pergunta: a que horas sai o ônibus?", "words": ["the bus", "does", "What time", "leave"], "answers": ["What time does the bus leave?"], "explanation": "Pergunta com *does* + verbo base."}
+          ]
+        }
+      ]
+    }
+  ]
+}

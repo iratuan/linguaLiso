@@ -1,0 +1,230 @@
+{
+  "level": "A2",
+  "title": "Básico",
+  "description": "Contar o passado, falar de planos, comparar coisas e resolver situações de viagem.",
+  "goal": "Você conversa sobre experiências, planos e necessidades do cotidiano.",
+  "units": [
+    {
+      "id": "a2-u1",
+      "title": "Contando o passado",
+      "goal": "Relatar o que aconteceu ontem e em outras épocas.",
+      "lessons": [
+        {
+          "id": "a2-1-1",
+          "title": "Past simple: verbos regulares",
+          "objective": "Formar o passado de verbos regulares e usar was/were.",
+          "explanation": "Verbos regulares recebem **-ed**: *work → worked*, *play → played*, *stop → stopped* (consoante dobrada). Verbos terminados em -e recebem só -d: *live → lived*.\n\n*To be* no passado: **was** (I, he, she, it) e **were** (you, we, they).\n\nNegativa: *did not* + verbo base. Ex.: *I did not work yesterday.*",
+          "key_phrases": [
+            {"en": "I worked yesterday.", "pt": "Eu trabalhei ontem."},
+            {"en": "She was tired.", "pt": "Ela estava cansada."},
+            {"en": "We didn't go out.", "pt": "Nós não saímos."}
+          ],
+          "exercises": [
+            {"id": "a2-1-1-e1", "type": "multiple_choice", "prompt": "Yesterday, I ___ at home.", "options": ["stay", "stayed", "staying", "stays"], "answer": 1, "explanation": "Passado regular: *stayed*."},
+            {"id": "a2-1-1-e2", "type": "fill_blank", "prompt": "They ___ happy at the party. (passado de be)", "answers": ["were"], "hint": "They = plural", "explanation": "*were* para *they*."},
+            {"id": "a2-1-1-e3", "type": "translate", "prompt": "Eu não assisti ao filme.", "answers": ["I did not watch the movie.", "I didn't watch the movie."], "explanation": "*did not* + verbo base."},
+            {"id": "a2-1-1-e4", "type": "reorder", "prompt": "Monte a frase: ele parou o carro na rua", "words": ["stopped", "He", "the car", "on the street"], "answers": ["He stopped the car on the street."], "explanation": "*stopped* (consoante dobrada)."}
+          ]
+        },
+        {
+          "id": "a2-1-2",
+          "title": "Verbos irregulares do dia a dia",
+          "objective": "Usar os verbos irregulares mais comuns no passado.",
+          "explanation": "Muitos verbos mudam de forma e não seguem a regra do *-ed*. Os mais usados: *go → went*, *have → had*, *make → made*, *see → saw*, *buy → bought*, *take → took*, *eat → ate*.\n\nDica: memorize em grupos de 5 e use nas suas frases do dia.",
+          "key_phrases": [
+            {"en": "I went to the beach.", "pt": "Eu fui à praia."},
+            {"en": "We bought some bread.", "pt": "Nós compramos pão."},
+            {"en": "He took the bus.", "pt": "Ele pegou o ônibus."}
+          ],
+          "exercises": [
+            {"id": "a2-1-2-e1", "type": "multiple_choice", "prompt": "Last week I ___ a new phone.", "options": ["buy", "buyed", "bought", "buys"], "answer": 2, "explanation": "*buy* → *bought*."},
+            {"id": "a2-1-2-e2", "type": "fill_blank", "prompt": "We ___ lunch at noon. (eat)", "answers": ["ate"], "hint": "Irregular", "explanation": "*eat* → *ate*."},
+            {"id": "a2-1-2-e3", "type": "translate", "prompt": "Ela viu meu irmão ontem.", "answers": ["She saw my brother yesterday."], "explanation": "*see* → *saw*."},
+            {"id": "a2-1-2-e4", "type": "multiple_choice", "prompt": "Which is the past of 'go'?", "options": ["goed", "went", "gone", "goes"], "answer": 1, "explanation": "*go* → *went* (irregular)."}
+          ]
+        },
+        {
+          "id": "a2-1-3",
+          "title": "Falando de quando aconteceu",
+          "objective": "Usar ago, last e when para situar eventos no tempo.",
+          "explanation": "- **ago** — atrás: *two days ago* (há dois dias)\n- **last** — passado: *last week, last year*\n- **when** — quando: *When did you arrive?*\n\nNa pergunta com *did*, o verbo volta ao infinitivo: *Did you visit Rome?*",
+          "key_phrases": [
+            {"en": "I moved here three years ago.", "pt": "Eu me mudei para cá há três anos."},
+            {"en": "When did you arrive?", "pt": "Quando você chegou?"}
+          ],
+          "exercises": [
+            {"id": "a2-1-3-e1", "type": "multiple_choice", "prompt": "I left the company three years ___.", "options": ["before", "ago", "last", "since"], "answer": 1, "explanation": "*three years ago*."},
+            {"id": "a2-1-3-e2", "type": "fill_blank", "prompt": "___ did you visit Rome? (quando)", "answers": ["When"], "hint": "Pergunta sobre tempo", "explanation": "*When did you...?*"},
+            {"id": "a2-1-3-e3", "type": "translate", "prompt": "Nós fomos ao cinema na semana passada.", "answers": ["We went to the cinema last week.", "We went to the movies last week."], "explanation": "*last week*."},
+            {"id": "a2-1-3-e4", "type": "reorder", "prompt": "Monte a pergunta: você visitou Roma no ano passado", "words": ["visit", "Did", "Rome", "you", "last year", "?"], "answers": ["Did you visit Rome last year?"], "explanation": "Pergunta com *Did* + verbo base."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2-u2",
+      "title": "Planos e previsões",
+      "goal": "Falar do futuro: planos, decisões e previsões.",
+      "lessons": [
+        {
+          "id": "a2-2-1",
+          "title": "Be going to: planos",
+          "objective": "Expressar intenções já decididas com be going to.",
+          "explanation": "Use **be going to** + verbo base para planos que você já decidiu:\n\n- *I am going to study tonight.*\n- *She is going to move to Lisbon.*\n- *Are you going to call him?*",
+          "key_phrases": [
+            {"en": "I'm going to travel next month.", "pt": "Vou viajar no mês que vem."},
+            {"en": "What are you going to do?", "pt": "O que você vai fazer?"}
+          ],
+          "exercises": [
+            {"id": "a2-2-1-e1", "type": "multiple_choice", "prompt": "They ___ going to buy a house.", "options": ["is", "are", "am", "be"], "answer": 1, "explanation": "*They are going to*."},
+            {"id": "a2-2-1-e2", "type": "fill_blank", "prompt": "She is ___ to study medicine. (going)", "answers": ["going"], "hint": "be ___ to", "explanation": "*going to*."},
+            {"id": "a2-2-1-e3", "type": "translate", "prompt": "Eu vou começar um curso em janeiro.", "answers": ["I am going to start a course in January.", "I'm going to start a course in January."], "explanation": "*I'm going to start*."},
+            {"id": "a2-2-1-e4", "type": "reorder", "prompt": "Monte a pergunta: o que você vai fazer amanhã", "words": ["going", "What", "you", "are", "to do", "tomorrow", "?"], "answers": ["What are you going to do tomorrow?"], "explanation": "*What are you going to do...?*"}
+          ]
+        },
+        {
+          "id": "a2-2-2",
+          "title": "Will: decisões e promessas",
+          "objective": "Usar will para decisões do momento e promessas.",
+          "explanation": "**Will** (ou *'ll*) + verbo base serve para decisões tomadas agora, promessas e previsões gerais:\n\n- *I'll call you later.* (decisão na hora)\n- *It will rain tomorrow.* (previsão)\n- *I won't be late.* (promessa)",
+          "key_phrases": [
+            {"en": "I'll help you.", "pt": "Eu te ajudo."},
+            {"en": "I think it will be sunny.", "pt": "Acho que vai fazer sol."}
+          ],
+          "exercises": [
+            {"id": "a2-2-2-e1", "type": "multiple_choice", "prompt": "Oh, the phone is ringing. I ___ answer it.", "options": ["am going to", "will", "going", "am"], "answer": 1, "explanation": "Decisão do momento = *will*."},
+            {"id": "a2-2-2-e2", "type": "fill_blank", "prompt": "I ___ be late. (promessa, negativa)", "answers": ["won't", "will not"], "hint": "will + not", "explanation": "*won't* = *will not*."},
+            {"id": "a2-2-2-e3", "type": "translate", "prompt": "Acho que vai chover amanhã.", "answers": ["I think it will rain tomorrow."], "explanation": "*I think it will...*"},
+            {"id": "a2-2-2-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "I'll call you when I get home.", "answers": ["I'll call you when I get home.", "I will call you when I get home."], "explanation": "Promessa com *will*."}
+          ]
+        },
+        {
+          "id": "a2-2-3",
+          "title": "Present continuous para compromissos",
+          "objective": "Usar o presente contínuo para combinar encontros futuros.",
+          "explanation": "O presente contínuo (*am/is/are + -ing*) também fala do futuro quando há um compromisso marcado, com data ou horário:\n\n- *We are meeting at six.*\n- *Are you coming to the party on Friday?*",
+          "key_phrases": [
+            {"en": "I'm meeting Ana tonight.", "pt": "Vou encontrar a Ana hoje à noite."},
+            {"en": "Are you free on Monday?", "pt": "Você está livre na segunda?"}
+          ],
+          "exercises": [
+            {"id": "a2-2-3-e1", "type": "multiple_choice", "prompt": "We ___ dinner with my parents on Sunday. (compromisso)", "options": ["eat", "are eating", "will eats", "ate"], "answer": 1, "explanation": "Compromisso marcado = presente contínuo."},
+            {"id": "a2-2-3-e2", "type": "fill_blank", "prompt": "I am ___ (meet) my boss at 3 p.m.", "answers": ["meeting"], "hint": "-ing", "explanation": "*meeting*."},
+            {"id": "a2-2-3-e3", "type": "translate", "prompt": "Você vem à festa na sexta?", "answers": ["Are you coming to the party on Friday?"], "explanation": "*Are you coming...?*"},
+            {"id": "a2-2-3-e4", "type": "reorder", "prompt": "Monte a frase: ela está viajando para Londres amanhã", "words": ["to London", "is", "She", "tomorrow", "travelling"], "answers": ["She is travelling to London tomorrow."], "explanation": "Presente contínuo + futuro."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2-u3",
+      "title": "Descrevendo as coisas",
+      "goal": "Comparar pessoas, lugares e objetos.",
+      "lessons": [
+        {
+          "id": "a2-3-1",
+          "title": "Comparativos",
+          "objective": "Formar comparativos com -er e more.",
+          "explanation": "Adjetivos curtos: *cheap → cheaper*, *tall → taller*. Adjetivos longos: *expensive → more expensive*.\n\nCompare com **than**: *This hotel is cheaper than that one.*\n\nIrregulares: *good → better*, *bad → worse*.",
+          "key_phrases": [
+            {"en": "This bag is bigger than mine.", "pt": "Esta bolsa é maior que a minha."},
+            {"en": "English is more interesting than I thought.", "pt": "Inglês é mais interessante do que eu pensava."}
+          ],
+          "exercises": [
+            {"id": "a2-3-1-e1", "type": "multiple_choice", "prompt": "This road is ___ than that one.", "options": ["long", "longer", "more long", "longest"], "answer": 1, "explanation": "Adjetivo curto: *-er* + *than*."},
+            {"id": "a2-3-1-e2", "type": "fill_blank", "prompt": "Pizza is ___ (good) than pasta, in my opinion.", "answers": ["better"], "hint": "Irregular", "explanation": "*good* → *better*."},
+            {"id": "a2-3-1-e3", "type": "translate", "prompt": "Este carro é mais caro que aquele.", "answers": ["This car is more expensive than that one."], "explanation": "Adjetivo longo: *more*."},
+            {"id": "a2-3-1-e4", "type": "reorder", "prompt": "Monte a frase: o inverno é mais frio que o verão", "words": ["than", "colder", "Winter", "is", "summer"], "answers": ["Winter is colder than summer."], "explanation": "*colder than*."}
+          ]
+        },
+        {
+          "id": "a2-3-2",
+          "title": "Superlativos",
+          "objective": "Dizer o mais, o melhor e o pior de um grupo.",
+          "explanation": "Superlativo com **the** + -est (*the tallest*) ou **the most** (*the most beautiful*).\n\nIrregular: *the best*, *the worst*.\n\nEx.: *It is the best restaurant in town.*",
+          "key_phrases": [
+            {"en": "It's the best day of the year.", "pt": "É o melhor dia do ano."},
+            {"en": "He is the most friendly person here.", "pt": "Ele é a pessoa mais simpática daqui."}
+          ],
+          "exercises": [
+            {"id": "a2-3-2-e1", "type": "multiple_choice", "prompt": "Mount Everest is ___ mountain in the world.", "options": ["high", "higher", "the highest", "more high"], "answer": 2, "explanation": "*the highest*."},
+            {"id": "a2-3-2-e2", "type": "fill_blank", "prompt": "This is the ___ film I have ever seen. (bom)", "answers": ["best"], "hint": "Irregular", "explanation": "*the best*."},
+            {"id": "a2-3-2-e3", "type": "translate", "prompt": "Essa é a cidade mais bonita que eu conheço.", "answers": ["This is the most beautiful city I know."], "explanation": "*the most beautiful*."},
+            {"id": "a2-3-2-e4", "type": "multiple_choice", "prompt": "She is the ___ student in the class. (rápido)", "options": ["fastest", "faster", "most fast", "fast"], "answer": 0, "explanation": "*the fastest*."}
+          ]
+        },
+        {
+          "id": "a2-3-3",
+          "title": "Too, enough e a ordem dos adjetivos",
+          "objective": "Usar too e enough e ordenar adjetivos antes de substantivos.",
+          "explanation": "- **too** = demais: *It is too expensive.*\n- **enough** = suficiente: *It isn't big enough.* (enough vem depois do adjetivo)\n\nOrdem dos adjetivos: opinião → tamanho → idade → cor → origem → substantivo.\nEx.: *a beautiful small old Italian chair.*",
+          "key_phrases": [
+            {"en": "It's too cold to swim.", "pt": "Está frio demais para nadar."},
+            {"en": "I have a red leather bag.", "pt": "Eu tenho uma bolsa vermelha de couro."}
+          ],
+          "exercises": [
+            {"id": "a2-3-3-e1", "type": "multiple_choice", "prompt": "The soup is ___ hot to eat.", "options": ["enough", "too", "very", "so"], "answer": 1, "explanation": "*too hot* = quente demais."},
+            {"id": "a2-3-3-e2", "type": "fill_blank", "prompt": "This room isn't big ___. (suficiente)", "answers": ["enough"], "hint": "Vem depois do adjetivo", "explanation": "*big enough*."},
+            {"id": "a2-3-3-e3", "type": "translate", "prompt": "Eu tenho um lindo vestido azul.", "answers": ["I have a beautiful blue dress."], "explanation": "Opinião antes da cor."},
+            {"id": "a2-3-3-e4", "type": "reorder", "prompt": "Monte a frase: ela comprou uma mesa de madeira velha", "words": ["old", "wooden", "an", "She", "bought", "table"], "answers": ["She bought an old wooden table."], "explanation": "Idade antes do material."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2-u4",
+      "title": "Viagens e serviços",
+      "goal": "Resolver situações práticas: pedir ajuda, fazer reservas e falar ao telefone.",
+      "lessons": [
+        {
+          "id": "a2-4-1",
+          "title": "Can e could: pedidos e permissão",
+          "objective": "Pedir favores e permissão com can e could.",
+          "explanation": "- *Can you help me?* — informal\n- *Could you help me, please?* — mais educado\n- *Can I sit here?* — pedir permissão\n\nDepois de *can/could*, o verbo fica na forma base: *Could you repeat that?*",
+          "key_phrases": [
+            {"en": "Could you repeat that, please?", "pt": "Você poderia repetir, por favor?"},
+            {"en": "Can I take a photo here?", "pt": "Posso tirar uma foto aqui?"}
+          ],
+          "exercises": [
+            {"id": "a2-4-1-e1", "type": "multiple_choice", "prompt": "Qual é a forma mais educada?", "options": ["Give me the key.", "Could you give me the key, please?", "Key now.", "I want key."], "answer": 1, "explanation": "*Could you...?* é educado."},
+            {"id": "a2-4-1-e2", "type": "fill_blank", "prompt": "Can I ___ a question? (fazer)", "answers": ["ask"], "hint": "verbo base", "explanation": "*Can I ask...?*"},
+            {"id": "a2-4-1-e3", "type": "translate", "prompt": "Você poderia falar mais devagar, por favor?", "answers": ["Could you speak more slowly, please?", "Could you speak slower, please?"], "explanation": "*Could you...?*"},
+            {"id": "a2-4-1-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "Could you help me with my bags?", "answers": ["Could you help me with my bags?"], "explanation": "Pedido educado."}
+          ]
+        },
+        {
+          "id": "a2-4-2",
+          "title": "Must e have to: obrigações",
+          "objective": "Falar de regras e obrigações.",
+          "explanation": "- **must** — obrigação forte (ou regra pessoal): *You must wear a seatbelt.*\n- **have to** — obrigação externa: *I have to work tomorrow.*\n- **don't have to** — não é necessário: *You don't have to pay now.*\n- **mustn't** — proibido: *You mustn't smoke here.*",
+          "key_phrases": [
+            {"en": "You have to show your passport.", "pt": "Você precisa mostrar o passaporte."},
+            {"en": "You mustn't park here.", "pt": "Você não pode estacionar aqui."}
+          ],
+          "exercises": [
+            {"id": "a2-4-2-e1", "type": "multiple_choice", "prompt": "At the airport, you ___ show your passport.", "options": ["have to", "mustn't", "can to", "must to"], "answer": 0, "explanation": "*have to* = obrigação."},
+            {"id": "a2-4-2-e2", "type": "fill_blank", "prompt": "You ___ smoke in this building. (proibido)", "answers": ["mustn't", "must not"], "hint": "Proibição", "explanation": "*mustn't*."},
+            {"id": "a2-4-2-e3", "type": "translate", "prompt": "Eu não preciso pagar agora.", "answers": ["I don't have to pay now.", "I do not have to pay now."], "explanation": "*don't have to*."},
+            {"id": "a2-4-2-e4", "type": "reorder", "prompt": "Monte a frase: eu tenho que acordar cedo amanhã", "words": ["early", "have to", "I", "tomorrow", "get up"], "answers": ["I have to get up early tomorrow."], "explanation": "*have to* + verbo base."}
+          ]
+        },
+        {
+          "id": "a2-4-3",
+          "title": "Ao telefone e no e-mail",
+          "objective": "Atender ligações e escrever mensagens simples.",
+          "explanation": "Ao telefone:\n- *Hello, this is Ana speaking.* — Oi, é a Ana.\n- *Can I speak to Mr. Silva, please?* — Posso falar com o Sr. Silva?\n- *Hold on, please.* — Um momento, por favor.\n\nNo e-mail:\n- *Dear Mr. Silva,* / *Best regards,*",
+          "key_phrases": [
+            {"en": "Can I leave a message?", "pt": "Posso deixar um recado?"},
+            {"en": "I'm sorry, the line is busy.", "pt": "Desculpe, a linha está ocupada."}
+          ],
+          "exercises": [
+            {"id": "a2-4-3-e1", "type": "multiple_choice", "prompt": "Ao atender o telefone, você diz:", "options": ["Hello, this is Ana speaking.", "Ana here, yes.", "Speak Ana.", "I am Ana phone."], "answer": 0, "explanation": "*this is ... speaking*."},
+            {"id": "a2-4-3-e2", "type": "fill_blank", "prompt": "Can I speak ___ Mr. Silva, please?", "answers": ["to"], "hint": "speak ___", "explanation": "*speak to*."},
+            {"id": "a2-4-3-e3", "type": "translate", "prompt": "Um momento, por favor.", "answers": ["Hold on, please.", "Just a moment, please.", "Hold on a moment, please."], "explanation": "Expressões comuns ao telefone."},
+            {"id": "a2-4-3-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "I'm sorry, he is not available right now.", "answers": ["I'm sorry, he is not available right now.", "I am sorry, he is not available right now."], "explanation": "Recusa educada."}
+          ]
+        }
+      ]
+    }
+  ]
+}

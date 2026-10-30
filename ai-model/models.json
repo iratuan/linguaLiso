@@ -1,0 +1,35 @@
+{
+  "llm": {
+    "provider": "ollama",
+    "primary": "qwen3:8b",
+    "fallback": "qwen3:4b",
+    "note": "Modelos baixados com 'ollama pull'. Trocar aqui não exige alterar o código do backend; a escolha ativa fica nas preferências do app."
+  },
+  "stt": {
+    "engine": "faster-whisper",
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "note": "Modelo multilíngue: reconhece inglês e francês. O idioma é enviado a cada requisição.",
+    "alternatives": ["base", "medium"]
+  },
+  "tts": {
+    "engine": "piper",
+    "voices": {
+      "en": "en_US-lessac-medium",
+      "fr": "fr_FR-siwis-medium"
+    },
+    "voice": "en_US-lessac-medium",
+    "voices_dir": "voices",
+    "downloads": {
+      "en_US-lessac-medium": {
+        "base_url": "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/medium",
+        "files": ["en_US-lessac-medium.onnx", "en_US-lessac-medium.onnx.json"]
+      },
+      "fr_FR-siwis-medium": {
+        "base_url": "https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium",
+        "files": ["fr_FR-siwis-medium.onnx", "fr_FR-siwis-medium.onnx.json"]
+      }
+    }
+  }
+}

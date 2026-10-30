@@ -1,0 +1,17 @@
+{
+  "id": "en-restaurant-a1",
+  "language": "en",
+  "level": "A1",
+  "title": "No restaurante",
+  "context": "Você entra num restaurante, pede uma mesa, faz o pedido e paga a conta.",
+  "sentences": [
+    {"text": "Hello, a table for two, please.", "pt": "Olá, uma mesa para duas pessoas, por favor."},
+    {"text": "Can I see the menu?", "pt": "Posso ver o cardápio?"},
+    {"text": "I would like a coffee, please.", "pt": "Eu gostaria de um café, por favor."},
+    {"text": "What do you recommend?", "pt": "O que você recomenda?"},
+    {"text": "I will have the chicken salad.", "pt": "Vou pedir a salada de frango."},
+    {"text": "Could we have some water, please?", "pt": "Podemos ter um pouco de água, por favor?"},
+    {"text": "Can we have the bill, please?", "pt": "Pode trazer a conta, por favor?"},
+    {"text": "Thank you, the food was delicious.", "pt": "Obrigado, a comida estava deliciosa."}
+  ]
+}
