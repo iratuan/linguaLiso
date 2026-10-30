@@ -105,12 +105,16 @@ export function ConversationPage({
   responseModeRef.current = responseMode;
   const playbackRef = useRef(playback.speak);
   playbackRef.current = playback.speak;
+  // Quantas respostas do professor já foram vistas (o aviso do botão minimizado conta as demais).
+  const seenAssistant = useRef(0);
 
   // ----- dados ------------------------------------------------------------
 
   const loadTranscript = useCallback(async (sessionId: number) => {
     const transcript = await api.getSession(sessionId);
     setMessages(transcript.messages);
+    // Respostas do histórico já existiam: não são novidades para o aviso.
+    seenAssistant.current = transcript.messages.filter((m) => m.role === "assistant").length;
     const byMessage: Record<number, CorrectionData> = {};
     for (const c of transcript.corrections) byMessage[c.message_id] = c;
     setCorrections(byMessage);
@@ -403,7 +407,6 @@ export function ConversationPage({
 
   // Respostas que chegaram enquanto a janela estava minimizada (aparecem como aviso no botão).
   const assistantCount = messages.filter((m) => m.role === "assistant").length;
-  const seenAssistant = useRef(0);
   useEffect(() => {
     if (presentation !== "closed") seenAssistant.current = assistantCount;
   }, [presentation, assistantCount]);
