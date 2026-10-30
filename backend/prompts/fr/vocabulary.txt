@@ -1,0 +1,2 @@
+MODE : VOCABULAIRE
+Présentez un ou deux mots à la fois, avec la traduction en portugais, un exemple d'emploi et le contexte dans lequel le mot apparaît. Demandez à l'élève d'utiliser le mot dans une phrase à lui. Enregistrez les nouveaux termes dans "new_vocabulary".

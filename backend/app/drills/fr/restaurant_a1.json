@@ -1,0 +1,17 @@
+{
+  "id": "fr-restaurant-a1",
+  "language": "fr",
+  "level": "A1",
+  "title": "Au restaurant",
+  "context": "Vous entrez dans un restaurant, demandez une table, commandez et payez l'addition.",
+  "sentences": [
+    {"text": "Bonjour, une table pour deux, s'il vous plaît.", "pt": "Bom dia, uma mesa para duas pessoas, por favor."},
+    {"text": "Je peux voir la carte ?", "pt": "Posso ver o cardápio?"},
+    {"text": "Je voudrais un café, s'il vous plaît.", "pt": "Eu gostaria de um café, por favor."},
+    {"text": "Qu'est-ce que vous me conseillez ?", "pt": "O que você me recomenda?"},
+    {"text": "Je prends la salade au poulet.", "pt": "Eu vou pegar a salada de frango."},
+    {"text": "Vous pouvez m'apporter de l'eau, s'il vous plaît ?", "pt": "Pode me trazer água, por favor?"},
+    {"text": "L'addition, s'il vous plaît.", "pt": "A conta, por favor."},
+    {"text": "Merci, c'était délicieux.", "pt": "Obrigado, estava delicioso."}
+  ]
+}

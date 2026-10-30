@@ -1,0 +1,118 @@
+{
+  "level": "A1",
+  "title": "Iniciante",
+  "description": "Primeiras conversas em francês: apresentar-se, falar da rotina, pedir informações e fazer compras.",
+  "goal": "Você responde perguntas simples de conhecidos, no café, no restaurante e nas lojas.",
+  "units": [
+    {
+      "id": "fr-a1-cu1",
+      "title": "Conversas do dia a dia",
+      "goal": "Responder perguntas simples de conhecidos, num café ou sobre o seu dia.",
+      "lessons": [
+        {
+          "id": "fr-a1-c1-1",
+          "title": "Conversa: faire connaissance",
+          "objective": "Responder quando alguém se apresenta e devolver a pergunta.",
+          "explanation": "Quando alguém se apresenta, responda e devolva a pergunta:\n\n- *Enchanté !* → *Enchanté aussi.* (Prazer também.)\n- *Tu t'appelles comment ?* → *Je m'appelle...*\n- *Et toi ?* — E você?\n\nDevolver a pergunta mantém a conversa viva.",
+          "key_phrases": [
+            {"en": "Enchanté !", "pt": "Prazer!"},
+            {"en": "Et toi ?", "pt": "E você?"}
+          ],
+          "exercises": [
+            {"id": "fr-a1-c1-1-e1", "type": "open_reply", "prompt": "Bonjour ! Je m'appelle Claire. Enchantée !", "context": "Você acabou de conhecer alguém numa festa.", "hint": "Responda ao cumprimento e diga seu nome.", "answers": ["Enchanté, Claire ! Je m'appelle Ana.", "Bonjour Claire, enchantée ! Moi, c'est Ana.", "Enchanté ! Je suis Ana."], "explanation": "*Moi, c'est...* é uma forma informal e natural de se apresentar."},
+            {"id": "fr-a1-c1-1-e2", "type": "open_reply", "prompt": "Tu es d'où ?", "context": "Uma colega quer saber sua origem.", "hint": "Diga de onde você é.", "answers": ["Je suis du Brésil.", "Je viens du Brésil.", "Je suis brésilien."], "explanation": "*Je viens de* + país, com *du* para masculinos."},
+            {"id": "fr-a1-c1-1-e3", "type": "open_reply", "prompt": "Et toi, tu fais quoi dans la vie ?", "context": "A colega quer saber sua profissão.", "hint": "Diga o que você faz (étudiant, professeur...).", "answers": ["Je suis étudiant.", "Je suis professeur.", "Je travaille comme ingénieur."], "explanation": "*Je suis* + profissão. Atenção ao gênero: *étudiante* para mulher."},
+            {"id": "fr-a1-c1-1-e4", "type": "listen", "prompt": "Ouça a pergunta e digite-a como foi dita.", "text": "Comment ça s'écrit, ton prénom ?", "answers": ["Comment ça s'écrit, ton prénom ?"], "explanation": "*Comment ça s'écrit ?* = como se escreve? Use para confirmar a grafia do nome."}
+          ]
+        },
+        {
+          "id": "fr-a1-c1-2",
+          "title": "Conversa : au café",
+          "objective": "Pedir uma bebida no café e responder ao atendente.",
+          "explanation": "No café, o atendente pergunta o que você quer:\n\n- *Vous voulez quelque chose ?* — Vocês querem algo?\n- *Un café, s'il vous plaît.* — Um café, por favor.\n- *Pour ici / à emporter.* — Para tomar aqui / para levar.\n\nAgradecimento: *Merci !* — resposta: *De rien.* (De nada.)",
+          "key_phrases": [
+            {"en": "Un café, s'il vous plaît.", "pt": "Um café, por favor."},
+            {"en": "À emporter, s'il vous plaît.", "pt": "Para levar, por favor."}
+          ],
+          "exercises": [
+            {"id": "fr-a1-c1-2-e1", "type": "open_reply", "prompt": "Bonjour ! Vous voulez quelque chose ?", "context": "Você está no balcão de um café.", "hint": "Peça uma bebida.", "answers": ["Un café, s'il vous plaît.", "Je voudrais un thé, s'il vous plaît.", "Un café au lait, merci."], "explanation": "*Un café, s'il vous plaît* é o pedido mais simples e educado."},
+            {"id": "fr-a1-c1-2-e2", "type": "open_reply", "prompt": "Pour ici ou à emporter ?", "context": "O atendente quer saber se você vai tomar ali ou levar.", "hint": "Responda: aqui ou para levar.", "answers": ["Pour ici, s'il vous plaît.", "À emporter, merci.", "Pour ici, merci."], "explanation": "*Pour ici* = para tomar aqui. *À emporter* = para levar."},
+            {"id": "fr-a1-c1-2-e3", "type": "open_reply", "prompt": "Voilà votre café. Ce sera tout ?", "context": "O atendente entrega o café e pergunta se você quer mais alguma coisa.", "hint": "Agradeça e diga que não quer mais nada.", "answers": ["Merci ! Non, c'est tout.", "Merci beaucoup, ça ira.", "Non merci, c'est parfait."], "explanation": "*C'est tout* = só isso. *Ça ira* = está bom assim."},
+            {"id": "fr-a1-c1-2-e4", "type": "multiple_choice", "prompt": "Qual é a resposta certa para « Merci ! » ?", "options": ["De rien.", "Oui, s'il vous plaît.", "Je vais bien.", "Bonjour."], "answer": 0, "explanation": "*De rien* = de nada."}
+          ]
+        },
+        {
+          "id": "fr-a1-c1-3",
+          "title": "Conversa : parler de sa journée",
+          "objective": "Perguntar sobre o dia de alguém e contar o que você fez.",
+          "explanation": "Para perguntar sobre o dia: *Ça s'est bien passé, ta journée ?* — Como foi o seu dia?\n\nRespostas: *Très bien.* (Muito bem.) / *Assez fatigant.* (Bastante cansativo.)\n\nPara contar o que fez: *Ce matin, j'ai travaillé.* / *Après, je suis allé au parc.*",
+          "key_phrases": [
+            {"en": "Ta journée s'est bien passée ?", "pt": "Como foi o seu dia?"},
+            {"en": "Ce matin, j'ai travaillé.", "pt": "Hoje de manhã, eu trabalhei."}
+          ],
+          "exercises": [
+            {"id": "fr-a1-c1-3-e1", "type": "open_reply", "prompt": "Salut ! Ta journée s'est bien passée ?", "context": "Um amigo pergunta sobre o seu dia.", "hint": "Diga se foi bom, cansativo, corrido...", "answers": ["Oui, très bien, merci. Et toi ?", "Assez fatigant. Et toi ?", "Oui, c'était bien. Et la tienne ?"], "explanation": "Responda e devolva a pergunta."},
+            {"id": "fr-a1-c1-3-e2", "type": "open_reply", "prompt": "Qu'est-ce que tu as fait ce matin ?", "context": "O amigo quer saber o que você fez de manhã.", "hint": "Conte uma atividade no passado (travailler, étudier, dormir...).", "answers": ["J'ai travaillé.", "J'ai étudié le français.", "J'ai dormi jusqu'à huit heures."], "explanation": "Para o passado simples falado, use *j'ai* + particípio."},
+            {"id": "fr-a1-c1-3-e3", "type": "open_reply", "prompt": "Super ! Tu as des projets pour le week-end ?", "context": "O amigo pergunta sobre os seus planos.", "hint": "Fale de um plano usando *je vais*.", "answers": ["Je vais rendre visite à ma famille.", "Je vais me reposer à la maison.", "Je vais à la plage."], "explanation": "*Je vais* + verbo no infinitivo para planos."},
+            {"id": "fr-a1-c1-3-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "C'était une longue journée, mais je suis content maintenant.", "answers": ["C'était une longue journée, mais je suis content maintenant.", "C'était une longue journée mais je suis content maintenant."], "explanation": "Um desabafo comum no fim do dia. *content* ou *contente* conforme o gênero."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-a1-cu2",
+      "title": "Hors de chez soi",
+      "goal": "Conversar em restaurantes, lojas e ao pedir informações na rua.",
+      "lessons": [
+        {
+          "id": "fr-a1-c2-1",
+          "title": "Conversa : au restaurant",
+          "objective": "Pedir comida, escolher uma bebida e pedir a conta.",
+          "explanation": "No restaurante, a sequência típica é:\n\n1. *Une table pour deux, s'il vous plaît.* (Uma mesa para duas pessoas, por favor.)\n2. *Je peux voir la carte ?* (Posso ver o cardápio?)\n3. *Je voudrais le poulet.* (Eu gostaria do frango.)\n4. *L'addition, s'il vous plaît.* (A conta, por favor.)",
+          "key_phrases": [
+            {"en": "Une table pour deux, s'il vous plaît.", "pt": "Uma mesa para duas pessoas, por favor."},
+            {"en": "L'addition, s'il vous plaît.", "pt": "A conta, por favor."}
+          ],
+          "exercises": [
+            {"id": "fr-a1-c2-1-e1", "type": "open_reply", "prompt": "Bonsoir ! Vous êtes combien ?", "context": "Você chegou a um restaurante com um amigo.", "hint": "Diga quantas pessoas são.", "answers": ["Une table pour deux, s'il vous plaît.", "Nous sommes deux.", "Deux personnes, s'il vous plaît."], "explanation": "*Nous sommes deux* é uma forma natural de responder."},
+            {"id": "fr-a1-c2-1-e2", "type": "open_reply", "prompt": "Vous voulez boire quelque chose ?", "context": "O garçom oferece bebidas.", "hint": "Peça uma bebida.", "answers": ["De l'eau, s'il vous plaît.", "Un jus d'orange, s'il vous plaît.", "Un verre de vin rouge, merci."], "explanation": "*De l'eau* usa o partitivo; *un verre de* = um copo de."},
+            {"id": "fr-a1-c2-1-e3", "type": "open_reply", "prompt": "Vous avez choisi ?", "context": "O garçom quer anotar o pedido.", "hint": "Peça um prato.", "answers": ["Je prends le poulet, s'il vous plaît.", "Je voudrais le poisson.", "Je vais prendre les pâtes."], "explanation": "*Je prends* ou *je voudrais* para pedir."},
+            {"id": "fr-a1-c2-1-e4", "type": "multiple_choice", "prompt": "Como pedir a conta de forma educada ?", "options": ["Addition !", "L'addition, s'il vous plaît.", "Donnez-moi l'argent.", "Je veux payer vite."], "answer": 1, "explanation": "*L'addition, s'il vous plaît.*"}
+          ]
+        },
+        {
+          "id": "fr-a1-c2-2",
+          "title": "Conversa : dans un magasin",
+          "objective": "Perguntar preço, tamanho e cor, e dizer que só está olhando.",
+          "explanation": "Na loja:\n\n- *Je regarde, merci.* — Estou só olhando, obrigado.\n- *Vous avez cette veste en taille M ?* — Vocês têm esta jaqueta no tamanho M?\n- *C'est combien ?* — Quanto custa?\n- *Je peux l'essayer ?* — Posso experimentar?",
+          "key_phrases": [
+            {"en": "Je regarde, merci.", "pt": "Estou só olhando, obrigado."},
+            {"en": "Je peux l'essayer ?", "pt": "Posso experimentá-la?"}
+          ],
+          "exercises": [
+            {"id": "fr-a1-c2-2-e1", "type": "open_reply", "prompt": "Bonjour ! Je peux vous aider ?", "context": "Você entrou numa loja de roupas.", "hint": "Diga que só está olhando.", "answers": ["Je regarde, merci.", "Je regarde seulement, merci beaucoup."], "explanation": "Resposta padrão ao vendedor."},
+            {"id": "fr-a1-c2-2-e2", "type": "open_reply", "prompt": "Quelle taille vous faites ?", "context": "O vendedor quer saber o seu tamanho.", "hint": "Diga um tamanho (S, M, L).", "answers": ["Je fais du M.", "Taille M, s'il vous plaît.", "Du L, merci."], "explanation": "Tamanhos: *S, M, L, XL*."},
+            {"id": "fr-a1-c2-2-e3", "type": "open_reply", "prompt": "Cette veste coûte 40 euros. Vous voulez l'essayer ?", "context": "Você gostou de uma jaqueta.", "hint": "Pergunte se pode experimentar.", "answers": ["Oui, je peux l'essayer ?", "Je peux l'essayer, s'il vous plaît ?"], "explanation": "*Je peux l'essayer ?* = posso experimentar?"},
+            {"id": "fr-a1-c2-2-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "Vous avez cette robe dans une taille plus petite ?", "answers": ["Vous avez cette robe dans une taille plus petite ?"], "explanation": "*plus petite* = menor."}
+          ]
+        },
+        {
+          "id": "fr-a1-c2-3",
+          "title": "Conversa : demander une information",
+          "objective": "Pedir direções e perguntar horários na rua.",
+          "explanation": "Na rua, use frases curtas e educadas:\n\n- *Excusez-moi, où est la gare ?* — Com licença, onde fica a estação?\n- *C'est loin d'ici ?* — Fica longe daqui?\n- *À quelle heure part le bus ?* — A que horas sai o ônibus?\n- *Merci beaucoup !* — Muito obrigado!",
+          "key_phrases": [
+            {"en": "Excusez-moi, où est la gare ?", "pt": "Com licença, onde fica a estação?"},
+            {"en": "C'est loin d'ici ?", "pt": "Fica longe daqui?"}
+          ],
+          "exercises": [
+            {"id": "fr-a1-c2-3-e1", "type": "open_reply", "prompt": "Bonjour ! Vous cherchez quelque chose ?", "context": "Você está perdido na rua e quer pedir ajuda.", "hint": "Peça onde fica um lugar.", "answers": ["Excusez-moi, où est la gare ?", "Excusez-moi, où est la banque ?"], "explanation": "*Excusez-moi* chama a atenção de forma educada."},
+            {"id": "fr-a1-c2-3-e2", "type": "open_reply", "prompt": "C'est à cinq minutes à pied, à gauche.", "context": "A pessoa explica onde fica o lugar.", "hint": "Pergunte se é longe, ou agradeça.", "answers": ["C'est loin d'ici ?", "Merci beaucoup, vous êtes très gentil !", "Merci ! C'est loin ?"], "explanation": "Confirme ou agradeça no fim da explicação."},
+            {"id": "fr-a1-c2-3-e3", "type": "open_reply", "prompt": "Désolé, je ne sais pas. Demandez à quelqu'un d'autre !", "context": "A pessoa não sabe a resposta.", "hint": "Agradeça mesmo assim.", "answers": ["Ce n'est pas grave, merci quand même.", "D'accord, merci quand même !"], "explanation": "*Merci quand même* = obrigado mesmo assim."},
+            {"id": "fr-a1-c2-3-e4", "type": "reorder", "prompt": "Monte a pergunta: a que horas sai o ônibus?", "words": ["part", "À quelle heure", "le bus", "?"], "answers": ["À quelle heure part le bus ?"], "explanation": "*À quelle heure* + verbo + sujeito."}
+          ]
+        }
+      ]
+    }
+  ]
+}

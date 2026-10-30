@@ -1,0 +1,118 @@
+{
+  "level": "B2",
+  "title": "Intermediário superior",
+  "description": "Debates, histórias longas, negociações e expressões idiomáticas do dia a dia.",
+  "goal": "Você se expressa com naturalidade sobre a maioria dos temas, argumentando e reagindo com nuance.",
+  "units": [
+    {
+      "id": "b2-cu1",
+      "title": "Debates e argumentos",
+      "goal": "Defender uma posição, ceder em um ponto e chegar a um acordo.",
+      "lessons": [
+        {
+          "id": "b2-c1-1",
+          "title": "Conversa: defendendo uma ideia",
+          "objective": "Apresentar um argumento e sustentá-lo com um exemplo.",
+          "explanation": "Para argumentar com clareza:\n\n- *The way I see it, ...* — Do meu ponto de vista...\n- *What I'd argue is that ...* — O que eu defenderia é que...\n- *For instance, ...* / *Take my own case, ...* — Por exemplo...\n\nUm bom argumento tem afirmação, justificativa e exemplo.",
+          "key_phrases": [
+            {"en": "The way I see it, remote work saves time.", "pt": "Do meu ponto de vista, o trabalho remoto economiza tempo."},
+            {"en": "Take my own case, for instance.", "pt": "Tomando o meu caso, por exemplo."}
+          ],
+          "exercises": [
+            {"id": "b2-c1-1-e1", "type": "open_reply", "prompt": "Do you think social media does more harm than good?", "context": "Um debate informal sobre redes sociais.", "hint": "Defenda uma posição com um argumento.", "answers": ["The way I see it, it does more good, because it keeps people connected.", "I'd argue it does more harm, especially for young people.", "It depends. What I'd argue is that moderation matters most."], "explanation": "*The way I see it* / *What I'd argue is that* introduzem a posição."},
+            {"id": "b2-c1-1-e2", "type": "open_reply", "prompt": "Can you give me an example?", "context": "Seu interlocutor pede um exemplo concreto.", "hint": "Dê um exemplo pessoal ou de alguém que conhece.", "answers": ["Take my own case, for instance. I stopped using it and felt more focused.", "For example, my sister used it to start her business.", "A good example is my neighbour, who learned English online."], "explanation": "*Take my own case* / *For example* tornam o argumento concreto."},
+            {"id": "b2-c1-1-e3", "type": "open_reply", "prompt": "That's a fair point, but what about privacy?", "context": "Seu interlocutor levanta uma objeção.", "hint": "Reconheça a objeção e responda.", "answers": ["That's a valid concern, but I think regulation can address it.", "I see your point about privacy. Still, the benefits outweigh the risks.", "You're right that privacy matters. However, people can control their settings."], "explanation": "*That's a valid concern, but...* reconhece a objeção antes de responder."},
+            {"id": "b2-c1-1-e4", "type": "reorder", "prompt": "Monte a frase: do meu ponto de vista, a educação é a chave", "words": ["education", "The way", "I see it", "is", "the key"], "answers": ["The way I see it, education is the key."], "explanation": "*The way I see it* abre o argumento."}
+          ]
+        },
+        {
+          "id": "b2-c1-2",
+          "title": "Conversa: cedendo e chegando a um acordo",
+          "objective": "Negociar: aceitar parte da proposta e propor um meio-termo.",
+          "explanation": "Em uma negociação:\n\n- *I can meet you halfway on that.* — Posso ceder até um meio-termo.\n- *Fair enough. Let's split the difference.* — Justo. Vamos dividir a diferença.\n- *Would you be open to a compromise?* — Você aceitaria um meio-termo?",
+          "key_phrases": [
+            {"en": "I can meet you halfway on that.", "pt": "Posso ceder até um meio-termo nisso."},
+            {"en": "Let's split the difference.", "pt": "Vamos dividir a diferença."}
+          ],
+          "exercises": [
+            {"id": "b2-c1-2-e1", "type": "open_reply", "prompt": "We can't go below 5,000 reais for this project.", "context": "Você negocia o valor de um projeto com um cliente.", "hint": "Proponha um meio-termo.", "answers": ["I can meet you halfway at 5,500.", "Would you be open to splitting the difference?", "How about 5,200 with a shorter deadline?"], "explanation": "Um meio-termo mostra flexibilidade e mantém a negociação viva."},
+            {"id": "b2-c1-2-e2", "type": "open_reply", "prompt": "That's the best we can offer. Take it or leave it.", "context": "O cliente pressiona.", "hint": "Responda sem perder o tom cordial.", "answers": ["I appreciate the offer. Let me think about it and get back to you.", "I understand your position. Can we revisit the timeline?", "Fair enough. Let's talk again tomorrow."], "explanation": "Não aceite nem recuse de imediato: peça um tempo ou outro ponto de negociação."},
+            {"id": "b2-c1-2-e3", "type": "open_reply", "prompt": "Okay, I think we can agree on a compromise.", "context": "Vocês chegaram a um acordo.", "hint": "Confirme o acordo.", "answers": ["Sounds good. Let's put it in writing.", "Great, I think that's fair for both of us.", "Agreed! I'll send the revised contract today."], "explanation": "*Let's put it in writing* formaliza o acordo."},
+            {"id": "b2-c1-2-e4", "type": "multiple_choice", "prompt": "Qual frase propõe dividir a diferença?", "options": ["Let's split the difference.", "Take it or leave it.", "No deal, never.", "I won't change my mind."], "answer": 0, "explanation": "*Let's split the difference* = dividir a diferença."}
+          ]
+        },
+        {
+          "id": "b2-c1-3",
+          "title": "Conversa: reclamando com elegância",
+          "objective": "Expressar insatisfação sem agressividade e pedir uma solução.",
+          "explanation": "Para reclamar com elegância:\n\n- *I hate to complain, but ...* — Odeio reclamar, mas...\n- *I was under the impression that ...* — Eu entendi que...\n- *Would it be possible to ...?* — Seria possível...?\n\nComece reconhecendo o esforço e depois descreva o problema.",
+          "key_phrases": [
+            {"en": "I hate to complain, but the order is wrong.", "pt": "Odeio reclamar, mas o pedido está errado."},
+            {"en": "I was under the impression that it was included.", "pt": "Eu entendi que estava incluído."}
+          ],
+          "exercises": [
+            {"id": "b2-c1-3-e1", "type": "open_reply", "prompt": "How can I help you today?", "context": "Você está no balcão de uma loja e o pedido veio errado.", "hint": "Explique o problema com educação.", "answers": ["I hate to complain, but I received the wrong order.", "I was under the impression that this item was included."], "explanation": "*I hate to complain, but...* suaviza a reclamação."},
+            {"id": "b2-c1-3-e2", "type": "open_reply", "prompt": "I'm sorry about that. What would you like us to do?", "context": "O atendente pergunta como resolver.", "hint": "Peça uma solução concreta.", "answers": ["Would it be possible to exchange it for the correct one?", "Could you refund the difference, please?", "Could we get the right order sent again?"], "explanation": "*Would it be possible to...?* pede sem exigir."},
+            {"id": "b2-c1-3-e3", "type": "open_reply", "prompt": "Of course. I'll sort it out right away.", "context": "O atendente promete resolver.", "hint": "Agradeça pelo cuidado.", "answers": ["Thank you, I really appreciate your help.", "That's very kind of you. Thanks for sorting this out."], "explanation": "Agradecer no fim mantém a relação boa."},
+            {"id": "b2-c1-3-e4", "type": "reorder", "prompt": "Monte a frase: odeio reclamar, mas o produto chegou quebrado", "words": ["arrived", "broken", "I hate to complain", "but the product"], "answers": ["I hate to complain but the product arrived broken."], "explanation": "Reclamação suave seguida do problema."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b2-cu2",
+      "title": "Histórias e expressões",
+      "goal": "Contar histórias com emoção e usar expressões que soam naturais.",
+      "lessons": [
+        {
+          "id": "b2-c2-1",
+          "title": "Conversa: contando uma história engraçada",
+          "objective": "Narrar um episódio com suspense, sequência e reação.",
+          "explanation": "Para contar uma história:\n\n- *So, there I was, ...* — Aí eu estava lá...\n- *Long story short, ...* — Resumindo...\n- *You won't believe what happened next!* — Você não vai acreditar no que aconteceu depois!\n\nUse o *past continuous* para o cenário e o *past simple* para as ações.",
+          "key_phrases": [
+            {"en": "So, there I was, waiting for the bus in the rain.", "pt": "Aí eu estava lá, esperando o ônibus na chuva."},
+            {"en": "Long story short, I missed my flight.", "pt": "Resumindo, perdi o voo."}
+          ],
+          "exercises": [
+            {"id": "b2-c2-1-e1", "type": "open_reply", "prompt": "You look like you have a story. What happened?", "context": "Um amigo percebe que você tem uma história para contar.", "hint": "Comece com *So, there I was...*", "answers": ["So, there I was, stuck in traffic for two hours.", "You won't believe it! I got lost in the old town.", "Long story short, I left my phone in a taxi."], "explanation": "*So, there I was* prende a atenção do ouvinte."},
+            {"id": "b2-c2-1-e2", "type": "open_reply", "prompt": "No way! What happened next?", "context": "O amigo quer saber o desfecho.", "hint": "Conte o que aconteceu depois.", "answers": ["Luckily, a kind driver gave me a ride.", "Then I realised I had the phone in my bag all along!", "I ended up walking home, which took forever."], "explanation": "Conectores como *luckily* e *then* organizam a sequência."},
+            {"id": "b2-c2-1-e3", "type": "open_reply", "prompt": "That's crazy! How did you feel?", "context": "O amigo quer saber sua reação.", "hint": "Descreva sua emoção.", "answers": ["I was furious at first, but then I laughed about it.", "Honestly, I was embarrassed, but it turned out fine.", "I felt relieved once I finally got home."], "explanation": "Expressar sentimentos torna a história mais viva."},
+            {"id": "b2-c2-1-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "Long story short, we got there just in time.", "answers": ["Long story short, we got there just in time.", "Long story short we got there just in time."], "explanation": "*Long story short* encerra um relato resumidamente."}
+          ]
+        },
+        {
+          "id": "b2-c2-2",
+          "title": "Conversa: expressões que soam naturais",
+          "objective": "Usar expressões idiomáticas comuns em conversas informais.",
+          "explanation": "Expressões muito usadas:\n\n- *It's not my cup of tea.* — Não é a minha praia.\n- *I'm up to my ears in work.* — Estou afogado em trabalho.\n- *Let's call it a day.* — Vamos parar por hoje.\n- *That's a piece of cake!* — Foi moleza!",
+          "key_phrases": [
+            {"en": "It's not my cup of tea.", "pt": "Não é a minha praia."},
+            {"en": "I'm up to my ears in work.", "pt": "Estou afogado em trabalho."}
+          ],
+          "exercises": [
+            {"id": "b2-c2-2-e1", "type": "open_reply", "prompt": "Do you want to go to the opera tonight?", "context": "Um amigo convida para um evento que você não gosta.", "hint": "Use uma expressão idiomática para recusar.", "answers": ["Thanks, but opera's not really my cup of tea.", "It's not my cup of tea, honestly."], "explanation": "*Not my cup of tea* recusa com leveza."},
+            {"id": "b2-c2-2-e2", "type": "open_reply", "prompt": "Are you free this weekend to help me move?", "context": "Um amigo pede ajuda, mas você está ocupado.", "hint": "Use *up to my ears* ou *swamped*.", "answers": ["Sorry, I'm up to my ears in work this weekend.", "I'd love to, but I'm swamped right now."], "explanation": "*Up to my ears in work* = muito ocupado."},
+            {"id": "b2-c2-2-e3", "type": "open_reply", "prompt": "That presentation went really well!", "context": "Um colega elogia seu trabalho.", "hint": "Responda com uma expressão de agradecimento e leveza.", "answers": ["Thanks! It was a piece of cake, honestly.", "Thank you, I'm glad it went well."], "explanation": "*A piece of cake* = algo fácil."},
+            {"id": "b2-c2-2-e4", "type": "multiple_choice", "prompt": "'Let's call it a day' significa:", "options": ["Vamos marcar um encontro.", "Vamos parar por hoje.", "Vamos ligar amanhã.", "Vamos comemorar."], "answer": 1, "explanation": "Encerrar o expediente."}
+          ]
+        },
+        {
+          "id": "b2-c2-3",
+          "title": "Conversa: opinião sobre notícias",
+          "objective": "Comentar notícias e reagir a fatos com nuance.",
+          "explanation": "Ao comentar notícias:\n\n- *Apparently, ...* — Aparentemente...\n- *I gather that ...* — Pelo que entendi...\n- *It's hard to say, but ...* — É difícil dizer, mas...\n- *That's worrying, isn't it?* — Isso preocupa, não é?",
+          "key_phrases": [
+            {"en": "Apparently, the prices will go up next year.", "pt": "Aparentemente, os preços vão subir no ano que vem."},
+            {"en": "I gather that the project was cancelled.", "pt": "Pelo que entendi, o projeto foi cancelado."}
+          ],
+          "exercises": [
+            {"id": "b2-c2-3-e1", "type": "open_reply", "prompt": "Did you hear about the new law on remote work?", "context": "Um colega comenta uma notícia.", "hint": "Diga o que ouviu com *I gather that*.", "answers": ["I gather that it will affect many companies.", "Apparently, it's going to change a lot for freelancers."], "explanation": "*I gather / apparently* indicam informação de segunda mão."},
+            {"id": "b2-c2-3-e2", "type": "open_reply", "prompt": "Do you think it's a good thing?", "context": "A conversa pede sua opinião.", "hint": "Dê uma opinião com ressalva.", "answers": ["It's hard to say, but I think it's a step forward.", "On balance, I think it's positive, though some details worry me."], "explanation": "*It's hard to say, but...* mostra cautela."},
+            {"id": "b2-c2-3-e3", "type": "open_reply", "prompt": "I'm not sure. It could cause a lot of problems.", "context": "O colega está preocupado.", "hint": "Reconheça a preocupação e responda.", "answers": ["That's worrying, isn't it? I hope they review it.", "You're right to be cautious, it could be risky."], "explanation": "Reconhecer o sentimento do outro é essencial em conversas."},
+            {"id": "b2-c2-3-e4", "type": "reorder", "prompt": "Monte a frase: pelo que entendi, a reunião foi adiada", "words": ["postponed", "was", "the meeting", "I gather that"], "answers": ["I gather that the meeting was postponed."], "explanation": "*I gather that* + oração."}
+          ]
+        }
+      ]
+    }
+  ]
+}

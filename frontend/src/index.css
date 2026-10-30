@@ -1,0 +1,399 @@
+@import "tailwindcss";
+
+/*
+ * Sistema visual inspirado no macOS/iOS: tema escuro com materiais translúcidos,
+ * azul de sistema como cor de ação, tipografia San Francisco (com fallback),
+ * cantos contínuos e transições com curva suave.
+ */
+
+@theme {
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI Variable Text", "Segoe UI", Inter,
+    system-ui, sans-serif;
+
+  --color-brand-50: #eaf3ff;
+  --color-brand-200: #a9d1ff;
+  --color-brand-300: #7cb8ff;
+  --color-brand-400: #409cff;
+  --color-brand-500: #0a84ff;
+  --color-brand-600: #0a72e6;
+  --color-brand-700: #0a5fc4;
+
+  --color-surface-0: #0b0b0f;
+  --color-surface-1: #15151b;
+  --color-surface-2: #1d1d25;
+  --color-surface-3: #282832;
+  --color-line: rgba(255, 255, 255, 0.09);
+
+  --color-ios-green: #30d158;
+  --color-ios-orange: #ff9f0a;
+  --color-ios-red: #ff453a;
+  --color-ios-purple: #bf5af2;
+
+  /* Texto sobre cores de destaque (botões azuis, avatares). No tema papel vira creme. */
+  --color-on-accent: #ffffff;
+
+  --ease-apple: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --radius-card: 22px;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-surface-0 text-slate-100 antialiased;
+    font-feature-settings: "cv11", "ss01";
+    background-image:
+      radial-gradient(1100px 620px at 8% -12%, rgba(10, 132, 255, 0.16), transparent 60%),
+      radial-gradient(900px 560px at 108% 4%, rgba(191, 90, 242, 0.12), transparent 60%),
+      radial-gradient(800px 500px at 50% 120%, rgba(48, 209, 88, 0.07), transparent 60%);
+    background-attachment: fixed;
+  }
+
+  /* Controles nativos (select, textarea, input) seguem o tema escuro. Sem isso, o Windows desenha
+     a lista suspensa com fundo branco e, como o texto herda a cor clara do campo, fica branco no branco. */
+  :root {
+    color-scheme: var(--ui-scheme);
+  }
+
+  select,
+  option,
+  optgroup {
+    color-scheme: var(--ui-scheme);
+  }
+
+  select {
+    color: var(--color-slate-100);
+  }
+
+  select option,
+  select optgroup {
+    background-color: var(--color-surface-2);
+    color: var(--color-slate-100);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-brand-400);
+    outline-offset: 2px;
+    border-radius: 10px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  /* Superfícies */
+  .card {
+    @apply rounded-[22px] border border-line bg-white/[0.035] p-5 backdrop-blur-xl;
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.04) inset,
+      0 12px 40px -18px rgba(0, 0, 0, 0.6);
+    transition:
+      transform 300ms var(--ease-apple),
+      border-color 300ms,
+      background-color 300ms;
+  }
+
+  .card-interactive:hover {
+    @apply border-white/15 bg-white/[0.06];
+    transform: translateY(-2px);
+  }
+
+  .glass {
+    @apply border-b border-line backdrop-blur-2xl;
+    background-color: rgb(var(--ui-sidebar-rgb) / calc(var(--ui-alpha, 0.55) * 0.82));
+  }
+
+  /* Botões */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand-500 px-5 py-2.5 text-[15px] font-medium
+      text-on-accent shadow-lg shadow-brand-500/25 transition duration-300 hover:bg-brand-400 active:scale-[0.97]
+      disabled:cursor-not-allowed disabled:opacity-40 disabled:shadow-none;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-line bg-white/[0.06] px-4 py-2
+      text-[15px] font-medium text-slate-200 transition duration-300 hover:bg-white/[0.11] active:scale-[0.97]
+      disabled:cursor-not-allowed disabled:opacity-40;
+  }
+
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-ios-red px-5 py-2.5 text-[15px] font-medium
+      text-on-accent transition duration-300 hover:brightness-110 active:scale-[0.97] disabled:opacity-40;
+  }
+
+  .icon-btn {
+    @apply inline-flex h-10 w-10 items-center justify-center rounded-full border border-line bg-white/[0.06] text-slate-300
+      transition duration-300 hover:bg-white/[0.12] hover:text-white active:scale-[0.94] disabled:opacity-35;
+  }
+
+  /* Campos */
+  .field {
+    @apply w-full rounded-[14px] border border-line bg-white/[0.05] px-4 py-2.5 text-[15px] text-slate-100
+      placeholder:text-slate-500 transition duration-300 focus:border-brand-500/70 focus:bg-white/[0.08] focus:outline-none;
+  }
+
+  .label {
+    @apply mb-1.5 block text-[12px] font-medium text-slate-400;
+  }
+
+  /* Segmentado (estilo controle de segmento do iOS) */
+  .segmented {
+    @apply inline-flex rounded-full border border-line bg-white/[0.05] p-1;
+  }
+
+  .segmented > button {
+    @apply rounded-full px-4 py-1.5 text-[13px] font-medium text-slate-400 transition duration-300 hover:text-white;
+  }
+
+  .segmented > button[aria-selected="true"],
+  .segmented > button[aria-pressed="true"],
+  .segmented > button[aria-checked="true"] {
+    @apply bg-white/[0.14] text-white shadow-sm;
+  }
+
+  /* Títulos */
+  .title-large {
+    @apply text-[34px] font-semibold leading-tight tracking-[-0.025em] text-white;
+  }
+
+  .eyebrow {
+    @apply text-[12px] font-semibold uppercase tracking-[0.08em] text-slate-400;
+  }
+}
+
+@layer utilities {
+  /* Áreas que arrastam a janela (a janela não tem barra de título padrão). */
+  .drag-region {
+    -webkit-app-region: drag;
+    user-select: none;
+  }
+
+  .no-drag {
+    -webkit-app-region: no-drag;
+  }
+
+  .animate-rise {
+    animation: rise 480ms var(--ease-apple) both;
+  }
+
+  .animate-sheet {
+    animation: sheet 420ms var(--ease-apple) both;
+  }
+
+  .animate-pop {
+    animation: pop 380ms var(--ease-apple) both;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes sheet {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.06);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+  }
+}
+
+/* App no Windows com material Mica: o fundo fica transparente e o vidro aparece por trás.
+   O conteúdo principal mantém um fundo quase opaco para o texto continuar legível. */
+.native-backdrop body {
+  background-color: transparent;
+  background-image: none;
+}
+
+.native-backdrop .content-surface {
+  /* Translúcido: o material nativo da janela (acrílico) aparece por trás do conteúdo. */
+  background-color: rgb(var(--ui-surface-rgb) / var(--ui-alpha, 0.55));
+}
+
+/* Barra lateral: um pouco mais opaca que o conteúdo. A opacidade vem de --ui-alpha,
+   definido pela configuração "Transparência" (ver lib/transparency.ts). */
+.sidebar-surface {
+  background-color: rgb(var(--ui-sidebar-rgb) / calc(var(--ui-alpha, 0.55) * 0.91));
+}
+
+/* Controles deslizantes com trilho fino e polegar branco, como no macOS. */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 999px;
+  /* --fill é definido pelo componente Slider: parte azul até o valor atual */
+  background: linear-gradient(
+    to right,
+    var(--color-brand-500) 0%,
+    var(--color-brand-500) var(--fill, 50%),
+    rgba(255, 255, 255, 0.16) var(--fill, 50%),
+    rgba(255, 255, 255, 0.16) 100%
+  );
+  outline: none;
+  cursor: pointer;
+}
+
+/* O polegar tem 20px e o trilho 4px: a margem negativa centraliza o polegar no trilho. */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: -8px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 999px;
+  background: transparent;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+input[type="range"]::-moz-range-track {
+  height: 4px;
+  border-radius: 999px;
+  background: transparent;
+}
+
+input[type="range"]:focus-visible {
+  outline: 2px solid var(--color-brand-400);
+  outline-offset: 4px;
+}
+
+/* Barra de rolagem discreta, no estilo do macOS. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
+}
+
+/* Impressão do material de apoio: imprime só a folha, sem a interface nem o fundo escuro. */
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+  #study-material-print,
+  #study-material-print * {
+    visibility: visible !important;
+  }
+  #study-material-print {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #ffffff !important;
+    box-shadow: none !important;
+  }
+}
+
+/* ----- Temas -------------------------------------------------------------
+ * Escuro (padrão) usa os valores de @theme acima. "Papel" redefine os mesmos tokens:
+ * as classes de cor continuam as mesmas, só mudam os valores. Ajustado para
+ * parecer uma página de leitor digital (Kindle): fundo creme, tinta escura e fonte serifada.
+ */
+:root {
+  --ui-alpha: 0.55;
+  --ui-surface-rgb: 11 11 15;
+  --ui-sidebar-rgb: 21 21 27;
+  --ui-scheme: dark;
+}
+
+:root[data-theme="papel"] {
+  --ui-scheme: light;
+  --ui-surface-rgb: 246 240 224;
+  --ui-sidebar-rgb: 236 228 207;
+
+  --font-sans: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Charter, serif;
+
+  /* Fundos: papel e tons um pouco mais escuros para painéis e campos. */
+  --color-surface-0: #f6f0e0;
+  --color-surface-1: #ece4cd;
+  --color-surface-2: #e4dabf;
+  --color-surface-3: #d8ccae;
+  --color-line: rgba(60, 40, 20, 0.14);
+
+  /* Tinta: "white" passa a ser a cor de texto principal (as tintas bg-white/x escurecem a página). */
+  --color-white: #2b2117;
+  --color-slate-100: #2b2117;
+  --color-slate-200: #3a2e22;
+  --color-slate-300: #4a3c2d;
+  --color-slate-400: #6b5a46;
+  --color-slate-500: #877560;
+
+  /* Marrom de couro para ações e destaques. */
+  --color-brand-50: #f1e4c8;
+  --color-brand-200: #d4b07a;
+  --color-brand-300: #7a4a1e;
+  --color-brand-400: #8c5a2b;
+  --color-brand-500: #7a4a1e;
+  --color-brand-600: #66391a;
+  --color-brand-700: #4f2b12;
+  --color-on-accent: #fbf6e8;
+
+  --color-ios-green: #2e7d4f;
+  --color-ios-orange: #a35c00;
+  --color-ios-red: #b42318;
+  --color-ios-purple: #7b3fb0;
+}
+
+:root[data-theme="papel"] body {
+  background-image: none;
+}
+
+/* Cards e painéis com sombra suave, como páginas sobre a mesa. */
+:root[data-theme="papel"] .card {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 8px 24px -16px rgba(60, 40, 20, 0.35);
+}

@@ -1,0 +1,11 @@
+Você é um professor de inglês criando uma aula guiada curta para um aluno brasileiro, em nível CEFR {level}, com inglês {variant}.
+
+Tema da aula: {objective}
+
+Crie:
+- "title": título curto da aula.
+- "objective": objetivo da aula em uma frase, em português.
+- "content_md": explicação curta em português (até 12 linhas), com um exemplo em inglês. Use Markdown simples.
+- "exercises": exatamente {exercise_count} exercícios de tradução ou completar lacunas. Cada um com "prompt" (a pergunta, em português ou inglês) e "expected_answer" (a resposta esperada em inglês).
+
+Responda somente com um objeto JSON com essas chaves.

@@ -1,0 +1,228 @@
+{
+  "level": "C1",
+  "title": "Avançado — fluência",
+  "description": "Estruturas avançadas, registro formal e informal, argumentação e expressões de falante nativo em francês.",
+  "goal": "Você se expressa com precisão e naturalidade em contextos acadêmicos, profissionais e sociais.",
+  "units": [
+    {
+      "id": "fr-c1-u1",
+      "title": "Mise en relief et inversion",
+      "goal": "Dar ênfase às ideias com estruturas avançadas.",
+      "lessons": [
+        {
+          "id": "fr-c1-1-1",
+          "title": "C'est ... qui / que",
+          "objective": "Destacar uma parte da frase com a construção clivada.",
+          "explanation": "Para dar foco a uma parte da frase:\n\n- *C'est Marie qui a résolu le problème.* — Foi a Marie que resolveu o problema.\n- *C'est à Lyon que nous nous sommes rencontrés.* — Foi em Lyon que nos encontramos.\n- *Ce qui m'inquiète, c'est le prix.* — O que me preocupa é o preço.",
+          "key_phrases": [
+            {"en": "C'est Marie qui a résolu le problème.", "pt": "Foi a Marie que resolveu o problema."},
+            {"en": "Ce que je veux, c'est du temps.", "pt": "O que eu quero é tempo."}
+          ],
+          "exercises": [
+            {"id": "fr-c1-1-1-e1", "type": "multiple_choice", "prompt": "C'est Paul ___ a fait la cuisine.", "options": ["qui", "que", "où", "dont"], "answer": 0, "explanation": "Sujeito (pessoa): *qui*."},
+            {"id": "fr-c1-1-1-e2", "type": "fill_blank", "prompt": "C'est à Paris ___ nous nous sommes connus.", "answers": ["que", "qu'"], "hint": "lugar destacado", "explanation": "*C'est à Paris que...*"},
+            {"id": "fr-c1-1-1-e3", "type": "translate", "prompt": "O que me surpreende é a sua calma.", "answers": ["Ce qui me surprend, c'est votre calme.", "Ce qui m'étonne, c'est ton calme."], "explanation": "*Ce qui ... c'est*."},
+            {"id": "fr-c1-1-1-e4", "type": "reorder", "prompt": "Monte a frase: foi o preço que nos fez desistir", "words": ["nous a fait renoncer", "C'est", "le prix", "qui"], "answers": ["C'est le prix qui nous a fait renoncer."], "explanation": "Clivada com *qui*."}
+          ]
+        },
+        {
+          "id": "fr-c1-1-2",
+          "title": "L'inversion après les adverbes",
+          "objective": "Usar a inversão após peut-être, ainsi, à peine, aussi.",
+          "explanation": "Na língua formal, a inversão do sujeito dá ênfase:\n\n- *Peut-être viendra-t-il demain.* — Talvez ele venha amanhã.\n- *Ainsi s'achève notre histoire.* — Assim termina a nossa história.\n- *À peine étais-je arrivé qu'il est parti.* — Mal eu tinha chegado, ele saiu.\n\nQuando o sujeito é substantivo, a inversão usa o pronome: *Marie viendra-t-elle ?*",
+          "key_phrases": [
+            {"en": "Peut-être viendra-t-il demain.", "pt": "Talvez ele venha amanhã."},
+            {"en": "À peine étais-je arrivé qu'il est parti.", "pt": "Mal eu tinha chegado, ele saiu."}
+          ],
+          "exercises": [
+            {"id": "fr-c1-1-2-e1", "type": "multiple_choice", "prompt": "Peut-être ___ (chegar) demain.", "options": ["arrivera-t-il", "arrivera il", "il arrivera", "arrive-t-il"], "answer": 0, "explanation": "Inversão: *arrivera-t-il*."},
+            {"id": "fr-c1-1-2-e2", "type": "fill_blank", "prompt": "À peine ___-je arrivé qu'il a commencé à pleuvoir. (eu)", "answers": ["suis"], "hint": "inversão com être", "explanation": "*À peine suis-je arrivé*."},
+            {"id": "fr-c1-1-2-e3", "type": "translate", "prompt": "Assim começa uma nova etapa.", "answers": ["Ainsi commence une nouvelle étape.", "Ainsi débute une nouvelle étape."], "explanation": "*ainsi* no início, sem inversão quando o sujeito é substantivo."},
+            {"id": "fr-c1-1-2-e4", "type": "reorder", "prompt": "Monte a frase: talvez ela tenha razão", "words": ["a-t-elle", "raison", "Peut-être"], "answers": ["Peut-être a-t-elle raison."], "explanation": "*Peut-être* + inversão."}
+          ]
+        },
+        {
+          "id": "fr-c1-1-3",
+          "title": "Ne ... que, ne ... jamais, ni ... ni",
+          "objective": "Usar as negações restritivas e de exclusão.",
+          "explanation": "- **ne ... que** (só): *Il ne boit que de l'eau.* — Ele só bebe água.\n- **ne ... jamais** (nunca): *Je ne mens jamais.* — Eu nunca minto.\n- **ni ... ni** (nem ... nem): *Ni lui ni moi ne sommes d'accord.* — Nem ele nem eu concordamos.\n\nCom *ni ... ni*, o verbo fica no plural quando os sujeitos são dois.",
+          "key_phrases": [
+            {"en": "Je n'ai que dix euros.", "pt": "Só tenho dez euros."},
+            {"en": "Ni lui ni moi n'avons accepté.", "pt": "Nem ele nem eu aceitamos."}
+          ],
+          "exercises": [
+            {"id": "fr-c1-1-3-e1", "type": "multiple_choice", "prompt": "Il n'y a ___ deux places libres. (só)", "options": ["que", "pas", "jamais", "ni"], "answer": 0, "explanation": "*ne ... que* = só."},
+            {"id": "fr-c1-1-3-e2", "type": "fill_blank", "prompt": "Je ne ___ jamais en retard. (estar)", "answers": ["suis"], "hint": "estar, eu", "explanation": "*je ne suis jamais*."},
+            {"id": "fr-c1-1-3-e3", "type": "translate", "prompt": "Nem ela nem eu sabíamos.", "answers": ["Ni elle ni moi ne savions.", "Ni elle ni moi ne le savions."], "explanation": "*ni ... ni* com verbo no plural."},
+            {"id": "fr-c1-1-3-e4", "type": "multiple_choice", "prompt": "Ela só fala francês e inglês.", "options": ["Elle ne parle que le français et l'anglais.", "Elle ne parle jamais le français.", "Elle parle ni le français ni l'anglais.", "Elle ne parle pas le français."], "answer": 0, "explanation": "*ne ... que* para restringir."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-c1-u2",
+      "title": "Grammaire avancée",
+      "goal": "Usar subjuntivo, condicional de incerteza e orações reduzidas com precisão.",
+      "lessons": [
+        {
+          "id": "fr-c1-2-1",
+          "title": "Le subjonctif : doute, émotion, nécessité",
+          "objective": "Usar o subjuntivo com verbos de dúvida, emoção e necessidade.",
+          "explanation": "O subjuntivo é obrigatório depois de expressões de:\n\n- **dúvida**: *Je doute qu'il soit d'accord.*\n- **emoção**: *Je suis content que tu sois là.*\n- **necessidade**: *Il est nécessaire que nous partions.*\n\nNa negativa de *croire* e *penser*, usa-se o subjuntivo: *Je ne crois pas qu'il ait raison.*",
+          "key_phrases": [
+            {"en": "Je doute qu'il soit d'accord.", "pt": "Duvido que ele concorde."},
+            {"en": "Il est essentiel que tu viennes.", "pt": "É essencial que você venha."}
+          ],
+          "exercises": [
+            {"id": "fr-c1-2-1-e1", "type": "multiple_choice", "prompt": "Je doute qu'il ___ (ter tempo).", "options": ["ait le temps", "a le temps", "aura le temps", "aurait le temps"], "answer": 0, "explanation": "Dúvida: subjuntivo (*ait*)."},
+            {"id": "fr-c1-2-1-e2", "type": "fill_blank", "prompt": "Il est essentiel que vous ___ (saber) la vérité.", "answers": ["sachiez"], "hint": "subjuntivo de savoir, vous", "explanation": "*que vous sachiez*."},
+            {"id": "fr-c1-2-1-e3", "type": "translate", "prompt": "Estou feliz que você esteja aqui.", "answers": ["Je suis heureux que tu sois là.", "Je suis content que tu sois là.", "Je suis heureuse que tu sois là."], "explanation": "Emoção: subjuntivo (*sois*)."},
+            {"id": "fr-c1-2-1-e4", "type": "reorder", "prompt": "Monte a frase: não acho que ele tenha razão", "words": ["ait raison", "pas", "Je ne crois", "qu'il"], "answers": ["Je ne crois pas qu'il ait raison."], "explanation": "Negativa de *croire* com subjuntivo."}
+          ]
+        },
+        {
+          "id": "fr-c1-2-2",
+          "title": "Le participe présent et l'adjectif verbal",
+          "objective": "Condensar frases com participe présent e distinguir do adjetivo verbal.",
+          "explanation": "- **participe présent** (-ant, invariável): *Ayant fini, il est parti.* — Tendo terminado, ele saiu.\n- **adjectif verbal** (concorda com o substantivo): *une personne charmante*, *des enfants obéissants*.\n\nPara a mesma forma, *-ant* pode ser participe (ação) ou adjetivo (qualidade).",
+          "key_phrases": [
+            {"en": "Ayant fini le travail, je suis rentré.", "pt": "Tendo terminado o trabalho, voltei."},
+            {"en": "Une femme charmante.", "pt": "Uma mulher encantadora."}
+          ],
+          "exercises": [
+            {"id": "fr-c1-2-2-e1", "type": "multiple_choice", "prompt": "___ de la fatigue, il a dormi.", "options": ["Pris", "Prenant", "Prendre", "Prend"], "answer": 1, "explanation": "Participe presente *prenant*: ação simultânea."},
+            {"id": "fr-c1-2-2-e2", "type": "fill_blank", "prompt": "___ (terminar) son travail, elle est partie.", "answers": ["Ayant fini"], "hint": "ação anterior", "explanation": "*Ayant fini*."},
+            {"id": "fr-c1-2-2-e3", "type": "translate", "prompt": "Um livro interessante.", "answers": ["Un livre intéressant."], "explanation": "Adjetivo: concorda com o substantivo."},
+            {"id": "fr-c1-2-2-e4", "type": "multiple_choice", "prompt": "« Des enfants ___ » (obediente)", "options": ["obéissants", "obéissant", "obéir", "obéi"], "answer": 0, "explanation": "Adjetivo verbal no plural: *obéissants*."}
+          ]
+        },
+        {
+          "id": "fr-c1-2-3",
+          "title": "Le conditionnel de l'information incertaine",
+          "objective": "Relatar informações não confirmadas com o condicional.",
+          "explanation": "Na imprensa e na conversa formal, o **conditionnel** indica uma informação não confirmada:\n\n- *Le ministre démissionnerait demain, selon la presse.* — O ministro renunciaria amanhã, segundo a imprensa.\n- *Il y aurait eu trois blessés.* — Teriam havido três feridos.\n\nCom *selon*, *d'après*, *paraît-il*, o condicional marca a dúvida.",
+          "key_phrases": [
+            {"en": "Selon la presse, le projet serait annulé.", "pt": "Segundo a imprensa, o projeto seria cancelado."},
+            {"en": "Il y aurait eu des retards.", "pt": "Teriam havido atrasos."}
+          ],
+          "exercises": [
+            {"id": "fr-c1-2-3-e1", "type": "multiple_choice", "prompt": "Selon les journaux, le président ___ (anunciar) une réforme.", "options": ["annoncerait", "annonce", "a annoncé", "annoncera"], "answer": 0, "explanation": "Informação não confirmada: condicional."},
+            {"id": "fr-c1-2-3-e2", "type": "fill_blank", "prompt": "Il y ___ (ter havido) des victimes, paraît-il.", "answers": ["aurait eu"], "hint": "condicional passado de avoir", "explanation": "*Il y aurait eu*."},
+            {"id": "fr-c1-2-3-e3", "type": "translate", "prompt": "Segundo a rádio, há um engarrafamento.", "answers": ["D'après la radio, il y aurait un embouteillage.", "Selon la radio, il y aurait un embouteillage."], "explanation": "Condicional em informações de terceiros."},
+            {"id": "fr-c1-2-3-e4", "type": "reorder", "prompt": "Monte a frase: dizem que ele se mudaria", "words": ["s'installerait", "Il", "paraît-il", "."], "answers": ["Il s'installerait, paraît-il."], "explanation": "*paraît-il* marca informação de terceiros."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-c1-u3",
+      "title": "Registre formel et argumentation",
+      "goal": "Escrever e falar em contextos acadêmicos e profissionais com clareza e polidez.",
+      "lessons": [
+        {
+          "id": "fr-c1-3-1",
+          "title": "Atténuer une affirmation",
+          "objective": "Suavizar afirmações e evitar um tom absoluto.",
+          "explanation": "Em contextos formais, evitamos afirmar com certeza absoluta:\n\n- *Il me semble que ...* — Parece-me que...\n- *Dans une certaine mesure, ...* — Até certo ponto...\n- *Les données semblent indiquer que ...* — Os dados parecem indicar que...\n- *Cela pourrait indiquer ...* — Isso poderia indicar...",
+          "key_phrases": [
+            {"en": "Il me semble que la réforme est nécessaire.", "pt": "Parece-me que a reforma é necessária."},
+            {"en": "Dans une certaine mesure, je suis d'accord.", "pt": "Até certo ponto, concordo."}
+          ],
+          "exercises": [
+            {"id": "fr-c1-3-1-e1", "type": "multiple_choice", "prompt": "Qual frase é mais cautelosa ?", "options": ["C'est certainement la cause.", "Cela pourrait être l'une des causes.", "C'est la seule cause.", "Il n'y a aucun doute."], "answer": 1, "explanation": "*pourrait être l'une des causes*."},
+            {"id": "fr-c1-3-1-e2", "type": "fill_blank", "prompt": "Il me ___ que le projet sera retardé. (parece)", "answers": ["semble"], "hint": "verbo de aparência", "explanation": "*il me semble que*."},
+            {"id": "fr-c1-3-1-e3", "type": "translate", "prompt": "Até certo ponto, os dados confirmam a hipótese.", "answers": ["Dans une certaine mesure, les données confirment l'hypothèse.", "Jusqu'à un certain point, les données confirment l'hypothèse."], "explanation": "Cautela."},
+            {"id": "fr-c1-3-1-e4", "type": "reorder", "prompt": "Monte a frase: isso poderia indicar um problema maior", "words": ["un problème plus grave", "pourrait indiquer", "Cela"], "answers": ["Cela pourrait indiquer un problème plus grave."], "explanation": "Condicional de possibilidade."}
+          ]
+        },
+        {
+          "id": "fr-c1-3-2",
+          "title": "Connecteurs d'argumentation",
+          "objective": "Organizar um argumento com conectores de adição, causa e contraste.",
+          "explanation": "- Adição: *de plus, en outre, par ailleurs*\n- Causa e consequência: *en conséquence, par conséquent, dès lors*\n- Contraste: *en revanche, d'une part ... d'autre part, toutefois*\n- Conclusão: *en définitive, somme toute*",
+          "key_phrases": [
+            {"en": "En conséquence, il faut revoir le budget.", "pt": "Em consequência, é preciso rever o orçamento."},
+            {"en": "D'une part, c'est rapide ; d'autre part, c'est coûteux.", "pt": "Por um lado é rápido; por outro, é caro."}
+          ],
+          "exercises": [
+            {"id": "fr-c1-3-2-e1", "type": "multiple_choice", "prompt": "Le plan est économique ; ___, il est lent.", "options": ["en revanche", "en conséquence", "de plus", "par conséquent"], "answer": 0, "explanation": "Contraste: *en revanche*."},
+            {"id": "fr-c1-3-2-e2", "type": "fill_blank", "prompt": "Les ventes ont baissé. ___, nous avons réduit les coûts. (em consequência)", "answers": ["En conséquence", "Par conséquent", "Dès lors"], "hint": "consequência", "explanation": "*En conséquence*."},
+            {"id": "fr-c1-3-2-e3", "type": "translate", "prompt": "Além disso, o produto é mais sustentável.", "answers": ["De plus, le produit est plus durable.", "En outre, le produit est plus durable."], "explanation": "Adição."},
+            {"id": "fr-c1-3-2-e4", "type": "reorder", "prompt": "Monte a frase: por outro lado, o risco é baixo", "words": ["le risque est faible", "Par ailleurs", ","], "answers": ["Par ailleurs, le risque est faible."], "explanation": "*Par ailleurs* acrescenta uma informação."}
+          ]
+        },
+        {
+          "id": "fr-c1-3-3",
+          "title": "Courriels professionnels",
+          "objective": "Escrever e-mails formais com eficiência e polidez.",
+          "explanation": "Em e-mails formais:\n- *Je me permets de vous écrire au sujet de ...* — Permito-me escrever sobre...\n- *Je vous prie de bien vouloir ...* — Peço-lhe gentilmente que...\n- *Veuillez trouver ci-joint ...* — Segue em anexo...\n- *Dans l'attente de votre réponse, je vous prie d'agréer mes salutations distinguées.* — Aguardo sua resposta e envio cordiais cumprimentos.",
+          "key_phrases": [
+            {"en": "Veuillez trouver ci-joint le rapport.", "pt": "Segue em anexo o relatório."},
+            {"en": "Je vous prie de bien vouloir confirmer.", "pt": "Peço-lhe gentilmente que confirme."}
+          ],
+          "exercises": [
+            {"id": "fr-c1-3-3-e1", "type": "multiple_choice", "prompt": "Para avançar para o próximo tópico numa reunião, diga :", "options": ["Passons au point suivant.", "Tais-toi et écoute.", "Je m'ennuie.", "Suivant, peu importe."], "answer": 0, "explanation": "*Passons au point suivant*."},
+            {"id": "fr-c1-3-3-e2", "type": "fill_blank", "prompt": "Veuillez ___ ci-joint le document. (encontrar)", "answers": ["trouver"], "hint": "veuillez + infinitivo", "explanation": "*Veuillez trouver ci-joint*."},
+            {"id": "fr-c1-3-3-e3", "type": "translate", "prompt": "Escrevo para acompanhar nossa conversa de ontem.", "answers": ["Je me permets de vous écrire au sujet de notre conversation d'hier.", "Je vous écris au sujet de notre conversation d'hier."], "explanation": "E-mail formal."},
+            {"id": "fr-c1-3-3-e4", "type": "reorder", "prompt": "Monte a frase: podemos retomar esse ponto, por favor", "words": ["revenir sur", "pourrions-nous", "ce point", "?"], "answers": ["Pourrions-nous revenir sur ce point ?"], "explanation": "Pedido polido numa reunião."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-c1-u4",
+      "title": "Fluidité naturelle",
+      "goal": "Falar com naturalidade: expressões coloquiais, hesitações e registros diferentes.",
+      "lessons": [
+        {
+          "id": "fr-c1-4-1",
+          "title": "Expressions idiomatiques avancées",
+          "objective": "Usar expressões idiomáticas de uso frequente entre falantes nativos.",
+          "explanation": "- *Mettre les points sur les i* — colocar os pingos nos is\n- *Tomber dans les pommes* — desmaiar\n- *Avoir du pain sur la planche* — ter muito trabalho pela frente\n- *Coûter les yeux de la tête* — custar os olhos da cara\n- *Être au courant* — estar informado",
+          "key_phrases": [
+            {"en": "Il faut mettre les points sur les i.", "pt": "É preciso colocar os pingos nos is."},
+            {"en": "On a du pain sur la planche.", "pt": "Temos muito trabalho pela frente."}
+          ],
+          "exercises": [
+            {"id": "fr-c1-4-1-e1", "type": "multiple_choice", "prompt": "« Avoir du pain sur la planche » significa :", "options": ["ter pão na mesa", "ter muito trabalho pela frente", "estar com fome", "ter férias"], "answer": 1, "explanation": "Muito trabalho a fazer."},
+            {"id": "fr-c1-4-1-e2", "type": "fill_blank", "prompt": "Il faut mettre les ___ sur les i.", "answers": ["points"], "hint": "pingos", "explanation": "*mettre les points sur les i*."},
+            {"id": "fr-c1-4-1-e3", "type": "translate", "prompt": "Ela sempre está por dentro das notícias.", "answers": ["Elle est toujours au courant de l'actualité.", "Elle est toujours au courant des nouvelles."], "explanation": "*être au courant*."},
+            {"id": "fr-c1-4-1-e4", "type": "multiple_choice", "prompt": "« Il est tombé dans les pommes » significa :", "options": ["ele caiu da macieira", "ele desmaiou", "ele foi ao mercado", "ele comeu muito"], "answer": 1, "explanation": "*Tomber dans les pommes* = desmaiar."}
+          ]
+        },
+        {
+          "id": "fr-c1-4-2",
+          "title": "Hésiter et reformuler",
+          "objective": "Ganhar tempo e reformular sem travar a conversa.",
+          "explanation": "Falantes fluentes usam expressões de transição:\n\n- *Euh, laisse-moi réfléchir...* — Hum, deixa eu pensar...\n- *C'est-à-dire ...* — Ou seja...\n- *Enfin, disons ...* — Bem, digamos...\n- *En fait, ...* — Na verdade...\n- *Si je me souviens bien ...* — Se não me engano...",
+          "key_phrases": [
+            {"en": "C'est-à-dire que nous avons besoin de temps.", "pt": "Ou seja, precisamos de tempo."},
+            {"en": "En fait, je ne suis pas sûr.", "pt": "Na verdade, não tenho certeza."}
+          ],
+          "exercises": [
+            {"id": "fr-c1-4-2-e1", "type": "multiple_choice", "prompt": "Para reformular o que acabou de dizer, você usa :", "options": ["C'est-à-dire", "Il était une fois", "Attends", "Tout à coup"], "answer": 0, "explanation": "*C'est-à-dire* = ou seja."},
+            {"id": "fr-c1-4-2-e2", "type": "fill_blank", "prompt": "Euh, laisse-moi ___ un instant. (pensar)", "answers": ["réfléchir"], "hint": "pausa para pensar", "explanation": "*réfléchir*."},
+            {"id": "fr-c1-4-2-e3", "type": "translate", "prompt": "Se não me engano, a reunião foi na terça.", "answers": ["Si je me souviens bien, la réunion était mardi.", "Si je ne me trompe pas, la réunion était mardi."], "explanation": "Expressão de dúvida suave."},
+            {"id": "fr-c1-4-2-e4", "type": "reorder", "prompt": "Monte a frase: o que quero dizer é que concordo com você", "words": ["d'accord avec toi", "C'est-à-dire que", "je suis"], "answers": ["C'est-à-dire que je suis d'accord avec toi."], "explanation": "Reformulação."}
+          ]
+        },
+        {
+          "id": "fr-c1-4-3",
+          "title": "Registre soutenu et registre familier",
+          "objective": "Reconhecer e alternar entre o registro formal e o informal.",
+          "explanation": "Os mesmos conteúdos mudam de registro:\n\n- formal: *Je ne sais pas.* / *Il n'est pas venu.*\n- informal: *Je sais pas.* / *Il est pas venu.*\n\nNa fala coloquial, o *ne* costuma cair, e *ça* substitui *cela*: *Ça marche !* — Funciona!",
+          "key_phrases": [
+            {"en": "Je sais pas, honnêtement.", "pt": "Não sei, sinceramente. (informal)"},
+            {"en": "Je ne sais pas, en toute franchise.", "pt": "Não sei, com toda franqueza. (formal)"}
+          ],
+          "exercises": [
+            {"id": "fr-c1-4-3-e1", "type": "multiple_choice", "prompt": "Qual frase é a mais formal ?", "options": ["Ça marche !", "Je ne sais pas, en toute franchise.", "Je sais pas trop.", "C'est ouf !"], "answer": 1, "explanation": "*en toute franchise* é formal."},
+            {"id": "fr-c1-4-3-e2", "type": "fill_blank", "prompt": "« Ça ___ » é a forma coloquial de « cela marche » (funciona).", "answers": ["marche"], "hint": "funcionar", "explanation": "*Ça marche*."},
+            {"id": "fr-c1-4-3-e3", "type": "translate", "prompt": "Não sei, sinceramente.", "answers": ["Je ne sais pas, franchement.", "Je sais pas, franchement.", "Je ne sais pas, honnêtement."], "explanation": "Versão formal ou informal."},
+            {"id": "fr-c1-4-3-e4", "type": "multiple_choice", "prompt": "Qual frase é coloquial e informal ?", "options": ["Il n'est pas arrivé.", "Il est pas arrivé.", "Il n'est point arrivé.", "Il n'est pas encore arrivé."], "answer": 1, "explanation": "A queda do *ne* é coloquial."}
+          ]
+        }
+      ]
+    }
+  ]
+}

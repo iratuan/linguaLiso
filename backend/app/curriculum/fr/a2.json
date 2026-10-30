@@ -1,0 +1,228 @@
+{
+  "level": "A2",
+  "title": "Básico",
+  "description": "Contar o passado, falar de planos, comparar coisas e resolver situações de viagem em francês.",
+  "goal": "Você conversa sobre experiências, planos e necessidades do cotidiano.",
+  "units": [
+    {
+      "id": "fr-a2-u1",
+      "title": "Raconter le passé",
+      "goal": "Contar o que aconteceu, com datas e detalhes.",
+      "lessons": [
+        {
+          "id": "fr-a2-1-1",
+          "title": "Passé composé com avoir",
+          "objective": "Formar o passé composé com avoir e o particípio passado.",
+          "explanation": "O **passé composé** conta uma ação concluída no passado. Para a maioria dos verbos, use **avoir** no presente + particípio passado:\n\n- *J'ai mangé.* — Eu comi.\n- *Nous avons travaillé.* — Nós trabalhamos.\n- *Tu n'as pas compris ?* — Você não entendeu?\n\nVerbos em -er: particípio em **-é** (*parler → parlé*). Outros: *avoir → eu*, *faire → fait*, *prendre → pris*.",
+          "key_phrases": [
+            {"en": "J'ai mangé une pizza hier.", "pt": "Comi uma pizza ontem."},
+            {"en": "Nous avons regardé un film.", "pt": "Nós assistimos a um filme."}
+          ],
+          "exercises": [
+            {"id": "fr-a2-1-1-e1", "type": "multiple_choice", "prompt": "Hier, j'___ un livre. (li)", "options": ["ai lu", "ai lire", "suis lu", "avais lu"], "answer": 0, "explanation": "*lire* → *lu*: *j'ai lu*."},
+            {"id": "fr-a2-1-1-e2", "type": "fill_blank", "prompt": "Nous avons ___ (parler) avec le professeur.", "answers": ["parlé"], "hint": "verbo em -er: particípio -é", "explanation": "*parlé*."},
+            {"id": "fr-a2-1-1-e3", "type": "translate", "prompt": "Eu fiz o almoço ontem.", "answers": ["J'ai fait le déjeuner hier.", "J'ai fait à manger hier."], "explanation": "*faire* → *fait*."},
+            {"id": "fr-a2-1-1-e4", "type": "reorder", "prompt": "Monte a frase: ela não entendeu a pergunta", "words": ["n'a pas", "compris", "Elle", "la question"], "answers": ["Elle n'a pas compris la question."], "explanation": "Negativa do passé composé: *n'a pas* + particípio."}
+          ]
+        },
+        {
+          "id": "fr-a2-1-2",
+          "title": "Passé composé com être",
+          "objective": "Usar être nos verbos de movimento e fazer o acordo do particípio.",
+          "explanation": "Alguns verbos (sobretudo de movimento) usam **être** no lugar de avoir, e o particípio concorda com o sujeito:\n\n- *Je suis allé(e) à Paris.* — Fui a Paris.\n- *Elle est partie à huit heures.* — Ela partiu às oito.\n- *Ils sont arrivés.* / *Elles sont arrivées.*\n\nMemorize o grupo: *aller, venir, arriver, partir, sortir, entrer, rester, naître, mourir*.",
+          "key_phrases": [
+            {"en": "Je suis arrivé hier.", "pt": "Cheguei ontem."},
+            {"en": "Elle est partie tôt.", "pt": "Ela saiu cedo."}
+          ],
+          "exercises": [
+            {"id": "fr-a2-1-2-e1", "type": "multiple_choice", "prompt": "Elle ___ à Lyon hier. (foi)", "options": ["est allée", "a allé", "est allé", "a allée"], "answer": 0, "explanation": "*aller* usa *être*; sujeito feminino: *allée*."},
+            {"id": "fr-a2-1-2-e2", "type": "fill_blank", "prompt": "Ils sont ___ (arriver) en retard.", "answers": ["arrivés"], "hint": "sujeito masculino plural", "explanation": "*arrivés* (acordo no plural masculino)."},
+            {"id": "fr-a2-1-2-e3", "type": "translate", "prompt": "Nós saímos cedo.", "answers": ["Nous sommes sortis tôt.", "Nous sommes sorties tôt."], "explanation": "*sortir* usa *être*."},
+            {"id": "fr-a2-1-2-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "Je suis née en 1995 à Rio.", "answers": ["Je suis née en 1995 à Rio.", "Je suis né en 1995 à Rio."], "explanation": "*née* (mulher) ou *né* (homem) do verbo *naître*."}
+          ]
+        },
+        {
+          "id": "fr-a2-1-3",
+          "title": "L'imparfait",
+          "objective": "Descrever o passado: hábitos, cenários e situações que duravam.",
+          "explanation": "O **imparfait** descreve o que era, o que costumava acontecer, ou o cenário:\n\n- *Quand j'étais petit, j'habitais à la campagne.* — Quando eu era pequeno, morava no campo.\n- *Il faisait beau.* — Estava bonito (tempo).\n\nFormação: radical da 1ª pessoa do plural (*nous parlons → parl-*) + *-ais, -ais, -ait, -ions, -iez, -aient*. Exceção: *être → ét-*.",
+          "key_phrases": [
+            {"en": "Il faisait très froid.", "pt": "Estava muito frio."},
+            {"en": "Je jouais au foot tous les dimanches.", "pt": "Eu jogava futebol todo domingo."}
+          ],
+          "exercises": [
+            {"id": "fr-a2-1-3-e1", "type": "multiple_choice", "prompt": "Quand j'étais jeune, je ___ au parc. (costumava ir)", "options": ["vais", "suis allé", "allais", "irai"], "answer": 2, "explanation": "Hábito no passado: imparfait."},
+            {"id": "fr-a2-1-3-e2", "type": "fill_blank", "prompt": "Nous ___ (habiter) à Paris à cette époque.", "answers": ["habitions"], "hint": "nous: radical habit- + -ions", "explanation": "*habitions*."},
+            {"id": "fr-a2-1-3-e3", "type": "translate", "prompt": "Estava chovendo quando cheguei.", "answers": ["Il pleuvait quand je suis arrivé.", "Il pleuvait quand je suis arrivée."], "explanation": "Cenário (imparfait) + ação interrompida (passé composé)."},
+            {"id": "fr-a2-1-3-e4", "type": "multiple_choice", "prompt": "Quel est l'imparfait de « c'est » (ele era)?", "options": ["il est", "il était", "il a été", "il sera"], "answer": 1, "explanation": "*être* no imparfait: *était*."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-a2-u2",
+      "title": "Projets et prévisions",
+      "goal": "Falar do futuro: planos, decisões e previsões.",
+      "lessons": [
+        {
+          "id": "fr-a2-2-1",
+          "title": "Le futur proche",
+          "objective": "Falar de planos próximos com aller + infinitif.",
+          "explanation": "Para planos próximos, use o presente de **aller** + infinitivo:\n\n- *Je vais partir demain.* — Vou partir amanhã.\n- *Nous allons manger au restaurant.* — Vamos jantar no restaurante.\n- *Tu vas faire quoi ce week-end ?* — O que você vai fazer no fim de semana?",
+          "key_phrases": [
+            {"en": "Je vais voyager le mois prochain.", "pt": "Vou viajar no mês que vem."},
+            {"en": "Qu'est-ce que tu vas faire ?", "pt": "O que você vai fazer?"}
+          ],
+          "exercises": [
+            {"id": "fr-a2-2-1-e1", "type": "multiple_choice", "prompt": "Ils ___ acheter une maison. (vão)", "options": ["vont", "vais", "allons", "allez"], "answer": 0, "explanation": "*ils vont*."},
+            {"id": "fr-a2-2-1-e2", "type": "fill_blank", "prompt": "Je vais ___ (travailler) demain.", "answers": ["travailler"], "hint": "verbo no infinitivo", "explanation": "*aller* + infinitivo."},
+            {"id": "fr-a2-2-1-e3", "type": "translate", "prompt": "Vou começar um curso em janeiro.", "answers": ["Je vais commencer un cours en janvier."], "explanation": "*Je vais* + infinitivo."},
+            {"id": "fr-a2-2-1-e4", "type": "reorder", "prompt": "Monte a pergunta: o que você vai fazer amanhã?", "words": ["faire", "vas-tu", "demain", "Qu'est-ce que"], "answers": ["Qu'est-ce que tu vas faire demain ?"], "explanation": "*Qu'est-ce que tu vas faire ?*"}
+          ]
+        },
+        {
+          "id": "fr-a2-2-2",
+          "title": "Le futur simple",
+          "objective": "Conjugar o futuro simples e usar os verbos irregulares mais comuns.",
+          "explanation": "O futuro simples é formado com o **infinitivo + -ai, -as, -a, -ons, -ez, -ont** (sem o -e final de *-re*):\n\n- *je parlerai, tu parleras, il parlera*\n- *nous parlerons, vous parlerez, ils parleront*\n\nIrregulares importantes: *être → serai, avoir → aurai, aller → irai, faire → ferai, pouvoir → pourrai*.",
+          "key_phrases": [
+            {"en": "Je serai là demain.", "pt": "Estarei aí amanhã."},
+            {"en": "Nous ferons un voyage.", "pt": "Faremos uma viagem."}
+          ],
+          "exercises": [
+            {"id": "fr-a2-2-2-e1", "type": "multiple_choice", "prompt": "Demain, je ___ au bureau. (irei)", "options": ["irai", "vais", "suis allé", "allais"], "answer": 0, "explanation": "*aller* no futuro simples: *irai*."},
+            {"id": "fr-a2-2-2-e2", "type": "fill_blank", "prompt": "Vous ___ (avoir) besoin d'aide ?", "answers": ["aurez"], "hint": "avoir → aur-", "explanation": "*vous aurez*."},
+            {"id": "fr-a2-2-2-e3", "type": "translate", "prompt": "Ela vai ser médica.", "answers": ["Elle sera médecin.", "Elle sera médecin ."], "explanation": "*être* no futuro: *sera*."},
+            {"id": "fr-a2-2-2-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "On se verra la semaine prochaine.", "answers": ["On se verra la semaine prochaine."], "explanation": "*voir* → *verra* (futuro)."}
+          ]
+        },
+        {
+          "id": "fr-a2-2-3",
+          "title": "Les pronoms le, la, les",
+          "objective": "Substituir o objeto direto por le, la ou les.",
+          "explanation": "Os pronoms **le, la, les** substituem o objeto direto (sem preposição) e ficam **antes do verbo**:\n\n- *Tu prends le bus ?* → *Tu le prends ?*\n- *J'adore cette chanson.* → *Je la adore.* → *Je l'adore.*\n- *Je vois mes amis.* → *Je les vois.*\n\nAntes de *avoir* no passado composé, o pronome vem antes do auxiliar: *Je l'ai vu.*",
+          "key_phrases": [
+            {"en": "Je le prends.", "pt": "Eu o levo."},
+            {"en": "Je l'ai vue hier.", "pt": "Eu a vi ontem."}
+          ],
+          "exercises": [
+            {"id": "fr-a2-2-3-e1", "type": "multiple_choice", "prompt": "Tu aimes la pizza ? Oui, je ___ aime beaucoup.", "options": ["le", "la", "les", "lui"], "answer": 1, "explanation": "*pizza* é feminino: *la*."},
+            {"id": "fr-a2-2-3-e2", "type": "fill_blank", "prompt": "Tu connais mes parents ? Oui, je ___ connais. (os)", "answers": ["les"], "hint": "plural", "explanation": "*les*."},
+            {"id": "fr-a2-2-3-e3", "type": "translate", "prompt": "Eu o vi ontem.", "answers": ["Je l'ai vu hier.", "Je l'ai vu hier !"], "explanation": "O pronome vai antes de *avoir*."},
+            {"id": "fr-a2-2-3-e4", "type": "reorder", "prompt": "Monte a frase: eu as comprei (elas, femininas)", "words": ["achetées", "Je", "les", "ai"], "answers": ["Je les ai achetées."], "explanation": "Com *les* antes de *avoir*, o particípio concorda com o objeto feminino plural."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-a2-u3",
+      "title": "Décrire et comparer",
+      "goal": "Comparar pessoas, lugares e objetos.",
+      "lessons": [
+        {
+          "id": "fr-a2-3-1",
+          "title": "Le comparatif",
+          "objective": "Comparar com plus, moins e aussi, e usar que.",
+          "explanation": "Para comparar:\n\n- **plus ... que** — mais ... do que: *Paris est plus grande que Lyon.*\n- **moins ... que** — menos ... do que: *Ce film est moins long.*\n- **aussi ... que** — tão ... quanto: *Il est aussi sympa que son frère.*\n\nIrregulares: *bon → meilleur*, *bien → mieux*.",
+          "key_phrases": [
+            {"en": "C'est plus cher que hier.", "pt": "Está mais caro que ontem."},
+            {"en": "Ce café est meilleur.", "pt": "Este café é melhor."}
+          ],
+          "exercises": [
+            {"id": "fr-a2-3-1-e1", "type": "multiple_choice", "prompt": "Ce train est ___ rapide ___ l'avion. (menos... que)", "options": ["moins / que", "plus / que", "aussi / de", "moins / de"], "answer": 0, "explanation": "*moins ... que*."},
+            {"id": "fr-a2-3-1-e2", "type": "fill_blank", "prompt": "Ce gâteau est ___ bon que celui-là. (melhor)", "answers": ["meilleur", "plus bon"], "hint": "irregular de bon", "explanation": "*meilleur que*."},
+            {"id": "fr-a2-3-1-e3", "type": "translate", "prompt": "Ela é tão alta quanto o irmão.", "answers": ["Elle est aussi grande que son frère.", "Elle est aussi grande que son frère ."], "explanation": "*aussi ... que*."},
+            {"id": "fr-a2-3-1-e4", "type": "reorder", "prompt": "Monte a frase: o inverno é mais frio que o verão", "words": ["que", "froid", "plus", "L'hiver est", "l'été"], "answers": ["L'hiver est plus froid que l'été."], "explanation": "*plus* + adjetivo + *que*."}
+          ]
+        },
+        {
+          "id": "fr-a2-3-2",
+          "title": "Le superlatif",
+          "objective": "Dizer o mais e o melhor de um grupo.",
+          "explanation": "O superlativo usa **le/la/les plus** (ou *moins*) + adjetivo:\n\n- *C'est la plus belle ville du Brésil.* — É a cidade mais bonita do Brasil.\n- *C'est le meilleur restaurant de la ville.* — É o melhor restaurante da cidade.\n\nUse *de* para indicar o grupo.",
+          "key_phrases": [
+            {"en": "C'est le meilleur film de l'année.", "pt": "É o melhor filme do ano."},
+            {"en": "Elle est la plus rapide de la classe.", "pt": "Ela é a mais rápida da turma."}
+          ],
+          "exercises": [
+            {"id": "fr-a2-3-2-e1", "type": "multiple_choice", "prompt": "C'est ___ montagne du monde. (a mais alta)", "options": ["la plus haute", "le plus haut", "plus haute", "la haute"], "answer": 0, "explanation": "*montagne* é feminino: *la plus haute*."},
+            {"id": "fr-a2-3-2-e2", "type": "fill_blank", "prompt": "C'est le ___ étudiant de la classe. (melhor)", "answers": ["meilleur"], "hint": "irregular", "explanation": "*le meilleur*."},
+            {"id": "fr-a2-3-2-e3", "type": "translate", "prompt": "Esta é a cidade mais bonita que eu conheço.", "answers": ["C'est la plus belle ville que je connaisse.", "C'est la plus belle ville que je connais."], "explanation": "*que je connaisse* (subjuntivo após superlativo) ou *que je connais*."},
+            {"id": "fr-a2-3-2-e4", "type": "multiple_choice", "prompt": "Elle est ___ étudiante de la classe. (a menos)", "options": ["la moins", "le moins", "moins", "plus la"], "answer": 0, "explanation": "*la moins* + adjetivo: superlativo de menos."}
+          ]
+        },
+        {
+          "id": "fr-a2-3-3",
+          "title": "Les pronoms lui et leur",
+          "objective": "Substituir o objeto indireto de pessoa com lui e leur.",
+          "explanation": "Para objetos indiretos de pessoas (com *à*), use **lui** (a ele/ela) e **leur** (a eles/elas):\n\n- *Je parle à Marie.* → *Je lui parle.*\n- *Je téléphone à mes parents.* → *Je leur téléphone.*\n\nCom verbos como *donner, dire, écrire, demander*: *Je lui donne un cadeau.*",
+          "key_phrases": [
+            {"en": "Je lui écris souvent.", "pt": "Eu escrevo para ela com frequência."},
+            {"en": "Je leur dis bonjour.", "pt": "Eu digo oi a eles."}
+          ],
+          "exercises": [
+            {"id": "fr-a2-3-3-e1", "type": "multiple_choice", "prompt": "Tu téléphones à ton frère ? Oui, je ___ téléphone.", "options": ["lui", "leur", "le", "les"], "answer": 0, "explanation": "*à ton frère* → *lui*."},
+            {"id": "fr-a2-3-3-e2", "type": "fill_blank", "prompt": "Je ___ (dar) un cadeau à mes amis. (eu dou)", "answers": ["donne"], "hint": "dar", "explanation": "*Je leur donne* com *leur* na frase."},
+            {"id": "fr-a2-3-3-e3", "type": "translate", "prompt": "Eu escrevo para eles todas as semanas.", "answers": ["Je leur écris toutes les semaines.", "Je leur écris chaque semaine."], "explanation": "*leur* = a eles/elas."},
+            {"id": "fr-a2-3-3-e4", "type": "reorder", "prompt": "Monte a frase: eu falo com ela amanhã", "words": ["lui", "demain", "Je", "parle"], "answers": ["Je lui parle demain."], "explanation": "*lui* antes do verbo."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-a2-u4",
+      "title": "Voyages et services",
+      "goal": "Resolver situações práticas: pedir ajuda, reservar e falar ao telefone.",
+      "lessons": [
+        {
+          "id": "fr-a2-4-1",
+          "title": "Pouvoir, vouloir, devoir",
+          "objective": "Pedir, desejar e expressar obrigação com os verbos modais.",
+          "explanation": "Três verbos modais muito úteis:\n\n- **pouvoir** (poder): *Pouvez-vous m'aider ?* — Pode me ajudar?\n- **vouloir** (querer): *Je veux un billet.* — Quero um bilhete.\n- **devoir** (dever): *Je dois partir.* — Preciso/Devo partir.\n\nDepois de um modal, o verbo principal vai no infinitivo.",
+          "key_phrases": [
+            {"en": "Pouvez-vous m'aider ?", "pt": "Pode me ajudar?"},
+            {"en": "Je dois partir maintenant.", "pt": "Preciso ir agora."}
+          ],
+          "exercises": [
+            {"id": "fr-a2-4-1-e1", "type": "multiple_choice", "prompt": "Vous ___ répéter, s'il vous plaît ? (poderia)", "options": ["pouvez", "voulez", "devez", "savez"], "answer": 0, "explanation": "*Pouvez-vous ...?* = poderia..."},
+            {"id": "fr-a2-4-1-e2", "type": "fill_blank", "prompt": "Je ___ (querer) réserver une chambre.", "answers": ["veux"], "hint": "vouloir, eu", "explanation": "*je veux*."},
+            {"id": "fr-a2-4-1-e3", "type": "translate", "prompt": "Preciso falar com o gerente.", "answers": ["Je dois parler au gérant.", "Je dois parler au directeur."], "explanation": "*devoir* + infinitivo."},
+            {"id": "fr-a2-4-1-e4", "type": "reorder", "prompt": "Monte a pergunta: posso sentar aqui?", "words": ["m'asseoir", "Puis-je", "ici", "?"], "answers": ["Puis-je m'asseoir ici ?"], "explanation": "*Puis-je* + infinitivo (*m'asseoir*)."}
+          ]
+        },
+        {
+          "id": "fr-a2-4-2",
+          "title": "Il faut et les obligations",
+          "objective": "Dizer o que é preciso fazer e o que é proibido.",
+          "explanation": "- **Il faut + infinitivo** — é preciso: *Il faut réserver.*\n- **Il faut que + subjuntivo** — é preciso que: *Il faut que tu viennes.*\n- **Il ne faut pas** — não se deve: *Il ne faut pas fumer ici.*\n- **Interdit de** — proibido: *Interdit de stationner.*",
+          "key_phrases": [
+            {"en": "Il faut présenter votre passeport.", "pt": "É preciso apresentar o passaporte."},
+            {"en": "Il ne faut pas stationner ici.", "pt": "Não se deve estacionar aqui."}
+          ],
+          "exercises": [
+            {"id": "fr-a2-4-2-e1", "type": "multiple_choice", "prompt": "À l'aéroport, ___ présenter votre passeport.", "options": ["il faut", "il est", "vous voulez", "je suis"], "answer": 0, "explanation": "*Il faut* + infinitivo."},
+            {"id": "fr-a2-4-2-e2", "type": "fill_blank", "prompt": "Il ne ___ pas fumer ici. (deve)", "answers": ["faut"], "hint": "falloir", "explanation": "*Il ne faut pas*."},
+            {"id": "fr-a2-4-2-e3", "type": "translate", "prompt": "Não é preciso pagar agora.", "answers": ["Il n'est pas nécessaire de payer maintenant.", "Il ne faut pas payer maintenant.", "Il n'faut pas payer maintenant."], "explanation": "*Il n'est pas nécessaire de* ou *Il ne faut pas*."},
+            {"id": "fr-a2-4-2-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "Il faut arriver avant neuf heures.", "answers": ["Il faut arriver avant neuf heures."], "explanation": "Regra de horário."}
+          ]
+        },
+        {
+          "id": "fr-a2-4-3",
+          "title": "Les pronoms y et en",
+          "objective": "Substituir lugares com y e quantidades ou assuntos com en.",
+          "explanation": "- **y** substitui lugares introduzidos por *à*: *Je vais à Paris.* → *J'y vais.*\n- **en** substitui *de* + substantivo (quantidade ou assunto): *Tu veux du café ?* → *Oui, j'en veux.*\n\nOs dois ficam antes do verbo conjugado.",
+          "key_phrases": [
+            {"en": "J'y vais demain.", "pt": "Vou lá amanhã."},
+            {"en": "J'en ai deux.", "pt": "Tenho dois."}
+          ],
+          "exercises": [
+            {"id": "fr-a2-4-3-e1", "type": "multiple_choice", "prompt": "Tu vas à la poste ? Oui, j'___ vais.", "options": ["y", "en", "le", "lui"], "answer": 0, "explanation": "Lugar com *à*: *y*."},
+            {"id": "fr-a2-4-3-e2", "type": "fill_blank", "prompt": "Tu as des frères ? Oui, j'___ ai deux. (deles)", "answers": ["en"], "hint": "quantidade de algo", "explanation": "*j'en ai deux*."},
+            {"id": "fr-a2-4-3-e3", "type": "translate", "prompt": "Eu moro lá há dois anos.", "answers": ["J'y habite depuis deux ans.", "J'y habite depuis deux ans."], "explanation": "*y* substitui o lugar."},
+            {"id": "fr-a2-4-3-e4", "type": "reorder", "prompt": "Monte a frase: tem muitos? sim, tenho muitos", "words": ["beaucoup", "J'en", "ai", "Oui"], "answers": ["Oui, j'en ai beaucoup."], "explanation": "*en* antes do verbo auxiliar."}
+          ]
+        }
+      ]
+    }
+  ]
+}

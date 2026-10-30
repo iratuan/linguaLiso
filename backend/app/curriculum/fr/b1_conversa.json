@@ -1,0 +1,118 @@
+{
+  "level": "B1",
+  "title": "Intermediário",
+  "description": "Conversas com opiniões, experiências e situações do trabalho em francês.",
+  "goal": "Você conduz conversas sobre temas do cotidiano, explica ideias e reage a opiniões diferentes.",
+  "units": [
+    {
+      "id": "fr-b1-cu1",
+      "title": "Opinions et expériences",
+      "goal": "Compartilhar o que pensa e o que já viveu, com argumentos simples.",
+      "lessons": [
+        {
+          "id": "fr-b1-c1-1",
+          "title": "Conversa : un film",
+          "objective": "Dar opinião sobre algo que viu e justificar.",
+          "explanation": "Para opinar e justificar:\n\n- *Je l'ai trouvé très bien, parce que l'histoire était originale.*\n- *Franchement, je l'ai trouvé un peu lent.*\n- *Ce que j'ai préféré, c'est la fin.*\n\nDepois de uma opinião, justifique com *parce que* ou *car*.",
+          "key_phrases": [
+            {"en": "Franchement, je l'ai trouvé un peu lent.", "pt": "Sinceramente, achei um pouco lento."},
+            {"en": "Ce que j'ai préféré, c'est la fin.", "pt": "O que mais gostei foi o final."}
+          ],
+          "exercises": [
+            {"id": "fr-b1-c1-1-e1", "type": "open_reply", "prompt": "Tu as vu le nouveau film dont tout le monde parle ?", "context": "Um colega quer saber sua opinião sobre um filme.", "hint": "Diga se viu e o que achou.", "answers": ["Oui, je l'ai vu la semaine dernière. Je l'ai beaucoup aimé.", "Pas encore, mais on m'a dit que c'est bien.", "Je l'ai vu. Franchement, il était un peu long."], "explanation": "Responda com a experiência e uma opinião."},
+            {"id": "fr-b1-c1-1-e2", "type": "open_reply", "prompt": "Ah bon ? Pourquoi tu l'as aimé ?", "context": "O colega quer saber o motivo da sua opinião.", "hint": "Justifique com *parce que*.", "answers": ["Parce que l'histoire était originale et les acteurs étaient excellents.", "Je l'ai aimé parce que la musique était magnifique.", "Parce qu'il m'a fait réfléchir sur ma vie."], "explanation": "*parce que* + motivo."},
+            {"id": "fr-b1-c1-1-e3", "type": "open_reply", "prompt": "Intéressant ! Il y a quelque chose que tu n'as pas aimé ?", "context": "O colega quer saber se há algo de que você não gostou.", "hint": "Diga o que não gostou, com educação.", "answers": ["Je trouve que la fin était un peu prévisible.", "Je n'ai pas beaucoup aimé le personnage principal.", "Je comprends ton point de vue, mais j'ai trouvé la deuxième partie lente."], "explanation": "*Je comprends ton point de vue, mais...* é uma forma educada de discordar."},
+            {"id": "fr-b1-c1-1-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "Ce que j'ai préféré, c'est la fin.", "answers": ["Ce que j'ai préféré, c'est la fin."], "explanation": "Estrutura *ce que j'ai préféré, c'est...*."}
+          ]
+        },
+        {
+          "id": "fr-b1-c1-2",
+          "title": "Conversa : un voyage marquant",
+          "objective": "Contar uma experiência de viagem com detalhes.",
+          "explanation": "Para contar uma viagem, combine o *passé composé* (o que aconteceu) e o *imparfait* (como era):\n\n- *Je suis allé à Lisbonne. Il faisait beau.*\n- *Nous avons logé dans un petit hôtel, qui était magnifique.*\n\nConectores úteis: *d'abord, ensuite, finalement*.",
+          "key_phrases": [
+            {"en": "Je suis déjà allé au Japon.", "pt": "Eu já estive no Japão."},
+            {"en": "C'était un voyage inoubliable.", "pt": "Foi uma viagem inesquecível."}
+          ],
+          "exercises": [
+            {"id": "fr-b1-c1-2-e1", "type": "open_reply", "prompt": "Tu as déjà voyagé à l'étranger ?", "context": "Um novo amigo pergunta sobre suas viagens.", "hint": "Diga se já viajou e para onde.", "answers": ["Oui, je suis déjà allé au Portugal.", "Oui, je suis allé en Argentine l'année dernière.", "Pas encore, mais j'aimerais beaucoup aller au Japon."], "explanation": "*Je suis déjà allé* para experiências; *je suis allé* para viagens com data."},
+            {"id": "fr-b1-c1-2-e2", "type": "open_reply", "prompt": "Ah, super ! Quel a été le meilleur moment ?", "context": "O amigo quer saber o melhor momento da viagem.", "hint": "Conte algo que aconteceu.", "answers": ["La nourriture était délicieuse et les gens étaient très accueillants.", "On a visité une vieille église magnifique.", "J'ai adoré me promener sur la plage au coucher du soleil."], "explanation": "Detalhes sensoriais deixam a história viva."},
+            {"id": "fr-b1-c1-2-e3", "type": "open_reply", "prompt": "Ça a l'air inoubliable ! Tu y retournerais ?", "context": "O amigo pergunta se você voltaria.", "hint": "Diga se voltaria e por quê.", "answers": ["Certainement ! J'aimerais y retourner l'été prochain.", "Peut-être, si j'avais plus de temps.", "J'y retournerais, parce qu'il y a encore tant à voir."], "explanation": "*J'aimerais* + infinitivo para desejos; *j'y retournerais* é o condicional de *retourner*."},
+            {"id": "fr-b1-c1-2-e4", "type": "reorder", "prompt": "Monte a frase: primeiro visitamos o museu, depois almoçamos", "words": ["D'abord", "nous avons visité", "le musée", "ensuite", "nous avons déjeuné"], "answers": ["D'abord, nous avons visité le musée, ensuite nous avons déjeuné."], "explanation": "*d'abord ... ensuite* organizam a sequência."}
+          ]
+        },
+        {
+          "id": "fr-b1-c1-3",
+          "title": "Conversa : être d'accord ou pas",
+          "objective": "Reagir a opiniões diferentes sem perder a cordialidade.",
+          "explanation": "Para concordar: *Tout à fait !* / *Je suis d'accord avec toi.*\n\nPara discordar com educação: *Je comprends ton point de vue, mais...* / *Je ne suis pas sûr que tu aies raison.*\n\nPara pedir mais informação antes de discordar: *Pourquoi tu penses ça ?*",
+          "key_phrases": [
+            {"en": "Je comprends ton point de vue, mais...", "pt": "Entendo o seu ponto de vista, mas..."},
+            {"en": "C'est un bon argument.", "pt": "É um bom argumento."}
+          ],
+          "exercises": [
+            {"id": "fr-b1-c1-3-e1", "type": "open_reply", "prompt": "Je pense que le télétravail est mieux que le bureau.", "context": "Colegas discutem trabalho remoto.", "hint": "Concorde ou discorde com educação.", "answers": ["Je comprends ton point de vue, mais je pense que le bureau aide le travail d'équipe.", "Je suis en partie d'accord : c'est pratique, mais les gens manquent les contacts.", "Tout à fait d'accord avec toi !"], "explanation": "*Je suis en partie d'accord* é uma concordância parcial muito usada."},
+            {"id": "fr-b1-c1-3-e2", "type": "open_reply", "prompt": "Pourquoi tu penses ça ?", "context": "O colega quer que você justifique sua posição.", "hint": "Dê um motivo.", "answers": ["Parce que ça donne plus de flexibilité.", "Parce qu'on gagne du temps sur le trajet.", "Je pense que c'est plus facile de communiquer en personne."], "explanation": "Justifique sua posição com um motivo claro."},
+            {"id": "fr-b1-c1-3-e3", "type": "open_reply", "prompt": "C'est un point juste. Tu proposes quoi ?", "context": "A discussão chegou a uma solução possível.", "hint": "Faça uma sugestão.", "answers": ["Et si on essayait un mélange des deux ?", "Peut-être deux jours au bureau par semaine.", "Je proposerais une période d'essai d'abord."], "explanation": "*Et si on...* / *Peut-être...* para sugerir."},
+            {"id": "fr-b1-c1-3-e4", "type": "multiple_choice", "prompt": "Qual frase discorda com educação ?", "options": ["Tu as complètement tort !", "Je comprends ton point de vue, mais je ne suis pas sûr.", "Ça ne va pas, c'est nul.", "Peu importe."], "answer": 1, "explanation": "Reconhecer o ponto antes de discordar é o mais educado."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-b1-cu2",
+      "title": "Au travail",
+      "goal": "Conversar com colegas, atualizar projetos e marcar reuniões.",
+      "lessons": [
+        {
+          "id": "fr-b1-c2-1",
+          "title": "Conversa : mise à jour d'un projet",
+          "objective": "Dar e pedir atualizações sobre o andamento de um trabalho.",
+          "explanation": "Para atualizar: *On est dans les temps.* (no prazo) / *On a un peu de retard.* (atrasados)\n\nPara perguntar: *Ça avance comment, le projet ?* / *Tu as fini le rapport ?*\n\nPara prever: *On devrait finir vendredi.*",
+          "key_phrases": [
+            {"en": "On est dans les temps.", "pt": "Estamos no prazo."},
+            {"en": "Tu as fini le rapport ?", "pt": "Você terminou o relatório?"}
+          ],
+          "exercises": [
+            {"id": "fr-b1-c2-1-e1", "type": "open_reply", "prompt": "Ça avance comment, le projet ?", "context": "Seu gerente quer uma atualização.", "hint": "Diga se está no prazo ou atrasado.", "answers": ["On est dans les temps. On devrait finir vendredi.", "On a un peu de retard, mais on rattrape.", "Ça avance bien. On a fini la première étape."], "explanation": "Atualize com o status e o próximo passo."},
+            {"id": "fr-b1-c2-1-e2", "type": "open_reply", "prompt": "Tu as envoyé la proposition mise à jour au client ?", "context": "O gerente pergunta sobre uma tarefa.", "hint": "Diga se já enviou ou quando vai enviar.", "answers": ["Pas encore. Je l'enverrai cet après-midi.", "Oui, je l'ai envoyée hier.", "J'ai envoyé un premier brouillon, et j'enverrai la version finale demain."], "explanation": "*Pas encore* + previsão com o futuro."},
+            {"id": "fr-b1-c2-1-e3", "type": "open_reply", "prompt": "Très bien. Il y a quelque chose qui te bloque ?", "context": "O gerente quer saber sobre impedimentos.", "hint": "Peça ajuda se precisar, ou diga que está tudo bem.", "answers": ["J'ai besoin d'un retour de l'équipe de design.", "Rien pour le moment, merci.", "Pourriez-vous m'aider à obtenir l'accès aux données ?"], "explanation": "Pedir ajuda com clareza agiliza o trabalho."},
+            {"id": "fr-b1-c2-1-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "On a bien avancé cette semaine.", "answers": ["On a bien avancé cette semaine."], "explanation": "*avancer* = avançar, progredir."}
+          ]
+        },
+        {
+          "id": "fr-b1-c2-2",
+          "title": "Conversa : fixer une réunion",
+          "objective": "Propor, confirmar e remarcar reuniões.",
+          "explanation": "Para propor: *Tu serais disponible pour un appel mardi ?*\n\nPara confirmar: *Ça me va.* / *Parfait, à mardi !*\n\nPara remarcar: *Serait-il possible de la décaler à jeudi ?*",
+          "key_phrases": [
+            {"en": "Tu serais disponible mardi ?", "pt": "Você estaria disponível na terça?"},
+            {"en": "Serait-il possible de la décaler à jeudi ?", "pt": "Seria possível adiá-la para quinta?"}
+          ],
+          "exercises": [
+            {"id": "fr-b1-c2-2-e1", "type": "open_reply", "prompt": "Salut ! Tu es libre pour un petit appel cette semaine ?", "context": "Um colega quer marcar uma conversa rápida.", "hint": "Proponha um dia e horário.", "answers": ["Oui ! Et si on se parlait mercredi à dix heures ?", "Jeudi après-midi, ça te va ?", "Mardi à trois heures, ça marche pour toi ?"], "explanation": "*Et si on...* e *ça te va ?* são formas naturais de propor."},
+            {"id": "fr-b1-c2-2-e2", "type": "open_reply", "prompt": "Malheureusement, j'ai un conflit mercredi. On peut décaler ?", "context": "O colega precisa remarcar.", "hint": "Aceite a mudança ou proponha outro horário.", "answers": ["Pas de problème. Jeudi à onze heures, ça irait ?", "Bien sûr, faisons plutôt vendredi.", "Ça me va, je t'envoie une nouvelle invitation."], "explanation": "Confirme a mudança e proponha uma alternativa."},
+            {"id": "fr-b1-c2-2-e3", "type": "open_reply", "prompt": "Super, j'envoie l'invitation tout de suite.", "context": "A reunião foi marcada.", "hint": "Confirme e agradeça.", "answers": ["Parfait, merci ! À jeudi.", "Ça me va très bien. Merci beaucoup !", "D'accord, on se parle jeudi."], "explanation": "Confirmações curtas encerram bem o combinado."},
+            {"id": "fr-b1-c2-2-e4", "type": "multiple_choice", "prompt": "Qual frase remarca uma reunião de forma educada ?", "options": ["Annule tout !", "Serait-il possible de la décaler à jeudi ?", "Je ne viens pas.", "Jeudi. D'accord ?"], "answer": 1, "explanation": "*Serait-il possible de la décaler...?*"}
+          ]
+        },
+        {
+          "id": "fr-b1-c2-3",
+          "title": "Conversa : un dîner de travail",
+          "objective": "Conversar socialmente sobre assuntos profissionais e pessoais.",
+          "explanation": "Em jantares e cafés com colegas, perguntas abertas funcionam bem:\n\n- *Depuis combien de temps tu travailles ici ?*\n- *Qu'est-ce que tu préfères dans ton travail ?*\n- *Tu as prévu quelque chose pour les vacances ?*\n\nElogie com naturalidade: *C'est une excellente idée !*",
+          "key_phrases": [
+            {"en": "Depuis combien de temps tu travailles ici ?", "pt": "Há quanto tempo você trabalha aqui?"},
+            {"en": "Tu as prévu quelque chose pour les vacances ?", "pt": "Você tem algum plano para as férias?"}
+          ],
+          "exercises": [
+            {"id": "fr-b1-c2-3-e1", "type": "open_reply", "prompt": "Depuis combien de temps tu travailles ici ?", "context": "Um colega novo pergunta sobre seu tempo de empresa.", "hint": "Responda com *depuis* ou *ça fait ... que*.", "answers": ["Ça fait trois ans que je travaille ici.", "Je travaille ici depuis 2021.", "Depuis environ deux ans."], "explanation": "*depuis* + duração ou ponto no tempo."},
+            {"id": "fr-b1-c2-3-e2", "type": "open_reply", "prompt": "Qu'est-ce que tu préfères dans ton travail ?", "context": "A conversa segue para o que você gosta no trabalho.", "hint": "Fale de algo que gosta.", "answers": ["J'aime beaucoup travailler avec l'équipe.", "Ce que je préfère, c'est résoudre les problèmes des clients.", "Le meilleur, c'est d'apprendre des choses nouvelles chaque jour."], "explanation": "*J'aime* + infinitivo; *ce que je préfère* para destacar."},
+            {"id": "fr-b1-c2-3-e3", "type": "open_reply", "prompt": "Tu as prévu quelque chose pour les vacances ?", "context": "A conversa muda para as férias.", "hint": "Fale de um plano usando *je vais*.", "answers": ["Je vais rendre visite à mes parents.", "Je pense aller à la montagne.", "Je compte me reposer et lire beaucoup."], "explanation": "*je vais*, *je pense* ou *je compte* para planos."},
+            {"id": "fr-b1-c2-3-e4", "type": "reorder", "prompt": "Monte a frase: essa é uma ótima ideia", "words": ["bonne", "une", "C'est", "idée"], "answers": ["C'est une bonne idée."], "explanation": "Elogio natural a uma sugestão."}
+          ]
+        }
+      ]
+    }
+  ]
+}

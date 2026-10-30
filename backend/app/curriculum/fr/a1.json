@@ -1,0 +1,229 @@
+{
+  "level": "A1",
+  "title": "Iniciante",
+  "description": "Primeiras frases em francês: se apresentar, falar da rotina, pedir direções e fazer compras.",
+  "goal": "Você se apresenta, entende perguntas simples e fala sobre o seu dia a dia em francês.",
+  "units": [
+    {
+      "id": "fr-a1-u1",
+      "title": "Primeiros contatos",
+      "goal": "Cumprimentar, se apresentar e dar informações pessoais básicas.",
+      "lessons": [
+        {
+          "id": "fr-a1-1-1",
+          "title": "Bonjour e o verbo être",
+          "objective": "Usar je suis, tu es, il/elle est para falar de você e de outras pessoas.",
+          "explanation": "O verbo **être** (ser / estar) é o mais usado no início:\n\n- **je suis** — eu sou / estou\n- **tu es** — você (informal) é / está\n- **il est / elle est** — ele / ela é / está\n\nUm detalhe importante: o adjetivo concorda com o gênero. Um homem diz *je suis brésilien*; uma mulher diz *je suis brésilienne*.",
+          "key_phrases": [
+            {"en": "Bonjour !", "pt": "Bom dia! / Olá!"},
+            {"en": "Enchanté(e).", "pt": "Prazer em conhecê-lo(a)."},
+            {"en": "Comment ça va ?", "pt": "Como vai?"}
+          ],
+          "exercises": [
+            {"id": "fr-a1-1-1-e1", "type": "multiple_choice", "prompt": "Complétez : Je ___ Marie.", "options": ["suis", "es", "est", "sommes"], "answer": 0, "explanation": "Com *je*, use *suis*."},
+            {"id": "fr-a1-1-1-e2", "type": "fill_blank", "prompt": "Elle ___ de Paris. (ela é)", "answers": ["est"], "hint": "Ela = elle (3ª pessoa)", "explanation": "*elle est*."},
+            {"id": "fr-a1-1-1-e3", "type": "translate", "prompt": "Eu sou estudante.", "answers": ["Je suis étudiant.", "Je suis étudiante."], "explanation": "Lembre o gênero: *étudiant* (homem) ou *étudiante* (mulher)."},
+            {"id": "fr-a1-1-1-e4", "type": "reorder", "prompt": "Monte a pergunta: como vai?", "words": ["va", "Comment", "ça"], "answers": ["Comment ça va ?"], "explanation": "*Comment ça va ?* = como vai? (expressão de cumprimento)."}
+          ]
+        },
+        {
+          "id": "fr-a1-1-2",
+          "title": "Se présenter",
+          "objective": "Dizer o nome, a origem e a nacionalidade.",
+          "explanation": "Para se apresentar:\n\n- *Je m'appelle Lucas.* — Eu me chamo Lucas.\n- *Je viens du Brésil.* — Eu venho do Brasil.\n- *Je suis brésilien.* — Eu sou brasileiro.\n\nPergunte com: *Comment tu t'appelles ?* ou *D'où viens-tu ?*",
+          "key_phrases": [
+            {"en": "Je m'appelle Lucas.", "pt": "Eu me chamo Lucas."},
+            {"en": "Je viens du Brésil.", "pt": "Eu venho do Brasil."}
+          ],
+          "exercises": [
+            {"id": "fr-a1-1-2-e1", "type": "multiple_choice", "prompt": "Comment dit-on « Eu me chamo Ana » ?", "options": ["Je m'appelle Ana.", "Je suis appelé Ana.", "Mon nom Ana.", "J'appelle Ana."], "answer": 0, "explanation": "*Je m'appelle* + nome."},
+            {"id": "fr-a1-1-2-e2", "type": "fill_blank", "prompt": "Je viens ___ Brésil. (do)", "answers": ["du"], "hint": "país masculino com artigo", "explanation": "*du Brésil* = do Brasil (contração de *de + le*)."},
+            {"id": "fr-a1-1-2-e3", "type": "translate", "prompt": "De onde você é?", "answers": ["D'où viens-tu ?", "D'où es-tu ?", "Tu viens d'où ?"], "explanation": "*D'où viens-tu ?* é a forma mais natural."},
+            {"id": "fr-a1-1-2-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "Je m'appelle Julien et je suis français.", "answers": ["Je m'appelle Julien et je suis français."], "explanation": "*français* é o adjetivo para homem; *française* para mulher."}
+          ]
+        },
+        {
+          "id": "fr-a1-1-3",
+          "title": "Les nombres et l'âge",
+          "objective": "Usar os números de 0 a 100 e perguntar a idade.",
+          "explanation": "Dos números:\n- 0 à 16: *zéro, un, deux... seize*\n- 17 à 19: *dix-sept, dix-huit, dix-neuf*\n- 20, 30, 40...: *vingt, trente, quarante...* (com *-et-un* em 21, 31, 41)\n\nPara a idade, use **avoir**: *J'ai vingt-cinq ans.* — Tenho vinte e cinco anos.\nPergunta: *Quel âge as-tu ?*",
+          "key_phrases": [
+            {"en": "Quel âge as-tu ?", "pt": "Quantos anos você tem?"},
+            {"en": "J'ai trente ans.", "pt": "Tenho trinta anos."}
+          ],
+          "exercises": [
+            {"id": "fr-a1-1-3-e1", "type": "multiple_choice", "prompt": "Qual é o número 15 ?", "options": ["cinquante", "quinze", "cinq", "cinquante-et-un"], "answer": 1, "explanation": "*quinze* = 15."},
+            {"id": "fr-a1-1-3-e2", "type": "fill_blank", "prompt": "J'ai vingt-___ ans. (21, complete)", "answers": ["et-un", "et un"], "hint": "21 usa *et-un*", "explanation": "*vingt et un* = 21."},
+            {"id": "fr-a1-1-3-e3", "type": "translate", "prompt": "Eu tenho trinta anos.", "answers": ["J'ai trente ans.", "J'ai 30 ans."], "explanation": "Com a idade, use *avoir*, não *être*."},
+            {"id": "fr-a1-1-3-e4", "type": "reorder", "prompt": "Monte a pergunta: quantos anos você tem?", "words": ["as-tu", "Quel âge"], "answers": ["Quel âge as-tu ?"], "explanation": "*Quel âge as-tu ?*"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-a1-u2",
+      "title": "Routine quotidienne",
+      "goal": "Falar do que você faz todo dia, com horários e dias da semana.",
+      "lessons": [
+        {
+          "id": "fr-a1-2-1",
+          "title": "Verbos em -er no presente",
+          "objective": "Conjugar os verbos do primeiro grupo (-er) no presente.",
+          "explanation": "A maioria dos verbos termina em **-er** (parler, habiter, travailler). Tire o *-er* e acrescente:\n\n- je **parle** — eu falo\n- tu **parles** — você fala\n- il / elle **parle** — ele / ela fala\n- nous **parlons** — nós falamos\n- vous **parlez** — vocês / você (formal) falam\n- ils / elles **parlent** — eles / elas falam\n\nAtenção: *je* vira *j'* antes de vogal (*j'habite*).",
+          "key_phrases": [
+            {"en": "Je parle un peu français.", "pt": "Eu falo um pouco de francês."},
+            {"en": "J'habite à São Paulo.", "pt": "Eu moro em São Paulo."}
+          ],
+          "exercises": [
+            {"id": "fr-a1-2-1-e1", "type": "multiple_choice", "prompt": "Nous ___ français. (falamos)", "options": ["parle", "parles", "parlons", "parlent"], "answer": 2, "explanation": "*nous* usa a terminação *-ons*."},
+            {"id": "fr-a1-2-1-e2", "type": "fill_blank", "prompt": "Ils travaill___ beaucoup. (eles trabalham)", "answers": ["ent"], "hint": "ils = terminação -ent", "explanation": "*ils travaillent*."},
+            {"id": "fr-a1-2-1-e3", "type": "translate", "prompt": "Eu moro em Paris.", "answers": ["J'habite à Paris.", "J'habite Paris."], "explanation": "*habiter* não pede preposição: *j'habite à Paris* é a forma mais comum."},
+            {"id": "fr-a1-2-1-e4", "type": "reorder", "prompt": "Monte a frase: eu trabalho todos os dias", "words": ["travaille", "Je", "tous les jours"], "answers": ["Je travaille tous les jours."], "explanation": "*tous les jours* = todos os dias."}
+          ]
+        },
+        {
+          "id": "fr-a1-2-2",
+          "title": "Avoir e aller",
+          "objective": "Usar os verbos mais frequentes avoir (ter) e aller (ir).",
+          "explanation": "Dois verbos irregulares essenciais:\n\n- **avoir** (ter): j'**ai**, tu **as**, il/elle **a**\n- **aller** (ir): je **vais**, tu **vas**, il/elle **va**\n\nCom *aller* + lugar: *Je vais à la maison.* Com *aller* + verbo: *Je vais manger.* (vou comer)",
+          "key_phrases": [
+            {"en": "J'ai faim.", "pt": "Estou com fome."},
+            {"en": "Je vais au travail.", "pt": "Vou ao trabalho."}
+          ],
+          "exercises": [
+            {"id": "fr-a1-2-2-e1", "type": "multiple_choice", "prompt": "Tu ___ un frère ? (você tem)", "options": ["as", "a", "ai", "avons"], "answer": 0, "explanation": "Com *tu*: *tu as*."},
+            {"id": "fr-a1-2-2-e2", "type": "fill_blank", "prompt": "Elle ___ à l'école. (ela vai)", "answers": ["va"], "hint": "aller, 3ª pessoa", "explanation": "*elle va*."},
+            {"id": "fr-a1-2-2-e3", "type": "translate", "prompt": "Eu estou com sede.", "answers": ["J'ai soif.", "J'ai soif !"], "explanation": "Em francês, *avoir soif* = estar com sede."},
+            {"id": "fr-a1-2-2-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "Nous avons un grand appartement.", "answers": ["Nous avons un grand appartement."], "explanation": "*nous avons* = nós temos."}
+          ]
+        },
+        {
+          "id": "fr-a1-2-3",
+          "title": "L'heure et les jours",
+          "objective": "Dizer as horas e os dias da semana.",
+          "explanation": "Para as horas, use **Il est** + número + *heure(s)*: *Il est trois heures.* Para meia hora, *et demie*; para um quarto, *et quart*.\n\nPergunta: *Quelle heure est-il ?* — Que horas são?\n\nDias da semana (minúsculas): *lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche*. Para dizer o dia: *Le lundi, je travaille.*",
+          "key_phrases": [
+            {"en": "Quelle heure est-il ?", "pt": "Que horas são?"},
+            {"en": "Il est sept heures et demie.", "pt": "São sete e meia."}
+          ],
+          "exercises": [
+            {"id": "fr-a1-2-3-e1", "type": "multiple_choice", "prompt": "Quelle heure est-il ? → ?", "options": ["Il est trois heures.", "Il a trois heures.", "Je suis trois heures.", "Il va trois."], "answer": 0, "explanation": "Para as horas: *Il est* + número."},
+            {"id": "fr-a1-2-3-e2", "type": "fill_blank", "prompt": "Le ___, je reste à la maison. (domingo)", "answers": ["dimanche"], "hint": "último dia da semana", "explanation": "*dimanche* = domingo."},
+            {"id": "fr-a1-2-3-e3", "type": "translate", "prompt": "Nos encontramos na sexta-feira.", "answers": ["On se retrouve vendredi.", "Nous nous retrouvons vendredi.", "On se voit vendredi."], "explanation": "Dias da semana sem artigo ao marcar: *vendredi*."},
+            {"id": "fr-a1-2-3-e4", "type": "reorder", "prompt": "Monte a frase: são nove horas", "words": ["neuf heures", "Il est"], "answers": ["Il est neuf heures."], "explanation": "*Il est* + horas."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-a1-u3",
+      "title": "En ville",
+      "goal": "Descrever lugares e pedir direções na rua.",
+      "lessons": [
+        {
+          "id": "fr-a1-3-1",
+          "title": "Il y a",
+          "objective": "Dizer que algo existe ou não existe.",
+          "explanation": "**Il y a** significa *há* (existe) para um item ou vários:\n\n- *Il y a une banque près d'ici.* — Há um banco perto daqui.\n- *Il y a deux parcs dans ma ville.* — Há dois parques na minha cidade.\n\nPergunta: *Y a-t-il un restaurant ici ?* Negativa: *Il n'y a pas de café.*",
+          "key_phrases": [
+            {"en": "Il y a un café.", "pt": "Há um café."},
+            {"en": "Il n'y a pas de métro ici.", "pt": "Não há metrô aqui."}
+          ],
+          "exercises": [
+            {"id": "fr-a1-3-1-e1", "type": "multiple_choice", "prompt": "___ une pharmacie près d'ici.", "options": ["Il y a", "Il est", "Il a", "Y a-t-il"], "answer": 0, "explanation": "*Il y a* = há."},
+            {"id": "fr-a1-3-1-e2", "type": "fill_blank", "prompt": "Il n'y a ___ de café ici. (nenhum)", "answers": ["pas"], "hint": "negação com *ne... pas*", "explanation": "*Il n'y a pas de...*"},
+            {"id": "fr-a1-3-1-e3", "type": "translate", "prompt": "Há um restaurante aqui perto?", "answers": ["Y a-t-il un restaurant près d'ici ?", "Est-ce qu'il y a un restaurant près d'ici ?"], "explanation": "Pergunta com *Y a-t-il*."},
+            {"id": "fr-a1-3-1-e4", "type": "reorder", "prompt": "Monte a frase: há muitas lojas aqui", "words": ["ici", "il y a", "beaucoup de", "magasins"], "answers": ["Il y a beaucoup de magasins ici."], "explanation": "*beaucoup de* + substantivo no plural."}
+          ]
+        },
+        {
+          "id": "fr-a1-3-2",
+          "title": "Demander son chemin",
+          "objective": "Perguntar onde fica um lugar e entender direções simples.",
+          "explanation": "Para perguntar: *Où est la gare ?* — Onde fica a estação?\n\nDireções úteis:\n- *Tout droit.* — Em frente.\n- *À gauche / à droite.* — À esquerda / à direita.\n- *C'est à côté de la pharmacie.* — Fica ao lado da farmácia.",
+          "key_phrases": [
+            {"en": "Où est la gare ?", "pt": "Onde fica a estação?"},
+            {"en": "Tournez à droite.", "pt": "Vire à direita."}
+          ],
+          "exercises": [
+            {"id": "fr-a1-3-2-e1", "type": "multiple_choice", "prompt": "Para dizer « siga em frente », você diz :", "options": ["Tournez à gauche.", "Tout droit.", "Arrêtez-vous.", "Asseyez-vous."], "answer": 1, "explanation": "*Tout droit*."},
+            {"id": "fr-a1-3-2-e2", "type": "fill_blank", "prompt": "La gare est ___ gauche. (à esquerda)", "answers": ["à", "a"], "hint": "preposição de direção", "explanation": "*à gauche*."},
+            {"id": "fr-a1-3-2-e3", "type": "translate", "prompt": "Onde fica o banheiro?", "answers": ["Où sont les toilettes ?", "Où est la salle de bains ?", "Où sont les toilettes, s'il vous plaît ?"], "explanation": "*Les toilettes* é o termo mais usado em lugares públicos."},
+            {"id": "fr-a1-3-2-e4", "type": "listen", "prompt": "Ouça a direção e digite a frase.", "text": "Tournez à droite au coin de la rue.", "answers": ["Tournez à droite au coin de la rue."], "explanation": "*au coin de la rue* = na esquina."}
+          ]
+        },
+        {
+          "id": "fr-a1-3-3",
+          "title": "Prépositions de lieu",
+          "objective": "Localizar objetos com dans, sur, sous, devant, derrière e à côté de.",
+          "explanation": "- **dans** — dentro: *dans la boîte*\n- **sur** — em cima: *sur la table*\n- **sous** — embaixo: *sous le lit*\n- **devant** — na frente: *devant la porte*\n- **derrière** — atrás: *derrière l'arbre*\n- **à côté de** — ao lado de: *à côté de la banque*\n\nLembre a contração: *à + le = au*, *à + les = aux*.",
+          "key_phrases": [
+            {"en": "Le livre est sur la table.", "pt": "O livro está na mesa."},
+            {"en": "La banque est à côté du parc.", "pt": "O banco fica ao lado do parque."}
+          ],
+          "exercises": [
+            {"id": "fr-a1-3-3-e1", "type": "multiple_choice", "prompt": "Le chat est ___ la porte. (atrás)", "options": ["devant", "derrière", "sous", "dans"], "answer": 1, "explanation": "*derrière* = atrás."},
+            {"id": "fr-a1-3-3-e2", "type": "fill_blank", "prompt": "La banque est à côté ___ parc. (do)", "answers": ["du"], "hint": "à côté de + le = du", "explanation": "*à côté du parc*."},
+            {"id": "fr-a1-3-3-e3", "type": "translate", "prompt": "As chaves estão na mesa.", "answers": ["Les clés sont sur la table.", "Les clefs sont sur la table."], "explanation": "*sur* = em cima de."},
+            {"id": "fr-a1-3-3-e4", "type": "reorder", "prompt": "Monte a frase: o banco fica ao lado do parque", "words": ["du parc", "à côté", "est", "La banque"], "answers": ["La banque est à côté du parc."], "explanation": "*à côté du* = ao lado do."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-a1-u4",
+      "title": "Nourriture et achats",
+      "goal": "Pedir comida, perguntar preços e comprar com educação.",
+      "lessons": [
+        {
+          "id": "fr-a1-4-1",
+          "title": "Articles partitifs : du, de la, des",
+          "objective": "Falar de quantidades de coisas que não se contam.",
+          "explanation": "Para coisas que não se contam, use o artigo partitivo:\n\n- **du** (masculino): *du pain, du lait*\n- **de la** (feminino): *de la confiture*\n- **de l'** (antes de vogal): *de l'eau*\n- **des** (plural): *des pommes*\n\nEm frases negativas, use *de*: *Je ne mange pas de viande.*",
+          "key_phrases": [
+            {"en": "Je voudrais du pain.", "pt": "Eu gostaria de pão."},
+            {"en": "Je ne bois pas de café.", "pt": "Eu não bebo café."}
+          ],
+          "exercises": [
+            {"id": "fr-a1-4-1-e1", "type": "multiple_choice", "prompt": "Je voudrais ___ eau. (um pouco de água)", "options": ["du", "de la", "de l'", "des"], "answer": 2, "explanation": "Antes de vogal: *de l'eau*."},
+            {"id": "fr-a1-4-1-e2", "type": "fill_blank", "prompt": "Il y a ___ fromage sur la table. (queijo)", "answers": ["du"], "hint": "masculino", "explanation": "*du fromage*."},
+            {"id": "fr-a1-4-1-e3", "type": "translate", "prompt": "Eu não tenho dinheiro.", "answers": ["Je n'ai pas d'argent.", "Je n'ai pas de l'argent."], "explanation": "Na negativa, use *de* / *d'*."},
+            {"id": "fr-a1-4-1-e4", "type": "reorder", "prompt": "Monte a frase: eu quero um pouco de chocolate", "words": ["du chocolat", "Je veux"], "answers": ["Je veux du chocolat."], "explanation": "Partitivo masculino: *du chocolat*."}
+          ]
+        },
+        {
+          "id": "fr-a1-4-2",
+          "title": "Commander au restaurant",
+          "objective": "Fazer pedidos educados e pedir a conta.",
+          "explanation": "Para pedir, use **je voudrais** (eu gostaria), mais educado que *je veux*:\n\n- *Je voudrais la carte, s'il vous plaît.* — O cardápio, por favor.\n- *Je prendrai le poulet.* — Vou pegar o frango.\n- *L'addition, s'il vous plaît.* — A conta, por favor.",
+          "key_phrases": [
+            {"en": "Je voudrais la carte, s'il vous plaît.", "pt": "Gostaria do cardápio, por favor."},
+            {"en": "L'addition, s'il vous plaît.", "pt": "A conta, por favor."}
+          ],
+          "exercises": [
+            {"id": "fr-a1-4-2-e1", "type": "multiple_choice", "prompt": "Qual é a forma educada de pedir ?", "options": ["Donne-moi du pain !", "Je voudrais du pain, s'il vous plaît.", "Pain maintenant.", "Je veux pain hier."], "answer": 1, "explanation": "*Je voudrais..., s'il vous plaît.*"},
+            {"id": "fr-a1-4-2-e2", "type": "fill_blank", "prompt": "Je ___ le poulet, merci. (vou pegar)", "answers": ["prendrai"], "hint": "futuro de prendre", "explanation": "*Je prendrai* = vou pegar."},
+            {"id": "fr-a1-4-2-e3", "type": "translate", "prompt": "Pode trazer a conta, por favor?", "answers": ["L'addition, s'il vous plaît ?", "Pourriez-vous apporter l'addition, s'il vous plaît ?"], "explanation": "*L'addition* = a conta."},
+            {"id": "fr-a1-4-2-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "Je voudrais un verre d'eau, s'il vous plaît.", "answers": ["Je voudrais un verre d'eau, s'il vous plaît."], "explanation": "*un verre d'eau* = um copo de água."}
+          ]
+        },
+        {
+          "id": "fr-a1-4-3",
+          "title": "Prix et achats",
+          "objective": "Perguntar preços, tamanhos e cores em lojas.",
+          "explanation": "Perguntas úteis:\n\n- *C'est combien ?* — Quanto custa?\n- *Vous avez cette robe en bleu ?* — Vocês têm esse vestido em azul?\n- *Quelle est votre taille ?* — Qual é o seu tamanho?\n- *Je la prends.* — Eu levo.\n\nNo plural, use *euros*: *Ça coûte dix euros.*",
+          "key_phrases": [
+            {"en": "C'est combien ?", "pt": "Quanto custa?"},
+            {"en": "Je la prends.", "pt": "Eu levo."}
+          ],
+          "exercises": [
+            {"id": "fr-a1-4-3-e1", "type": "multiple_choice", "prompt": "Como perguntar o preço de algo ?", "options": ["C'est combien ?", "Il est où ?", "Tu as quel âge ?", "Qu'est-ce que tu fais ?"], "answer": 0, "explanation": "*C'est combien ?*"},
+            {"id": "fr-a1-4-3-e2", "type": "fill_blank", "prompt": "Ça coûte dix ___. (euros)", "answers": ["euros"], "hint": "moeda, no plural", "explanation": "*dix euros*."},
+            {"id": "fr-a1-4-3-e3", "type": "translate", "prompt": "Qual é o seu tamanho?", "answers": ["Quelle est votre taille ?", "Quelle taille faites-vous ?"], "explanation": "*Votre* é a forma formal, usada em lojas."},
+            {"id": "fr-a1-4-3-e4", "type": "reorder", "prompt": "Monte a frase: eu levo essa camisa", "words": ["cette chemise", "prends", "Je", "."], "answers": ["Je prends cette chemise."], "explanation": "*prendre* = pegar / levar."}
+          ]
+        }
+      ]
+    }
+  ]
+}

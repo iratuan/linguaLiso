@@ -1,0 +1,228 @@
+{
+  "level": "B1",
+  "title": "Intermediário",
+  "description": "Narrar, formular hipóteses, opinar e relatar falas em francês.",
+  "goal": "Você sustenta conversas sobre temas do cotidiano e do trabalho, explicando ideias com clareza.",
+  "units": [
+    {
+      "id": "fr-b1-u1",
+      "title": "Narrer et raconter",
+      "goal": "Contar histórias com a sequência e os tempos corretos.",
+      "lessons": [
+        {
+          "id": "fr-b1-1-1",
+          "title": "Passé composé ou imparfait",
+          "objective": "Escolher entre passé composé (ação concluída) e imparfait (cenário, hábito).",
+          "explanation": "- **Passé composé**: ação pontual, concluída. *Hier, je suis allé au cinéma.*\n- **Imparfait**: cenário, descrição, hábito. *Il faisait froid et il y avait beaucoup de monde.*\n\nNa mesma história, o imparfait prepara o cenário e o passé composé traz a ação: *Je dormais quand le téléphone a sonné.*",
+          "key_phrases": [
+            {"en": "Je lisais quand tu as appelé.", "pt": "Eu lia quando você ligou."},
+            {"en": "Il pleuvait, alors nous sommes restés à la maison.", "pt": "Chovia, então ficamos em casa."}
+          ],
+          "exercises": [
+            {"id": "fr-b1-1-1-e1", "type": "multiple_choice", "prompt": "Je ___ quand le téléphone ___ (dormir / sonner).", "options": ["dormais / a sonné", "ai dormi / sonnait", "dormais / sonnait", "ai dormi / a sonné"], "answer": 0, "explanation": "Cenário em andamento (imparfait) interrompido por um evento (passé composé)."},
+            {"id": "fr-b1-1-1-e2", "type": "fill_blank", "prompt": "Il ___ beau quand nous sommes partis. (fazia)", "answers": ["faisait"], "hint": "descrição de tempo, imparfait", "explanation": "*faisait*."},
+            {"id": "fr-b1-1-1-e3", "type": "translate", "prompt": "Quando eu era criança, eu morava no campo.", "answers": ["Quand j'étais petit, j'habitais à la campagne.", "Quand j'étais enfant, j'habitais à la campagne.", "Quand j'étais petite, j'habitais à la campagne."], "explanation": "Hábito e cenário: imparfait."},
+            {"id": "fr-b1-1-1-e4", "type": "reorder", "prompt": "Monte a frase: eu lia quando ela chegou", "words": ["Je lisais", "quand", "elle", "est arrivée"], "answers": ["Je lisais quand elle est arrivée."], "explanation": "Ação em andamento (imparfait) + ação pontual (passé composé)."}
+          ]
+        },
+        {
+          "id": "fr-b1-1-2",
+          "title": "Le plus-que-parfait",
+          "objective": "Marcar uma ação anterior a outra ação passada.",
+          "explanation": "O **plus-que-parfait** = imparfait de **avoir/être** + particípio passado:\n\n- *J'avais déjà mangé quand tu es arrivé.* — Eu já tinha comido quando você chegou.\n- *Elle était partie quand je suis arrivé.* — Ela tinha saído quando eu cheguei.",
+          "key_phrases": [
+            {"en": "Quand je suis arrivé, il était déjà parti.", "pt": "Quando cheguei, ele já tinha saído."},
+            {"en": "J'avais oublié mes clés.", "pt": "Eu tinha esquecido minhas chaves."}
+          ],
+          "exercises": [
+            {"id": "fr-b1-1-2-e1", "type": "multiple_choice", "prompt": "Quand je suis arrivé, le film ___ déjà commencé.", "options": ["avait", "a", "était", "aura"], "answer": 0, "explanation": "Plus-que-parfait com *avoir*: *avait commencé*."},
+            {"id": "fr-b1-1-2-e2", "type": "fill_blank", "prompt": "Elle était partie : elle ___ oublié son sac. (tinha esquecido)", "answers": ["avait"], "hint": "imparfait de avoir", "explanation": "*avait oublié*."},
+            {"id": "fr-b1-1-2-e3", "type": "translate", "prompt": "Ele já tinha terminado quando cheguei.", "answers": ["Il avait déjà fini quand je suis arrivé.", "Il avait déjà fini quand je suis arrivée."], "explanation": "*avait fini* + *quand*."},
+            {"id": "fr-b1-1-2-e4", "type": "multiple_choice", "prompt": "Qual é o plus-que-parfait de « nous partons » ?", "options": ["nous étions partis", "nous sommes partis", "nous partions", "nous serons partis"], "answer": 0, "explanation": "*partir* usa *être*: *nous étions partis*."}
+          ]
+        },
+        {
+          "id": "fr-b1-1-3",
+          "title": "Les pronoms relatifs qui, que, où",
+          "objective": "Juntar informações com qui, que e où.",
+          "explanation": "- **qui** — sujeito: *Le garçon qui habite à côté est médecin.*\n- **que** — objeto: *Le livre que je lis est passionnant.*\n- **où** — lugar ou tempo: *La ville où je suis né est belle.*\n\n*Dont* (de quem / do qual) aparece com *parler de*: *Le film dont je parle.*",
+          "key_phrases": [
+            {"en": "C'est la femme qui m'a aidé.", "pt": "É a mulher que me ajudou."},
+            {"en": "C'est le restaurant où nous avons mangé.", "pt": "É o restaurante onde comemos."}
+          ],
+          "exercises": [
+            {"id": "fr-b1-1-3-e1", "type": "multiple_choice", "prompt": "C'est le café ___ nous nous sommes rencontrés.", "options": ["où", "qui", "que", "dont"], "answer": 0, "explanation": "Lugar: *où*."},
+            {"id": "fr-b1-1-3-e2", "type": "fill_blank", "prompt": "Le livre ___ je lis est excellent. (que)", "answers": ["que"], "hint": "objeto direto de lire", "explanation": "*que* é o objeto direto de *lire*. Com *parler de*, use *dont*."},
+            {"id": "fr-b1-1-3-e3", "type": "translate", "prompt": "O homem que mora ao lado é médico.", "answers": ["L'homme qui habite à côté est médecin.", "Le monsieur qui habite à côté est médecin."], "explanation": "*qui* como sujeito."},
+            {"id": "fr-b1-1-3-e4", "type": "reorder", "prompt": "Monte a frase: a cidade onde eu nasci é bonita", "words": ["est belle", "où je suis né", "La ville", "."], "answers": ["La ville où je suis né est belle."], "explanation": "*où* para lugar."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-b1-u2",
+      "title": "Hypothèses et souhaits",
+      "goal": "Falar do que aconteceria, do que é possível e de pedidos educados.",
+      "lessons": [
+        {
+          "id": "fr-b1-2-1",
+          "title": "Si + présent : hypothèse réelle",
+          "objective": "Falar de situações reais e prováveis no futuro.",
+          "explanation": "Estrutura: **si + présent, futur simple / présent**.\n\n- *Si tu travailles, tu réussiras.* — Se você trabalhar, vai conseguir.\n- *S'il pleut, on reste à la maison.* — Se chover, ficamos em casa.\n\nAtenção à elisão: *si* + *il* vira *s'il*, e *si* + *ils* vira *s'ils*.",
+          "key_phrases": [
+            {"en": "Si tu viens, on ira au cinéma.", "pt": "Se você vier, iremos ao cinema."},
+            {"en": "Si on part tôt, on arrivera à l'heure.", "pt": "Se sairmos cedo, chegaremos na hora."}
+          ],
+          "exercises": [
+            {"id": "fr-b1-2-1-e1", "type": "multiple_choice", "prompt": "Si tu ___ tôt, nous pourrons manger ensemble.", "options": ["arrives", "arriveras", "arriverais", "es arrivé"], "answer": 0, "explanation": "*si* + presente, depois futuro."},
+            {"id": "fr-b1-2-1-e2", "type": "fill_blank", "prompt": "Si vous ___ (venir), nous irons au théâtre.", "answers": ["venez"], "hint": "presente de venir, vous", "explanation": "*si vous venez*."},
+            {"id": "fr-b1-2-1-e3", "type": "translate", "prompt": "Se chover, nós ficaremos em casa.", "answers": ["S'il pleut, nous resterons à la maison.", "S'il pleut, on restera à la maison."], "explanation": "*s'il* + presente, futuro."},
+            {"id": "fr-b1-2-1-e4", "type": "reorder", "prompt": "Monte a frase: se você estudar, vai passar", "words": ["tu réussiras", "Si", "tu étudies", ","], "answers": ["Si tu étudies, tu réussiras."], "explanation": "*si* + presente, futuro simples."}
+          ]
+        },
+        {
+          "id": "fr-b1-2-2",
+          "title": "Le conditionnel présent",
+          "objective": "Fazer pedidos educados e falar de situações imaginárias.",
+          "explanation": "O **conditionnel présent** = futuro (radical) + terminações do imparfait (*-ais, -ais, -ait, -ions, -iez, -aient*):\n\n- *Je voudrais un café.* — Eu gostaria de um café.\n- *Si j'avais le temps, je voyagerais.* — Se eu tivesse tempo, viajaria.\n- *Tu devrais te reposer.* — Você deveria descansar.",
+          "key_phrases": [
+            {"en": "Je voudrais réserver une table.", "pt": "Gostaria de reservar uma mesa."},
+            {"en": "Tu pourrais venir demain ?", "pt": "Você poderia vir amanhã?"}
+          ],
+          "exercises": [
+            {"id": "fr-b1-2-2-e1", "type": "multiple_choice", "prompt": "Je ___ bien un thé, merci. (gostaria)", "options": ["voudrais", "veux", "voulais", "voudrai"], "answer": 0, "explanation": "*voudrais* = conditionnel: pedido educado."},
+            {"id": "fr-b1-2-2-e2", "type": "fill_blank", "prompt": "Si j'étais riche, j'___ (acheter) une maison.", "answers": ["achèterais", "achèterait"], "hint": "conditionnel de acheter", "explanation": "*j'achèterais*."},
+            {"id": "fr-b1-2-2-e3", "type": "translate", "prompt": "Você poderia me ajudar, por favor?", "answers": ["Pourriez-vous m'aider, s'il vous plaît ?", "Est-ce que vous pourriez m'aider, s'il vous plaît ?"], "explanation": "*pourriez* = conditionnel de *pouvoir*, forma educada."},
+            {"id": "fr-b1-2-2-e4", "type": "reorder", "prompt": "Monte a frase: eu iria ao cinema se tivesse tempo", "words": ["si", "j'avais le temps", "irais", "Je", "au cinéma"], "answers": ["Je irais au cinéma si j'avais le temps."], "explanation": "Hipótese irreal: *si* + imparfait, conditionnel na principal."}
+          ]
+        },
+        {
+          "id": "fr-b1-2-3",
+          "title": "Le subjonctif présent : il faut que",
+          "objective": "Usar o subjuntivo após il faut que, je veux que e il faut que.",
+          "explanation": "O subjuntivo aparece depois de expressões de necessidade, vontade ou opinião com **que**:\n\n- *Il faut que tu fasses attention.* — É preciso que você preste atenção.\n- *Je veux que tu viennes.* — Quero que você venha.\n\nFormas comuns: *que je fasse, que tu sois, qu'il vienne, que nous ayons*.",
+          "key_phrases": [
+            {"en": "Il faut que tu viennes.", "pt": "É preciso que você venha."},
+            {"en": "Je veux que vous soyez à l'heure.", "pt": "Quero que vocês cheguem na hora."}
+          ],
+          "exercises": [
+            {"id": "fr-b1-2-3-e1", "type": "multiple_choice", "prompt": "Il faut que nous ___ (partir) tôt.", "options": ["partions", "partons", "partirons", "partis"], "answer": 0, "explanation": "Após *il faut que*: subjuntivo (*partions*)."},
+            {"id": "fr-b1-2-3-e2", "type": "fill_blank", "prompt": "Je veux que tu ___ (être) là demain.", "answers": ["sois"], "hint": "subjuntivo de être, tu", "explanation": "*que tu sois*."},
+            {"id": "fr-b1-2-3-e3", "type": "translate", "prompt": "É preciso que você faça seu trabalho.", "answers": ["Il faut que tu fasses ton travail.", "Il faut que vous fassiez votre travail."], "explanation": "*que* + subjuntivo de *faire*."},
+            {"id": "fr-b1-2-3-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "Il faut que nous ayons assez de temps.", "answers": ["Il faut que nous ayons assez de temps."], "explanation": "*que nous ayons* (subjuntivo de *avoir*)."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-b1-u3",
+      "title": "Idées et connexions",
+      "goal": "Conectar frases, dar opiniões e usar a voz passiva.",
+      "lessons": [
+        {
+          "id": "fr-b1-3-1",
+          "title": "La voix passive",
+          "objective": "Formar frases passivas com être + particípio passado.",
+          "explanation": "Passiva = **être + particípio passado** (o particípio concorda com o sujeito):\n\n- *Le pain est fait chaque matin.* — O pão é feito toda manhã.\n- *La lettre a été envoyée hier.* — A carta foi enviada ontem.\n\nQuem faz a ação, quando importa, vem com **par**: *Le livre a été écrit par Victor Hugo.*",
+          "key_phrases": [
+            {"en": "La maison a été construite en 1990.", "pt": "A casa foi construída em 1990."},
+            {"en": "Le français est parlé dans beaucoup de pays.", "pt": "O francês é falado em muitos países."}
+          ],
+          "exercises": [
+            {"id": "fr-b1-3-1-e1", "type": "multiple_choice", "prompt": "La fenêtre ___ cassée hier.", "options": ["a été", "est", "avait", "fait"], "answer": 0, "explanation": "Passiva no passado: *a été* + particípio."},
+            {"id": "fr-b1-3-1-e2", "type": "fill_blank", "prompt": "Le café est ___ (servir) à la table. (servido)", "answers": ["servi"], "hint": "particípio de servir", "explanation": "*est servi*."},
+            {"id": "fr-b1-3-1-e3", "type": "translate", "prompt": "Este livro foi escrito em 1950.", "answers": ["Ce livre a été écrit en 1950."], "explanation": "Passado passivo: *a été écrit*."},
+            {"id": "fr-b1-3-1-e4", "type": "multiple_choice", "prompt": "Forma passiva de « On parle français ici » :", "options": ["Le français est parlé ici.", "Le français parle ici.", "Le français a parlé ici.", "Le français parlera ici."], "answer": 0, "explanation": "*est parlé*."}
+          ]
+        },
+        {
+          "id": "fr-b1-3-2",
+          "title": "Le gérondif : en + participe présent",
+          "objective": "Dizer como ou enquanto algo é feito, com en + -ant.",
+          "explanation": "O **gérondif** (*en + particípio presente*) indica simultaneidade ou modo:\n\n- *J'écoute de la musique en travaillant.* — Escuto música enquanto trabalho.\n- *Il a appris le français en vivant à Paris.* — Ele aprendeu francês morando em Paris.\n\nParticípio presente: *parler → parlant, finir → finissant, prendre → prenant*.",
+          "key_phrases": [
+            {"en": "En rentrant, j'ai acheté du pain.", "pt": "Voltando para casa, comprei pão."},
+            {"en": "Il apprend en écoutant la radio.", "pt": "Ele aprende ouvindo rádio."}
+          ],
+          "exercises": [
+            {"id": "fr-b1-3-2-e1", "type": "multiple_choice", "prompt": "J'ai appris la guitare ___ des vidéos.", "options": ["en regardant", "regarde", "regardant", "pour regarder"], "answer": 0, "explanation": "*en* + participe presente: *en regardant*."},
+            {"id": "fr-b1-3-2-e2", "type": "fill_blank", "prompt": "En ___ (rentrer), j'ai fait les courses.", "answers": ["rentrant"], "hint": "participe presente", "explanation": "*en rentrant*."},
+            {"id": "fr-b1-3-2-e3", "type": "translate", "prompt": "Ouvindo música, eu cozinho.", "answers": ["J'écoute de la musique en cuisinant.", "En écoutant de la musique, je cuisine."], "explanation": "*en* + gerúndio."},
+            {"id": "fr-b1-3-2-e4", "type": "reorder", "prompt": "Monte a frase: ela aprende lendo", "words": ["en lisant", "apprend", "Elle"], "answers": ["Elle apprend en lisant."], "explanation": "*en lisant* = lendo."}
+          ]
+        },
+        {
+          "id": "fr-b1-3-3",
+          "title": "Exprimer une opinion",
+          "objective": "Dar opiniões e concordar ou discordar com o subjuntivo.",
+          "explanation": "- *Je pense que ...* + indicatif: *Je pense qu'il a raison.*\n- *Je ne pense pas que ...* + subjonctif: *Je ne pense pas qu'il ait raison.*\n- *Je suis d'accord.* / *Je ne suis pas d'accord.*\n- *À mon avis, ...* — Na minha opinião...",
+          "key_phrases": [
+            {"en": "Je pense que c'est une bonne idée.", "pt": "Acho que é uma boa ideia."},
+            {"en": "Je ne suis pas d'accord avec toi.", "pt": "Não concordo com você."}
+          ],
+          "exercises": [
+            {"id": "fr-b1-3-3-e1", "type": "multiple_choice", "prompt": "À mon avis, cette solution ___ bonne.", "options": ["est", "soit", "sera", "était"], "answer": 0, "explanation": "*À mon avis* + indicativo."},
+            {"id": "fr-b1-3-3-e2", "type": "fill_blank", "prompt": "Je ne pense pas qu'il ___ (ter razão). (subjuntivo)", "answers": ["ait raison"], "hint": "avoir raison no subjuntivo", "explanation": "*qu'il ait raison*."},
+            {"id": "fr-b1-3-3-e3", "type": "translate", "prompt": "Concordo totalmente com você.", "answers": ["Je suis tout à fait d'accord avec toi.", "Je suis complètement d'accord avec vous.", "Je suis tout à fait d'accord avec vous."], "explanation": "Concordância com *d'accord*."},
+            {"id": "fr-b1-3-3-e4", "type": "reorder", "prompt": "Monte a frase: eu acho que você tem razão", "words": ["raison", "que", "tu as", "Je pense"], "answers": ["Je pense que tu as raison."], "explanation": "*Je pense que* + indicativo."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-b1-u4",
+      "title": "Travail et opinions",
+      "goal": "Relatar o que foi dito e usar conectores para organizar o discurso.",
+      "lessons": [
+        {
+          "id": "fr-b1-4-1",
+          "title": "Le discours indirect",
+          "objective": "Relatar o que alguém disse com o tempo verbal recuado.",
+          "explanation": "No discurso indireto, o tempo verbal costuma recuar e *que* introduz a fala:\n\n- *« Je suis fatigué. »* → *Il a dit qu'il était fatigué.*\n- *« Je viendrai demain. »* → *Elle a dit qu'elle viendrait le lendemain.*\n\nPerguntas: *« Tu viens ? »* → *Il m'a demandé si je venais.*",
+          "key_phrases": [
+            {"en": "Il a dit qu'il était occupé.", "pt": "Ele disse que estava ocupado."},
+            {"en": "Elle m'a demandé si je venais.", "pt": "Ela me perguntou se eu ia."}
+          ],
+          "exercises": [
+            {"id": "fr-b1-4-1-e1", "type": "multiple_choice", "prompt": "« Je suis content. » → Il a dit qu'il ___ content.", "options": ["était", "est", "sera", "soit"], "answer": 0, "explanation": "Presente → imparfait no discurso indireto."},
+            {"id": "fr-b1-4-1-e2", "type": "fill_blank", "prompt": "« Je viendrai. » → Elle a dit qu'elle ___ (viria).", "answers": ["viendrait"], "hint": "futuro → condicional", "explanation": "*viendrait*."},
+            {"id": "fr-b1-4-1-e3", "type": "translate", "prompt": "Ela me disse que tinha perdido o trem.", "answers": ["Elle m'a dit qu'elle avait raté le train.", "Elle m'a dit qu'elle avait manqué le train."], "explanation": "Passé composé → plus-que-parfait."},
+            {"id": "fr-b1-4-1-e4", "type": "multiple_choice", "prompt": "Ele me perguntou onde eu morava.", "options": ["Il m'a demandé où j'habitais.", "Il m'a demandé où j'habite.", "Il m'a demandé où habiter.", "Il me demande où j'habite."], "answer": 0, "explanation": "Pergunta indireta: *où* + imparfait."}
+          ]
+        },
+        {
+          "id": "fr-b1-4-2",
+          "title": "Les pronoms COD et COI ensemble",
+          "objective": "Usar dois pronomes na mesma frase (le lui, la leur...).",
+          "explanation": "Quando há objeto direto e indireto de pessoa, a ordem é **me/te/nous/vous + le/la/les + lui/leur**:\n\n- *Je donne le livre à Marie.* → *Je le lui donne.*\n- *Tu présentes ton ami à nous ?* → *Tu nous le présentes ?*\n\nCom *lui* ou *leur*, o pronome do objeto direto vem sempre antes.",
+          "key_phrases": [
+            {"en": "Je le lui donne demain.", "pt": "Eu dou para ele amanhã."},
+            {"en": "Tu peux me le prêter ?", "pt": "Você pode me emprestar?"}
+          ],
+          "exercises": [
+            {"id": "fr-b1-4-2-e1", "type": "multiple_choice", "prompt": "Tu donnes le cadeau à ton frère ? Oui, je ___ donne.", "options": ["le lui", "lui le", "la leur", "leur le"], "answer": 0, "explanation": "*le lui* = objeto direto + objeto indireto."},
+            {"id": "fr-b1-4-2-e2", "type": "fill_blank", "prompt": "Je donne le cadeau à mes amis. → Je le ___ donne.", "answers": ["leur"], "hint": "a eles / a elas", "explanation": "*le leur donne* = eu o dou a eles."},
+            {"id": "fr-b1-4-2-e3", "type": "translate", "prompt": "Eu dou o livro a ela.", "answers": ["Je le lui donne.", "Je lui donne le livre."], "explanation": "Pronomes ou substantivo, ambos corretos."},
+            {"id": "fr-b1-4-2-e4", "type": "reorder", "prompt": "Monte a frase: eu te dou isso", "words": ["le", "te", "Je", "donne"], "answers": ["Je te le donne."], "explanation": "*te* antes de *le*."}
+          ]
+        },
+        {
+          "id": "fr-b1-4-3",
+          "title": "Connecteurs logiques",
+          "objective": "Organizar o discurso com cependant, pourtant, donc, alors.",
+          "explanation": "- **cependant / pourtant** — no entanto: *Il pleuvait, pourtant nous sommes sortis.*\n- **donc / alors / par conséquent** — portanto: *Il est en retard, donc il prend un taxi.*\n- **d'abord / ensuite / enfin** — primeiro / depois / por fim.\n- **d'un côté ... de l'autre** — de um lado ... do outro.",
+          "key_phrases": [
+            {"en": "Il pleut, pourtant je sors.", "pt": "Chove, no entanto eu saio."},
+            {"en": "D'abord, nous mangeons ; ensuite, nous jouons.", "pt": "Primeiro, comemos; depois, brincamos."}
+          ],
+          "exercises": [
+            {"id": "fr-b1-4-3-e1", "type": "multiple_choice", "prompt": "Il était fatigué, ___ il a continué à travailler.", "options": ["pourtant", "donc", "parce que", "alors que"], "answer": 0, "explanation": "Oposição: *pourtant*."},
+            {"id": "fr-b1-4-3-e2", "type": "fill_blank", "prompt": "Il a fini son travail ; ___, il est rentré. (depois)", "answers": ["ensuite"], "hint": "sequência", "explanation": "*ensuite*."},
+            {"id": "fr-b1-4-3-e3", "type": "translate", "prompt": "Ele estava cansado; portanto, foi dormir cedo.", "answers": ["Il était fatigué ; donc, il s'est couché tôt.", "Il était fatigué, alors il s'est couché tôt."], "explanation": "Consequência: *donc* ou *alors*."},
+            {"id": "fr-b1-4-3-e4", "type": "reorder", "prompt": "Monte a frase: primeiro, eu leio; depois, eu escrevo", "words": ["D'abord", "je lis", "ensuite", "j'écris", ","], "answers": ["D'abord, je lis ; ensuite, j'écris."], "explanation": "*d'abord ... ensuite* organizam a sequência."}
+          ]
+        }
+      ]
+    }
+  ]
+}

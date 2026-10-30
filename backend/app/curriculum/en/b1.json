@@ -1,0 +1,228 @@
+{
+  "level": "B1",
+  "title": "Intermediário",
+  "description": "Contar histórias, falar de experiências, hipóteses, pessoas e opiniões com fluidez.",
+  "goal": "Você sustenta conversas sobre temas do dia a dia e do trabalho, explicando ideias com clareza.",
+  "units": [
+    {
+      "id": "b1-u1",
+      "title": "Experiências e histórias",
+      "goal": "Falar de experiências de vida e de eventos que ainda têm relação com o presente.",
+      "lessons": [
+        {
+          "id": "b1-1-1",
+          "title": "Present perfect: experiências",
+          "objective": "Usar have/has + particípio para experiências sem data.",
+          "explanation": "O **present perfect** (*have/has + particípio*) fala de experiências na vida, sem indicar quando aconteceu:\n\n- *I have visited Japan.* (já visitei o Japão)\n- *Have you ever tried sushi?* (você já experimentou?)\n- *She has never flown in a helicopter.* (nunca voou)\n\nParticípios irregulares comuns: *been, done, seen, gone, written, eaten*.",
+          "key_phrases": [
+            {"en": "Have you ever been to London?", "pt": "Você já esteve em Londres?"},
+            {"en": "I have never seen that film.", "pt": "Eu nunca vi esse filme."}
+          ],
+          "exercises": [
+            {"id": "b1-1-1-e1", "type": "multiple_choice", "prompt": "I ___ never ___ (eat) Thai food.", "options": ["have / eat", "have / eaten", "had / eaten", "has / ate"], "answer": 1, "explanation": "*have eaten*."},
+            {"id": "b1-1-1-e2", "type": "fill_blank", "prompt": "___ you ever read this book? (já)", "answers": ["Have"], "hint": "Pergunta com you", "explanation": "*Have you ever...?*"},
+            {"id": "b1-1-1-e3", "type": "translate", "prompt": "Ela já trabalhou no exterior.", "answers": ["She has worked abroad.", "She has worked overseas."], "explanation": "*has worked*."},
+            {"id": "b1-1-1-e4", "type": "reorder", "prompt": "Monte a frase: nós nunca fomos a Paris", "words": ["been", "have", "We", "never", "to Paris"], "answers": ["We have never been to Paris."], "explanation": "*never* entre *have* e o particípio."}
+          ]
+        },
+        {
+          "id": "b1-1-2",
+          "title": "Present perfect x past simple",
+          "objective": "Escolher entre present perfect e past simple.",
+          "explanation": "- **Past simple**: evento terminado, com tempo definido. *I visited Japan in 2019.*\n- **Present perfect**: experiência sem tempo definido. *I have visited Japan.*\n\nSe há *yesterday, last year, in 2019, when I was a child* → use past simple.",
+          "key_phrases": [
+            {"en": "I lost my keys yesterday.", "pt": "Perdi minhas chaves ontem."},
+            {"en": "I have lost my keys.", "pt": "Perdi minhas chaves (e ainda não as encontrei)."}
+          ],
+          "exercises": [
+            {"id": "b1-1-2-e1", "type": "multiple_choice", "prompt": "I ___ to Berlin in 2018.", "options": ["have been", "went", "have gone", "had gone"], "answer": 1, "explanation": "Tempo definido (*in 2018*) = past simple."},
+            {"id": "b1-1-2-e2", "type": "fill_blank", "prompt": "She has ___ (finish) the report. (particípio)", "answers": ["finished"], "hint": "Regular", "explanation": "*has finished*."},
+            {"id": "b1-1-2-e3", "type": "translate", "prompt": "Eu assisti a esse filme ano passado.", "answers": ["I watched that film last year."], "explanation": "Tempo definido: past simple."},
+            {"id": "b1-1-2-e4", "type": "multiple_choice", "prompt": "Which sentence is correct?", "options": ["I have seen him yesterday.", "I saw him yesterday.", "I have saw him yesterday.", "I see him yesterday."], "answer": 1, "explanation": "*yesterday* pede past simple."}
+          ]
+        },
+        {
+          "id": "b1-1-3",
+          "title": "For, since e a duração",
+          "objective": "Falar de situações que começaram no passado e continuam.",
+          "explanation": "Use **present perfect** com duração:\n\n- **for** + período: *for three years* (por três anos)\n- **since** + ponto no tempo: *since 2020* / *since Monday*\n\nEx.: *I have lived here for five years.* / *She has worked here since 2019.*",
+          "key_phrases": [
+            {"en": "I have known him since school.", "pt": "Eu o conheço desde a escola."},
+            {"en": "We have been waiting for an hour.", "pt": "Estamos esperando há uma hora."}
+          ],
+          "exercises": [
+            {"id": "b1-1-3-e1", "type": "multiple_choice", "prompt": "I have worked here ___ two years.", "options": ["since", "for", "ago", "during"], "answer": 1, "explanation": "*for* + duração."},
+            {"id": "b1-1-3-e2", "type": "fill_blank", "prompt": "She has lived in Porto ___ 2015. (desde)", "answers": ["since"], "hint": "Ponto no tempo", "explanation": "*since 2015*."},
+            {"id": "b1-1-3-e3", "type": "translate", "prompt": "Eu estudo inglês há três anos.", "answers": ["I have been studying English for three years.", "I have studied English for three years."], "explanation": "Present perfect contínuo ou simples."},
+            {"id": "b1-1-3-e4", "type": "reorder", "prompt": "Monte a frase: ele mora nesta casa desde 2010", "words": ["in this house", "has lived", "He", "since 2010"], "answers": ["He has lived in this house since 2010."], "explanation": "*has lived ... since*."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b1-u2",
+      "title": "Hipóteses e probabilidade",
+      "goal": "Falar do que aconteceria, do que pode ser verdade e de conselhos.",
+      "lessons": [
+        {
+          "id": "b1-2-1",
+          "title": "First conditional",
+          "objective": "Falar de situações reais e prováveis no futuro.",
+          "explanation": "Estrutura: **if + presente simples, will + verbo base**.\n\n- *If it rains, I will stay home.*\n- *If you study, you will pass the exam.*\n\nA cláusula com *if* pode vir antes ou depois: *I will stay home if it rains.*",
+          "key_phrases": [
+            {"en": "If you hurry, you'll catch the train.", "pt": "Se você se apressar, vai pegar o trem."},
+            {"en": "I'll call you if I'm late.", "pt": "Eu te ligo se eu me atrasar."}
+          ],
+          "exercises": [
+            {"id": "b1-2-1-e1", "type": "multiple_choice", "prompt": "If it ___ tomorrow, we will cancel the trip.", "options": ["rains", "will rain", "rained", "is raining"], "answer": 0, "explanation": "No *if*, use presente simples."},
+            {"id": "b1-2-1-e2", "type": "fill_blank", "prompt": "If you eat too much, you ___ feel sick. (vai)", "answers": ["will"], "hint": "Resultado futuro", "explanation": "*will* na oração principal."},
+            {"id": "b1-2-1-e3", "type": "translate", "prompt": "Se ele chegar cedo, nós jantamos juntos.", "answers": ["If he arrives early, we will have dinner together.", "If he arrives early, we'll have dinner together."], "explanation": "Condicional de 1º tipo."},
+            {"id": "b1-2-1-e4", "type": "reorder", "prompt": "Monte a frase: eu vou ficar feliz se você vier", "words": ["happy", "you come", "I will be", "if"], "answers": ["I will be happy if you come."], "explanation": "*if* no meio da frase."}
+          ]
+        },
+        {
+          "id": "b1-2-2",
+          "title": "Second conditional",
+          "objective": "Falar de situações imaginárias ou improváveis.",
+          "explanation": "Estrutura: **if + passado simples, would + verbo base**.\n\n- *If I had more time, I would learn guitar.*\n- *If I were you, I would apologize.* (com *were* para todas as pessoas)",
+          "key_phrases": [
+            {"en": "If I won the lottery, I would travel the world.", "pt": "Se eu ganhasse na loteria, viajaria pelo mundo."},
+            {"en": "If I were you, I would talk to him.", "pt": "Se eu fosse você, falaria com ele."}
+          ],
+          "exercises": [
+            {"id": "b1-2-2-e1", "type": "multiple_choice", "prompt": "If I ___ rich, I would buy a boat.", "options": ["am", "was", "will be", "be"], "answer": 1, "explanation": "No 2º tipo, *was/were* (ou *were*)."},
+            {"id": "b1-2-2-e2", "type": "fill_blank", "prompt": "If I ___ you, I would take the job.", "answers": ["were"], "hint": "Conselho", "explanation": "*If I were you*."},
+            {"id": "b1-2-2-e3", "type": "translate", "prompt": "Se eu tivesse mais tempo, eu viajaria mais.", "answers": ["If I had more time, I would travel more."], "explanation": "*had* no *if*, *would* na principal."},
+            {"id": "b1-2-2-e4", "type": "multiple_choice", "prompt": "Choose the correct form: If she ___ here, she would help us.", "options": ["is", "was", "were", "will be"], "answer": 2, "explanation": "Situação hipotética: *were*."}
+          ]
+        },
+        {
+          "id": "b1-2-3",
+          "title": "Modal de probabilidade",
+          "objective": "Expressar certeza, possibilidade e dedução.",
+          "explanation": "- **must** — quase certeza: *He must be tired.*\n- **might / may / could** — possibilidade: *It might rain.*\n- **can't** — quase impossível: *That can't be right.*\n\nNo passado: *must have + particípio* (certeza), *might have* (possibilidade).",
+          "key_phrases": [
+            {"en": "She must be at home.", "pt": "Ela deve estar em casa."},
+            {"en": "It might be late.", "pt": "Pode ser tarde."}
+          ],
+          "exercises": [
+            {"id": "b1-2-3-e1", "type": "multiple_choice", "prompt": "The lights are off. They ___ be asleep.", "options": ["must", "mustn't", "can to", "should to"], "answer": 0, "explanation": "Dedução forte = *must*."},
+            {"id": "b1-2-3-e2", "type": "fill_blank", "prompt": "That ___ be true! (é impossível)", "answers": ["can't", "cannot"], "hint": "Impossibilidade", "explanation": "*can't be*."},
+            {"id": "b1-2-3-e3", "type": "translate", "prompt": "Ele pode estar no trabalho agora.", "answers": ["He might be at work now.", "He may be at work now.", "He could be at work now."], "explanation": "Possibilidade."},
+            {"id": "b1-2-3-e4", "type": "reorder", "prompt": "Monte a frase: ela deve ter perdido o ônibus", "words": ["missed", "must have", "She", "the bus"], "answers": ["She must have missed the bus."], "explanation": "*must have* + particípio."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b1-u3",
+      "title": "Ideias e conexões",
+      "goal": "Conectar frases, descrever pessoas e coisas e usar a voz passiva.",
+      "lessons": [
+        {
+          "id": "b1-3-1",
+          "title": "Voz passiva",
+          "objective": "Reconhecer e formar frases na passiva no presente e no passado.",
+          "explanation": "Passiva = **be + particípio**. O foco fica na ação, não em quem a faz:\n\n- *The letter is written.* (presente)\n- *The bridge was built in 1990.* (passado)\n- *English is spoken here.*\n\nQuem fez a ação, quando importa, vem com *by*: *The book was written by Machado.*",
+          "key_phrases": [
+            {"en": "The house was painted last year.", "pt": "A casa foi pintada no ano passado."},
+            {"en": "Rice is grown in many countries.", "pt": "Arroz é cultivado em muitos países."}
+          ],
+          "exercises": [
+            {"id": "b1-3-1-e1", "type": "multiple_choice", "prompt": "The window ___ broken yesterday.", "options": ["was", "were", "did", "has"], "answer": 0, "explanation": "*was* + particípio."},
+            {"id": "b1-3-1-e2", "type": "fill_blank", "prompt": "The car is ___ (wash) every Sunday.", "answers": ["washed"], "hint": "Particípio regular", "explanation": "*is washed*."},
+            {"id": "b1-3-1-e3", "type": "translate", "prompt": "Esse livro foi escrito em 1950.", "answers": ["This book was written in 1950."], "explanation": "Passado passivo."},
+            {"id": "b1-3-1-e4", "type": "multiple_choice", "prompt": "Passive of 'They sell bread here':", "options": ["Bread is sold here.", "Bread sells here.", "Bread was sell here.", "Bread is selling here."], "answer": 0, "explanation": "*is sold*."}
+          ]
+        },
+        {
+          "id": "b1-3-2",
+          "title": "Relative clauses: who, which, that",
+          "objective": "Juntar informações com orações relativas.",
+          "explanation": "- **who** — para pessoas: *The woman who called is my aunt.*\n- **which** — para coisas: *The book which I bought is great.*\n- **that** — para pessoas ou coisas (mais informal): *The car that I drive is old.*\n- **where** — para lugares: *This is the café where we met.*",
+          "key_phrases": [
+            {"en": "The man who lives next door is a doctor.", "pt": "O homem que mora ao lado é médico."},
+            {"en": "This is the place where I grew up.", "pt": "Este é o lugar onde cresci."}
+          ],
+          "exercises": [
+            {"id": "b1-3-2-e1", "type": "multiple_choice", "prompt": "She is the teacher ___ helped me.", "options": ["which", "who", "where", "what"], "answer": 1, "explanation": "Pessoa = *who*."},
+            {"id": "b1-3-2-e2", "type": "fill_blank", "prompt": "This is the hotel ___ we stayed. (lugar)", "answers": ["where"], "hint": "Lugar", "explanation": "*where*."},
+            {"id": "b1-3-2-e3", "type": "translate", "prompt": "O restaurante que recomendei é ótimo.", "answers": ["The restaurant that I recommended is great.", "The restaurant which I recommended is great."], "explanation": "*that* ou *which* para coisas."},
+            {"id": "b1-3-2-e4", "type": "reorder", "prompt": "Monte a frase: o rapaz que está ali é meu primo", "words": ["who", "over there", "The boy", "is my cousin", "is standing"], "answers": ["The boy who is standing over there is my cousin."], "explanation": "*who* para pessoas."}
+          ]
+        },
+        {
+          "id": "b1-3-3",
+          "title": "Phrasal verbs essenciais",
+          "objective": "Usar phrasal verbs muito comuns com sentido correto.",
+          "explanation": "Phrasal verb = verbo + partícula, com sentido próprio:\n\n- **look for** — procurar: *I'm looking for my keys.*\n- **give up** — desistir: *Don't give up!*\n- **turn on / turn off** — ligar / desligar\n- **pick up** — buscar / pegar: *I'll pick you up at six.*\n- **find out** — descobrir: *I found out the truth.*",
+          "key_phrases": [
+            {"en": "Turn off the lights, please.", "pt": "Apague as luzes, por favor."},
+            {"en": "I need to find out the price.", "pt": "Preciso descobrir o preço."}
+          ],
+          "exercises": [
+            {"id": "b1-3-3-e1", "type": "multiple_choice", "prompt": "I'm ___ my glasses. (procurando)", "options": ["looking for", "looking at", "look after", "look up"], "answer": 0, "explanation": "*look for* = procurar."},
+            {"id": "b1-3-3-e2", "type": "fill_blank", "prompt": "Please don't ___ up. (desistir)", "answers": ["give"], "hint": "give up", "explanation": "*give up*."},
+            {"id": "b1-3-3-e3", "type": "translate", "prompt": "Pode desligar a TV, por favor?", "answers": ["Can you turn off the TV, please?", "Could you turn off the TV, please?"], "explanation": "*turn off*."},
+            {"id": "b1-3-3-e4", "type": "reorder", "prompt": "Monte a frase: eu te busco às sete", "words": ["pick you up", "I'll", "at seven"], "answers": ["I'll pick you up at seven."], "explanation": "*pick up* = buscar."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b1-u4",
+      "title": "Trabalho e opiniões",
+      "goal": "Expressar opiniões, concordar e discordar e relatar o que foi dito.",
+      "lessons": [
+        {
+          "id": "b1-4-1",
+          "title": "Gerúndio e infinitivo",
+          "objective": "Saber quando usar -ing ou to + verbo depois de outros verbos.",
+          "explanation": "Alguns verbos pedem **-ing**: *enjoy, avoid, finish, suggest, consider* (*I enjoy reading.*).\n\nOutros pedem **to + verbo**: *want, decide, hope, plan, need* (*I decided to move.*).\n\nDepois de preposições, use sempre **-ing**: *before leaving, thanks for helping.*",
+          "key_phrases": [
+            {"en": "I enjoy working outdoors.", "pt": "Eu gosto de trabalhar ao ar livre."},
+            {"en": "We decided to change the plan.", "pt": "Decidimos mudar o plano."}
+          ],
+          "exercises": [
+            {"id": "b1-4-1-e1", "type": "multiple_choice", "prompt": "I enjoy ___ new languages.", "options": ["learn", "to learn", "learning", "learns"], "answer": 2, "explanation": "*enjoy* + -ing."},
+            {"id": "b1-4-1-e2", "type": "fill_blank", "prompt": "She decided ___ (leave) early. (to + verbo)", "answers": ["to leave"], "hint": "decide to", "explanation": "*decided to leave*."},
+            {"id": "b1-4-1-e3", "type": "translate", "prompt": "Ele evitou falar sobre o assunto.", "answers": ["He avoided talking about the subject.", "He avoided talking about the topic."], "explanation": "*avoid* + -ing."},
+            {"id": "b1-4-1-e4", "type": "multiple_choice", "prompt": "Thank you for ___ me.", "options": ["help", "to help", "helping", "helped"], "answer": 2, "explanation": "Depois de preposição: -ing."}
+          ]
+        },
+        {
+          "id": "b1-4-2",
+          "title": "Reported speech",
+          "objective": "Relatar o que alguém disse com o tempo verbal recuado.",
+          "explanation": "No discurso indireto, o tempo verbal costuma recuar:\n\n- *\"I am tired.\"* → *He said (that) he was tired.*\n- *\"I will call.\"* → *She said she would call.*\n- *\"I have finished.\"* → *They said they had finished.*\n\nPerguntas: *\"Where do you live?\"* → *She asked where I lived.*",
+          "key_phrases": [
+            {"en": "He said he was busy.", "pt": "Ele disse que estava ocupado."},
+            {"en": "She asked me where I worked.", "pt": "Ela me perguntou onde eu trabalhava."}
+          ],
+          "exercises": [
+            {"id": "b1-4-2-e1", "type": "multiple_choice", "prompt": "'I am happy.' → She said she ___ happy.", "options": ["is", "was", "were", "be"], "answer": 1, "explanation": "Presente → passado."},
+            {"id": "b1-4-2-e2", "type": "fill_blank", "prompt": "'I will come.' → He said he ___ come. (would)", "answers": ["would"], "hint": "will → would", "explanation": "*would*."},
+            {"id": "b1-4-2-e3", "type": "translate", "prompt": "Ela disse que tinha perdido o trem.", "answers": ["She said she had missed the train.", "She said that she had missed the train."], "explanation": "Present perfect → past perfect."},
+            {"id": "b1-4-2-e4", "type": "multiple_choice", "prompt": "She asked me ___ I lived.", "options": ["where", "where did", "that", "do"], "answer": 0, "explanation": "Pergunta reportada: ordem afirmativa."}
+          ]
+        },
+        {
+          "id": "b1-4-3",
+          "title": "Dar e discutir opiniões",
+          "objective": "Usar expressões para opinar, concordar e discordar com educação.",
+          "explanation": "- Opinar: *In my opinion...* / *I think / I believe...*\n- Concordar: *I totally agree.* / *That's a good point.*\n- Discordar com cuidado: *I see your point, but...* / *I'm not sure I agree.*\n- Pedir opinião: *What do you think?*",
+          "key_phrases": [
+            {"en": "In my opinion, it's a good idea.", "pt": "Na minha opinião, é uma boa ideia."},
+            {"en": "I see your point, but I disagree.", "pt": "Entendo seu ponto, mas discordo."}
+          ],
+          "exercises": [
+            {"id": "b1-4-3-e1", "type": "multiple_choice", "prompt": "Qual expressão serve para discordar com educação?", "options": ["You are wrong.", "I see your point, but I disagree.", "Shut up.", "No way, stupid."], "answer": 1, "explanation": "Discordância educada."},
+            {"id": "b1-4-3-e2", "type": "fill_blank", "prompt": "___ my opinion, the plan is too expensive.", "answers": ["In"], "hint": "In ___ opinion", "explanation": "*In my opinion*."},
+            {"id": "b1-4-3-e3", "type": "translate", "prompt": "Concordo totalmente com você.", "answers": ["I totally agree with you.", "I completely agree with you.", "I totally agree."], "explanation": "Concordância."},
+            {"id": "b1-4-3-e4", "type": "reorder", "prompt": "Monte a pergunta: o que você acha disso", "words": ["do", "What", "think", "you", "about it", "?"], "answers": ["What do you think about it?"], "explanation": "Pedido de opinião."}
+          ]
+        }
+      ]
+    }
+  ]
+}

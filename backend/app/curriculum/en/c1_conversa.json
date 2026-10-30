@@ -1,0 +1,118 @@
+{
+  "level": "C1",
+  "title": "Avançado — fluência",
+  "description": "Conversas de alto nível: apresentações, debates, negociações e situações sociais complexas.",
+  "goal": "Você conversa com fluência em qualquer contexto, com precisão, nuance e registro adequado.",
+  "units": [
+    {
+      "id": "c1-cu1",
+      "title": "Apresentações e perguntas",
+      "goal": "Apresentar ideias com segurança e responder perguntas difíceis em público.",
+      "lessons": [
+        {
+          "id": "c1-c1-1",
+          "title": "Conversa: respondendo perguntas numa apresentação",
+          "objective": "Ganhar tempo, reformular e responder perguntas sem perder o controle.",
+          "explanation": "Recursos para responder bem:\n\n- *That's a great question.* — Ótima pergunta.\n- *Let me rephrase that to make sure I've understood.* — Deixe-me reformular para ter certeza de que entendi.\n- *I don't have the exact figures, but my understanding is that ...* — Não tenho os números exatos, mas entendo que...\n- *Would you mind if I came back to that later?* — Se importa de eu voltar a isso depois?",
+          "key_phrases": [
+            {"en": "Let me rephrase that to make sure I've understood.", "pt": "Deixe-me reformular para ter certeza de que entendi."},
+            {"en": "I'll come back to that point later.", "pt": "Volto a esse ponto depois."}
+          ],
+          "exercises": [
+            {"id": "c1-c1-1-e1", "type": "open_reply", "prompt": "Could you explain how the model handles missing data?", "context": "Você apresenta um estudo e alguém faz uma pergunta técnica.", "hint": "Responda ou explique o que vai fazer.", "answers": ["Great question. The model imputes missing values using the median.", "I'd be happy to explain. We handle missing data by excluding incomplete records.", "That's a fair point. I'll come back to that after the demo."], "explanation": "Respostas claras, ou um compromisso de voltar ao ponto, são igualmente profissionais."},
+            {"id": "c1-c1-1-e2", "type": "open_reply", "prompt": "I'm not sure I follow. Are you saying the results are invalid?", "context": "A pergunta veio confusa e você precisa garantir que entendeu.", "hint": "Reformule a pergunta antes de responder.", "answers": ["Let me rephrase that to make sure I've understood. You're asking whether the sample was representative?", "If I understand correctly, your concern is about the sample size, is that right?"], "explanation": "Reformular evita responder à pergunta errada."},
+            {"id": "c1-c1-1-e3", "type": "open_reply", "prompt": "Do you have the exact figures for last year?", "context": "Você não tem o número na memória.", "hint": "Admita sem constrangimento e ofereça o seguimento.", "answers": ["I don't have the exact figures, but I'll send them by the end of the day.", "I'd need to check that. I'll follow up with the precise numbers."], "explanation": "Admitir e oferecer seguimento transmite segurança."},
+            {"id": "c1-c1-1-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "Would you mind if I came back to that later?", "answers": ["Would you mind if I came back to that later?"], "explanation": "Uma forma educada de adiar uma resposta."}
+          ]
+        },
+        {
+          "id": "c1-c1-2",
+          "title": "Conversa: defendendo um ponto de vista complexo",
+          "objective": "Desenvolver um argumento em camadas e reconhecer limitações.",
+          "explanation": "Para argumentos sofisticados:\n\n- *While it's true that X, it doesn't necessarily follow that Y.* — É verdade que X, mas não se segue necessariamente que Y.\n- *To a large extent, I'd agree, although ...* — Em grande medida, concordo, embora...\n- *The real question, to my mind, is ...* — A verdadeira questão, na minha opinião, é...",
+          "key_phrases": [
+            {"en": "To a large extent, I'd agree.", "pt": "Em grande medida, concordo."},
+            {"en": "The real question, to my mind, is whether it's sustainable.", "pt": "A verdadeira questão, na minha opinião, é se é sustentável."}
+          ],
+          "exercises": [
+            {"id": "c1-c1-2-e1", "type": "open_reply", "prompt": "Economic growth always improves people's wellbeing, doesn't it?", "context": "Um debate sobre desenvolvimento econômico.", "hint": "Concorde em parte e explique a ressalva.", "answers": ["While it's true that growth raises incomes, it doesn't necessarily follow that wellbeing improves.", "To a large extent I'd agree, although inequality can offset the benefits."], "explanation": "Argumentos em camadas reconhecem o ponto do outro antes de refutá-lo."},
+            {"id": "c1-c1-2-e2", "type": "open_reply", "prompt": "So what's the real problem here, in your view?", "context": "O debate pede que você identifique o cerne da questão.", "hint": "Aponte o que, na sua visão, é central.", "answers": ["The real question, to my mind, is whether the policy is sustainable in the long run.", "In my view, the core issue is access, not efficiency."], "explanation": "*The real question is...* direciona a discussão para o essencial."},
+            {"id": "c1-c1-2-e3", "type": "open_reply", "prompt": "Then what would you propose instead?", "context": "A discussão pede uma alternativa.", "hint": "Proponha algo com ressalvas.", "answers": ["I'd propose a phased approach, though I'd want to see the costs first.", "Perhaps a pilot programme could test the idea before scaling it up."], "explanation": "*Though I'd want to see...* mostra cautela e pensamento crítico."},
+            {"id": "c1-c1-2-e4", "type": "multiple_choice", "prompt": "Qual frase reconhece um ponto e depois discorda?", "options": ["You're wrong.", "While that's true, it doesn't necessarily follow that it's right.", "Whatever you think.", "No, no, no."], "answer": 1, "explanation": "*While that's true, it doesn't necessarily follow...*"}
+          ]
+        },
+        {
+          "id": "c1-c1-3",
+          "title": "Conversa: conduzindo uma reunião",
+          "objective": "Moderar uma discussão, dar a palavra e fechar decisões.",
+          "explanation": "Para conduzir uma reunião:\n\n- *Shall we get started?* — Vamos começar?\n- *Let's hear from Maria first.* — Vamos ouvir a Maria primeiro.\n- *Can we park that for now?* — Podemos deixar isso para depois?\n- *So, to recap, we've agreed to ...* — Então, recapitulando, concordamos em...",
+          "key_phrases": [
+            {"en": "Let's hear from Maria first.", "pt": "Vamos ouvir a Maria primeiro."},
+            {"en": "Can we park that for now?", "pt": "Podemos deixar isso de lado por ora?"}
+          ],
+          "exercises": [
+            {"id": "c1-c1-3-e1", "type": "open_reply", "prompt": "Shall we get started? We have a packed agenda.", "context": "Você abre a reunião como moderador.", "hint": "Convide a equipe a começar.", "answers": ["Yes, let's get started. We have a lot to cover.", "Sure. Let's dive in, and keep an eye on the time."], "explanation": "*Let's dive in* é uma forma dinâmica de começar."},
+            {"id": "c1-c1-3-e2", "type": "open_reply", "prompt": "I think we should also discuss the budget now.", "context": "Alguém quer mudar de assunto no meio da reunião.", "hint": "Proponha deixar para depois.", "answers": ["Good point, but can we park the budget for now and come back to it?", "Let's finish the timeline first and then move to the budget."], "explanation": "*Park that for now* adia um tema sem desprezá-lo."},
+            {"id": "c1-c1-3-e3", "type": "open_reply", "prompt": "So what have we decided?", "context": "A reunião está chegando ao fim.", "hint": "Recapitule as decisões.", "answers": ["To recap, we've agreed to launch in March and review the budget next week.", "So, to sum up, the team will pilot the tool and report back on Friday."], "explanation": "*To recap* organiza as decisões."},
+            {"id": "c1-c1-3-e4", "type": "reorder", "prompt": "Monte a frase: vamos ouvir o time de vendas primeiro", "words": ["first", "sales team", "Let's hear from the", "."], "answers": ["Let's hear from the sales team first."], "explanation": "*Let's hear from...* convida a fala de alguém."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c1-cu2",
+      "title": "Relações e situações sociais",
+      "goal": "Lidar com conflitos, elogios, desculpas e assuntos delicados com naturalidade.",
+      "lessons": [
+        {
+          "id": "c1-c2-1",
+          "title": "Conversa: pedindo desculpas com sinceridade",
+          "objective": "Assumir um erro, reparar o dano e evitar justificativas vazias.",
+          "explanation": "Um pedido de desculpas sincero tem três partes:\n\n- *I owe you an apology.* — Devo-lhe um pedido de desculpas.\n- *That was entirely my fault.* — Foi totalmente culpa minha.\n- *Let me make it right.* — Deixe-me consertar isso.\n\nEvite começar com *but* logo após o pedido de desculpas.",
+          "key_phrases": [
+            {"en": "I owe you an apology.", "pt": "Devo-lhe um pedido de desculpas."},
+            {"en": "Let me make it right.", "pt": "Deixe-me consertar isso."}
+          ],
+          "exercises": [
+            {"id": "c1-c2-1-e1", "type": "open_reply", "prompt": "You missed the deadline and the whole team had to work late.", "context": "Você atrasou uma entrega que afetou a equipe.", "hint": "Assuma a responsabilidade.", "answers": ["I owe you all an apology. That was entirely my fault.", "I'm sorry. I should have flagged the delay earlier."], "explanation": "Assumir sem rodeios é o início de uma reparação."},
+            {"id": "c1-c2-1-e2", "type": "open_reply", "prompt": "What are you going to do about it?", "context": "A equipe quer saber como você vai reparar o erro.", "hint": "Proponha uma reparação concreta.", "answers": ["Let me make it right. I'll take over the next two reports.", "I'd like to make it up to you. Can I buy lunch this week?"], "explanation": "Propostas concretas mostram comprometimento."},
+            {"id": "c1-c2-1-e3", "type": "open_reply", "prompt": "Okay. Just make sure it doesn't happen again.", "context": "A pessoa aceita, mas com cobrança.", "hint": "Comprometa-se sem se justificar demais.", "answers": ["It won't happen again. Thank you for being understanding.", "You have my word. I'll keep you posted on every milestone."], "explanation": "Promessas específicas são melhores que frases genéricas."},
+            {"id": "c1-c2-1-e4", "type": "listen", "prompt": "Ouça e digite a frase.", "text": "That was entirely my fault, and I'm sorry.", "answers": ["That was entirely my fault, and I'm sorry.", "That was entirely my fault and I'm sorry."], "explanation": "Assumir a culpa com clareza."}
+          ]
+        },
+        {
+          "id": "c1-c2-2",
+          "title": "Conversa: elogios e reconhecimento",
+          "objective": "Elogiar com naturalidade e receber elogios sem parecer forçado.",
+          "explanation": "Elogios soam mais naturais quando são específicos:\n\n- *The way you handled that client was impressive.* — A forma como você lidou com aquele cliente foi impressionante.\n- *I really admire how calmly you dealt with it.* — Admiro muito como você lidou com calma.\n\nAo receber elogios: *That's very kind of you.* / *I couldn't have done it without the team.*",
+          "key_phrases": [
+            {"en": "The way you handled that was impressive.", "pt": "A forma como você lidou com aquilo foi impressionante."},
+            {"en": "I couldn't have done it without the team.", "pt": "Eu não teria conseguido sem a equipe."}
+          ],
+          "exercises": [
+            {"id": "c1-c2-2-e1", "type": "open_reply", "prompt": "Your presentation yesterday was fantastic.", "context": "Um colega elogia sua apresentação.", "hint": "Receba o elogio com modéstia.", "answers": ["That's very kind of you. I couldn't have done it without the team.", "Thank you, I really appreciate that."], "explanation": "Receber elogios com humildade é natural."},
+            {"id": "c1-c2-2-e2", "type": "open_reply", "prompt": "How did you manage to stay so calm during the crisis?", "context": "Alguém admira sua postura numa situação difícil.", "hint": "Explique com sinceridade.", "answers": ["Honestly, I focused on what I could control and took it one step at a time.", "I've learned that staying calm helps everyone else stay calm too."], "explanation": "Respostas reflexivas aprofundam a conversa."},
+            {"id": "c1-c2-2-e3", "type": "open_reply", "prompt": "Thanks for sharing that. Is there anything you'd change?", "context": "A conversa aprofunda para uma reflexão.", "hint": "Diga algo que mudaria, com humildade.", "answers": ["I'd communicate earlier with the stakeholders next time.", "Probably I'd plan more buffer time for the unexpected."], "explanation": "Autocrítica construtiva transmite maturidade."},
+            {"id": "c1-c2-2-e4", "type": "multiple_choice", "prompt": "Qual é uma forma natural de receber um elogio?", "options": ["No, it wasn't good at all.", "That's very kind of you, thank you.", "I know, I'm the best.", "Whatever."], "answer": 1, "explanation": "Agradecer com gentileza."}
+          ]
+        },
+        {
+          "id": "c1-c2-3",
+          "title": "Conversa: discordando de um chefe ou colega",
+          "objective": "Discordar de uma decisão com respeito, propondo alternativas.",
+          "explanation": "Para discordar de uma decisão superior:\n\n- *I appreciate the reasoning behind this, but I have some concerns.*\n- *Would you be open to considering an alternative?*\n- *I'd rather raise this now than after we've committed.*\n\nFoque no problema, não na pessoa.",
+          "key_phrases": [
+            {"en": "I have some concerns about the timeline.", "pt": "Tenho algumas preocupações com o cronograma."},
+            {"en": "Would you be open to an alternative?", "pt": "Você estaria aberto a uma alternativa?"}
+          ],
+          "exercises": [
+            {"id": "c1-c2-3-e1", "type": "open_reply", "prompt": "We're moving the launch to next week. Any objections?", "context": "Seu gestor anuncia uma mudança arriscada.", "hint": "Expresse a preocupação com respeito.", "answers": ["I appreciate the reasoning, but I have some concerns about the timeline.", "I understand the urgency, but I'd rather raise a risk now than later."], "explanation": "Reconhecer o motivo antes de questionar."},
+            {"id": "c1-c2-3-e2", "type": "open_reply", "prompt": "Why? The original plan was fine.", "context": "Seu gestor pede justificativa.", "hint": "Explique o risco concreto.", "answers": ["The testing hasn't finished, and I'm worried about the quality of the release.", "We'd have less time to fix the critical bugs we found last week."], "explanation": "Fatos concretos são mais convincentes que opiniões gerais."},
+            {"id": "c1-c2-3-e3", "type": "open_reply", "prompt": "Hmm. What do you suggest, then?", "context": "Seu gestor abre espaço para uma alternativa.", "hint": "Proponha uma saída intermediária.", "answers": ["Would you be open to a phased launch, starting with a small group?", "What if we kept the date but limited the first release to core features?"], "explanation": "Propor alternativas transforma a crítica em colaboração."},
+            {"id": "c1-c2-3-e4", "type": "reorder", "prompt": "Monte a frase: eu preferiria levantar isso agora", "words": ["now", "raise this", "I'd rather", "."], "answers": ["I'd rather raise this now."], "explanation": "*I'd rather raise this now* antes de comprometer o projeto."}
+          ]
+        }
+      ]
+    }
+  ]
+}
