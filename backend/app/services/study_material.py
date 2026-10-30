@@ -15,7 +15,7 @@ from typing import Any
 
 from app.repositories.settings_repo import ProfileRepository, SettingsRepository
 from app.services.conversation_service import BadRequest, NotFound
-from app.services.llm_service import OllamaClient
+from app.services.llm_service import MAX_TOKENS_LONG, OllamaClient
 from app.services.teacher_response import parse_json_object
 
 log = logging.getLogger(__name__)
@@ -249,6 +249,7 @@ class StudyMaterialService:
             format_schema=MATERIAL_SCHEMA,
             temperature=0.4,
             num_ctx=int(settings["llm_num_ctx"]),
+            max_tokens=MAX_TOKENS_LONG,
         )
         data = parse_json_object(raw)
         items = validate_items(data.get("items")) if data else []

@@ -10,6 +10,12 @@ import httpx
 
 log = logging.getLogger(__name__)
 
+# Limite de tokens gerados por chamada. Sem ele, o modelo pode continuar gerando até o timeout
+# (visto em teste: quase 14 mil tokens numa única resposta, com 503 no fim).
+# Ao gerar ~33 tokens/s, 1024 tokens levam ~30 s e 3072 levam ~90 s, dentro do timeout de 120 s.
+MAX_TOKENS_SHORT = 1024  # respostas da conversa, correções e análises
+MAX_TOKENS_LONG = 3072  # lições, material de apoio e trilha, que geram JSON maior
+
 
 class LLMUnavailable(Exception):
     """Ollama fora do ar, modelo ausente ou falha de comunicação."""
@@ -68,6 +74,7 @@ class OllamaClient:
         format_schema: dict[str, Any] | None,
         temperature: float,
         num_ctx: int,
+        max_tokens: int = MAX_TOKENS_SHORT,
     ) -> str:
         payload: dict[str, Any] = {
             "model": model,
@@ -75,7 +82,7 @@ class OllamaClient:
             "stream": False,
             # Qwen3 tem modo de raciocínio; desligado para respostas rápidas e JSON limpo.
             "think": False,
-            "options": {"temperature": temperature, "num_ctx": num_ctx},
+            "options": {"temperature": temperature, "num_ctx": num_ctx, "num_predict": max_tokens},
         }
         if format_schema is not None:
             payload["format"] = format_schema
