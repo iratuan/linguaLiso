@@ -9,7 +9,7 @@ from pydantic import BaseModel, Field, ValidationError
 from app.repositories.lesson_repo import LessonRepository
 from app.repositories.settings_repo import ProfileRepository, SettingsRepository
 from app.services.conversation_service import BadRequest, Conflict, NotFound
-from app.services.llm_service import OllamaClient
+from app.services.llm_service import MAX_TOKENS_LONG, OllamaClient
 from app.services.prompt_library import PromptLibrary
 from app.services.teacher_response import parse_json_object
 
@@ -96,6 +96,7 @@ class LessonService:
             format_schema=LESSON_SCHEMA,
             temperature=float(settings["llm_temperature"]),
             num_ctx=int(settings["llm_num_ctx"]),
+            max_tokens=MAX_TOKENS_LONG,
         )
         draft = _validate(raw, LessonDraft, "A aula gerada não tem a estrutura esperada. Tente outro tema.")
         exercises = [e.model_dump() for e in draft.exercises][:exercise_count]

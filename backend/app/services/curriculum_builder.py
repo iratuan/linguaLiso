@@ -21,7 +21,7 @@ from app.languages import DEFAULT_LANGUAGE, LANGUAGES
 from app.repositories.course_repo import CourseRepository
 from app.repositories.settings_repo import SettingsRepository
 from app.services.conversation_service import BadRequest, NotFound
-from app.services.llm_service import OllamaClient
+from app.services.llm_service import MAX_TOKENS_LONG, OllamaClient
 from app.services.prompt_library import PromptLibrary
 from app.services.teacher_response import parse_json_object
 
@@ -151,6 +151,7 @@ class CurriculumBuilder:
                     format_schema=LESSON_SCHEMA,
                     temperature=float(settings["llm_temperature"]),
                     num_ctx=int(settings["llm_num_ctx"]),
+                    max_tokens=MAX_TOKENS_LONG,
                 )
                 lesson = self._build(raw, lang, level, problems)
                 if lesson is not None:
