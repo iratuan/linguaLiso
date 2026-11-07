@@ -1,5 +1,18 @@
 @import "tailwindcss";
 
+/* Fontes do tema pixel, embutidas (o app funciona offline). Licença SIL OFL: ver src/assets/fonts. */
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("./assets/fonts/press-start-2p.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "VT323";
+  src: url("./assets/fonts/vt323.woff2") format("woff2");
+  font-display: swap;
+}
+
 /*
  * Sistema visual inspirado no macOS/iOS: tema escuro com materiais translúcidos,
  * azul de sistema como cor de ação, tipografia San Francisco (com fallback),
@@ -427,4 +440,196 @@ input[type="range"]:focus-visible {
 /* Cards e painéis com sombra suave, como páginas sobre a mesa. */
 :root[data-theme="papel"] .card {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 8px 24px -16px rgba(60, 40, 20, 0.35);
+}
+
+/* ----- Pixel 8 bits ------------------------------------------------------
+ * Tema sólido e de cantos retos: cores de console, sombras "duras" (sem desfoque),
+ * fonte pixel nos títulos e VT323 no texto. Só muda os tokens e os seletores abaixo.
+ */
+/* Tons de cinza: sem azul nem roxo. O destaque é prata, com texto escuro. */
+:root[data-theme="pixel"] {
+  --ui-scheme: dark;
+  --ui-alpha: 1;
+  --ui-surface-rgb: 22 22 22;
+  --ui-sidebar-rgb: 30 30 30;
+
+  --font-sans: "VT323", "Consolas", monospace;
+  --font-pixel: "Press Start 2P", "VT323", monospace;
+
+  --color-surface-0: #161616;
+  --color-surface-1: #1f1f1f;
+  --color-surface-2: #2a2a2a;
+  --color-surface-3: #363636;
+  --color-line: #5e5e5e;
+
+  --pixel-edge: #9a9a9a;
+  --pixel-shadow: #070707;
+
+  --color-brand-50: #f2f2f2;
+  --color-brand-200: #e0e0e0;
+  --color-brand-300: #d4d4d4;
+  --color-brand-400: #c4c4c4;
+  --color-brand-500: #b0b0b0;
+  --color-brand-600: #8f8f8f;
+  --color-brand-700: #6b6b6b;
+  --color-on-accent: #161616;
+
+  --color-ios-green: #9fd1ae;
+  --color-ios-orange: #d6b27a;
+  --color-ios-red: #e08a8a;
+  --color-ios-purple: #b5b5b5;
+}
+
+:root[data-theme="pixel"] body {
+  font-size: 20px;
+  line-height: 1.2;
+  background-image: radial-gradient(rgba(180, 180, 180, 0.14) 1px, transparent 1px);
+  background-size: 8px 8px;
+}
+
+/* Linhas de varredura de monitor antigo: discretas e sem bloquear cliques. */
+:root[data-theme="pixel"] body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0 2px, rgba(0, 0, 0, 0.14) 2px 3px);
+}
+
+:root[data-theme="pixel"] *,
+:root[data-theme="pixel"] *::before,
+:root[data-theme="pixel"] *::after {
+  border-radius: 0 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+:root[data-theme="pixel"] ::selection {
+  background: var(--color-brand-500);
+  color: var(--color-on-accent);
+}
+
+:root[data-theme="pixel"] img {
+  image-rendering: pixelated;
+}
+
+/* Títulos em fonte pixel, em tamanhos fixos para não estourar a largura. */
+:root[data-theme="pixel"] h1,
+:root[data-theme="pixel"] h2,
+:root[data-theme="pixel"] h3,
+:root[data-theme="pixel"] .title-large {
+  font-family: var(--font-pixel);
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+:root[data-theme="pixel"] h1,
+:root[data-theme="pixel"] .title-large {
+  font-size: 20px !important;
+}
+
+:root[data-theme="pixel"] h2 {
+  font-size: 14px !important;
+}
+
+:root[data-theme="pixel"] h3 {
+  font-size: 12px !important;
+}
+
+/* Textos pequenos do app ficariam ilegíveis em VT323: sobe o tamanho. */
+:root[data-theme="pixel"] .text-\[12px\],
+:root[data-theme="pixel"] .text-\[13px\] {
+  font-size: 18px !important;
+}
+
+:root[data-theme="pixel"] .text-\[14px\],
+:root[data-theme="pixel"] .text-\[15px\] {
+  font-size: 20px !important;
+}
+
+/* Superfícies: cartões com borda sólida e sombra deslocada. */
+:root[data-theme="pixel"] .card {
+  background-color: var(--color-surface-1);
+  border: 2px solid var(--pixel-edge);
+  box-shadow: 4px 4px 0 var(--pixel-shadow);
+}
+
+:root[data-theme="pixel"] .card-interactive:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--pixel-shadow);
+}
+
+:root[data-theme="pixel"] .glass {
+  border-bottom: 2px solid var(--pixel-edge);
+  background-color: var(--color-surface-1);
+}
+
+:root[data-theme="pixel"] .sidebar-surface,
+:root[data-theme="pixel"] .content-surface {
+  background-color: var(--color-surface-0);
+}
+
+/* Botões: relevo de bloco, afundam ao clicar. */
+:root[data-theme="pixel"] .btn-primary {
+  border: 2px solid var(--pixel-shadow);
+  box-shadow: 0 4px 0 var(--color-brand-700);
+  text-transform: uppercase;
+}
+
+:root[data-theme="pixel"] .btn-primary:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 var(--color-brand-700);
+}
+
+:root[data-theme="pixel"] .btn-ghost,
+:root[data-theme="pixel"] .btn-danger,
+:root[data-theme="pixel"] .icon-btn {
+  border: 2px solid var(--pixel-edge);
+  box-shadow: 0 4px 0 var(--pixel-shadow);
+}
+
+:root[data-theme="pixel"] .btn-ghost:active,
+:root[data-theme="pixel"] .btn-danger:active,
+:root[data-theme="pixel"] .icon-btn:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+/* Campos e segmentos. */
+:root[data-theme="pixel"] .field {
+  border: 2px solid var(--pixel-edge);
+  background-color: var(--color-surface-0);
+}
+
+:root[data-theme="pixel"] .field:focus {
+  border-color: var(--color-brand-500);
+  box-shadow: 0 0 0 2px var(--color-brand-500);
+}
+
+:root[data-theme="pixel"] .segmented {
+  border: 2px solid var(--pixel-edge);
+}
+
+:root[data-theme="pixel"] .segmented > button[aria-selected="true"],
+:root[data-theme="pixel"] .segmented > button[aria-pressed="true"],
+:root[data-theme="pixel"] .segmented > button[aria-checked="true"] {
+  background-color: var(--color-brand-500);
+  color: var(--color-on-accent);
+  box-shadow: none;
+}
+
+/* Controle deslizante em blocos, sem o polegar redondo. */
+:root[data-theme="pixel"] input[type="range"]::-webkit-slider-thumb,
+:root[data-theme="pixel"] input[type="range"]::-moz-range-thumb {
+  width: 12px;
+  height: 20px;
+  border-radius: 0;
+  box-shadow: 0 0 0 2px var(--pixel-shadow);
+}
+
+/* Avatares e medalhas com gradiente (o violeta fixo do componente vira cinza no tema pixel). */
+:root[data-theme="pixel"] .bg-gradient-to-br {
+  --tw-gradient-from: #d4d4d4;
+  --tw-gradient-to: #6b6b6b;
 }

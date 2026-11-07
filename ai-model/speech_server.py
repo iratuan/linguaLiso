@@ -1,7 +1,7 @@
 """Servidor de voz local (componente ai-model): faster-whisper (STT) e Piper (TTS).
 
 Roda somente em 127.0.0.1. Nenhuma chamada externa é feita durante o uso: os
-modelos precisam estar baixados antes (ver scripts/setup_models.ps1).
+modelos precisam estar baixados antes (baixadas por scripts/iniciar.ps1).
 
 Endpoints:
   GET  /health        estado dos componentes (não carrega modelos)
@@ -102,7 +102,7 @@ def _voice_path(name: str) -> Path:
     if not path.is_file() or not Path(f"{path}.json").is_file():
         raise HTTPException(
             status_code=503,
-            detail=f"Voz '{name}' não encontrada em {VOICES_DIR}. Execute scripts/setup_models.ps1.",
+            detail=f"Voz '{name}' não encontrada em {VOICES_DIR}. Execute scripts\iniciar.ps1 (baixa as vozes).",
         )
     return path
 
@@ -150,7 +150,7 @@ async def transcribe(audio: UploadFile = File(...), language: str = Form("en")) 
         log.exception("Falha ao carregar Whisper")
         raise HTTPException(
             status_code=503,
-            detail=f"Modelo de voz '{STT_MODEL}' indisponível. Execute scripts/setup_models.ps1. ({type(exc).__name__})",
+            detail=f"Modelo de voz '{STT_MODEL}' indisponível. Execute scripts\iniciar.ps1 (baixa as vozes). ({type(exc).__name__})",
         ) from exc
 
     try:

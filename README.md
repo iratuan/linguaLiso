@@ -92,22 +92,30 @@ O francês segue a mesma estrutura, com pequenas diferenças na distribuição d
 
 ---
 
-## 🚀 Instalação
+## 🚀 Instalação e uso
 
-Para um computador novo, passo a passo, veja o **[Guia de instalação](docs/INSTALACAO.md)**. Aqui vai o resumo para quem já tem tudo pronto. Rode na pasta do projeto, em um PowerShell:
+Versão portátil: não há instalador. Copie a pasta do projeto (ou clone o repositório) e rode **um único script**, em um PowerShell na pasta do projeto:
 
 ```powershell
-# 1. Dependências dos três componentes
-powershell -ExecutionPolicy Bypass -File scripts\instalar.ps1
-
-# 2. Modelos locais (Qwen3 8B e 4B via Ollama, voz Piper, Whisper small)
-powershell -ExecutionPolicy Bypass -File ai-model\scripts\setup_models.ps1
-
-# 3. Verificação
-powershell -ExecutionPolicy Bypass -File scripts\diagnostico.ps1
+powershell -ExecutionPolicy Bypass -File scripts\iniciar.ps1
 ```
 
-O passo 2 é o único que acessa a internet (além da instalação do Ollama e das dependências). Depois dele, o uso diário é offline.
+O script faz tudo, na ordem:
+
+1. **Pré-requisitos:** Python 3.11+ e Node.js 20+. Se faltarem, oferece instalar com `winget`.
+2. **Ollama** (modelo local, gratuito): oferece instalar com `winget`. Se você recusar, o app abre mesmo assim e você pode usar um provedor na nuvem.
+3. **Dependências:** cria os ambientes Python (backend e voz) e instala o frontend (`npm install`). Só reinstala quando o `requirements.txt` ou o `package.json` mudam.
+4. **Interface:** compila o frontend quando ele estiver desatualizado.
+5. **Vozes e reconhecimento de fala:** baixa sempre as vozes Piper (inglês e francês) e o Whisper `small`.
+6. **Modelo do Ollama:** se o modelo principal não estiver baixado, oferece baixar agora. Também dá para baixar depois em **Ajustes**.
+7. **Abre o aplicativo.** Ao fechar a janela, o backend, a voz e o Ollama iniciados pelo script são encerrados.
+
+Opções:
+
+- `-Verificar`: só diagnostica, sem instalar nem abrir o app.
+- `-Sim`: responde "sim" a todas as perguntas (útil para repetir a instalação).
+
+Os logs ficam em `%APPDATA%\English Teacher Local\logs`. O guia detalhado está em [docs/INSTALACAO.md](docs/INSTALACAO.md).
 
 ### Requisitos
 
@@ -127,10 +135,7 @@ O passo 2 é o único que acessa a internet (além da instalação do Ollama e d
 powershell -ExecutionPolicy Bypass -File scripts\iniciar.ps1
 ```
 
-O script confere o Ollama (sobe o serviço se estiver parado), baixa o modelo de conversa se faltar, verifica a voz e abre o app. O Electron também sobe o backend (porta 8000) e o servidor de voz (porta 8001) quando eles ainda não estão rodando. Os logs ficam em `%APPDATA%\english-teacher-frontend\logs`.
-
-- Só verificar, sem abrir o app: `scripts\iniciar.ps1 -SomenteVerificar`
-- Atalho na área de trabalho: rode uma vez `scripts\criar_atalho.ps1` e pronto, é só dar dois cliques em "English Teacher".
+Na primeira vez, o script prepara tudo (veja a seção acima). Nas próximas, ele só confere e abre o app. Para não ter que digitar o comando, crie um atalho para ele na área de trabalho.
 
 Para rodar cada parte à mão, em quatro terminais:
 
@@ -200,6 +205,35 @@ ollama pull qwen3:4b
 
 Para trocar o modelo, use **Configurações → Modelo LLM**. O modelo precisa estar instalado; o diagnóstico mostra quais estão disponíveis. Para guardar os modelos em outro disco, defina `OLLAMA_MODELS` antes de iniciar o Ollama.
 
+O app abre e sobe o Ollama sozinho (`ollama serve`), se ele ainda não estiver rodando. Se você já tiver o Ollama aberto, o app usa esse mesmo.
+
+### Provedores na nuvem (Claude, Groq, GPT) — opcional
+
+Você pode usar um modelo na nuvem no lugar do Ollama. Ele só entra em **Configurações → Modelo** depois que você define a chave:
+
+Crie o arquivo `backend\.env` (fica fora do Git) com as chaves que quiser usar:
+
+```ini
+ETL_ANTHROPIC_API_KEY=sk-ant-...
+ETL_GROQ_API_KEY=gsk_...
+ETL_OPENAI_API_KEY=sk-...
+
+# Opcional: troque o modelo de cada provedor (confira o nome no painel do provedor)
+ETL_ANTHROPIC_MODEL=claude-haiku-5-5
+ETL_GROQ_MODEL=openai/gpt-oss-20b
+ETL_OPENAI_MODEL=gpt-4.1-nano
+
+# Teto de tokens de resposta por chamada na nuvem (padrão 2048)
+ETL_CLOUD_MAX_OUTPUT_TOKENS=2048
+```
+
+No app instalado, use o arquivo `%APPDATA%\English Teacher Local\provedores-ia.env` com o mesmo conteúdo.
+
+- Modelos na nuvem aparecem com `· nuvem`. Eles **enviam as mensagens da conversa ao provedor** e são cobrados por token.
+- Sem chave, o provedor aparece como indisponível e nada é enviado para fora.
+- O diagnóstico não faz chamadas pagas: ele só confere se a chave existe.
+- Cada resposta grava no log (`backend\...`, nível INFO) só a contagem de tokens de entrada e saída, nunca o texto.
+
 ### Reconhecimento de voz (Whisper)
 
 Usa o modelo multilíngue `small` em CPU com INT8, carregado uma vez e reaproveitado. Para trocar:
@@ -222,12 +256,13 @@ O Ollama usa a GPU para o modelo de linguagem. O Whisper fica em CPU por padrão
 
 ## 🔒 Privacidade e modo offline
 
-- **Uso diário:** nenhuma chamada externa. Backend e servidor de voz recusam baixar modelos durante a operação (`local_files_only`).
+- **Uso diário com o Ollama (padrão):** nenhuma chamada externa. Backend e servidor de voz recusam baixar modelos durante a operação (`local_files_only`).
+- **Uso com modelo na nuvem (opcional):** só quando você escolhe um modelo `· nuvem`. Aí as mensagens da conversa são enviadas ao provedor escolhido (Anthropic, Groq ou OpenAI), sujeitas à política de dados dele. A voz continua local.
 - **Instalação e download de modelos:** exigem internet, feitos uma vez pelos scripts.
 - **Atualizações:** manuais, substituindo as pastas do projeto.
 - O backend só escuta em `127.0.0.1`. **Não exponha a porta 11434 na rede.**
 
-Para testar o modo offline: depois do `setup_models.ps1`, desligue o Wi-Fi e o cabo e use o app normalmente.
+Para testar o modo offline: depois da primeira execução do `scripts\iniciar.ps1`, com o Ollama e o modelo baixados, desligue o Wi-Fi e use o app normalmente.
 
 ---
 
@@ -269,7 +304,7 @@ cd ai-model ; .\.venv\Scripts\python.exe -m pytest -q
 cd frontend ; npm test ; npm run typecheck
 ```
 
-Os testes unitários usam um Ollama simulado, então não precisam de modelo instalado. Os testes com modelos reais (Ollama, Whisper, Piper e microfone) são manuais e estão descritos em `scripts\diagnostico.ps1`.
+Os testes unitários usam um Ollama simulado, então não precisam de modelo instalado. Os testes com modelos reais (Ollama, Whisper, Piper e microfone) são manuais e estão descritos em `scripts\iniciar.ps1 -Verificar` (diagnóstico).
 
 **Empacotamento:** ainda não configurado. A ideia é que o executável inclua backend, servidor de voz e interface, com os modelos baixados à parte em `data\models`.
 

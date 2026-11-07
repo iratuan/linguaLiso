@@ -10,9 +10,7 @@
     "build": "tsc --noEmit && vite build",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "electron:dev": "concurrently -k -n vite,electron \"vite\" \"wait-on http://127.0.0.1:5173 && electron .\"",
-    "electron:start": "vite build && electron .",
-    "dist:win": "npm run build && electron-builder --win --x64"
+    "electron:dev": "concurrently -k -n vite,electron \"vite\" \"wait-on http://127.0.0.1:5173 && electron .\""
   },
   "dependencies": {
     "lucide-react": "^1.63.0",
@@ -32,62 +30,6 @@
     "typescript": "^7.0.2",
     "vite": "^8.3.5",
     "vitest": "^5.0.5",
-    "wait-on": "^9.5.1",
-    "electron-builder": "^26.0.12"
-  },
-  "build": {
-    "appId": "com.iratu.englishteacher",
-    "productName": "English Teacher Local",
-    "copyright": "Uso pessoal",
-    "directories": {
-      "output": "../build/installer",
-      "buildResources": "build-resources"
-    },
-    "files": [
-      "dist/**/*",
-      "electron/**/*",
-      "package.json"
-    ],
-    "extraResources": [
-      {
-        "from": "../build/staging/runtime",
-        "to": "runtime"
-      },
-      {
-        "from": "../build/staging/backend",
-        "to": "backend"
-      },
-      {
-        "from": "../build/staging/ai-model",
-        "to": "ai-model"
-      },
-      {
-        "from": "../build/staging/scripts",
-        "to": "scripts"
-      }
-    ],
-    "win": {
-      "icon": "electron/assets/icon.ico",
-      "target": [
-        {
-          "target": "nsis",
-          "arch": [
-            "x64"
-          ]
-        }
-      ]
-    },
-    "nsis": {
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true,
-      "installerIcon": "electron/assets/icon.ico",
-      "uninstallerIcon": "electron/assets/icon.ico",
-      "installerSidebar": "build-resources/installerSidebar.bmp",
-      "uninstallerSidebar": "build-resources/installerSidebar.bmp",
-      "createDesktopShortcut": true,
-      "createStartMenuShortcut": true,
-      "shortcutName": "English Teacher",
-      "artifactName": "English-Teacher-Setup-${version}.${ext}"
-    }
+    "wait-on": "^9.5.1"
   }
 }

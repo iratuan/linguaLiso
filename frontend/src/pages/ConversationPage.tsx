@@ -396,7 +396,12 @@ export function ConversationPage({
     if (playback.state === "playing") return { text: "Reproduzindo a resposta", tone: "ok" };
     if (recorder.micError) return { text: recorder.micError.message, tone: "error" };
     if (!devices.input) return { text: "Nenhum microfone encontrado", tone: "warn" };
-    if (services.llm === "down") return { text: "Ollama não responde. Verifique se ele está aberto", tone: "error" };
+    if (services.llm === "down") {
+      const cloud = services.details?.llm.provider && services.details.llm.provider !== "ollama";
+      return cloud
+        ? { text: services.details?.llm.message ?? "IA na nuvem indisponível", tone: "error" }
+        : { text: "Ollama não responde. Verifique se ele está aberto", tone: "error" };
+    }
     if (services.llm === "warning") return { text: "Modelo de linguagem não instalado", tone: "warn" };
     return { text: "Pronto para conversar", tone: "ok" };
   })();

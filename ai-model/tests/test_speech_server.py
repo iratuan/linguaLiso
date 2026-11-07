@@ -32,7 +32,7 @@ def test_synthesize_without_voice_file_is_503_with_instructions(server):
     with TestClient(server.app) as client:
         response = client.post("/synthesize", json={"text": "Hello"})
     assert response.status_code == 503
-    assert "setup_models.ps1" in response.json()["detail"]
+    assert "iniciar.ps1" in response.json()["detail"]
 
 
 @pytest.mark.parametrize("name", ["../etc/passwd", "a\\b"])
@@ -62,7 +62,7 @@ def test_transcribe_reports_missing_whisper_model(server, monkeypatch):
     with TestClient(server.app) as client:
         response = client.post("/transcribe", files={"audio": ("a.webm", b"abc", "audio/webm")})
     assert response.status_code == 503
-    assert "setup_models.ps1" in response.json()["detail"]
+    assert "iniciar.ps1" in response.json()["detail"]
 
 
 def test_transcribe_rejects_undecodable_audio(server, monkeypatch):

@@ -19,7 +19,7 @@ from app.services.curriculum_builder import CurriculumBuilder
 from app.services.lesson_service import LessonService
 from app.repositories.analysis_repo import AnalysisRepository
 from app.services.level_analysis import LevelAnalysisService
-from app.services.llm_service import OllamaClient
+from app.services.llm_service import ChatLLM, build_llm
 from app.services.prompt_library import PromptLibrary
 from app.services.speech_client import SpeechClient
 from app.services.study_material import StudyMaterialService
@@ -29,7 +29,7 @@ from app.services.study_material import StudyMaterialService
 class Container:
     config: Settings
     db: Database
-    llm: OllamaClient
+    llm: ChatLLM
     speech: SpeechClient
     prompts: PromptLibrary
     settings: SettingsRepository
@@ -48,12 +48,12 @@ class Container:
     study_material: StudyMaterialService
 
 
-def build_container(config: Settings, *, llm: OllamaClient | None = None,
+def build_container(config: Settings, *, llm: ChatLLM | None = None,
                     speech: SpeechClient | None = None) -> Container:
     db = Database(config.db_path, config.migrations_dir, config.backups_dir)
     db.migrate()
 
-    llm = llm or OllamaClient(config.ollama_url, config.llm_timeout_s)
+    llm = llm or build_llm(config)
     speech = speech or SpeechClient(config.speech_url, config.speech_timeout_s)
     prompts = PromptLibrary(config.prompts_dir)
     user_curriculum = config.data_dir / "curriculo_usuario"

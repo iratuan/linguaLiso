@@ -61,6 +61,7 @@ export interface Settings {
   llm_model: string | null;
   llm_model_default: string;
   llm_model_fallback: string;
+  llm_model_options: { value: string; label: string }[];
   llm_temperature: number;
   llm_num_ctx: number;
   history_limit: number;
@@ -73,7 +74,7 @@ export interface Settings {
   /** Transparência da interface, em %: 0 opaca, 80 quase transparente. */
   ui_transparency: number;
   /** Tema visual: escuro (padrão) ou papel, estilo Kindle. */
-  app_theme: "escuro" | "papel";
+  app_theme: "escuro" | "papel" | "pixel";
 }
 
 export interface Session {
@@ -247,12 +248,55 @@ export interface RecurringError {
   occurrences: number;
 }
 
+export interface StorageItem {
+  name: string;
+  bytes: number;
+}
+
+export interface StorageGroup {
+  id: string;
+  label: string;
+  bytes: number;
+  items: StorageItem[];
+}
+
+export interface StorageReport {
+  groups: StorageGroup[];
+  total_bytes: number;
+}
+
+export interface PullState {
+  model: string | null;
+  status: "idle" | "downloading" | "done" | "error";
+  percent: number | null;
+  error: string | null;
+}
+
+export interface OllamaStatus {
+  binary_found: boolean;
+  reachable: boolean;
+  suggested: { role: "principal" | "leve"; model: string; installed: boolean }[];
+  installed_models: string[];
+  download: PullState;
+}
+
+export interface LlmProvider {
+  provider: "anthropic" | "groq" | "openai";
+  label: string;
+  key_env: string;
+  configured: boolean;
+  key_hint: string;
+  model: string;
+}
+
 export interface Diagnostics {
   backend: { version: string; schema_version: number };
   database: { path: string; exists: boolean };
   data_dir: string;
   disk_free_gb: number;
   llm: {
+    /** "ollama" ou o provedor na nuvem do modelo escolhido ("groq", "anthropic", "openai"). */
+    provider: string;
     url: string;
     reachable: boolean;
     selected_model: string;

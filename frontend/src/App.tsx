@@ -237,7 +237,7 @@ function SystemStatus() {
     text = "Backend desconectado";
   } else if (llm === "down") {
     state = "down";
-    text = "Ollama não responde";
+    text = details?.llm.provider && details.llm.provider !== "ollama" ? "IA na nuvem indisponível" : "Ollama não responde";
   } else if (llm === "warning") {
     state = "warning";
     text = `Modelo ${details?.llm.selected_model ?? ""} ausente`;
