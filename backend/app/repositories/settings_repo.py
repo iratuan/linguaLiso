@@ -26,7 +26,7 @@ DEFAULT_SETTINGS: dict[str, Any] = {
     "teacher_persona": "descontraido",
     # Transparência da interface, em %: 0 é opaca e 80 é quase transparente.
     "ui_transparency": 45,
-    # Tema visual: "escuro" (padrão) ou "papel" (estilo Kindle, fundo claro e fonte serifada).
+    # Tema visual: "escuro" (padrão), "papel" (estilo Kindle, fundo claro e fonte serifada) ou "pixel" (8 bits).
     "app_theme": "escuro",
 }
 

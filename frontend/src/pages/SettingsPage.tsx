@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Download, RefreshCw, Trash2 } from "lucide-react";
 import { api, describeError } from "../lib/api";
 import { LEVEL_LABELS } from "../lib/format";
+import { ModelSettings } from "../components/ModelSettings";
 import { THEME_LABELS, applyAppearance, type AppTheme } from "../lib/appearance";
 import {
   PERSONA_DESCRIPTIONS,
@@ -129,7 +130,15 @@ export function SettingsPage() {
     }
   };
 
-  const modelOptions = settings ? [...new Set([settings.llm_model_default, settings.llm_model_fallback])] : [];
+  // Lista vem do backend (Ollama + provedores com chave). Se o modelo salvo não estiver nela, mantém visível.
+  const modelOptions = settings
+    ? settings.llm_model_options.some((o) => o.value === (settings.llm_model ?? settings.llm_model_default))
+      ? settings.llm_model_options
+      : [
+          ...settings.llm_model_options,
+          { value: settings.llm_model ?? settings.llm_model_default, label: `${settings.llm_model ?? settings.llm_model_default} (sem chave configurada)` },
+        ]
+    : [];
 
   return (
     <div className="flex-1 overflow-y-auto">
@@ -217,7 +226,10 @@ export function SettingsPage() {
           </SettingsGroup>
 
           {/* ----- Conversa ----- */}
-          <SettingsGroup title="Conversa" footer="Modelos precisam estar instalados no Ollama (ollama pull).">
+          <SettingsGroup
+            title="Conversa"
+            footer="Modelos do Ollama ficam neste computador (ollama pull). Modelos · nuvem enviam as mensagens para o provedor e cobram por token; as chaves ficam em backend/.env."
+          >
             {settings && (
               <>
                 <SettingRow
@@ -259,10 +271,9 @@ export function SettingsPage() {
                       value={settings.llm_model ?? settings.llm_model_default}
                       onChange={(e) => void changeSetting({ llm_model: e.target.value })}
                     >
-                      {modelOptions.map((m) => (
-                        <option key={m} value={m}>
-                          {m}
-                          {m === settings.llm_model_default ? " (padrão)" : " (leve)"}
+                      {modelOptions.map((o) => (
+                        <option key={o.value} value={o.value}>
+                          {o.label}
                         </option>
                       ))}
                     </select>
@@ -299,6 +310,16 @@ export function SettingsPage() {
               </>
             )}
           </SettingsGroup>
+
+          {/* ----- Modelos de IA, provedores na nuvem e espaço ----- */}
+          <ModelSettings
+            onProvidersChanged={() => {
+              api
+                .getSettings()
+                .then(setSettings)
+                .catch(() => undefined);
+            }}
+          />
 
           {/* ----- Aparência ----- */}
           {settings && (
@@ -492,7 +513,7 @@ export function SettingsPage() {
       </PageContainer>
 
       {dirty && (
-        <div className="animate-rise fixed bottom-6 right-8 z-40 flex items-center gap-3 rounded-full border border-line bg-surface-2/95 py-2 pl-5 pr-2 shadow-2xl backdrop-blur-2xl">
+        <div className="animate-rise fixed bottom-6 left-[calc(138px+50%)] z-50 -translate-x-1/2 flex items-center gap-3 rounded-full border border-line bg-surface-2/95 py-2 pl-5 pr-2 shadow-2xl backdrop-blur-2xl">
           <span className="text-[14px] text-slate-300">Alterações não salvas</span>
           <button type="button" className="btn-ghost !py-2" onClick={discardAll} disabled={saving}>
             Descartar

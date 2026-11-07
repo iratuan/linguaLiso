@@ -53,4 +53,5 @@ def test_ui_transparency_defaults_and_accepts_only_0_to_80(client):
 def test_app_theme_defaults_to_dark_and_accepts_paper(client):
     assert client.get("/api/settings").json()["app_theme"] == "escuro"
     assert client.put("/api/settings", json={"app_theme": "papel"}).json()["app_theme"] == "papel"
+    assert client.put("/api/settings", json={"app_theme": "pixel"}).json()["app_theme"] == "pixel"
     assert client.put("/api/settings", json={"app_theme": "sepia"}).status_code == 422

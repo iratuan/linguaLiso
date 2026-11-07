@@ -116,4 +116,4 @@ class SettingsIn(BaseModel):
     response_mode: Literal["audio", "text"] | None = None
     teacher_persona: Literal["formal", "descontraido", "nativo"] | None = None
     ui_transparency: int | None = Field(default=None, ge=0, le=80)
-    app_theme: Literal["escuro", "papel"] | None = None
+    app_theme: Literal["escuro", "papel", "pixel"] | None = None

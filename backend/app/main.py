@@ -10,7 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 from app import __version__
-from app.api import analysis, course, data, drills, learning, speech, system, teaching
+from app.api import analysis, course, data, drills, learning, llm_admin, speech, system, teaching
 from app.config import Settings, get_settings
 from app.container import Container, build_container
 from app.services.conversation_service import BadRequest, Conflict, Locked, NotFound
@@ -47,6 +47,7 @@ def create_app(config: Settings | None = None, container: Container | None = Non
     app.include_router(drills.router, prefix="/api")
     app.include_router(analysis.router, prefix="/api")
     app.include_router(data.router, prefix="/api")
+    app.include_router(llm_admin.router, prefix="/api")
     return app
 
 

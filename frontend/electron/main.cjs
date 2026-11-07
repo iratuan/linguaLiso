@@ -24,7 +24,10 @@ const SPEECH_URL = process.env.ETL_SPEECH_URL || "http://127.0.0.1:8001";
 const DEV_URL = process.env.ETL_DEV_URL || "http://127.0.0.1:5173";
 const BACKEND_HEALTH = `${BACKEND_URL}/api/health`;
 const SPEECH_HEALTH = `${SPEECH_URL}/health`;
+const OLLAMA_URL = process.env.ETL_OLLAMA_URL || "http://127.0.0.1:11434";
+const OLLAMA_HEALTH = `${OLLAMA_URL}/api/version`;
 const STARTUP_TIMEOUT_MS = 60_000;
+const OLLAMA_STARTUP_TIMEOUT_MS = 30_000;
 
 const children = [];
 let logDir = null;
@@ -38,60 +41,24 @@ function ensureLogDir() {
 }
 
 /** Pasta com backend e ai-model: no pacote instalado fica em resources/; em desenvolvimento, na raiz do projeto. */
-const RUNTIME_ROOT = app.isPackaged ? process.resourcesPath : PROJECT_ROOT;
+const RUNTIME_ROOT = PROJECT_ROOT;
 
 function pythonFor(folder) {
-  // No instalador, o Python embutido e as bibliotecas vêm junto (resources/runtime).
-  if (app.isPackaged) return path.join(process.resourcesPath, "runtime", "python.exe");
   const venvPython = path.join(PROJECT_ROOT, folder, ".venv", "Scripts", "python.exe");
   return fs.existsSync(venvPython) ? venvPython : process.env.ETL_PYTHON || "python";
 }
 
-/** Dados do usuário ficam fora da pasta do programa (que é somente leitura após a instalação). */
+/** Logs e dados de janela ficam em %APPDATA%; os dados do aluno ficam em data/ na pasta do projeto. */
 function userDataDir() {
   return app.getPath("userData");
 }
 
-function readMachineProfile() {
-  try {
-    return JSON.parse(fs.readFileSync(path.join(userDataDir(), "perfil-maquina.json"), "utf8"));
-  } catch {
-    return null;
-  }
-}
-
-/** Variáveis extras só no app instalado: pasta de dados gravável e modelo escolhido para esta máquina. */
-function packagedEnv() {
-  if (!app.isPackaged) return {};
-  const env = { ETL_DATA_DIR: path.join(userDataDir(), "data") };
-  const profile = readMachineProfile();
-  if (profile && profile.llm_model) env.ETL_DEFAULT_LLM_MODEL = profile.llm_model;
-  return env;
-}
-
-/** Primeira execução do instalado: prepara o Ollama e o modelo de linguagem (com confirmação na janela). */
-function setupDone() {
-  return fs.existsSync(path.join(userDataDir(), "instalacao-concluida.json"));
-}
-
-function runFirstRunSetup() {
-  return new Promise((resolve) => {
-    const script = path.join(process.resourcesPath, "scripts", "preparar.ps1");
-    const child = spawn(
-      "powershell.exe",
-      ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", script, "-DataDir", userDataDir()],
-      { stdio: "inherit", windowsHide: false }
-    );
-    child.on("error", () => resolve(1));
-    child.on("exit", (code) => resolve(code ?? 1));
-  });
-}
-
+/** Só 200 conta como "é o nosso serviço": outro programa na mesma porta (ex.: 404 de um servidor PHP) não basta. */
 function isReachable(healthUrl) {
   return new Promise((resolve) => {
     const req = http.get(healthUrl, { timeout: 1500 }, (res) => {
       res.resume();
-      resolve(res.statusCode !== undefined && res.statusCode < 500);
+      resolve(res.statusCode === 200);
     });
     req.on("timeout", () => {
       req.destroy();
@@ -115,7 +82,7 @@ function startService(name, cwd, args, env) {
   const out = fs.openSync(logFile, "a");
   const child = spawn(pythonFor(path.basename(cwd)), args, {
     cwd,
-    env: { ...process.env, ...packagedEnv(), ...env, PYTHONUNBUFFERED: "1" },
+    env: { ...process.env, ...env, PYTHONUNBUFFERED: "1" },
     windowsHide: true,
     stdio: ["ignore", out, out],
   });
@@ -124,8 +91,42 @@ function startService(name, cwd, args, env) {
   return child;
 }
 
+/** Ollama: se já estiver rodando (serviço do Windows, app da bandeja), usa o que existe; senão sobe `ollama serve`. */
+function ollamaExecutable() {
+  const local = path.join(process.env.LOCALAPPDATA || "", "Programs", "Ollama", "ollama.exe");
+  return fs.existsSync(local) ? local : "ollama";
+}
+
+/** Devolve o processo iniciado por nós (para encerrar junto com o app), ou null se já estava de pé. */
+async function ensureOllama() {
+  if (await isReachable(OLLAMA_HEALTH)) return { started: false };
+
+  const logFile = path.join(ensureLogDir(), "ollama.log");
+  const out = fs.openSync(logFile, "a");
+  const child = spawn(ollamaExecutable(), ["serve"], {
+    env: { ...process.env, OLLAMA_NUM_PARALLEL: process.env.OLLAMA_NUM_PARALLEL || "2" },
+    windowsHide: true,
+    stdio: ["ignore", out, out],
+  });
+  let spawnError = null;
+  child.on("error", (err) => (spawnError = err));
+  child.on("exit", (code) => console.log(`[ollama] encerrado com código ${code}`));
+  children.push(child);
+
+  const ok = await waitFor(OLLAMA_HEALTH, OLLAMA_STARTUP_TIMEOUT_MS);
+  return { started: true, ok: ok && !spawnError, spawnError, logFile };
+}
+
 async function ensureServices() {
   const failures = [];
+
+  const ollama = await ensureOllama();
+  if (ollama.started && !ollama.ok) {
+    const motivo = ollama.spawnError
+      ? "o Ollama não foi encontrado. Instale em https://ollama.com"
+      : `o Ollama não respondeu. Veja ${ollama.logFile}`;
+    failures.push(`Ollama não iniciou: ${motivo}`);
+  }
 
   if (!(await isReachable(BACKEND_HEALTH))) {
     startService(
@@ -211,10 +212,15 @@ function closeSplash() {
   splashWindow = null;
 }
 
-/** Carrega a aplicação numa rota (ex.: "/chat-window"), em desenvolvimento ou empacotada. */
+/**
+ * Carrega a aplicação numa rota (ex.: "/chat-window").
+ * - Instalado, ou pasta portátil (scripts\iniciar.ps1 define ETL_USE_DIST=1): usa o build em dist/.
+ * - Desenvolvimento (scripts\iniciar.ps1 -Dev): usa o servidor do Vite.
+ */
 function loadRoute(win, route) {
-  if (app.isPackaged) {
-    win.loadFile(path.join(PROJECT_ROOT, "frontend", "dist", "index.html"), { hash: route });
+  if (app.isPackaged || process.env.ETL_USE_DIST === "1") {
+    // dist/ vai junto no app.asar (ao lado de electron/), não em resources/frontend.
+    win.loadFile(path.join(__dirname, "..", "dist", "index.html"), { hash: route });
   } else {
     win.loadURL(`${DEV_URL}/#${route}`);
   }
@@ -336,17 +342,6 @@ function createWindow() {
 app.whenReady().then(async () => {
   hardenSession();
   showSplash();
-
-  if (app.isPackaged && !setupDone()) {
-    const code = await runFirstRunSetup();
-    if (code !== 0) {
-      closeSplash();
-      dialog.showErrorBox(
-        "Preparação não concluída",
-        "A instalação do Ollama ou do modelo de linguagem não terminou. O app abre, mas o professor só responde depois da preparação. Abra o app de novo para tentar outra vez."
-      );
-    }
-  }
 
   const failures = await ensureServices();
   createWindow();

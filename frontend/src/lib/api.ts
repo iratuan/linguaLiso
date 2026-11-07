@@ -61,6 +61,14 @@ export const api = {
   getSettings: () => request<T.Settings>("/settings"),
   updateSettings: (values: Partial<T.Settings>) => request<T.Settings>("/settings", put(values)),
 
+  storage: () => request<T.StorageReport>("/storage"),
+  ollamaStatus: () => request<T.OllamaStatus>("/llm/ollama"),
+  pullModel: (model: string) => request<T.PullState>("/llm/ollama/pull", json({ model })),
+  pullState: () => request<T.PullState>("/llm/ollama/pull"),
+  providers: () => request<T.LlmProvider[]>("/llm/providers"),
+  saveProvider: (provider: string, body: { api_key?: string | null; model?: string | null }) =>
+    request<T.LlmProvider[]>(`/llm/providers/${provider}`, put(body)),
+
   getProfile: () => request<T.Profile | null>("/profile"),
   saveProfile: (profile: T.Profile) => request<T.Profile>("/profile", put(profile)),
 

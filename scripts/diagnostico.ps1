@@ -27,6 +27,8 @@ Write-Host "`n== Ambientes virtuais ==" -ForegroundColor Cyan
 Show (Test-Path "$root\backend\.venv\Scripts\python.exe") "backend\.venv"
 Show (Test-Path "$root\ai-model\.venv\Scripts\python.exe") "ai-model\.venv"
 Show (Test-Path "$root\frontend\node_modules") "frontend\node_modules"
+Show (Test-Path "$root\frontend\node_modules\electron\dist\electron.exe") "Electron (frontend\node_modules)"
+Show (Test-Path "$root\frontend\dist\index.html") "Interface compilada (frontend\dist; o iniciar.ps1 compila se faltar)"
 
 Write-Host "`n== Modelos ==" -ForegroundColor Cyan
 $voice = "$root\ai-model\voices\en_US-lessac-medium.onnx"
